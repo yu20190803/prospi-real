@@ -1,0 +1,180 @@
+{
+  "category": "wbc",
+  "team": "usa",
+  "kind": "batter",
+  "player_id": "schwarber_12",
+  "source_capture": "captures/wbc/usa/schwarber_12.png",
+  "year": 2026,
+  "uniform_number": "12",
+  "name": "シュワーバー",
+  "position": "左翼手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 387
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "C",
+          "value": 60
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 58
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "S",
+      "value": 93
+    },
+    {
+      "label": "走力",
+      "grade": "E",
+      "value": 49
+    },
+    {
+      "label": "捕球",
+      "grade": "F",
+      "value": 36
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 53
+    },
+    {
+      "label": "肩力",
+      "grade": "E",
+      "value": 46
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 76
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "LF",
+    "primary_grade": 30,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "LF",
+        "grade": "F",
+        "value": 30
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "アーチスト",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "満塁男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対ストレート○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "プルヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "死球",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

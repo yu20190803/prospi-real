@@ -1,0 +1,469 @@
+<title>プロスピ能力帳</title>
+<meta name="description" content="プロ野球スピリッツ2026の選手能力を一覧・比較できるデータベース（試作）">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;700;800&family=Montserrat:wght@700;800&family=Oswald:wght@500;600&display=swap">
+<style>
+/* ゲームの選手詳細画面に寄せた単一ダークテーマ。色は画面キャプチャからの近似値 */
+:root{
+  color-scheme:dark;
+  --page:#0b0c0f; --card:#15171c; --card-2:#1b1e24; --head:#eceef1; --head-ink:#1c1f24;
+  --line:#3e434c; --line-soft:#2b2f36; --ink:#ffffff; --ink-2:#c9cdd4; --dim:#7b818b;
+  --row:#2a2f39; --row-off:#1f232b; --row-edge:#434a57; --sel:#5ab8ea;
+  --star:#f6c62d; --ovr:#f39a3a; --year:#c4242b;
+  --badge-p:#e3746a; --badge-in:#e2c47a; --badge-out:#86c28e; --badge-c:#8fb6e0;
+  --plus:#f2a8c8; --minus:#8f84c9;
+  --s1:#f2a8c8; --s2:#f39a3a; --s3:#5ab8ea;
+}
+*{box-sizing:border-box}
+body{background:var(--page);color:var(--ink);font-family:"M PLUS 1p","Hiragino Sans","Yu Gothic",sans-serif;font-size:14px;line-height:1.5;padding-inline:16px;padding-block:0 48px}
+.wrap{max-width:900px;margin:0 auto;display:grid;gap:22px}
+.num{font-family:"Oswald","Arial Narrow",sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.01em}
+
+/* サイトヘッダー */
+header.site{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px 20px;padding-block:22px 10px;border-bottom:1px solid var(--line)}
+h1{margin:0;font-weight:800;font-size:clamp(24px,4vw,30px);letter-spacing:.04em;display:flex;align-items:center;gap:10px}
+h1 .star{color:var(--star)}
+.meta{margin:0;color:var(--ink-2);font-size:13px}
+h2{margin:0;font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px}
+h2::before{content:"";width:3px;height:16px;background:var(--ink-2)}
+.section-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;margin-bottom:10px}
+.hint{margin:0;color:var(--dim);font-size:12.5px}
+
+.tabs{display:inline-flex;gap:3px}
+.tabs button{font:inherit;font-weight:700;border:1px solid var(--row-edge);background:var(--row-off);color:var(--ink-2);padding:6px 18px;border-radius:2px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--row);color:var(--ink);border:2px solid var(--sel);padding:5px 17px}
+button:focus-visible,input:focus-visible{outline:2px solid var(--sel);outline-offset:2px}
+
+/* 一覧 */
+.table-box{overflow-x:auto;background:var(--card);border:1px solid var(--line-soft)}
+table.list{border-collapse:separate;border-spacing:0 3px;width:100%;min-width:820px;padding:6px}
+.list th{font-size:12px;color:var(--ink-2);font-weight:700;text-align:left;padding:4px 10px;white-space:nowrap}
+.list td{background:var(--row);border-block:1px solid var(--row-edge);padding:6px 10px;white-space:nowrap}
+.list td:first-child{border-left:1px solid var(--row-edge)} .list td:last-child{border-right:1px solid var(--row-edge)}
+.list tr.active td{border-color:var(--sel);background:#34404f}
+.list tr:hover td{background:#323946}
+.list th button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+.list th button[data-dir]::after{content:" " attr(data-dir);color:var(--sel);font-size:10px}
+.pick{width:17px;height:17px;accent-color:var(--sel);cursor:pointer;vertical-align:middle}
+.swatch{display:inline-block;width:10px;height:10px;margin-left:6px;vertical-align:middle}
+.no-badge{display:inline-grid;place-items:center;min-width:34px;height:24px;padding:0 4px;font-family:"Oswald",sans-serif;font-weight:600;font-size:16px;color:#1b1d21}
+.name-btn{font:inherit;font-weight:700;font-size:15px;color:var(--ink);background:none;border:0;padding:0;cursor:pointer}
+.name-btn:hover{color:var(--sel)}
+.tb{color:var(--dim);font-size:12px;margin-left:6px}
+.g{font-family:"Montserrat","Arial Black",sans-serif;font-weight:800;font-size:17px;line-height:1;display:inline-block;width:18px;text-align:center}
+.gv{display:inline-flex;align-items:baseline;gap:6px}
+.gv .num{font-size:16px}
+.ovr-cell{color:var(--ovr);font-family:"Oswald",sans-serif;font-weight:600;font-size:18px}
+
+/* ── 選手カード ───────────────── */
+.pcard{background:var(--card);border:1px solid var(--line-soft);scroll-margin-top:12px}
+.ph{display:grid;grid-template-columns:auto 1fr auto;align-items:stretch;background:var(--head);color:var(--head-ink);min-height:62px}
+.ph .badges{display:flex;flex-direction:column;width:78px}
+.ph .no{flex:1;display:grid;place-items:center;font-family:"Oswald",sans-serif;font-weight:600;font-size:34px;line-height:1;color:#23252a}
+.ph .yr{background:var(--year);color:#fff;font-family:"Oswald",sans-serif;font-size:13px;text-align:center;line-height:20px}
+.ph .nm{display:flex;align-items:center;padding:0 18px;font-size:clamp(22px,4vw,30px);font-weight:700;border-left:1px solid #c7cbd1;letter-spacing:.03em}
+.ph .pos{display:flex;align-items:center;gap:clamp(18px,5vw,56px);padding:0 22px;font-size:clamp(14px,2.4vw,18px);font-weight:700;border-left:1px solid #c7cbd1}
+.pb{display:grid;grid-template-columns:minmax(0,560px) 201px;gap:14px;padding:12px 12px 14px}
+@media (min-width:761px){.pcard{width:fit-content;max-width:100%}}
+@media (max-width:760px){.pb{grid-template-columns:1fr} .ph{grid-template-columns:auto 1fr} .ph .pos{grid-column:1/-1;border-left:0;border-top:1px solid #c7cbd1;padding:6px 14px;justify-content:flex-end}}
+.upper{display:grid;grid-template-columns:136px minmax(0,1fr);gap:16px}
+@media (max-width:460px){.upper{grid-template-columns:1fr}}
+.rar{display:flex;align-items:center;gap:6px;margin-bottom:6px}
+.rar .star{color:var(--star);font-size:26px;line-height:1}
+.rar .ovr{color:var(--ovr);font-family:"Oswald",sans-serif;font-weight:600;font-size:34px;line-height:1}
+.photo{width:128px;max-width:100%;aspect-ratio:128/140;background:linear-gradient(#7d93a8,#5f7488);border:2px solid #d6d9de;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
+.photo svg{width:78%;height:auto;display:block}
+.srow{--lbw:6em;display:grid;grid-template-columns:3px calc(var(--lbw) + 3em) 28px 38px minmax(0,1fr);align-items:center;gap:0 8px;min-height:35px;border-bottom:1px solid var(--line)}
+.pcard.pitcher .srow{--lbw:4.5em}
+.srow .tick{width:3px;height:16px;background:#c9ccd2}
+.srow .lb{font-size:16px;font-weight:500}
+.srow .gr{font-family:"Montserrat","Arial Black",sans-serif;font-weight:800;font-size:22px;line-height:1;text-align:center}
+.srow .vl{font-family:"Montserrat",sans-serif;font-weight:700;font-size:18px;text-align:right}
+.srow .wide{grid-column:3/span 2;text-align:right;font-family:"Montserrat",sans-serif;font-weight:700;font-size:17px;white-space:nowrap}
+.srow .sym{grid-column:3/span 2;text-align:center;font-size:18px}
+.srow.split{grid-template-columns:3px 3.6em calc(var(--lbw) - 3.6em + 3em - 8px) 28px 38px minmax(0,1fr);min-height:33px}
+.srow .lb,.srow .vs{white-space:nowrap}
+.wrap>*{min-width:0}
+.srow.split .lb{font-size:16px}
+.srow.split .vs{font-size:14px;color:var(--ink-2)}
+.srow.split.first{border-bottom-color:var(--line-soft)}
+
+.abils{display:flex;flex-direction:column;gap:3px}
+.ab{display:flex;align-items:center;gap:8px;min-height:31px;padding:0 5px 0 8px;background:var(--row);border:1px solid var(--row-edge);border-radius:2px;font-size:14.5px;font-weight:500;white-space:nowrap}
+.ab.dim{background:var(--row-off);color:var(--dim)}
+.ab .ic{width:13px;height:13px;flex-shrink:0}
+.ab.plus .ic{background:var(--plus)} .ab.minus .ic{background:var(--minus)}
+.ab.both .ic{background:linear-gradient(135deg,var(--plus) 0 50%,var(--minus) 50% 100%)}
+.ab .an{flex:1}
+.ab .ag{display:grid;place-items:center;width:22px;height:22px;background:#3a3d44;border-radius:3px;font-family:"Montserrat",sans-serif;font-weight:800;font-size:13px;color:#e8eaee}
+.ab.dim .ag{color:#9aa0aa}
+.ab.pad{background:var(--row-off);border-color:var(--line-soft)}
+
+.pitches{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+@media (max-width:460px){.pitches{grid-template-columns:1fr}}
+.ppanel{position:relative}
+.ppanel .pn{position:absolute;left:0;top:0;width:24px;height:24px;display:grid;place-items:center;background:#3a3f49;font-family:"Oswald",sans-serif;font-size:15px}
+.ppanel svg{width:100%;height:auto;display:block}
+.plabel{fill:#e6e9ee;font-size:11px;font-family:"M PLUS 1p",sans-serif;font-weight:700}
+.pgrade{font-family:"Montserrat","Arial Black",sans-serif;font-weight:800;font-size:19px;text-anchor:middle}
+.pgrade.ctl{font-size:18px}
+
+.zone{margin-top:14px}
+.zone .zt{font-size:14px;color:var(--ink-2);margin-bottom:6px;text-align:center}
+.zgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;width:124px;margin:0 auto}
+.zgrid div{aspect-ratio:1/1;display:grid;place-items:center;background:#1c1f25;border:1px solid var(--line);font-family:"Oswald",sans-serif;font-size:17px}
+.plate{display:block;width:124px;margin:8px auto 0}
+.field{margin-top:8px}
+.field svg{width:100%;max-width:380px;display:block;margin:0 auto}
+.fgrade{font-family:"Montserrat","Arial Black",sans-serif;font-weight:800;font-size:17px}
+
+/* 比較 */
+.panel{background:var(--card);border:1px solid var(--line-soft);padding:16px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--ink-2);margin-bottom:8px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;display:inline-block}
+.empty{color:var(--dim);font-size:13px;text-align:center;padding:20px 0}
+svg text{font-family:"M PLUS 1p",sans-serif}
+.tip{position:fixed;pointer-events:none;background:#eceef1;color:#1c1f24;font-size:12px;padding:5px 9px;z-index:10;white-space:nowrap;border-radius:2px}
+footer{color:var(--dim);font-size:12px;border-top:1px solid var(--line-soft);padding-top:12px}
+</style>
+
+<div class="wrap">
+  <header class="site">
+    <h1><span class="star" aria-hidden="true">★</span>プロスピ能力帳</h1>
+    <p class="meta">2026 · WBC アメリカ代表 · 収録 <span class="num" id="count"></span> 選手（試作版）</p>
+  </header>
+
+  <section aria-labelledby="list-h">
+    <div class="section-head">
+      <h2 id="list-h">選手一覧</h2>
+      <div class="tabs" role="tablist" aria-label="区分">
+        <button id="tab-batter" role="tab" aria-selected="true" data-kind="batter">野手</button>
+        <button id="tab-pitcher" role="tab" aria-selected="false" data-kind="pitcher">投手</button>
+      </div>
+    </div>
+    <p class="hint" style="margin-bottom:8px">列見出しで並べ替え／名前で詳細表示／チェックで最大3人を比較</p>
+    <div class="table-box"><table class="list" id="list"></table></div>
+  </section>
+
+  <section aria-labelledby="card-h">
+    <div class="section-head"><h2 id="card-h">選手詳細</h2></div>
+    <div id="card"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="cmp-h">
+    <div class="section-head"><h2 id="cmp-h">能力比較</h2><span class="hint">外側ほど高い（0〜100）</span></div>
+    <div class="legend" id="cmp-legend"></div>
+    <div id="cmp"></div>
+  </section>
+
+  <footer>数値はゲーム画面から書き起こしたもので、誤りを含む場合があります。変化量は目視による推定値です。顔写真・ロゴなどゲーム内の画像は使用していません。</footer>
+</div>
+<div class="tip" id="tip" hidden></div>
+
+<script>
+const PLAYERS = __DATA__;
+const GC = __GRADE_COLORS__;
+const SERIES = ["var(--s1)","var(--s2)","var(--s3)"];
+const APT_ORDER = {"◎":4,"○":3,"△":2,"ー":1,"－":1};
+const state = {kind:"batter", sort:{key:"ovr",dir:-1}, picked:{batter:[],pitcher:[]}, detail:{batter:null,pitcher:null}};
+
+const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const gcol = g => GC[g] || "#ffffff";
+const G = g => g? `<span class="g" style="color:${gcol(g)}">${g}</span>`:"";
+function stat(p,label,vs){ const s=p.stats.find(x=>x.label===label); if(!s) return null; return s.splits? (s.splits.find(x=>x.vs===vs)||null): s; }
+const speed = p => { const s=stat(p,"球速"); return s? parseInt(s.value,10): null; };
+const breaking = p => (p.pitches||[]).filter(x=>x.category!=="straight");
+function badgeColor(p){
+  if(p.kind==="pitcher") return "var(--badge-p)";
+  if(p.position==="捕手") return "var(--badge-c)";
+  return /翼手|外野/.test(p.position)? "var(--badge-out)" : "var(--badge-in)";
+}
+
+const BATTER_COLS = [
+  {key:"meetR",label:"ミート右",full:"ミート対右",get:p=>stat(p,"ミート","対右")},
+  {key:"meetL",label:"ミート左",full:"ミート対左",get:p=>stat(p,"ミート","対左")},
+  {key:"pow",label:"パワー",get:p=>stat(p,"パワー")},
+  {key:"run",label:"走力",get:p=>stat(p,"走力")},
+  {key:"catch",label:"捕球",get:p=>stat(p,"捕球")},
+  {key:"throw",label:"送球",full:"スローイング",get:p=>stat(p,"スローイング")},
+  {key:"arm",label:"肩力",get:p=>stat(p,"肩力")},
+  {key:"rec",label:"回復",full:"疲労回復",get:p=>stat(p,"疲労回復")},
+];
+const PITCHER_COLS = [
+  {key:"sta",label:"スタミナ",get:p=>stat(p,"スタミナ")},
+  {key:"rec",label:"疲労回復",get:p=>stat(p,"疲労回復")},
+];
+
+/* ── 一覧 ── */
+function renderList(){
+  const kind=state.kind, cols=kind==="batter"?BATTER_COLS:PITCHER_COLS;
+  const rows=PLAYERS.filter(p=>p.kind===kind);
+  const head=[{key:null,label:"比較"},{key:"no",label:"No."},{key:"name",label:"選手"},{key:"ovr",label:"★"},
+    ...(kind==="batter"?[{key:"pos",label:"守備"}]:[{key:"spd",label:"球速"}]), ...cols,
+    ...(kind==="pitcher"?[{key:"apt",label:"先/中/抑"},{key:"npitch",label:"変化球"},{key:"brk",label:"変化量計"}]:[])];
+  const val=(p,k)=>{
+    if(k==="no")return +p.uniform_number; if(k==="name")return p.name; if(k==="ovr")return p.rarity.overall;
+    if(k==="pos")return p.position; if(k==="spd")return speed(p);
+    if(k==="apt")return ["先発適性","中継適性","抑え適性"].reduce((a,l)=>a*10+APT_ORDER[stat(p,l).value],0);
+    if(k==="npitch")return breaking(p).length; if(k==="brk")return breaking(p).reduce((a,x)=>a+(x.break||0),0);
+    const c=cols.find(c=>c.key===k), s=c&&c.get(p); return s?s.value:-1;
+  };
+  let {key,dir}=state.sort; if(!head.some(h=>h.key===key)){key="ovr";dir=-1;}
+  rows.sort((a,b)=>{const x=val(a,key),y=val(b,key);return (x>y?1:x<y?-1:0)*dir;});
+  const cur=currentDetail();
+  const th=head.map(h=>h.key?`<th scope="col"><button data-sort="${h.key}" ${h.key===key?`data-dir="${dir<0?"▼":"▲"}"`:""}>${h.label}</button></th>`:`<th scope="col">${h.label}</th>`).join("");
+  const tr=rows.map(p=>{
+    const i=state.picked[kind].indexOf(p.player_id);
+    return `<tr class="${cur&&cur.player_id===p.player_id?"active":""}">
+      <td><input type="checkbox" class="pick" id="pick-${p.player_id}" data-id="${p.player_id}" ${i>=0?"checked":""} aria-label="${esc(p.name)}を比較">${i>=0?`<span class="swatch" style="background:${SERIES[i]}"></span>`:""}</td>
+      <td><span class="no-badge" style="background:${badgeColor(p)}">${esc(p.uniform_number)}</span></td>
+      <td><button class="name-btn" data-detail="${p.player_id}">${esc(p.name)}</button><span class="tb">${esc(p.throws_bats)}</span></td>
+      <td class="ovr-cell">${p.rarity.overall}</td>
+      ${kind==="batter"?`<td>${esc(p.position)}</td>`:`<td><span class="num" style="font-size:16px">${speed(p)}</span><span class="tb" style="margin-left:2px">km/h</span></td>`}
+      ${cols.map(c=>{const s=c.get(p);return `<td>${s?`<span class="gv">${G(s.grade)}<span class="num">${s.value}</span></span>`:"—"}</td>`;}).join("")}
+      ${kind==="pitcher"?`<td>${["先発適性","中継適性","抑え適性"].map(l=>stat(p,l).value).join(" ")}</td><td class="num" style="font-size:16px">${breaking(p).length}</td><td class="num" style="font-size:16px">${breaking(p).reduce((a,x)=>a+(x.break||0),0)}</td>`:""}
+    </tr>`;}).join("");
+  document.getElementById("list").innerHTML=`<thead><tr>${th}</tr></thead><tbody>${tr}</tbody>`;
+}
+
+/* ── 選手カード ── */
+function currentDetail(){
+  const id=state.detail[state.kind];
+  return PLAYERS.find(p=>p.player_id===id) || PLAYERS.filter(p=>p.kind===state.kind).sort((a,b)=>b.rarity.overall-a.rarity.overall)[0];
+}
+const SILHOUETTE=`<svg viewBox="0 0 100 100" aria-hidden="true"><path d="M26 40c0-16 11-26 24-26s24 10 24 26c0 3-1 5-2 6H28c-1-1-2-3-2-6z" fill="#2f3f55"/><rect x="22" y="40" width="56" height="6" rx="3" fill="#24324a"/><ellipse cx="50" cy="55" rx="18" ry="21" fill="#9fb0c0"/><path d="M8 100c2-18 20-27 42-27s40 9 42 27z" fill="#e4e7ec"/></svg>`;
+
+function statRows(p){
+  return p.stats.map(s=>{
+    if(s.splits) return s.splits.map((sp,i)=>`<div class="srow split${i===0?" first":""}"><span class="tick"></span><span class="lb">${i===0?esc(s.label):""}</span><span class="vs">${esc(sp.vs)}</span><span class="gr" style="color:${gcol(sp.grade)}">${sp.grade}</span><span class="vl">${sp.value}</span></div>`).join("");
+    if(s.grade) return `<div class="srow"><span class="tick"></span><span class="lb">${esc(s.label)}</span><span class="gr" style="color:${gcol(s.grade)}">${s.grade}</span><span class="vl">${s.value}</span></div>`;
+    const long=String(s.value).length>2;
+    return `<div class="srow"><span class="tick"></span><span class="lb">${esc(s.label)}</span><span class="${long?"wide":"sym"}">${esc(s.value)}</span></div>`;
+  }).join("");
+}
+function abilities(p){
+  const rows=p.abilities.map(a=>{
+    const dim=a.grade && "CDEFG".includes(a.grade);
+    return `<div class="ab ${a.type}${dim?" dim":""}"><span class="ic"></span><span class="an">${esc(a.name)}</span>${a.grade?`<span class="ag">${a.grade}</span>`:""}</div>`;
+  });
+  while(rows.length<14) rows.push(`<div class="ab pad" aria-hidden="true"></div>`);
+  return `<div class="abils">${rows.join("")}</div>`;
+}
+// 変化球チャート：画面キャプチャの寸法を実測して配置（viewBox 280x246）
+// 直球系は最上段に単独、2段目は左右に横方向の2枠、3段目は3枠。
+// 各球種は「箱＋柄」が一体のT字型カード（つなぎ目に線を入れない）。
+// 第一球種のカードは基準位置、第二球種（なければグレーの空カード）は右下にわずかにずらして重ねる。
+// 柄は球種ごとに1本。第二球種の柄は第一球種の柄のすぐ隣（右側／下側）に並べ、少し遅れて始まる。
+const PITCH_GEOM = {
+  // off = 第二球種カードのずらし量、soff = 第二球種の柄のずらし量（省略時は off と同じ）
+  // 裏カードは中央側・下側へずれる（シンカーは左下、スラーブは右下、横方向は真下）
+  straight:{c:[147,46],  off:[7,6]},
+  // 横方向：第一球種の柄は箱の高さ中央やや上から。第二球種は真下にずれ、柄が下に少しのぞく
+  slider:  {c:[111,90],  exit:[0,0.45],   dir:[-1,0], len:58, off:[0,7]},
+  shoot:   {c:[183,90],  exit:[1,0.45],   dir:[1,0],  len:54, off:[0,7]},
+  // 斜め：柄は箱の下辺の外側の角寄りから出る。第二球種は中央側の下へずれ、柄は外側の柄と隣り合う
+  curve:   {c:[69,138],  exit:[0.25,1],   dir:[-1,1], len:54, off:[9,9]},
+  fork:    {c:[139,138], exit:[0.50,1],   dir:[0,1],  len:62, off:[6,5], soff:[11,5]},
+  sinker:  {c:[225,138], exit:[0.75,1],   dir:[1,1],  len:48, off:[-9,9]},
+};
+// 右投手基準のラベル位置（左投手は左右反転後の方向で決まる）
+const PITCH_LABEL = {
+  straight:[147,20,"middle"], slider:[52,70,"middle"], shoot:[244,70,"middle"],
+  curve:[40,234,"middle"], fork:[146,242,"middle"], sinker:[242,234,"middle"],
+};
+const PMIRROR = {slider:"shoot",shoot:"slider",curve:"sinker",sinker:"curve"};
+const BOX_W=62, BOX_H=30, RUNGS=7, STEM_HALF=5.5, EDGE=1.4;
+const TRACK_OFF="#34373e", TRACK_EDGE="#0c0d10", CARD_EMPTY="#2c2f35", DIM_BASE="#1b1d22";
+
+function mix(hex, to, r){
+  const h=s=>[1,3,5].map(i=>parseInt(s.slice(i,i+2),16)), a=h(hex), b=h(to);
+  return "#"+a.map((v,i)=>Math.round(v+(b[i]-v)*r).toString(16).padStart(2,"0")).join("");
+}
+function unit(g){ let [ux,uy]=g.dir; const k=Math.hypot(ux,uy); return [ux/k,uy/k]; }
+// 第二球種の柄を並べる側：x成分が正の垂線（横向きの柄なら下側）
+// order ごとの柄の根元（箱の中から描き始める）
+function stemOrigin(g,cx,cy,order){
+  const bx=cx-BOX_W/2, by=cy-BOX_H/2;
+  let x=bx+BOX_W*g.exit[0], y=by+BOX_H*g.exit[1];
+  if(order===2){ const [dx,dy]=g.soff||g.off; x+=dx; y+=dy; }
+  return [x,y];
+}
+// 柄の外形（黒い縁）とその中身。outline と fill を分けて描き、箱との継ぎ目に線が出ないようにする
+function stemShape(x0,y0,g,pad){
+  const [ux,uy]=unit(g), px=-uy, py=ux, L=g.len, h=STEM_HALF+pad, tip=7;
+  const pt=(t,w)=>`${(x0+ux*t+px*w).toFixed(1)},${(y0+uy*t+py*w).toFixed(1)}`;
+  return {pt, pts:`${pt(-12,-h)} ${pt(L-tip,-h)} ${pt(L+pad,0)} ${pt(L-tip,h)} ${pt(-12,h)}`, L, tip};
+}
+function stemOutline(x0,y0,g){ return `<polygon points="${stemShape(x0,y0,g,EDGE).pts}" fill="${TRACK_EDGE}"/>`; }
+function stemFill(x0,y0,g,n,lit){
+  const {pt,pts,L,tip}=stemShape(x0,y0,g,0), h=STEM_HALF;
+  // 7段目は先端の山形まで含めた1段として扱う（先端を独立した段に見せない）
+  // 隙間防止：(1) 柄全体を未点灯色 → (2) 根元〜点灯段の終わりを1枚の点灯色 → (3) 段の区切り線（6本）
+  // 箱の縁(t=0)から先端までを7等分する（1段目だけ長く見えないように根元の余白は設けない）
+  const start=0, seg=(L-start)/RUNGS;
+  let s=`<polygon points="${pts}" fill="${TRACK_OFF}"/>`;
+  if(n>=RUNGS){
+    s+=`<polygon points="${pts}" fill="${lit}"/>`;
+  } else if(n>0){
+    const e=Math.min(start+n*seg, L-tip);
+    s+=`<polygon points="${pt(-12,-h)} ${pt(e,-h)} ${pt(e,h)} ${pt(-12,h)}" fill="${lit}"/>`;
+  }
+  for(let i=1;i<RUNGS;i++){
+    const b=start+i*seg, a=b-1.1;
+    // 区切り線が先端の山形にかかる場合は、山形の幅に合わせて短くする
+    const w = b<=L-tip? h+0.3 : h*(L-b)/tip;
+    s+=`<polygon points="${pt(a,-w)} ${pt(b,-w)} ${pt(b,w)} ${pt(a,w)}" fill="${TRACK_EDGE}"/>`;
+  }
+  return s;
+}
+// T字型カード1枚。front=true なら文字を描く。x=null は空カード
+function card(cx,cy,g,x,stemXY,{front,dim}){
+  const bx=cx-BOX_W/2, by=cy-BOX_H/2;
+  const col = x? gcol(x.power) : CARD_EMPTY;
+  const fill = dim? mix(col,DIM_BASE,0.55) : col;
+  let s="";
+  // 1) 外形：柄と箱の黒い縁をまとめて敷く
+  if(g.dir) s+=stemOutline(stemXY[0],stemXY[1],g);
+  s+=`<rect x="${bx-EDGE}" y="${by-EDGE}" width="${BOX_W+EDGE*2}" height="${BOX_H+EDGE*2}" rx="${5+EDGE}" fill="${TRACK_EDGE}"/>`;
+  // 2) 中身：柄→箱の順に塗り、箱の塗りで柄の根元を覆って一体化させる
+  if(g.dir) s+=stemFill(stemXY[0],stemXY[1],g, x?(x.break||0):0, fill);
+  s+=`<rect x="${bx}" y="${by}" width="${BOX_W}" height="${BOX_H}" rx="5" fill="${fill}"/>`;
+  if(front && x){
+    const ink = dim? mix("#1d1f24",DIM_BASE,0.3) : "#1d1f24";
+    const ctl = dim? mix(gcol(x.control),DIM_BASE,0.55) : gcol(x.control);
+    s+=`<text class="pgrade" x="${bx+16}" y="${cy+7}" fill="${ink}">${x.power}</text>`;
+    s+=`<rect x="${bx+31}" y="${by+3}" width="28" height="${BOX_H-6}" rx="3" fill="${ink}"/>`;
+    s+=`<text class="pgrade ctl" x="${bx+45}" y="${cy+6.5}" fill="${ctl}">${x.control}</text>`;
+  }
+  return s;
+}
+function pitchSvg(p, order){
+  const lefty=(p.throws_bats||"").startsWith("左");
+  const byCat={};
+  (p.pitches||[]).forEach(x=>{
+    const cat=lefty?(PMIRROR[x.category]||x.category):x.category;
+    (byCat[cat]=byCat[cat]||{})[x.order]=x;
+  });
+  let s=`<svg viewBox="0 0 280 246" role="img" aria-label="第${order}球種の変化図">`;
+  Object.entries(PITCH_GEOM).forEach(([cat,g])=>{
+    const slot=byCat[cat]||{}, [cx,cy]=g.c, ox=cx+g.off[0], oy=cy+g.off[1];
+    const a=slot[1], b=slot[2];
+    const s1=g.dir? stemOrigin(g,cx,cy,1):null, s2=g.dir? stemOrigin(g,cx,cy,2):null;
+    if(order===1){
+      s+=card(ox,oy,g,b,s2,{front:false});            // 裏：第二球種（なければ空カード）
+      s+=card(cx,cy,g,a,s1,{front:true});             // 表：第一球種
+    } else if(b){
+      s+=card(cx,cy,g,a,s1,{front:false});            // 裏：第一球種
+      s+=card(ox,oy,g,b,s2,{front:true});             // 表：第二球種
+    } else {
+      s+=card(ox,oy,g,null,s2,{front:false});         // 裏：空カード
+      s+=card(cx,cy,g,a,s1,{front:true,dim:!!a});     // 表：第一球種を暗く
+    }
+    const shown = order===1? a : b;
+    if(shown){
+      const [lx,ly,anc]=PITCH_LABEL[cat];
+      s+=`<text class="plabel" x="${lx}" y="${ly}" text-anchor="${anc}">${esc(shown.name)}</text>`;
+    }
+  });
+  return s+`</svg>`;
+}
+// 守備図：扇形のフィールドに各ポジションの守備適性を置く
+const FIELD_POS={LF:[78,70],CF:[160,40],RF:[242,70],SS:[122,112],"2B":[196,112],"3B":[100,140],"1B":[222,140],C:[160,178],P:[160,142]};
+function fieldSvg(p){
+  const fd=p.fielding_diagram||{}; const list=fd.positions||[{position:fd.primary_position,grade:null,value:fd.primary_grade}];
+  let s=`<svg viewBox="0 0 320 190" role="img" aria-label="守備適性">
+    <path d="M160 186 L8 70 Q160 -30 312 70 Z" fill="#4f7a3c"/>
+    <path d="M160 186 L60 110 Q160 40 260 110 Z" fill="#8b5a32"/>
+    <path d="M160 166 L122 132 L160 100 L198 132 Z" fill="#5d8a47"/>
+    <path d="M160 186 L8 70 Q160 -30 312 70 Z" fill="none" stroke="#c8ccc2" stroke-width="2"/>
+    <circle cx="160" cy="130" r="3" fill="#d8d2c2"/>`;
+  list.forEach(f=>{ const [x,y]=FIELD_POS[f.position]||[160,90]; const g=f.grade||"";
+    s+=`<text x="${x}" y="${y}" text-anchor="middle" class="fgrade"><tspan fill="${gcol(g)}">${g}</tspan><tspan fill="#fff" dx="2">${f.value}</tspan></text>`; });
+  return s+`</svg>`;
+}
+function renderCard(){
+  const p=currentDetail(), box=document.getElementById("card");
+  const left = `<div><div class="rar">${p.rarity.star?`<span class="star">★</span>`:""}<span class="ovr">${p.rarity.overall}</span></div><div class="photo">${SILHOUETTE}</div>
+    ${p.kind==="batter"?`<div class="zone"><div class="zt">得意・苦手コース</div><div class="zgrid">${(p.zone_grid||[[0,0,0],[0,0,0],[0,0,0]]).flat().map(v=>`<div>${v}</div>`).join("")}</div><svg class="plate" viewBox="0 0 124 20" aria-hidden="true"><path d="M2 2 L30 2 L22 18" stroke="#dfe2e7" stroke-width="3" fill="none"/><path d="M122 2 L94 2 L102 18" stroke="#dfe2e7" stroke-width="3" fill="none"/><path d="M46 4 H78 V12 L62 18 L46 12 Z" fill="#dfe2e7"/></svg></div>`:""}</div>`;
+  const right = `<div>${statRows(p)}${p.kind==="batter"?`<div class="srow"><span class="tick"></span><span class="lb">守備適性</span></div><div class="field">${fieldSvg(p)}</div>`:""}</div>`;
+  const pitches = p.kind==="pitcher"? `<div class="pitches">${[1,2].filter(o=>o===1||(p.pitches||[]).some(x=>x.order===2)).map(o=>`<div class="ppanel"><span class="pn">${o}</span>${pitchSvg(p,o)}</div>`).join("")}</div>`:"";
+  box.innerHTML=`<article class="pcard ${p.kind}" id="pcard">
+    <div class="ph"><div class="badges"><div class="no" style="background:${badgeColor(p)}">${esc(p.uniform_number)}</div><div class="yr">${p.year}</div></div>
+      <div class="nm">${esc(p.name)}</div><div class="pos"><span>${esc(p.position)}</span><span>${esc(p.throws_bats)}</span></div></div>
+    <div class="pb"><div><div class="upper">${left}${right}</div>${pitches}</div>${abilities(p)}</div>
+  </article>`;
+}
+
+/* ── 比較 ── */
+function renderCompare(){
+  const ps=state.picked[state.kind].map(id=>PLAYERS.find(p=>p.player_id===id));
+  const legend=document.getElementById("cmp-legend"), box=document.getElementById("cmp");
+  if(!ps.length){legend.innerHTML="";box.innerHTML=`<p class="empty">一覧のチェックボックスで選手を選ぶと、ここに能力が並びます。</p>`;return;}
+  legend.innerHTML=ps.map((p,i)=>`<span><i style="background:${SERIES[i]}"></i>${esc(p.name)}</span>`).join("");
+  const axes = state.kind==="batter"? BATTER_COLS.map(c=>({label:c.full||c.label, get:p=>{const s=c.get(p);return s?{v:s.value,t:`${s.grade} ${s.value}`}:null;}})) : PITCHER_AXES;
+  const W=520,H=440,cx=W/2,cy=H/2+4,R=160,n=axes.length;
+  const ang=i=>-Math.PI/2+2*Math.PI*i/n, P=(i,v)=>[cx+Math.cos(ang(i))*R*v/100, cy+Math.sin(ang(i))*R*v/100];
+  let s=`<svg viewBox="0 0 ${W} ${H}" width="100%" style="max-width:560px;display:block;margin:0 auto" role="img" aria-label="能力比較レーダーチャート">`;
+  [20,40,60,80,100].forEach(r=>{
+    s+=`<polygon points="${axes.map((_,i)=>P(i,r).map(v=>v.toFixed(1)).join(",")).join(" ")}" fill="none" stroke="var(--line-soft)" stroke-width="1"/>`;
+  });
+  axes.forEach((a,i)=>{
+    const [x,y]=P(i,100), [lx,ly]=P(i,116);
+    s+=`<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="var(--line-soft)"/>`;
+    const anc=Math.abs(lx-cx)<8?"middle":(lx<cx?"end":"start");
+    s+=`<text x="${lx.toFixed(1)}" y="${(ly+4).toFixed(1)}" font-size="12.5" fill="var(--ink-2)" text-anchor="${anc}">${a.label}</text>`;
+  });
+  [50,100].forEach(r=>{ s+=`<text x="${cx+4}" y="${(cy-R*r/100+11).toFixed(1)}" font-size="10" fill="var(--dim)">${r}</text>`; });
+  ps.forEach((p,pi)=>{
+    const vals=axes.map(a=>a.get(p));
+    const pts=vals.map((d,i)=>P(i,Math.max(0,Math.min(100,d?d.v:0))));
+    s+=`<polygon points="${pts.map(q=>q.map(v=>v.toFixed(1)).join(",")).join(" ")}" fill="${SERIES[pi]}" fill-opacity="0.16" stroke="${SERIES[pi]}" stroke-width="2" stroke-linejoin="round"/>`;
+  });
+  // 頂点マーカー（ホバーで値を表示）は線より後に描き、面の下に隠れないようにする
+  ps.forEach((p,pi)=>{
+    axes.forEach((a,i)=>{ const d=a.get(p); if(!d) return; const [x,y]=P(i,Math.max(0,Math.min(100,d.v)));
+      s+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4" fill="${SERIES[pi]}" stroke="var(--card)" stroke-width="2"/>`;
+      s+=`<circle class="hit" data-tip="${esc(p.name)}｜${a.label} ${d.t}" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="11" fill="transparent"/>`; });
+  });
+  s+=`</svg>`;
+  if(state.kind==="pitcher") s+=`<p class="hint" style="text-align:center">球速は120〜170km/h、変化量計は0〜20段、制球は等級を0〜100に換算して表示</p>`;
+  box.innerHTML=s;
+}
+// 投手は能力値が2項目しかないため、球速・変化量・制球を0〜100に換算して5軸にする
+const CONTROL_SCORE={S:95,A:85,B:75,C:65,D:55,E:45,F:30,G:10};
+const PITCHER_AXES=[
+  {label:"球速", get:p=>{const v=speed(p);return v?{v:(v-120)/50*100,t:`${v}km/h`}:null;}},
+  {label:"スタミナ", get:p=>{const s=stat(p,"スタミナ");return s?{v:s.value,t:`${s.grade} ${s.value}`}:null;}},
+  {label:"疲労回復", get:p=>{const s=stat(p,"疲労回復");return s?{v:s.value,t:`${s.grade} ${s.value}`}:null;}},
+  {label:"変化量計", get:p=>{const b=breaking(p).reduce((a,x)=>a+(x.break||0),0);return {v:b/20*100,t:`${b}段`};}},
+  {label:"制球(平均)", get:p=>{const l=(p.pitches||[]);if(!l.length)return null;const m=l.reduce((a,x)=>a+(CONTROL_SCORE[x.control]||0),0)/l.length;return {v:m,t:`平均 ${Math.round(m)}`};}},
+];
+
+function renderAll(){
+  document.getElementById("count").textContent=PLAYERS.length;
+  document.querySelectorAll(".tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.kind===state.kind));
+  renderList();renderCard();renderCompare();
+}
+document.addEventListener("click",e=>{
+  const t=e.target.closest("[data-kind],[data-sort],[data-detail]");if(!t)return;
+  if(t.dataset.kind) state.kind=t.dataset.kind;
+  else if(t.dataset.sort){const k=t.dataset.sort;state.sort=state.sort.key===k?{key:k,dir:-state.sort.dir}:{key:k,dir:k==="name"||k==="no"?1:-1};}
+  else if(t.dataset.detail){state.detail[state.kind]=t.dataset.detail;renderAll();document.getElementById("pcard").scrollIntoView({behavior:"smooth",block:"start"});return;}
+  renderAll();
+});
+document.addEventListener("change",e=>{
+  if(!e.target.classList.contains("pick"))return;
+  const arr=state.picked[state.kind],id=e.target.dataset.id,i=arr.indexOf(id);
+  if(i>=0)arr.splice(i,1);else{if(arr.length>=3)arr.shift();arr.push(id);}
+  renderAll();
+});
+const tip=document.getElementById("tip");
+document.addEventListener("pointermove",e=>{const h=e.target.closest(".hit");if(!h){tip.hidden=true;return;}
+  tip.textContent=h.dataset.tip;tip.hidden=false;const r=tip.getBoundingClientRect();
+  tip.style.left=Math.min(e.clientX+12,innerWidth-r.width-8)+"px";tip.style.top=(e.clientY+14)+"px";});
+
+["batter","pitcher"].forEach(k=>{state.picked[k]=PLAYERS.filter(p=>p.kind===k).sort((a,b)=>b.rarity.overall-a.rarity.overall).slice(0,2).map(p=>p.player_id);});
+renderAll();
+</script>

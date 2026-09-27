@@ -1,0 +1,147 @@
+{
+  "category": "wbc",
+  "team": "usa",
+  "kind": "pitcher",
+  "player_id": "skubal_27",
+  "source_capture": "captures/wbc/usa/skubal_27.png",
+  "year": 2026,
+  "uniform_number": "27",
+  "name": "スクーバル",
+  "position": "投手",
+  "throws_bats": "左投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 550
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "165km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 76,
+      "grade": "B"
+    },
+    {
+      "label": "疲労回復",
+      "value": 79,
+      "grade": "B"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "真っスラ",
+      "power": "B",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "高速スライダー",
+      "power": "C",
+      "control": "C",
+      "break": 3
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "S",
+      "control": "B",
+      "break": 5
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ナックルカーブ",
+      "power": "E",
+      "control": "E",
+      "break": 2
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ツーシーム",
+      "power": "B",
+      "control": "B",
+      "break": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内角攻め",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打球反応○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "力配分",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}
