@@ -1,0 +1,16 @@
+{# 投手・野手共通のヘッダー（背番号／年度／選手名／守備位置／投打） #}
+<div class="card-header">
+  <div class="badge-col">
+    <div class="number-badge">{{ player.uniform_number }}</div>
+    <div class="year-badge">{{ player.year }}</div>
+  </div>
+  <div class="header-sep"></div>
+  <div class="name-col">
+    <div class="player-name">{{ player.name }}</div>
+  </div>
+  <div class="header-sep"></div>
+  <div class="meta-col">
+    <span class="position">{{ player.position }}</span>
+    <span class="throws-bats">{{ player.throws_bats }}</span>
+  </div>
+</div>

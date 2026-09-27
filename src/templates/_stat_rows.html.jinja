@@ -1,0 +1,27 @@
+{# 投手・野手共通のステータス行。splits を持つ項目は2段に分ける #}
+{% for s in player.stats %}
+  {% if s.splits %}
+    {% for sp in s.splits %}
+    <div class="stat-row split{{ ' first' if loop.first }}">
+      <span class="tick"></span>
+      <span class="stat-label">{% if loop.first %}{{ s.label }}　{% endif %}{{ sp.vs }}</span>
+      <span class="stat-grade" style="color: {{ grade_color(sp.grade) }}">{{ sp.grade }}</span>
+      <span class="stat-num">{{ sp.value }}</span>
+    </div>
+    {% endfor %}
+  {% else %}
+    <div class="stat-row">
+      <span class="tick"></span>
+      <span class="stat-label">{{ s.label }}</span>
+      {% if s.grade %}
+        <span class="stat-grade" style="color: {{ grade_color(s.grade) }}">{{ s.grade }}</span>
+        <span class="stat-num">{{ s.value }}</span>
+      {% elif s.value is string and s.value|length > 2 %}
+        <span class="stat-num wide">{{ s.value }}</span>
+      {% else %}
+        <span class="stat-grade sym">{{ s.value }}</span>
+        <span class="stat-num"></span>
+      {% endif %}
+    </div>
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,286 @@
+/* 選手カード共通スタイル
+   元スクリーンショット（863x605px相当）のレイアウトに合わせた実測ベースの値。
+   色はキャプチャからの近似値であり、ゲーム公式のカラーコードではない。 */
+
+:root {
+  --page-bg: #0d0e11;
+  --card-bg: #111216;
+  --header-bg: #1b1c20;
+
+  --line: #4a4e57;        /* ステータス行の区切り線 */
+  --line-soft: #33363d;
+
+  --text: #ffffff;
+  --text-dim: #6f757f;    /* 未習得の能力名 */
+
+  --num-badge: #c2272d;   /* 背番号バッジ */
+  --year-badge: #8f1d21;  /* 年度バッジ */
+  --star: #f6c62d;
+  --ovr: #ef9436;
+
+  --icon-pink: #f2a8c8;   /* プラスの特殊能力（等級Aより少し薄いピンク） */
+  --icon-purple: #a89ad8; /* マイナスの特殊能力（薄紫） */
+
+  --row-bg: #262b36;      /* 能力行の背景 */
+  --row-bg-off: #1c2029;
+  --row-border: #3f4552;
+  --sel: #59b9ea;         /* 選択中の水色枠 */
+
+  /* 等級カラー: S赤 A マゼンタ B ピンク C緑 D橙 E黄緑 */
+  --g-s: #e8384c;
+  --g-a: #ec4899;
+  --g-b: #f06ba8;
+  --g-c: #45b649;
+  --g-d: #e8a33d;
+  --g-e: #c3c93c;
+
+  --gauge-track: #23262e;
+  --gauge-fill: #d94850;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+  color: var(--text);
+}
+
+.player-card {
+  width: 863px;
+  margin: 24px auto;
+  background: var(--card-bg);
+}
+
+/* ── ヘッダー ─────────────────────────────── */
+.card-header {
+  display: flex;
+  align-items: stretch;
+  height: 72px;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.badge-col {
+  width: 88px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+.number-badge {
+  flex: 1;
+  background: var(--num-badge);
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.year-badge {
+  background: var(--year-badge);
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  padding: 1px 0 2px;
+}
+
+.header-sep {
+  width: 1px;
+  background: var(--line-soft);
+  margin: 14px 0;
+  flex-shrink: 0;
+}
+
+.name-col {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+}
+.player-name {
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.meta-col {
+  display: flex;
+  align-items: center;
+  gap: 62px;
+  padding: 0 26px 0 30px;
+  font-size: 20px;
+}
+
+/* ── 本体: 左（写真＋ステータス＋球種） / 右（能力サイドバー） ── */
+.card-body {
+  display: grid;
+  grid-template-columns: 1fr 283px;
+}
+
+.main-col { padding: 14px 0 0 14px; }
+
+.upper-row {
+  display: grid;
+  grid-template-columns: 158px 1fr;
+  gap: 18px;
+}
+
+/* 左カラム: ★とOVR、顔写真 */
+.rarity-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.rarity-row .star { color: var(--star); font-size: 27px; line-height: 1; }
+.rarity-row .overall { color: var(--ovr); font-size: 35px; font-weight: 700; line-height: 1; }
+
+.photo-box {
+  width: 152px;
+  height: 162px;
+  background: #7e93a6;
+  border: 1px solid #55595f;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.photo-box img { width: 100%; height: 100%; object-fit: cover; }
+.photo-placeholder { width: 78%; height: 88%; fill: #3f5468; }
+
+/* ── ステータス表 ────────────────────────── */
+.stat-row {
+  display: grid;
+  grid-template-columns: 3px 1fr 62px 54px;
+  align-items: center;
+  gap: 0 10px;
+  height: 38px;
+  border-bottom: 1px solid var(--line);
+  padding-right: 18px;
+}
+.tick { width: 3px; height: 17px; background: #c9ccd2; }
+.stat-label { font-size: 17px; }
+.stat-grade {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+.stat-grade.sym { font-size: 20px; font-weight: 400; color: var(--text); }
+.stat-num { font-size: 21px; text-align: right; }
+.stat-num.wide { grid-column: 3 / span 2; text-align: left; font-size: 20px; }
+
+/* 野手: ミートの対右/対左 2段行 */
+.stat-row.split { height: 33px; }
+.stat-row.split .stat-label { font-size: 15px; color: #cfd3da; }
+.stat-row.split.first { border-bottom: 1px solid var(--line-soft); }
+.stat-label-span {
+  font-size: 17px;
+  grid-row: span 2;
+  align-self: center;
+}
+
+/* 等級の色は src/grades.py が算出し style 属性で流し込む（docs/grades.md 参照） */
+
+/* ── 特殊能力サイドバー（カード全高） ─────────── */
+.ability-panel {
+  padding: 12px 12px 12px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.ability-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  height: 31px;
+  padding: 0 11px;
+  background: var(--row-bg);
+  border: 1px solid var(--row-border);
+  border-radius: 2px;
+  font-size: 16px;
+}
+/* C以下の等級が付くものは能力名・アルファベットとも薄く表示する */
+.ability-row.dimmed { background: var(--row-bg-off); color: var(--text-dim); }
+.ability-row.highlighted {
+  border: 2px solid var(--sel);
+  background: #384252;
+}
+.ability-icon {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+/* プラスの特殊能力はピンク、マイナスは薄紫、両方の意味を持つものは斜め分割 */
+.icon-plus  .ability-icon { background: var(--icon-pink); }
+.icon-minus .ability-icon { background: var(--icon-purple); }
+.icon-both  .ability-icon {
+  background: linear-gradient(135deg,
+    var(--icon-pink) 0 50%, var(--icon-purple) 50% 100%);
+}
+.ability-name { flex: 1; }
+.ability-grade { font-size: 17px; font-weight: 700; line-height: 1; }
+
+/* ── 球種セクション ──────────────────────── */
+.pitch-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: 12px;
+  padding-right: 14px;
+}
+.pitch-panel {
+  position: relative;
+  padding-top: 4px;
+}
+.pitch-no {
+  position: absolute;
+  top: 0; left: 0;
+  width: 23px; height: 23px;
+  background: #2a2f3a;
+  border-left: 3px solid #9aa0aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+/* 変化球チャート本体。座標は src/pitch_chart.py が計算する。
+   viewBox は 195x130（参考実装の寸法系）で、ここで拡大表示する */
+.pitch-svg { width: 100%; height: auto; display: block; }
+.pitch-label {
+  fill: #e4e7ec;
+  font-size: 9.5px;
+  font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+}
+/* 球威は黒文字、制球はカラー文字（色は fill 属性で個別指定） */
+.pitch-power, .pitch-control {
+  font-size: 14px;
+  font-weight: 700;
+  text-anchor: middle;
+  font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+}
+.pitch-power { fill: #111; }
+
+/* ── 野手固有 ────────────────────────────── */
+.zone-block { margin-top: 10px; }
+.zone-title { font-size: 14px; color: #cfd3da; margin-bottom: 5px; }
+.zone-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 46px);
+  grid-template-rows: repeat(3, 40px);
+  gap: 2px;
+}
+.zone-cell {
+  background: #1a1d24;
+  border: 1px solid var(--line-soft);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 17px;
+}
+.fielding-diagram { position: relative; margin-top: 8px; }
+.diamond-svg { width: 250px; display: block; }
+.fielding-label { text-align: center; font-size: 17px; font-weight: 700; }
+.catcher-lead { text-align: center; font-size: 15px; color: #cfd3da; }

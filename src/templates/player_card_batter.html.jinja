@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>{{ player.name }} #{{ player.uniform_number }}</title>
+<link rel="stylesheet" href="../../../src/templates/style.css">
+</head>
+<body>
+<div class="player-card">
+
+  {% include "_header.html.jinja" %}
+
+  <div class="card-body">
+    <div class="main-col">
+      <div class="upper-row">
+        <div class="photo-col">
+          {% include "_photo_col.html.jinja" %}
+          <div class="zone-block">
+            <div class="zone-title">得意・苦手コース</div>
+            <div class="zone-grid">
+              {% for row in player.zone_grid %}{% for cell in row %}
+              <div class="zone-cell">{{ cell }}</div>
+              {% endfor %}{% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="stat-col">
+          {% include "_stat_rows.html.jinja" %}
+          <div class="stat-row">
+            <span class="tick"></span>
+            <span class="stat-label">守備適性</span>
+          </div>
+
+          <div class="fielding-diagram">
+            <svg viewBox="0 0 250 130" class="diamond-svg">
+              <ellipse cx="125" cy="118" rx="118" ry="105" fill="#3f7a3f" />
+              <path d="M125 118 L38 46 A112 112 0 0 1 212 46 Z" fill="#4f9142" />
+              <path d="M125 118 L74 78 A64 64 0 0 1 176 78 Z" fill="#8a6135" />
+              <circle cx="125" cy="66" r="4" fill="#c9c4b4" />
+            </svg>
+            <div class="fielding-label">
+              <span class="g-c">{{ player.fielding_diagram.primary_position }}</span>{{ player.fielding_diagram.primary_grade }}
+              {% if player.fielding_diagram.catcher_lead_grade %}
+              　捕手リード <span class="g-{{ player.fielding_diagram.catcher_lead_grade|lower }}">{{ player.fielding_diagram.catcher_lead_grade }}</span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include "_abilities.html.jinja" %}
+  </div>
+
+</div>
+</body>
+</html>

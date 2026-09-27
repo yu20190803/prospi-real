@@ -1,0 +1,12 @@
+{# 投手・野手共通の特殊能力サイドバー（カード全高）
+   アイコン: プラス=ピンク / マイナス=薄紫 / 両方=斜め分割
+   C以下の等級が付くものは能力名とアルファベットを薄く表示する #}
+<div class="ability-panel">
+  {% for a in player.abilities %}
+  <div class="ability-row icon-{{ a.type }}{{ ' dimmed' if a.grade and a.grade|upper in dimmed_grades }}{{ ' highlighted' if a.highlighted }}">
+    <span class="ability-icon"></span>
+    <span class="ability-name">{{ a.name }}</span>
+    {% if a.grade %}<span class="ability-grade">{{ a.grade }}</span>{% endif %}
+  </div>
+  {% endfor %}
+</div>
