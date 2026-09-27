@@ -46,6 +46,48 @@
       "grade": null
     }
   ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ツーシーム",
+      "power": "B",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "B",
+      "control": "B",
+      "break": 5
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "B",
+      "control": "B",
+      "break": 4
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ストレート",
+      "power": "E",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "カットボール",
+      "power": "E",
+      "control": "C",
+      "break": 2
+    }
+  ],
   "abilities": [
     {
       "name": "ケガしにくさ",
@@ -57,7 +99,7 @@
       "name": "対ピンチ",
       "grade": "D",
       "highlighted": false,
-      "type": "minus"
+      "type": "plus"
     },
     {
       "name": "クイック",
@@ -69,13 +111,13 @@
       "name": "打たれ強さ",
       "grade": "D",
       "highlighted": false,
-      "type": "minus"
+      "type": "plus"
     },
     {
       "name": "対左打者",
       "grade": "D",
       "highlighted": false,
-      "type": "minus"
+      "type": "plus"
     },
     {
       "name": "奪三振",
@@ -112,48 +154,6 @@
       "grade": null,
       "highlighted": false,
       "type": "both"
-    }
-  ],
-  "pitches": [
-    {
-      "category": "straight",
-      "order": 1,
-      "name": "ツーシーム",
-      "power": "B",
-      "control": "B",
-      "break": null
-    },
-    {
-      "category": "slider",
-      "order": 1,
-      "name": "スライダー",
-      "power": "B",
-      "control": "B",
-      "break": 3
-    },
-    {
-      "category": "fork",
-      "order": 1,
-      "name": "チェンジアップ",
-      "power": "B",
-      "control": "B",
-      "break": 3
-    },
-    {
-      "category": "straight",
-      "order": 2,
-      "name": "ストレート",
-      "power": "E",
-      "control": "B",
-      "break": null
-    },
-    {
-      "category": "slider",
-      "order": 2,
-      "name": "カットボール",
-      "power": "E",
-      "control": "C",
-      "break": 3
     }
   ]
 }

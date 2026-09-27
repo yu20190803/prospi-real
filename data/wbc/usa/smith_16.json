@@ -1,0 +1,47 @@
+{
+  "category": "wbc",
+  "team": "usa",
+  "kind": "batter",
+  "player_id": "smith_16",
+  "source_capture": "captures/wbc/usa/smith_16.png",
+  "year": 2026,
+  "uniform_number": "16",
+  "name": "スミス",
+  "position": "捕手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {"star": true, "overall": 389},
+  "stats": [
+    {"label": "ミート", "splits": [
+      {"vs": "対右", "grade": "C", "value": 63},
+      {"vs": "対左", "grade": "D", "value": 58}
+    ]},
+    {"label": "パワー", "grade": "B", "value": 77},
+    {"label": "走力", "grade": "C", "value": 67},
+    {"label": "捕球", "grade": "E", "value": 48},
+    {"label": "スローイング", "grade": "A", "value": 83},
+    {"label": "肩力", "grade": "A", "value": 80},
+    {"label": "疲労回復", "grade": "D", "value": 51}
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
+  "fielding_diagram": {
+    "primary_position": "C",
+    "primary_grade": 56,
+    "catcher_lead_grade": "D",
+    "positions": [
+      {"position": "C", "grade": "D", "value": 56}
+    ]
+  },
+  "abilities": [
+    {"name": "高弾道", "grade": null, "highlighted": true, "type": "plus"},
+    {"name": "ケガしにくさ", "grade": "D", "highlighted": false, "type": "plus"},
+    {"name": "バント", "grade": "D", "highlighted": false, "type": "plus"},
+    {"name": "チャンス", "grade": "C", "highlighted": false, "type": "plus"},
+    {"name": "走塁", "grade": "E", "highlighted": false, "type": "minus"},
+    {"name": "盗塁", "grade": "E", "highlighted": false, "type": "minus"},
+    {"name": "初球", "grade": null, "highlighted": false, "type": "plus"},
+    {"name": "サヨナラ男", "grade": null, "highlighted": false, "type": "plus"},
+    {"name": "逆境", "grade": null, "highlighted": false, "type": "plus"}
+  ]
+}

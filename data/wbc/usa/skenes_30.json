@@ -46,9 +46,6 @@
       "grade": null
     }
   ],
-  "unverified": [
-    "pitches[].break"
-  ],
   "pitches": [
     {
       "category": "straight",
@@ -88,7 +85,7 @@
       "name": "高速シンカー",
       "power": "B",
       "control": "C",
-      "break": 4
+      "break": 3
     },
     {
       "category": "straight",

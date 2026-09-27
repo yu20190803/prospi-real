@@ -38,15 +38,8 @@
   "abilities": [
     {"name": "アーチスト", "grade": null, "highlighted": true, "type": "plus"},
     {"name": "ケガしにくさ", "grade": "D", "highlighted": false, "type": "plus"},
-    {"name": "バント", "grade": "D", "highlighted": false, "type": "plus"},
-    {"name": "チャンス", "grade": "D", "highlighted": false, "type": "plus"},
     {"name": "走塁", "grade": "E", "highlighted": false, "type": "minus"},
-    {"name": "盗塁", "grade": "D", "highlighted": false, "type": "minus"},
-    {"name": "威圧感", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "広角打法", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "固め打ち", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "連発", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "初球", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "対ストレート○", "grade": null, "highlighted": false, "type": "plus"}
+    {"name": "対ストレート○", "grade": null, "highlighted": false, "type": "plus"},
+    {"name": "プルヒッター", "grade": null, "highlighted": false, "type": "both"}
   ]
 }

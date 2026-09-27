@@ -1,0 +1,48 @@
+{
+  "category": "wbc",
+  "team": "usa",
+  "kind": "batter",
+  "player_id": "anthony_3",
+  "source_capture": "captures/wbc/usa/anthony_3.png",
+  "year": 2026,
+  "uniform_number": "3",
+  "name": "アンソニー",
+  "position": "右翼手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {"star": true, "overall": 341},
+  "stats": [
+    {"label": "ミート", "splits": [
+      {"vs": "対右", "grade": "D", "value": 58},
+      {"vs": "対左", "grade": "D", "value": 56}
+    ]},
+    {"label": "パワー", "grade": "A", "value": 80},
+    {"label": "走力", "grade": "B", "value": 73},
+    {"label": "捕球", "grade": "E", "value": 46},
+    {"label": "スローイング", "grade": "E", "value": 43},
+    {"label": "肩力", "grade": "B", "value": 72},
+    {"label": "疲労回復", "grade": "E", "value": 49}
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
+  "unverified": ["fielding_diagram.positions"],
+  "fielding_diagram": {
+    "primary_position": "RF",
+    "primary_grade": 64,
+    "catcher_lead_grade": null,
+    "positions": [
+      {"position": "RF", "grade": "C", "value": 64},
+      {"position": "CF", "grade": "D", "value": 58}
+    ]
+  },
+  "abilities": [
+    {"name": "低弾道", "grade": null, "highlighted": true, "type": "plus"},
+    {"name": "ケガしにくさ", "grade": "D", "highlighted": false, "type": "plus"},
+    {"name": "バント", "grade": "D", "highlighted": false, "type": "plus"},
+    {"name": "チャンス", "grade": "D", "highlighted": false, "type": "plus"},
+    {"name": "走塁", "grade": "C", "highlighted": false, "type": "plus"},
+    {"name": "盗塁", "grade": "D", "highlighted": false, "type": "minus"},
+    {"name": "初球", "grade": null, "highlighted": false, "type": "plus"},
+    {"name": "三振", "grade": null, "highlighted": false, "type": "minus"}
+  ]
+}

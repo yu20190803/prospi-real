@@ -10,6 +10,10 @@
 - 公開物は `site/`（`src/build_site.py` で生成）。ゲーム画面の再現・画像・アイコンは載せない。
 - `src/generate.py` + `player_card_*.jinja` の画面再現カードは、書き起こし結果を元画像と
   見比べる**内部の検証用**としてのみ残す（公開しない）。
+- 同じ検証目的で `src/build_site_work.py` が `site/index_work.html`（一覧を右サイドバー、
+  詳細を上部に配置し、詳細の下に対応する `captures/` 画像を表示するレイアウト）を生成する。
+  元画像をJPEGのdata URIとしてHTMLに直接埋め込むため `.gitignore` 対象・非公開。公開用は必ず
+  `src/build_site.py` の `site/index.html` を使う。
 
 ## 分類
 
@@ -29,10 +33,15 @@
 
 ## ワークフロー
 
-1. ユーザーが選手詳細画面のスクリーンショットを渡す。
-2. Claude が画像を読み取り、`docs/data_schema.md` のスキーマに従って
-   `data/<npb|wbc>/<team>/<player_id>.json` を書き起こす。
-   元画像は `captures/<npb|wbc>/<team>/<player_id>.png` に保存する（差分検証用）。
+**画像を受け取ってからの書き起こし作業は `docs/runbook_transcribe.md` の手順に従う**
+（別モデル・別セッションでも同じ品質で進められるよう、判断基準をすべてそこに書いている）。
+
+1. ユーザーがPCの `captures/<npb|wbc>/<team>/` に選手詳細画面のスクリーンショットを置く
+   （チーム名は英小文字、ファイル名は自由、1選手1枚、投手・野手混在可）。
+   `<ローマ字姓>_<背番号>.png` の命名になっていない画像を未処理とみなす。
+2. Claude が画像を読み取り、選手名・背番号から `<player_id>.png` に改名したうえで、
+   `docs/data_schema.md` のスキーマに従って `data/<npb|wbc>/<team>/<player_id>.json` を書き起こす。
+   既存の player_id と同じ選手なら、画像・JSONとも上書き更新する。
 3. `python src/generate.py <data/.../player_id.json>` で
    `src/templates/player_card.html.jinja` + `src/templates/style.css` から
    `output/<npb|wbc>/<team>/<player_id>.html` を生成する。
@@ -40,7 +49,9 @@
    テンプレート/CSSを直す（データではなくレイアウト側を直す）。
 5. 全選手を再生成する場合は `python src/generate.py --all` を使う想定。
 6. `python src/validate.py` で全JSONを機械チェック（等級と能力値の整合、値域、推定値の一覧）。
-   エラー0件にしてから次へ進む。
+   エラー0件にしてから次へ進む。あわせて `python src/check_pitch_slots.py` で投手の変化球の
+   位置（category）と書き漏れを元画像と照合し、不一致0人にする。そのあと
+   `python src/read_break.py --write` で変化量を画像から読み取って反映する。
 7. `python src/build_site.py` で `site/index.html`（公開用データベースページ）を生成する。
 
 ## ディレクトリ
@@ -55,10 +66,18 @@ src/templates/player_card_batter.html.jinja    野手カードのテンプレー
 src/templates/style.css                        カード共通スタイル
 output/<npb|wbc>/<team>/<player_id>.html       検証用の画面再現HTML（公開しない・コミット対象外）
 src/validate.py                                書き起こしデータの検証スクリプト
+src/check_pitch_slots.py                       投手の変化球の位置・書き漏れを元画像と機械照合
+src/read_break.py                              投手の変化量を元画像の画素から読み取り・照合（--write で反映）
 src/build_site.py                              全JSON → site/index.html（公開用ページ）
 src/site/index.template.html                   公開用ページのテンプレート（__DATA__ にJSONを埋め込む）
 site/index.html                                生成された公開用ページ
+src/build_site_work.py                         全JSON → site/index_work.html（検証用・非公開）
+src/site/index_work.template.html              検証用ページのテンプレート（一覧が右サイド／詳細下に元画像）
+site/index_work.html                           生成された検証用ページ（.gitignore対象・コミットしない）
 docs/data_schema.md                            選手データのJSONスキーマ定義（投手/野手それぞれ記載）
+docs/runbook_transcribe.md                     書き起こし手順書（画像受け取り〜PC書き戻し〜報告）
+docs/templates/pitcher.json, batter.json       書き起こし用の雛形（実データと同じ形式）
+src/pending.py                                 未処理画像・画像のないデータ・確認待ちの一覧
 ```
 
 ## player_id の命名規則
@@ -102,15 +121,16 @@ docs/data_schema.md                            選手データのJSONスキー�
 - `captures/` の画像はゲームの著作物なので **GitHubにはコミットしない**（.gitignore 済み、
   ローカルPCにのみ保存）。公開ページにも埋め込まない。
 - 左投手は画面上の変化方向が左右反転する。`pitches[].category` は右投手基準の大分類
-  （スライダー系=左方向 など）で記録する。
-- 変化量（`pitches[].break`）は7段階。柄の読み取りは次の手順で行う（2026-09-27 見直し）。
-  - 箱のすぐ外側の1段目は箱と同じ色で区切り線がなく、箱の一部に見える。**点灯段を数えると
-    この1段を落としやすい**（スクーバルで全球種1段少なく誤読した）。
-  - そのため **点灯段ではなく未点灯段（暗い段。先端の山形も1段）を数え、7から引く**。
-    未点灯段は区切りがはっきりしているので数え違えにくい。
-  - 斜め方向は根元が箱の下に隠れるため、見えている段の合計が6になることがある。この場合も
-    「7−未点灯段」で求める。
-  - ユーザーがゲームで確認した選手は `"unverified"` を外す。未確認の選手は推定値として残し、
-    validate.py が警告として一覧化する。
+  （スライダー系=左方向 など）で記録する。**category は画面上の箱の位置で決め、球種名からは
+  決めない**（チェンジアップが sinker の位置にあることは普通にある）。
+  `src/check_pitch_slots.py` で画像と機械照合できる。
+- 変化量（`pitches[].break`）は7段階。**目で数えず `src/read_break.py` で画素から読む**
+  （2026-09-27 見直し）。目視では箱と同色の1段目を落とすなどして段数がぶれ、品質が安定しなかった。
+  - read_break.py は柄7段の中心の画素で点灯/未点灯を判定し、第一・第二パネルの2か所で読んで
+    一致したものだけ `--write` で書き込む。柄の座標は全キャプチャ共通（865x605で実測）。
+  - category（箱の位置）が違うと別の柄を読むので、先に check_pitch_slots.py を通す。
+  - 機械照合済みの変化量には `unverified` を付けない。読み取りに問題が残った球種だけ付ける。
+  - ゲーム画面の解像度・レイアウトが変わった場合は、柄の座標（read_break.py の STEMS）と
+    箱の座標（check_pitch_slots.py の SLOTS）を測り直す必要がある。
 - `captures/` の画像はスクリーンショット原本。生成スクリプトから読むだけで、
   加工・上書きしない。

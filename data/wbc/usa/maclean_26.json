@@ -2,10 +2,10 @@
   "category": "wbc",
   "team": "usa",
   "kind": "pitcher",
-  "player_id": "mclean_26",
-  "source_capture": "captures/wbc/usa/mclean_26.png",
+  "source_image": "/mnt/user-data/uploads/prospi-real/captures/wbc/usa/Screen_20260811_175016_061.png",
+  "source_original": "captures/wbc/usa/Screen_20260811_175016_061.png",
   "year": 2026,
-  "uniform_number": "26",
+  "uniform_number": 26,
   "name": "マクリーン",
   "position": "投手",
   "throws_bats": "右投右打",
@@ -46,6 +46,9 @@
       "grade": null
     }
   ],
+  "unverified": [
+    "pitches[].break"
+  ],
   "pitches": [
     {
       "category": "straight",
@@ -61,7 +64,7 @@
       "name": "スライダー",
       "power": "C",
       "control": "D",
-      "break": 5
+      "break": 4
     },
     {
       "category": "curve",
@@ -72,12 +75,12 @@
       "break": 5
     },
     {
-      "category": "sinker",
+      "category": "fork",
       "order": 1,
       "name": "チェンジアップ",
       "power": "D",
       "control": "E",
-      "break": 4
+      "break": 3
     },
     {
       "category": "straight",
@@ -88,12 +91,12 @@
       "break": null
     },
     {
-      "category": "slider",
+      "category": "fork",
       "order": 2,
       "name": "カットボール",
       "power": "E",
       "control": "E",
-      "break": 4
+      "break": 3
     }
   ],
   "abilities": [
@@ -143,7 +146,9 @@
       "name": "ゴロピッチャー",
       "grade": null,
       "highlighted": false,
-      "type": "both"
+      "type": "plus"
     }
-  ]
+  ],
+  "player_id": "maclean_26",
+  "source_capture": "captures/wbc/usa/maclean_26.png"
 }

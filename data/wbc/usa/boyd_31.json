@@ -2,33 +2,33 @@
   "category": "wbc",
   "team": "usa",
   "kind": "pitcher",
-  "player_id": "mclean_26",
-  "source_capture": "captures/wbc/usa/mclean_26.png",
+  "player_id": "boyd_31",
+  "source_capture": "captures/wbc/usa/boyd_31.png",
   "year": 2026,
-  "uniform_number": "26",
-  "name": "マクリーン",
+  "uniform_number": "31",
+  "name": "ボイド",
   "position": "投手",
-  "throws_bats": "右投右打",
+  "throws_bats": "左投左打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 424
+    "overall": 376
   },
   "stats": [
     {
       "label": "球速",
-      "value": "158km/h",
+      "value": "155km/h",
       "grade": null
     },
     {
       "label": "スタミナ",
-      "value": 61,
-      "grade": "C"
+      "value": 70,
+      "grade": "B"
     },
     {
       "label": "疲労回復",
-      "value": 50,
-      "grade": "D"
+      "value": 74,
+      "grade": "B"
     },
     {
       "label": "先発適性",
@@ -37,7 +37,7 @@
     },
     {
       "label": "中継適性",
-      "value": "ー",
+      "value": "◎",
       "grade": null
     },
     {
@@ -50,58 +50,50 @@
     {
       "category": "straight",
       "order": 1,
-      "name": "ツーシーム",
+      "name": "ナチュラル",
       "power": "B",
-      "control": "D",
+      "control": "C",
       "break": null
     },
     {
-      "category": "slider",
+      "category": "sinker",
       "order": 1,
-      "name": "スライダー",
-      "power": "C",
-      "control": "D",
-      "break": 5
+      "name": "サークルチェンジ",
+      "power": "B",
+      "control": "C",
+      "break": 3
     },
     {
       "category": "curve",
       "order": 1,
       "name": "スラーブ",
-      "power": "A",
-      "control": "F",
-      "break": 5
+      "power": "D",
+      "control": "D",
+      "break": 4
     },
     {
-      "category": "sinker",
+      "category": "slider",
       "order": 1,
-      "name": "チェンジアップ",
+      "name": "スライダー",
       "power": "D",
       "control": "E",
-      "break": 4
+      "break": 3
     },
     {
       "category": "straight",
       "order": 2,
-      "name": "ストレート",
+      "name": "ツーシーム",
       "power": "E",
       "control": "E",
       "break": null
-    },
-    {
-      "category": "slider",
-      "order": 2,
-      "name": "カットボール",
-      "power": "E",
-      "control": "E",
-      "break": 4
     }
   ],
   "abilities": [
     {
       "name": "ケガしにくさ",
-      "grade": "D",
+      "grade": "E",
       "highlighted": true,
-      "type": "plus"
+      "type": "minus"
     },
     {
       "name": "対ピンチ",
@@ -111,39 +103,33 @@
     },
     {
       "name": "クイック",
-      "grade": "D",
+      "grade": "B",
       "highlighted": false,
       "type": "plus"
     },
     {
       "name": "打たれ強さ",
-      "grade": "C",
+      "grade": "D",
       "highlighted": false,
       "type": "plus"
     },
     {
       "name": "対左打者",
-      "grade": "D",
+      "grade": "C",
       "highlighted": false,
-      "type": "minus"
+      "type": "plus"
     },
     {
-      "name": "奪三振",
+      "name": "援護○",
       "grade": null,
       "highlighted": false,
       "type": "plus"
     },
     {
-      "name": "球速安定○",
+      "name": "打球反応○",
       "grade": null,
       "highlighted": false,
       "type": "plus"
-    },
-    {
-      "name": "ゴロピッチャー",
-      "grade": null,
-      "highlighted": false,
-      "type": "both"
     }
   ]
 }

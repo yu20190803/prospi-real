@@ -2,47 +2,47 @@
   "category": "wbc",
   "team": "usa",
   "kind": "pitcher",
-  "player_id": "mclean_26",
-  "source_capture": "captures/wbc/usa/mclean_26.png",
+  "player_id": "keller_40",
+  "source_capture": "captures/wbc/usa/keller_40.png",
   "year": 2026,
-  "uniform_number": "26",
-  "name": "マクリーン",
+  "uniform_number": "40",
+  "name": "ケラー",
   "position": "投手",
   "throws_bats": "右投右打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 424
+    "overall": 335
   },
   "stats": [
     {
       "label": "球速",
-      "value": "158km/h",
+      "value": "160km/h",
       "grade": null
     },
     {
       "label": "スタミナ",
-      "value": 61,
-      "grade": "C"
-    },
-    {
-      "label": "疲労回復",
-      "value": 50,
+      "value": 58,
       "grade": "D"
     },
     {
+      "label": "疲労回復",
+      "value": 68,
+      "grade": "C"
+    },
+    {
       "label": "先発適性",
-      "value": "◎",
+      "value": "○",
       "grade": null
     },
     {
       "label": "中継適性",
-      "value": "ー",
+      "value": "◎",
       "grade": null
     },
     {
       "label": "抑え適性",
-      "value": "ー",
+      "value": "◎",
       "grade": null
     }
   ],
@@ -50,50 +50,42 @@
     {
       "category": "straight",
       "order": 1,
-      "name": "ツーシーム",
-      "power": "B",
-      "control": "D",
+      "name": "真っスラ",
+      "power": "C",
+      "control": "C",
       "break": null
     },
     {
       "category": "slider",
       "order": 1,
       "name": "スライダー",
-      "power": "C",
-      "control": "D",
-      "break": 5
-    },
-    {
-      "category": "curve",
-      "order": 1,
-      "name": "スラーブ",
-      "power": "A",
+      "power": "B",
       "control": "F",
       "break": 5
     },
     {
-      "category": "sinker",
+      "category": "fork",
       "order": 1,
-      "name": "チェンジアップ",
+      "name": "縦スライダー",
       "power": "D",
       "control": "E",
       "break": 4
     },
     {
-      "category": "straight",
-      "order": 2,
-      "name": "ストレート",
-      "power": "E",
-      "control": "E",
-      "break": null
+      "category": "sinker",
+      "order": 1,
+      "name": "高速シンカー",
+      "power": "D",
+      "control": "D",
+      "break": 2
     },
     {
-      "category": "slider",
+      "category": "straight",
       "order": 2,
-      "name": "カットボール",
-      "power": "E",
-      "control": "E",
-      "break": 4
+      "name": "ツーシーム",
+      "power": "D",
+      "control": "D",
+      "break": null
     }
   ],
   "abilities": [
@@ -105,13 +97,13 @@
     },
     {
       "name": "対ピンチ",
-      "grade": "D",
+      "grade": "F",
       "highlighted": false,
-      "type": "plus"
+      "type": "minus"
     },
     {
       "name": "クイック",
-      "grade": "D",
+      "grade": "C",
       "highlighted": false,
       "type": "plus"
     },
@@ -123,18 +115,12 @@
     },
     {
       "name": "対左打者",
-      "grade": "D",
+      "grade": "E",
       "highlighted": false,
       "type": "minus"
     },
     {
       "name": "奪三振",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "球速安定○",
       "grade": null,
       "highlighted": false,
       "type": "plus"

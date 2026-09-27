@@ -2,33 +2,33 @@
   "category": "wbc",
   "team": "usa",
   "kind": "pitcher",
-  "player_id": "mclean_26",
-  "source_capture": "captures/wbc/usa/mclean_26.png",
+  "source_image": "/mnt/user-data/uploads/prospi-real/captures/wbc/usa/Screen_20260811_175008_717.png",
+  "source_original": "captures/wbc/usa/Screen_20260811_175008_717.png",
   "year": 2026,
-  "uniform_number": "26",
-  "name": "マクリーン",
+  "uniform_number": 27,
+  "name": "スクーバル",
   "position": "投手",
-  "throws_bats": "右投右打",
+  "throws_bats": "左投右打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 424
+    "overall": 550
   },
   "stats": [
     {
       "label": "球速",
-      "value": "158km/h",
+      "value": "165km/h",
       "grade": null
     },
     {
       "label": "スタミナ",
-      "value": 61,
-      "grade": "C"
+      "value": 76,
+      "grade": "B"
     },
     {
       "label": "疲労回復",
-      "value": 50,
-      "grade": "D"
+      "value": 79,
+      "grade": "B"
     },
     {
       "label": "先発適性",
@@ -46,54 +46,49 @@
       "grade": null
     }
   ],
+  "unverified": [
+    "pitches[].break"
+  ],
   "pitches": [
-    {
-      "category": "straight",
-      "order": 1,
-      "name": "ツーシーム",
-      "power": "B",
-      "control": "D",
-      "break": null
-    },
     {
       "category": "slider",
       "order": 1,
-      "name": "スライダー",
-      "power": "C",
-      "control": "D",
-      "break": 5
-    },
-    {
-      "category": "curve",
-      "order": 1,
-      "name": "スラーブ",
-      "power": "A",
-      "control": "F",
+      "name": "真っスラ",
+      "power": "B",
+      "control": "B",
       "break": 5
     },
     {
       "category": "sinker",
       "order": 1,
-      "name": "チェンジアップ",
-      "power": "D",
-      "control": "E",
+      "name": "高速シンカー",
+      "power": "C",
+      "control": "C",
       "break": 4
     },
     {
       "category": "straight",
       "order": 2,
-      "name": "ストレート",
-      "power": "E",
-      "control": "E",
+      "name": "ツーシーム",
+      "power": "B",
+      "control": "B",
       "break": null
     },
     {
-      "category": "slider",
+      "category": "curve",
       "order": 2,
-      "name": "カットボール",
+      "name": "チェンジアップ",
+      "power": "S",
+      "control": "B",
+      "break": 5
+    },
+    {
+      "category": "fork",
+      "order": 2,
+      "name": "ナックルカーブ",
       "power": "E",
       "control": "E",
-      "break": 4
+      "break": 3
     }
   ],
   "abilities": [
@@ -105,25 +100,25 @@
     },
     {
       "name": "対ピンチ",
-      "grade": "D",
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "クイック",
-      "grade": "D",
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "打たれ強さ",
       "grade": "C",
       "highlighted": false,
       "type": "plus"
     },
     {
-      "name": "対左打者",
+      "name": "クイック",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
       "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "B",
       "highlighted": false,
       "type": "minus"
     },
@@ -134,16 +129,24 @@
       "type": "plus"
     },
     {
-      "name": "球速安定○",
+      "name": "内角攻め",
       "grade": null,
       "highlighted": false,
       "type": "plus"
     },
     {
-      "name": "ゴロピッチャー",
+      "name": "打球反応○",
       "grade": null,
       "highlighted": false,
-      "type": "both"
+      "type": "plus"
+    },
+    {
+      "name": "力配分",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
     }
-  ]
+  ],
+  "player_id": "scubal_27",
+  "source_capture": "captures/wbc/usa/scubal_27.png"
 }

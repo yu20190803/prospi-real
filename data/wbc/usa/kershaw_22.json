@@ -2,32 +2,32 @@
   "category": "wbc",
   "team": "usa",
   "kind": "pitcher",
-  "player_id": "mclean_26",
-  "source_capture": "captures/wbc/usa/mclean_26.png",
+  "player_id": "kershaw_22",
+  "source_capture": "captures/wbc/usa/kershaw_22.png",
   "year": 2026,
-  "uniform_number": "26",
-  "name": "マクリーン",
+  "uniform_number": "22",
+  "name": "カーショー",
   "position": "投手",
-  "throws_bats": "右投右打",
+  "throws_bats": "左投左打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 424
+    "overall": 342
   },
   "stats": [
     {
       "label": "球速",
-      "value": "158km/h",
+      "value": "147km/h",
       "grade": null
     },
     {
       "label": "スタミナ",
-      "value": 61,
-      "grade": "C"
+      "value": 72,
+      "grade": "B"
     },
     {
       "label": "疲労回復",
-      "value": 50,
+      "value": 58,
       "grade": "D"
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "label": "中継適性",
-      "value": "ー",
+      "value": "○",
       "grade": null
     },
     {
@@ -50,58 +50,50 @@
     {
       "category": "straight",
       "order": 1,
-      "name": "ツーシーム",
-      "power": "B",
+      "name": "真っスラ",
+      "power": "D",
       "control": "D",
       "break": null
     },
     {
       "category": "slider",
       "order": 1,
-      "name": "スライダー",
-      "power": "C",
+      "name": "高速スライダー",
+      "power": "D",
       "control": "D",
-      "break": 5
-    },
-    {
-      "category": "curve",
-      "order": 1,
-      "name": "スラーブ",
-      "power": "A",
-      "control": "F",
-      "break": 5
+      "break": 3
     },
     {
       "category": "sinker",
       "order": 1,
-      "name": "チェンジアップ",
-      "power": "D",
+      "name": "シンキング",
+      "power": "E",
       "control": "E",
-      "break": 4
+      "break": 2
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ドロップカーブ",
+      "power": "A",
+      "control": "D",
+      "break": 5
     },
     {
       "category": "straight",
       "order": 2,
-      "name": "ストレート",
-      "power": "E",
-      "control": "E",
+      "name": "ツーシーム",
+      "power": "F",
+      "control": "D",
       "break": null
-    },
-    {
-      "category": "slider",
-      "order": 2,
-      "name": "カットボール",
-      "power": "E",
-      "control": "E",
-      "break": 4
     }
   ],
   "abilities": [
     {
       "name": "ケガしにくさ",
-      "grade": "D",
+      "grade": "E",
       "highlighted": true,
-      "type": "plus"
+      "type": "minus"
     },
     {
       "name": "対ピンチ",
@@ -111,13 +103,13 @@
     },
     {
       "name": "クイック",
-      "grade": "D",
+      "grade": "C",
       "highlighted": false,
       "type": "plus"
     },
     {
       "name": "打たれ強さ",
-      "grade": "C",
+      "grade": "D",
       "highlighted": false,
       "type": "plus"
     },
@@ -125,16 +117,34 @@
       "name": "対左打者",
       "grade": "D",
       "highlighted": false,
-      "type": "minus"
+      "type": "plus"
     },
     {
-      "name": "奪三振",
+      "name": "援護○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "牽制◎",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "緊急登板○",
       "grade": null,
       "highlighted": false,
       "type": "plus"
     },
     {
       "name": "球速安定○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打球反応○",
       "grade": null,
       "highlighted": false,
       "type": "plus"

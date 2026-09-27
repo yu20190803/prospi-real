@@ -1,0 +1,39 @@
+{
+  "category": "wbc",
+  "team": "usa",
+  "kind": "pitcher",
+  "player_id": "skenes_30",
+  "source_capture": "captures/wbc/usa/skenes_30.png",
+  "year": 2026,
+  "uniform_number": "30",
+  "name": "スキーンズ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {"star": true, "overall": 605},
+  "stats": [
+    {"label": "球速", "value": "161km/h", "grade": null},
+    {"label": "スタミナ", "value": 70, "grade": "B"},
+    {"label": "疲労回復", "value": 77, "grade": "B"},
+    {"label": "先発適性", "value": "◎", "grade": null},
+    {"label": "中継適性", "value": "ー", "grade": null},
+    {"label": "抑え適性", "value": "ー", "grade": null}
+  ],
+  "unverified": ["pitches[].break"],
+  "pitches": [
+    {"category": "straight", "order": 1, "name": "ナチュラル", "power": "B", "control": "A", "break": null},
+    {"category": "slider", "order": 1, "name": "スライダー", "power": "A", "control": "D", "break": 5},
+    {"category": "curve", "order": 1, "name": "スラーブ", "power": "D", "control": "C", "break": 3},
+    {"category": "fork", "order": 1, "name": "スプリンカー", "power": "C", "control": "C", "break": 4},
+    {"category": "sinker", "order": 1, "name": "高速シンカー", "power": "B", "control": "C", "break": 4},
+    {"category": "straight", "order": 2, "name": "ツーシーム", "power": "A", "control": "A", "break": null},
+    {"category": "curve", "order": 2, "name": "パワーカーブ", "power": "D", "control": "D", "break": 3}
+  ],
+  "abilities": [
+    {"name": "ケガしにくさ", "grade": "D", "highlighted": true, "type": "plus"},
+    {"name": "対ピンチ", "grade": "C", "highlighted": false, "type": "plus"},
+    {"name": "対左打者", "grade": "E", "highlighted": false, "type": "minus"},
+    {"name": "奪三振", "grade": null, "highlighted": false, "type": "plus"},
+    {"name": "援護▼", "grade": null, "highlighted": false, "type": "minus"}
+  ]
+}

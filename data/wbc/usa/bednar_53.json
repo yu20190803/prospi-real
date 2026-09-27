@@ -2,47 +2,47 @@
   "category": "wbc",
   "team": "usa",
   "kind": "pitcher",
-  "player_id": "mclean_26",
-  "source_capture": "captures/wbc/usa/mclean_26.png",
+  "player_id": "bednar_53",
+  "source_capture": "captures/wbc/usa/bednar_53.png",
   "year": 2026,
-  "uniform_number": "26",
-  "name": "マクリーン",
+  "uniform_number": "53",
+  "name": "ベドナー",
   "position": "投手",
-  "throws_bats": "右投右打",
+  "throws_bats": "右投左打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 424
+    "overall": 427
   },
   "stats": [
     {
       "label": "球速",
-      "value": "158km/h",
+      "value": "159km/h",
       "grade": null
     },
     {
       "label": "スタミナ",
-      "value": 61,
-      "grade": "C"
+      "value": 43,
+      "grade": "E"
     },
     {
       "label": "疲労回復",
-      "value": 50,
-      "grade": "D"
+      "value": 70,
+      "grade": "B"
     },
     {
       "label": "先発適性",
-      "value": "◎",
+      "value": "ー",
       "grade": null
     },
     {
       "label": "中継適性",
-      "value": "ー",
+      "value": "◎",
       "grade": null
     },
     {
       "label": "抑え適性",
-      "value": "ー",
+      "value": "◎",
       "grade": null
     }
   ],
@@ -50,49 +50,25 @@
     {
       "category": "straight",
       "order": 1,
-      "name": "ツーシーム",
+      "name": "ストレート",
       "power": "B",
-      "control": "D",
+      "control": "B",
       "break": null
-    },
-    {
-      "category": "slider",
-      "order": 1,
-      "name": "スライダー",
-      "power": "C",
-      "control": "D",
-      "break": 5
     },
     {
       "category": "curve",
       "order": 1,
-      "name": "スラーブ",
-      "power": "A",
-      "control": "F",
-      "break": 5
+      "name": "ドロップカーブ",
+      "power": "B",
+      "control": "B",
+      "break": 3
     },
     {
-      "category": "sinker",
+      "category": "fork",
       "order": 1,
-      "name": "チェンジアップ",
-      "power": "D",
-      "control": "E",
-      "break": 4
-    },
-    {
-      "category": "straight",
-      "order": 2,
-      "name": "ストレート",
-      "power": "E",
-      "control": "E",
-      "break": null
-    },
-    {
-      "category": "slider",
-      "order": 2,
-      "name": "カットボール",
-      "power": "E",
-      "control": "E",
+      "name": "SFF",
+      "power": "A",
+      "control": "B",
       "break": 4
     }
   ],
@@ -105,7 +81,7 @@
     },
     {
       "name": "対ピンチ",
-      "grade": "D",
+      "grade": "C",
       "highlighted": false,
       "type": "plus"
     },
@@ -117,15 +93,21 @@
     },
     {
       "name": "打たれ強さ",
-      "grade": "C",
+      "grade": "D",
       "highlighted": false,
       "type": "plus"
     },
     {
       "name": "対左打者",
-      "grade": "D",
+      "grade": "C",
       "highlighted": false,
-      "type": "minus"
+      "type": "plus"
+    },
+    {
+      "name": "存在感",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
     },
     {
       "name": "奪三振",
@@ -134,16 +116,16 @@
       "type": "plus"
     },
     {
-      "name": "球速安定○",
+      "name": "逃げ球",
       "grade": null,
       "highlighted": false,
       "type": "plus"
     },
     {
-      "name": "ゴロピッチャー",
+      "name": "リリース",
       "grade": null,
       "highlighted": false,
-      "type": "both"
+      "type": "plus"
     }
   ]
 }

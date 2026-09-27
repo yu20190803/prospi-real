@@ -1,0 +1,52 @@
+{
+  "category": "wbc",
+  "team": "usa",
+  "kind": "batter",
+  "player_id": "rowley_29",
+  "source_capture": "captures/wbc/usa/rowley_29.png",
+  "year": 2026,
+  "uniform_number": "29",
+  "name": "ローリー",
+  "position": "捕手",
+  "throws_bats": "右投両打",
+  "photo": null,
+  "rarity": {"star": true, "overall": 458},
+  "stats": [
+    {"label": "ミート", "splits": [
+      {"vs": "対右", "grade": "E", "value": 49},
+      {"vs": "対左", "grade": "D", "value": 53}
+    ]},
+    {"label": "パワー", "grade": "S", "value": 91},
+    {"label": "走力", "grade": "D", "value": 53},
+    {"label": "捕球", "grade": "E", "value": 46},
+    {"label": "スローイング", "grade": "C", "value": 66},
+    {"label": "肩力", "grade": "A", "value": 82},
+    {"label": "疲労回復", "grade": "B", "value": 73}
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
+  "fielding_diagram": {
+    "primary_position": "C",
+    "primary_grade": 67,
+    "catcher_lead_grade": "C",
+    "positions": [
+      {"position": "C", "grade": "C", "value": 67}
+    ]
+  },
+  "abilities": [
+    {"name": "アーチスト", "grade": null, "highlighted": true, "type": "plus"},
+    {"name": "ケガしにくさ", "grade": "C", "highlighted": false, "type": "plus"},
+    {"name": "バント", "grade": "D", "highlighted": false, "type": "plus"},
+    {"name": "チャンス", "grade": "D", "highlighted": false, "type": "plus"},
+    {"name": "走塁", "grade": "E", "highlighted": false, "type": "minus"},
+    {"name": "盗塁", "grade": "D", "highlighted": false, "type": "minus"},
+    {"name": "存在感", "grade": null, "highlighted": false, "type": "plus"},
+    {"name": "満塁男", "grade": null, "highlighted": false, "type": "plus"},
+    {"name": "連発", "grade": null, "highlighted": false, "type": "plus"},
+    {"name": "初球", "grade": null, "highlighted": false, "type": "plus"},
+    {"name": "逆境", "grade": null, "highlighted": false, "type": "plus"},
+    {"name": "悪球打ち", "grade": null, "highlighted": false, "type": "plus"},
+    {"name": "プルヒッター", "grade": null, "highlighted": false, "type": "both"},
+    {"name": "死球", "grade": null, "highlighted": false, "type": "both"}
+  ]
+}

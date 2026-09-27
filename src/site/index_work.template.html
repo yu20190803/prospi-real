@@ -1,5 +1,5 @@
-<title>プロスピ能力帳</title>
-<meta name="description" content="プロ野球スピリッツ2026の選手能力を一覧・比較できるデータベース（試作）">
+<title>プロスピ能力帳（検証用）</title>
+<meta name="description" content="プロ野球スピリッツ2026の選手データ書き起こしを元キャプチャと見比べるための内部検証用ページ。非公開・.gitignore対象。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;700;800&family=Montserrat:wght@700;800&family=Oswald:wght@500;600&display=swap">
@@ -127,30 +127,50 @@ table.list{border-collapse:separate;border-spacing:0 3px;width:100%;min-width:82
 svg text{font-family:"M PLUS 1p",sans-serif}
 .tip{position:fixed;pointer-events:none;background:#eceef1;color:#1c1f24;font-size:12px;padding:5px 9px;z-index:10;white-space:nowrap;border-radius:2px}
 footer{color:var(--dim);font-size:12px;border-top:1px solid var(--line-soft);padding-top:12px}
+
+/* ── 検証用レイアウト：詳細を上、一覧を右サイドバーに ── */
+.work-banner{background:#3a2a12;border:1px solid #6b4a1a;color:#f0c98a;font-size:12.5px;padding:8px 12px}
+.wrap.work{max-width:none}
+.layout{display:grid;grid-template-columns:minmax(820px,max-content) minmax(360px,1fr);gap:24px;align-items:start}
+@media (max-width:1260px){.layout{grid-template-columns:1fr}}
+.side-col{position:sticky;top:12px;display:grid;gap:10px}
+@media (max-width:1260px){.side-col{position:static}}
+.side-col .table-box{max-height:70vh;overflow:auto}
+.capture-box img{display:block;max-width:100%;border:1px solid var(--line-soft)}
+.capture-box .cap-path{color:var(--dim);font-size:12px;margin-top:6px;word-break:break-all}
+.capture-box .cap-empty{color:var(--dim);font-size:13px;padding:16px 0;text-align:center;background:var(--card);border:1px solid var(--line-soft)}
 </style>
 
-<div class="wrap">
+<div class="wrap work">
   <header class="site">
     <h1><span class="star" aria-hidden="true">★</span>プロスピ能力帳</h1>
-    <p class="meta">2026 · WBC アメリカ代表 · 収録 <span class="num" id="count"></span> 選手（試作版）</p>
+    <p class="meta">2026 · WBC アメリカ代表 · 収録 <span class="num" id="count"></span> 選手（検証用）</p>
   </header>
+  <p class="work-banner">これは書き起こし内容を元キャプチャと見比べるための内部検証用ページです（.gitignore対象・非公開）。公開版は site/index.html。</p>
 
-  <section aria-labelledby="list-h">
-    <div class="section-head">
-      <h2 id="list-h">選手一覧</h2>
-      <div class="tabs" role="tablist" aria-label="区分">
-        <button id="tab-batter" role="tab" aria-selected="true" data-kind="batter">野手</button>
-        <button id="tab-pitcher" role="tab" aria-selected="false" data-kind="pitcher">投手</button>
+  <div class="layout">
+    <section class="main-col" aria-labelledby="card-h">
+      <div class="section-head"><h2 id="card-h">選手詳細</h2></div>
+      <div id="card"></div>
+
+      <section aria-labelledby="cap-h" class="capture-box" style="margin-top:20px">
+        <div class="section-head"><h2 id="cap-h">元キャプチャ</h2></div>
+        <div id="capture"></div>
+      </section>
+    </section>
+
+    <aside class="side-col" aria-labelledby="list-h">
+      <div class="section-head">
+        <h2 id="list-h">選手一覧</h2>
+        <div class="tabs" role="tablist" aria-label="区分">
+          <button id="tab-batter" role="tab" aria-selected="true" data-kind="batter">野手</button>
+          <button id="tab-pitcher" role="tab" aria-selected="false" data-kind="pitcher">投手</button>
+        </div>
       </div>
-    </div>
-    <p class="hint" style="margin-bottom:8px">列見出しで並べ替え／名前で詳細表示／チェックで最大3人を比較</p>
-    <div class="table-box"><table class="list" id="list"></table></div>
-  </section>
-
-  <section aria-labelledby="card-h">
-    <div class="section-head"><h2 id="card-h">選手詳細</h2></div>
-    <div id="card"></div>
-  </section>
+      <p class="hint" style="margin-bottom:8px">列見出しで並べ替え／名前で詳細表示／チェックで最大3人を比較</p>
+      <div class="table-box"><table class="list" id="list"></table></div>
+    </aside>
+  </div>
 
   <section class="panel" aria-labelledby="cmp-h">
     <div class="section-head"><h2 id="cmp-h">能力比較</h2><span class="hint">外側ほど高い（0〜100）</span></div>
@@ -158,13 +178,14 @@ footer{color:var(--dim);font-size:12px;border-top:1px solid var(--line-soft);pad
     <div id="cmp"></div>
   </section>
 
-  <footer>数値はゲーム画面から書き起こしたもので、誤りを含む場合があります。変化量はゲーム画面の変化量表示を画像解析で読み取った値です。顔写真・ロゴなどゲーム内の画像は使用していません。</footer>
+  <footer>数値はゲーム画面から書き起こしたもので、誤りを含む場合があります。変化量はゲーム画面の変化量表示を画像解析で読み取った値です。このページは検証用のため元キャプチャ画像を表示しています（公開版には含まれません）。</footer>
 </div>
 <div class="tip" id="tip" hidden></div>
 
 <script>
 const PLAYERS = __DATA__;
 const GC = __GRADE_COLORS__;
+const CAPTURES = __CAPTURES__;
 const SERIES = ["var(--s1)","var(--s2)","var(--s3)"];
 const APT_ORDER = {"◎":4,"○":3,"△":2,"ー":1,"－":1};
 const state = {kind:"batter", sort:{key:"ovr",dir:-1}, picked:{batter:[],pitcher:[]}, detail:{batter:null,pitcher:null}};
@@ -396,6 +417,16 @@ function renderCard(){
   </article>`;
 }
 
+/* ── 元キャプチャ（検証用） ── */
+function renderCapture(){
+  const p=currentDetail(), box=document.getElementById("capture");
+  if(!box) return;
+  const img=CAPTURES[p.player_id];
+  if(!img){ box.innerHTML=`<p class="cap-empty">元キャプチャが見つかりません（${esc(p.source_capture||"source_capture なし")}）</p>`; return; }
+  box.innerHTML=`<img src="${img}" alt="${esc(p.name)}の元キャプチャ">
+    <div class="cap-path">${esc(p.source_capture)}</div>`;
+}
+
 /* ── 比較 ── */
 function renderCompare(){
   const ps=state.picked[state.kind].map(id=>PLAYERS.find(p=>p.player_id===id));
@@ -444,7 +475,7 @@ const PITCHER_AXES=[
 function renderAll(){
   document.getElementById("count").textContent=PLAYERS.length;
   document.querySelectorAll(".tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.kind===state.kind));
-  renderList();renderCard();renderCompare();
+  renderList();renderCard();renderCapture();renderCompare();
 }
 document.addEventListener("click",e=>{
   const t=e.target.closest("[data-kind],[data-sort],[data-detail]");if(!t)return;

@@ -2,17 +2,17 @@
   "category": "wbc",
   "team": "usa",
   "kind": "pitcher",
-  "player_id": "mclean_26",
-  "source_capture": "captures/wbc/usa/mclean_26.png",
+  "player_id": "jacks_48",
+  "source_capture": "captures/wbc/usa/jacks_48.png",
   "year": 2026,
-  "uniform_number": "26",
-  "name": "マクリーン",
+  "uniform_number": "48",
+  "name": "ジャックス",
   "position": "投手",
   "throws_bats": "右投右打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 424
+    "overall": 373
   },
   "stats": [
     {
@@ -22,27 +22,27 @@
     },
     {
       "label": "スタミナ",
-      "value": 61,
-      "grade": "C"
+      "value": 41,
+      "grade": "E"
     },
     {
       "label": "疲労回復",
-      "value": 50,
-      "grade": "D"
+      "value": 73,
+      "grade": "B"
     },
     {
       "label": "先発適性",
-      "value": "◎",
+      "value": "△",
       "grade": null
     },
     {
       "label": "中継適性",
-      "value": "ー",
+      "value": "◎",
       "grade": null
     },
     {
       "label": "抑え適性",
-      "value": "ー",
+      "value": "○",
       "grade": null
     }
   ],
@@ -50,49 +50,49 @@
     {
       "category": "straight",
       "order": 1,
-      "name": "ツーシーム",
-      "power": "B",
-      "control": "D",
+      "name": "ストレート",
+      "power": "F",
+      "control": "A",
       "break": null
     },
     {
       "category": "slider",
       "order": 1,
-      "name": "スライダー",
-      "power": "C",
-      "control": "D",
-      "break": 5
+      "name": "カットボール",
+      "power": "E",
+      "control": "C",
+      "break": 3
     },
     {
       "category": "curve",
       "order": 1,
       "name": "スラーブ",
-      "power": "A",
-      "control": "F",
-      "break": 5
+      "power": "B",
+      "control": "B",
+      "break": 4
     },
     {
       "category": "sinker",
       "order": 1,
       "name": "チェンジアップ",
-      "power": "D",
-      "control": "E",
+      "power": "B",
+      "control": "A",
       "break": 4
     },
     {
       "category": "straight",
       "order": 2,
-      "name": "ストレート",
-      "power": "E",
-      "control": "E",
+      "name": "ツーシーム",
+      "power": "C",
+      "control": "A",
       "break": null
     },
     {
-      "category": "slider",
+      "category": "curve",
       "order": 2,
-      "name": "カットボール",
-      "power": "E",
-      "control": "E",
+      "name": "カーブ",
+      "power": "D",
+      "control": "F",
       "break": 4
     }
   ],
@@ -117,13 +117,13 @@
     },
     {
       "name": "打たれ強さ",
-      "grade": "C",
+      "grade": "E",
       "highlighted": false,
-      "type": "plus"
+      "type": "minus"
     },
     {
       "name": "対左打者",
-      "grade": "D",
+      "grade": "E",
       "highlighted": false,
       "type": "minus"
     },
@@ -134,16 +134,22 @@
       "type": "plus"
     },
     {
-      "name": "球速安定○",
+      "name": "リリース",
       "grade": null,
       "highlighted": false,
       "type": "plus"
     },
     {
-      "name": "ゴロピッチャー",
+      "name": "対ランナー▼",
       "grade": null,
       "highlighted": false,
-      "type": "both"
+      "type": "minus"
+    },
+    {
+      "name": "シュート回転",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
     }
   ]
 }
