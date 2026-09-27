@@ -9,39 +9,44 @@
 
 ---
 
-## 0. 作業環境の準備（クラウド。PCの電源状態に関係なく動く）
+## 0. 作業環境の準備（PCにリンクして直接読む）
 
-リポジトリは2つ。**画像は非公開リポジトリにだけ置く。公開リポジトリには絶対に入れない。**
+画像はPC上のフォルダに置かれたままにする。**どちらのGitHubリポジトリにも画像は上げない**
+（非公開リポジトリ prospi-captures 経由でのやりとりは廃止、2026-09-28）。
+コードは `yu20190803/prospi-real`（公開）の1つだけ。
 
-| リポジトリ | 公開 | 中身 | クラウドでの場所 |
-|---|---|---|---|
-| `yu20190803/prospi-real` | 公開 | コード・データ・公開ページ | `/home/claude/prospi-real` |
-| `yu20190803/prospi-captures` | **非公開** | ゲーム画面キャプチャ（`wbc/<Team>/...png`） | `/home/claude/prospi-captures` |
-
-1. 両方を `add_repo`（access: push）でセッションに追加し、それぞれ `git clone --depth 1` する
-   （captures は約350MBあるので clone のタイムアウトは10分にする）。
-2. 画像を作業コピーから見えるようにリンクする:
-   `ln -s /home/claude/prospi-captures /home/claude/prospi-real/captures`
-   （`prospi-real/.gitignore` で `captures` を丸ごと除外済みなので、公開リポジトリには入らない）
-3. Python 依存: `pip install -r requirements.txt --break-system-packages`
-4. チームのフォルダ名は `USA`・`Australia` のように大文字を含むことがある。
+1. `add_repo`（access: push）で `yu20190803/prospi-real` をセッションに追加し、
+   `/home/claude/prospi-real` に `git clone --depth 1` する。
+2. Python 依存: `cd /home/claude/prospi-real && pip install -r requirements.txt --break-system-packages`
+3. このタスクはPCにリンクされている前提で動く（デバイス連携ツール `mcp__remote-devices__*` が
+   使えること）。使えなければ「PCにリンクされていないため画像に触れられない」と報告して終了する
+   （リンクなしで進めない）。
+4. `get_device_info` で接続済みフォルダを確認し、`<npb|wbc>/<team>/...png` の形の画像が入っている
+   `captures` フォルダを特定する（`device_list_dir` で接続フォルダ直下・1階層下を確認すれば見つかる
+   はず）。見つからなければ「captures フォルダが見つからない」と報告して終了する
+   （フォルダ名を推測して `device_request_folder_access` を呼ばない）。
+5. チームのフォルダ名は `USA`・`Australia` のように大文字を含むことがある。
    **データ側（`team`・`data/` のフォルダ・`source_capture`）は常に英小文字**（`usa`, `australia`, `japan_2026`）。
    画像を読むスクリプトは `src/capture_paths.py` で大文字・小文字を無視して解決するので、
-   フォルダ名を変える必要はない（PCのWindowsで大文字小文字だけの改名は事故のもと）。
+   PC側のフォルダ名を変える必要はない（PCのWindowsで大文字小文字だけの改名は事故のもと）。
 
 ## 1. 未処理の画像を特定する
 
-1. `python src/pending.py` で未処理の画像をチームごとに一覧する。
-   `python src/pending.py --next-team` は未処理が残っている最初のチーム（例: `wbc/Australia`）を返す。
-2. 未処理の判定: JSON の `source_original` / `source_capture` に記録された画像と、
-   `data/<cat>/<team>/_skipped.json` に記録された画像は処理済み。それ以外が未処理。
+1. 0-4. で特定したPC上の captures フォルダを `device_list_dir`（recursive）で一覧する。
+2. 未処理の判定: `<ローマ字姓>_<背番号>.png` の命名になっていない画像のうち、
+   `data/<cat>/<team>/` の各JSONの `source_original` に記録済みのファイル名でも
+   `data/<cat>/<team>/_skipped.json` に記録済みのファイル名でもないものが未処理。
 3. **1回の作業では1チームだけ処理する**（1チーム40枚前後。途中で打ち切られないように）。
-4. 未処理の画像には選手詳細画面以外も混ざっている。1枚ずつ見て分類する:
+   未処理が残っている最初のチームを選ぶ。
+4. そのチームの未処理画像を `device_stage_files` で取り込み、作業コピーの
+   `captures/<cat>/<team>/<元のファイル名>` に置く（`captures/` はこのリポジトリで
+   まるごと .gitignore 済みなので、公開リポジトリには入らない）。
+5. 未処理の画像には選手詳細画面以外も混ざっている。1枚ずつ見て分類する:
    - 選手詳細画面 → 2. の手順で書き起こす
    - 選手一覧のメニュー画面・画面切り替え途中のフレーム（2画面が半透明に重なったもの）・
      同じ選手の2枚目 → `_skipped.json` に `{"file": "captures/wbc/<Team>/<元ファイル名>", "reason": "…"}` で記録
    - 迷ったら選手画面として書き起こし、報告で触れる
-5. メニュー画面の選手一覧に載っているのに詳細画面がない選手がいれば、報告に書く
+6. メニュー画面の選手一覧に載っているのに詳細画面がない選手がいれば、報告に書く
    （例: USA のバクストン、クロウ=アームストロング）。
 
 ## 2. 1枚ずつ書き起こす
@@ -124,14 +129,13 @@ python3 src/build_site.py    # site/index.html を再生成
 validate.py のエラーは読み違いのサイン。**エラーを消すために数値を都合よく変えない。**
 画像を拡大して読み直し、それでも決められない場合は「迷ったとき」に従う。
 
-## 4. GitHubへ反映する（2つのリポジトリ）
+## 4. 反映する
 
-1. **prospi-captures（非公開）**: 改名コピーした `<player_id>.png` を追加してコミット・push。
-   元ファイルは消さない。
-   ```bash
-   cd /home/claude/prospi-captures && git add wbc/<Team>/ && git commit -m "<Team>: add renamed captures" && git push
-   ```
-2. **prospi-real（公開）**: `data/<cat>/<team>/`（JSONと `_skipped.json`）と `site/index.html` をコミット・push。
+1. **PCへの書き戻し**: 改名コピーした `<player_id>.png` を `device_commit_files` で、
+   0-4. で特定したPC上の captures フォルダの `<cat>/<team>/<player_id>.png` に書く
+   （改名前の元ファイルは消さない・上書きしない）。
+2. **GitHub（prospi-real、公開）**: `data/<cat>/<team>/`（JSONと `_skipped.json`）と
+   `site/index.html` をコミット・push。
    **push 前に `git status` で `captures` 配下や画像ファイルが含まれていないことを必ず確認する。**
    ```bash
    cd /home/claude/prospi-real && git add data/ site/index.html && git status --short && git commit -m "<Team>: add N players" && git push
@@ -140,7 +144,8 @@ validate.py のエラーは読み違いのサイン。**エラーを消すため
    強制 push はしない。
 3. `site/index_work.html`（検証用）は .gitignore 対象なので push しない。
 
-ユーザーはPCで両方のリポジトリを `git pull` して結果を受け取る。
+ユーザーはPCで `git pull` して `data/` と `site/index.html` の更新を受け取る
+（改名した画像はすでに `device_commit_files` でPCに書き戻し済み）。
 
 ## 5. ユーザーへの報告（短く）
 
