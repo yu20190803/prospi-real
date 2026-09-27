@@ -4,43 +4,142 @@
   "kind": "batter",
   "player_id": "goldschmidt_43",
   "source_capture": "captures/wbc/usa/goldschmidt_43.png",
+  "source_original": "captures/wbc/USA/Screen_20260811_175122_826.png",
   "year": 2026,
   "uniform_number": "43",
   "name": "ゴールドシュミット",
   "position": "一塁手",
   "throws_bats": "右投右打",
   "photo": null,
-  "rarity": {"star": true, "overall": 365},
+  "rarity": {
+    "star": true,
+    "overall": 365
+  },
   "stats": [
-    {"label": "ミート", "splits": [
-      {"vs": "対右", "grade": "D", "value": 54},
-      {"vs": "対左", "grade": "A", "value": 80}
-    ]},
-    {"label": "パワー", "grade": "C", "value": 68},
-    {"label": "走力", "grade": "D", "value": 52},
-    {"label": "捕球", "grade": "B", "value": 71},
-    {"label": "スローイング", "grade": "B", "value": 77},
-    {"label": "肩力", "grade": "E", "value": 46},
-    {"label": "疲労回復", "grade": "D", "value": 58}
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 54
+        },
+        {
+          "vs": "対左",
+          "grade": "A",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 68
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "捕球",
+      "grade": "B",
+      "value": 71
+    },
+    {
+      "label": "スローイング",
+      "grade": "B",
+      "value": 77
+    },
+    {
+      "label": "肩力",
+      "grade": "E",
+      "value": 46
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 58
+    }
   ],
   "fielding_aptitude": [],
-  "zone_grid": [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
   "fielding_diagram": {
     "primary_position": "1B",
     "primary_grade": 48,
     "catcher_lead_grade": null,
     "positions": [
-      {"position": "1B", "grade": "E", "value": 48}
+      {
+        "position": "1B",
+        "grade": "E",
+        "value": 48
+      }
     ]
   },
   "abilities": [
-    {"name": "高弾道", "grade": null, "highlighted": true, "type": "plus"},
-    {"name": "ケガしにくさ", "grade": "D", "highlighted": false, "type": "plus"},
-    {"name": "バント", "grade": "D", "highlighted": false, "type": "plus"},
-    {"name": "チャンス", "grade": "D", "highlighted": false, "type": "plus"},
-    {"name": "走塁", "grade": "E", "highlighted": false, "type": "minus"},
-    {"name": "盗塁", "grade": "B", "highlighted": false, "type": "plus"},
-    {"name": "広角打法", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "悪球打ち", "grade": null, "highlighted": false, "type": "plus"}
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "広角打法",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "悪球打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
   ]
 }

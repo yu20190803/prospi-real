@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
 output/
-captures/**/*.png
+# ゲーム画面キャプチャは非公開リポジトリ prospi-captures で管理する。公開リポジトリには絶対に入れない
+captures
 site/index_work.html

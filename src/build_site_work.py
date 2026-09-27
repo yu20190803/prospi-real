@@ -21,6 +21,7 @@ from pathlib import Path
 
 from build_site import PUBLIC_KEYS as _BASE_KEYS
 import grades
+from capture_paths import resolve
 
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "src" / "site" / "index_work.template.html"
@@ -31,8 +32,8 @@ PUBLIC_KEYS = _BASE_KEYS + ["source_capture"]
 
 def capture_data_uri(rel: str) -> str | None:
     """captures/ の画像をJPEGに変換して data URI にする（HTMLをどこで開いても表示できるように）。"""
-    path = ROOT / rel
-    if not path.exists():
+    path = resolve(rel)
+    if path is None:
         return None
     from PIL import Image  # 検証ページ生成時だけ必要
     im = Image.open(path).convert("RGB")
@@ -43,7 +44,7 @@ def capture_data_uri(rel: str) -> str | None:
 
 def main() -> None:
     players, captures, missing = [], {}, []
-    for path in sorted((ROOT / "data").rglob("*.json")):
+    for path in sorted((ROOT / "data").rglob("[!_]*.json")):
         d = json.loads(path.read_text(encoding="utf-8"))
         pub = {k: d[k] for k in PUBLIC_KEYS if k in d}
         players.append(pub)

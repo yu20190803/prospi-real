@@ -4,47 +4,162 @@
   "kind": "batter",
   "player_id": "toland_13",
   "source_capture": "captures/wbc/usa/toland_13.png",
+  "source_original": "captures/wbc/USA/Screen_20260811_175111_244.png",
   "year": 2026,
   "uniform_number": "13",
   "name": "トゥラング",
   "position": "二塁手",
   "throws_bats": "右投左打",
   "photo": null,
-  "rarity": {"star": true, "overall": 418},
+  "rarity": {
+    "star": true,
+    "overall": 418
+  },
   "stats": [
-    {"label": "ミート", "splits": [
-      {"vs": "対右", "grade": "D", "value": 57},
-      {"vs": "対左", "grade": "D", "value": 56}
-    ]},
-    {"label": "パワー", "grade": "B", "value": 77},
-    {"label": "走力", "grade": "A", "value": 86},
-    {"label": "捕球", "grade": "B", "value": 75},
-    {"label": "スローイング", "grade": "B", "value": 70},
-    {"label": "肩力", "grade": "B", "value": 72},
-    {"label": "疲労回復", "grade": "B", "value": 70}
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 57
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 56
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 77
+    },
+    {
+      "label": "走力",
+      "grade": "A",
+      "value": 86
+    },
+    {
+      "label": "捕球",
+      "grade": "B",
+      "value": 75
+    },
+    {
+      "label": "スローイング",
+      "grade": "B",
+      "value": 70
+    },
+    {
+      "label": "肩力",
+      "grade": "B",
+      "value": 72
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 70
+    }
   ],
   "fielding_aptitude": [],
-  "zone_grid": [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
-  "unverified": ["fielding_diagram.positions"],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "unverified": [
+    "fielding_diagram.positions"
+  ],
   "fielding_diagram": {
     "primary_position": "2B",
     "primary_grade": 68,
     "catcher_lead_grade": null,
     "positions": [
-      {"position": "2B", "grade": "C", "value": 68},
-      {"position": "SS", "grade": "D", "value": 59}
+      {
+        "position": "2B",
+        "grade": "C",
+        "value": 68
+      },
+      {
+        "position": "SS",
+        "grade": "D",
+        "value": 59
+      }
     ]
   },
   "abilities": [
-    {"name": "低弾道", "grade": null, "highlighted": true, "type": "plus"},
-    {"name": "ケガしにくさ", "grade": "D", "highlighted": false, "type": "plus"},
-    {"name": "バント", "grade": "D", "highlighted": false, "type": "plus"},
-    {"name": "チャンス", "grade": "A", "highlighted": false, "type": "plus"},
-    {"name": "走塁", "grade": "E", "highlighted": false, "type": "minus"},
-    {"name": "盗塁", "grade": "D", "highlighted": false, "type": "plus"},
-    {"name": "流し打ち", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "固め打ち", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "逆境", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "内野安打○", "grade": null, "highlighted": false, "type": "plus"}
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "A",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "流し打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
   ]
 }

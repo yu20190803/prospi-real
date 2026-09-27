@@ -101,7 +101,7 @@ def validate(path: Path) -> tuple[list[str], list[str]]:
 
 
 def main() -> int:
-    targets = [Path(a) for a in sys.argv[1:]] or sorted((ROOT / "data").rglob("*.json"))
+    targets = [Path(a) for a in sys.argv[1:]] or sorted((ROOT / "data").rglob("[!_]*.json"))
     n_err = 0
     for t in targets:
         errors, warns = validate(t)

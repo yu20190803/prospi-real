@@ -52,7 +52,7 @@ def pitch_panels(d: dict) -> list[dict]:
 
 def main() -> None:
     players = []
-    for path in sorted((ROOT / "data").rglob("*.json")):
+    for path in sorted((ROOT / "data").rglob("[!_]*.json")):
         d = json.loads(path.read_text(encoding="utf-8"))
         pub = {k: d[k] for k in PUBLIC_KEYS if k in d}
         players.append(pub)

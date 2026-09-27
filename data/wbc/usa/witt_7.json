@@ -4,47 +4,166 @@
   "kind": "batter",
   "player_id": "witt_7",
   "source_capture": "captures/wbc/usa/witt_7.png",
+  "source_original": "captures/wbc/USA/Screen_20260811_175135_934.png",
   "year": 2026,
   "uniform_number": "7",
   "name": "ウィットJr.",
   "position": "遊撃手",
   "throws_bats": "右投右打",
   "photo": null,
-  "rarity": {"star": true, "overall": 524},
+  "rarity": {
+    "star": true,
+    "overall": 524
+  },
   "stats": [
-    {"label": "ミート", "splits": [
-      {"vs": "対右", "grade": "B", "value": 74},
-      {"vs": "対左", "grade": "B", "value": 72}
-    ]},
-    {"label": "パワー", "grade": "A", "value": 85},
-    {"label": "走力", "grade": "S", "value": 99},
-    {"label": "捕球", "grade": "B", "value": 72},
-    {"label": "スローイング", "grade": "B", "value": 74},
-    {"label": "肩力", "grade": "A", "value": 83},
-    {"label": "疲労回復", "grade": "B", "value": 71}
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "B",
+          "value": 74
+        },
+        {
+          "vs": "対左",
+          "grade": "B",
+          "value": 72
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "A",
+      "value": 85
+    },
+    {
+      "label": "走力",
+      "grade": "S",
+      "value": 99
+    },
+    {
+      "label": "捕球",
+      "grade": "B",
+      "value": 72
+    },
+    {
+      "label": "スローイング",
+      "grade": "B",
+      "value": 74
+    },
+    {
+      "label": "肩力",
+      "grade": "A",
+      "value": 83
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 71
+    }
   ],
   "fielding_aptitude": [],
-  "zone_grid": [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
   "fielding_diagram": {
     "primary_position": "SS",
     "primary_grade": 85,
     "catcher_lead_grade": null,
     "positions": [
-      {"position": "SS", "grade": "A", "value": 85}
+      {
+        "position": "SS",
+        "grade": "A",
+        "value": 85
+      }
     ]
   },
   "abilities": [
-    {"name": "ラインドライブ", "grade": null, "highlighted": true, "type": "plus"},
-    {"name": "ケガしにくさ", "grade": "C", "highlighted": false, "type": "plus"},
-    {"name": "バント", "grade": "D", "highlighted": false, "type": "plus"},
-    {"name": "チャンス", "grade": "D", "highlighted": false, "type": "plus"},
-    {"name": "走塁", "grade": "B", "highlighted": false, "type": "plus"},
-    {"name": "盗塁", "grade": "D", "highlighted": false, "type": "plus"},
-    {"name": "存在感", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "固め打ち", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "粘り打ち", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "悪球打ち", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "内野安打○", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "死球", "grade": null, "highlighted": false, "type": "both"}
+    {
+      "name": "ラインドライブ",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "存在感",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "粘り打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "悪球打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "死球",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
   ]
 }

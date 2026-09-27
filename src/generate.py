@@ -81,7 +81,7 @@ def main() -> None:
 
     targets = list(args.data_files)
     if args.all:
-        targets += sorted(DATA_DIR.rglob("*.json"))
+        targets += sorted(DATA_DIR.rglob("[!_]*.json"))
 
     if not targets:
         parser.error("データファイルを指定するか --all を使ってください")

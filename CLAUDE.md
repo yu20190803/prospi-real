@@ -36,8 +36,9 @@
 **画像を受け取ってからの書き起こし作業は `docs/runbook_transcribe.md` の手順に従う**
 （別モデル・別セッションでも同じ品質で進められるよう、判断基準をすべてそこに書いている）。
 
-1. ユーザーがPCの `captures/<npb|wbc>/<team>/` に選手詳細画面のスクリーンショットを置く
-   （チーム名は英小文字、ファイル名は自由、1選手1枚、投手・野手混在可）。
+1. ユーザーがPCの `captures/<npb|wbc>/<team>/` に選手詳細画面のスクリーンショットを置き、
+   非公開リポジトリ prospi-captures に push する（ファイル名は自由、投手・野手・メニュー画面混在可）。
+   書き起こしはクラウドの定期実行が1回1チームずつ行う（手順は runbook の 0.〜5.）。
    `<ローマ字姓>_<背番号>.png` の命名になっていない画像を未処理とみなす。
 2. Claude が画像を読み取り、選手名・背番号から `<player_id>.png` に改名したうえで、
    `docs/data_schema.md` のスキーマに従って `data/<npb|wbc>/<team>/<player_id>.json` を書き起こす。
@@ -77,7 +78,9 @@ site/index_work.html                           生成された検証用ページ
 docs/data_schema.md                            選手データのJSONスキーマ定義（投手/野手それぞれ記載）
 docs/runbook_transcribe.md                     書き起こし手順書（画像受け取り〜PC書き戻し〜報告）
 docs/templates/pitcher.json, batter.json       書き起こし用の雛形（実データと同じ形式）
-src/pending.py                                 未処理画像・画像のないデータ・確認待ちの一覧
+src/pending.py                                 未処理画像の一覧（--next-team で次に処理するチーム）
+src/capture_paths.py                           captures/ のパスを大文字・小文字を無視して解決
+data/<npb|wbc>/<team>/_skipped.json            書き起こし対象外の画像（メニュー画面・重複など）の記録
 ```
 
 ## player_id の命名規則
@@ -118,8 +121,14 @@ src/pending.py                                 未処理画像・画像のない
 
 - ゲーム公式のフォント・アイコン画像ファイルそのものはリポジトリに含めない
   （自作CSS/SVGで見た目を再現する）。
-- `captures/` の画像はゲームの著作物なので **GitHubにはコミットしない**（.gitignore 済み、
-  ローカルPCにのみ保存）。公開ページにも埋め込まない。
+- `captures/` の画像はゲームの著作物なので、**公開リポジトリ（prospi-real）には絶対にコミットしない**
+  （`captures` を丸ごと .gitignore 済み）。公開ページにも埋め込まない。
+  画像は**非公開リポジトリ `yu20190803/prospi-captures`** でのみ管理する（2026-09-28〜。PCの
+  `captures/` フォルダ自体がこのリポジトリ）。定期実行はクラウドでこれを clone して
+  `prospi-real/captures` にシンボリックリンクして使う。prospi-captures を公開に変えない。
+- チームのフォルダ名は大文字を含むことがある（`captures/wbc/USA`）。データ側の `team`・
+  `data/` のフォルダ・`source_capture` は常に英小文字。画像を読むコードは必ず
+  `src/capture_paths.py` の `resolve()` を通す（Linux は大文字・小文字を区別する）。
 - 左投手は画面上の変化方向が左右反転する。`pitches[].category` は右投手基準の大分類
   （スライダー系=左方向 など）で記録する。**category は画面上の箱の位置で決め、球種名からは
   決めない**（チェンジアップが sinker の位置にあることは普通にある）。

@@ -27,6 +27,8 @@ from pathlib import Path
 
 from PIL import Image
 
+from capture_paths import resolve
+
 ROOT = Path(__file__).resolve().parent.parent
 BASE_W, BASE_H = 865, 605
 
@@ -63,8 +65,8 @@ def detect(capture: Path) -> dict:
 
 
 def check(d: dict) -> list[str]:
-    cap = ROOT / d["source_capture"]
-    if not cap.exists():
+    cap = resolve(d["source_capture"])
+    if cap is None:
         return [f"元キャプチャがありません: {d['source_capture']}"]
     slots = detect(cap)
     table = LEFT if d.get("throws_bats", "").startswith("左") else RIGHT
@@ -91,7 +93,7 @@ def check(d: dict) -> list[str]:
 
 
 def main(argv: list[str]) -> int:
-    files = sorted((ROOT / "data").rglob("*.json"))
+    files = sorted((ROOT / "data").rglob("[!_]*.json"))
     if argv:
         files = [f for f in files if f.stem in argv]
     n_err = 0

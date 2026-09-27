@@ -4,54 +4,201 @@
   "kind": "batter",
   "player_id": "clement_5",
   "source_capture": "captures/wbc/usa/clement_5.png",
+  "source_original": "captures/wbc/USA/Screen_20260811_175126_492.png",
   "year": 2026,
   "uniform_number": "5",
   "name": "クレメント",
   "position": "三塁手",
   "throws_bats": "右投右打",
   "photo": null,
-  "rarity": {"star": true, "overall": 355},
+  "rarity": {
+    "star": true,
+    "overall": 355
+  },
   "stats": [
-    {"label": "ミート", "splits": [
-      {"vs": "対右", "grade": "D", "value": 55},
-      {"vs": "対左", "grade": "D", "value": 59}
-    ]},
-    {"label": "パワー", "grade": "D", "value": 53},
-    {"label": "走力", "grade": "A", "value": 81},
-    {"label": "捕球", "grade": "E", "value": 46},
-    {"label": "スローイング", "grade": "D", "value": 51},
-    {"label": "肩力", "grade": "C", "value": 61},
-    {"label": "疲労回復", "grade": "C", "value": 60}
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 55
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 59
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "D",
+      "value": 53
+    },
+    {
+      "label": "走力",
+      "grade": "A",
+      "value": 81
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 46
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 51
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 61
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 60
+    }
   ],
   "fielding_aptitude": [],
-  "zone_grid": [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
-  "unverified": ["fielding_diagram.positions"],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "unverified": [
+    "fielding_diagram.positions"
+  ],
   "fielding_diagram": {
     "primary_position": "3B",
     "primary_grade": 78,
     "catcher_lead_grade": null,
     "positions": [
-      {"position": "3B", "grade": "B", "value": 78},
-      {"position": "1B", "grade": "D", "value": 56},
-      {"position": "SS", "grade": "C", "value": 67},
-      {"position": "2B", "grade": "B", "value": 78},
-      {"position": "CF", "grade": "F", "value": 34}
+      {
+        "position": "3B",
+        "grade": "B",
+        "value": 78
+      },
+      {
+        "position": "1B",
+        "grade": "D",
+        "value": 56
+      },
+      {
+        "position": "SS",
+        "grade": "C",
+        "value": 67
+      },
+      {
+        "position": "2B",
+        "grade": "B",
+        "value": 78
+      },
+      {
+        "position": "CF",
+        "grade": "F",
+        "value": 34
+      }
     ]
   },
   "abilities": [
-    {"name": "高弾道", "grade": null, "highlighted": true, "type": "plus"},
-    {"name": "ケガしにくさ", "grade": "D", "highlighted": false, "type": "plus"},
-    {"name": "バント", "grade": "B", "highlighted": false, "type": "plus"},
-    {"name": "チャンス", "grade": "D", "highlighted": false, "type": "plus"},
-    {"name": "走塁", "grade": "C", "highlighted": false, "type": "plus"},
-    {"name": "盗塁", "grade": "F", "highlighted": false, "type": "minus"},
-    {"name": "大舞台", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "固め打ち", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "粘り打ち", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "サヨナラ男", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "意外性", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "悪球打ち", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "ヘッドスライディング", "grade": null, "highlighted": false, "type": "plus"},
-    {"name": "内野安打○", "grade": null, "highlighted": false, "type": "plus"}
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "大舞台",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "粘り打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "サヨナラ男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "意外性",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "悪球打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ヘッドスライディング",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
   ]
 }

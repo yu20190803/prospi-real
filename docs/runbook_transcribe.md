@@ -9,29 +9,40 @@
 
 ---
 
-## 0. 作業環境の準備
+## 0. 作業環境の準備（クラウド。PCの電源状態に関係なく動く）
 
-- ユーザーのPC上の本体: `C:\dev\claude\prospi-real`（GitHub: `yu20190803/prospi-real`）
-- クラウド側の作業コピー: `/home/claude/prospi-real`
-  - 存在しなければ `git clone --depth 1 https://github.com/yu20190803/prospi-real /home/claude/prospi-real`
-  - `captures/` の画像は GitHub に上がっていない（.gitignore）。**画像はPCから取り込む。**
-- PCとのやりとりはデバイス連携ツールで行う。
-  - 一覧: `device_list_dir`（`C:\dev\claude\prospi-real\captures`, recursive）
-  - 取り込み: `device_stage_files` → `/mnt/user-data/uploads/prospi-real/...` に届く
-  - 書き戻し: ファイルを `/mnt/user-data/outputs/prospi-real/<同じ相対パス>` に置き、
-    `device_commit_files` で `C:\dev\claude\prospi-real\<相対パス>` に書く
-  - フォルダへのアクセスがない場合は `device_request_folder_access` で
-    `C:\dev\claude\prospi-real` を1回だけ要求する
-- Python 依存は `pip install -r requirements.txt --break-system-packages`（jinja2 のみ）
+リポジトリは2つ。**画像は非公開リポジトリにだけ置く。公開リポジトリには絶対に入れない。**
+
+| リポジトリ | 公開 | 中身 | クラウドでの場所 |
+|---|---|---|---|
+| `yu20190803/prospi-real` | 公開 | コード・データ・公開ページ | `/home/claude/prospi-real` |
+| `yu20190803/prospi-captures` | **非公開** | ゲーム画面キャプチャ（`wbc/<Team>/...png`） | `/home/claude/prospi-captures` |
+
+1. 両方を `add_repo`（access: push）でセッションに追加し、それぞれ `git clone --depth 1` する
+   （captures は約350MBあるので clone のタイムアウトは10分にする）。
+2. 画像を作業コピーから見えるようにリンクする:
+   `ln -s /home/claude/prospi-captures /home/claude/prospi-real/captures`
+   （`prospi-real/.gitignore` で `captures` を丸ごと除外済みなので、公開リポジトリには入らない）
+3. Python 依存: `pip install -r requirements.txt --break-system-packages`
+4. チームのフォルダ名は `USA`・`Australia` のように大文字を含むことがある。
+   **データ側（`team`・`data/` のフォルダ・`source_capture`）は常に英小文字**（`usa`, `australia`, `japan_2026`）。
+   画像を読むスクリプトは `src/capture_paths.py` で大文字・小文字を無視して解決するので、
+   フォルダ名を変える必要はない（PCのWindowsで大文字小文字だけの改名は事故のもと）。
 
 ## 1. 未処理の画像を特定する
 
-1. PCの `captures` を `device_list_dir` で再帰的に一覧する。
-2. `<ローマ字姓>_<背番号>.png` 形式**でない**画像が未処理。
-   すでにその形式で、`data/` に同名JSONがあるものは処理済み。
-3. 未処理の画像を `device_stage_files` で取り込み、作業コピーの
-   `captures/<npb|wbc>/<team>/<元のファイル名>` にコピーする。
-4. `python src/pending.py` で、作業コピー上の未処理一覧を確認する。
+1. `python src/pending.py` で未処理の画像をチームごとに一覧する。
+   `python src/pending.py --next-team` は未処理が残っている最初のチーム（例: `wbc/Australia`）を返す。
+2. 未処理の判定: JSON の `source_original` / `source_capture` に記録された画像と、
+   `data/<cat>/<team>/_skipped.json` に記録された画像は処理済み。それ以外が未処理。
+3. **1回の作業では1チームだけ処理する**（1チーム40枚前後。途中で打ち切られないように）。
+4. 未処理の画像には選手詳細画面以外も混ざっている。1枚ずつ見て分類する:
+   - 選手詳細画面 → 2. の手順で書き起こす
+   - 選手一覧のメニュー画面・画面切り替え途中のフレーム（2画面が半透明に重なったもの）・
+     同じ選手の2枚目 → `_skipped.json` に `{"file": "captures/wbc/<Team>/<元ファイル名>", "reason": "…"}` で記録
+   - 迷ったら選手画面として書き起こし、報告で触れる
+5. メニュー画面の選手一覧に載っているのに詳細画面がない選手がいれば、報告に書く
+   （例: USA のバクストン、クロウ=アームストロング）。
 
 ## 2. 1枚ずつ書き起こす
 
@@ -50,9 +61,13 @@
 - ローマ字は**実在選手の英語表記の姓**を使う（ウィットJr. → `witt`、ジャッジ → `judge`、
   日本人選手はヘボン式: 大谷 → `ohtani`、山本 → `yamamoto`）。
 - 同じチームで同じIDがすでにあり**別人**なら末尾に `_2`。**同一人物**なら上書き更新。
-- 画像を作業コピー内で `captures/<cat>/<team>/<player_id>.png` にコピーし、
-  JSON に `"source_capture": "captures/<cat>/<team>/<player_id>.png"` と
-  `"source_original": "captures/<cat>/<team>/<元のファイル名>"` を書く。
+- 画像を**実際のフォルダ**（例: `captures/wbc/Australia/`）に `<player_id>.png` という名前でコピーする
+  （元ファイルは消さない・上書きしない）。
+- JSON には `"team": "<英小文字>"`、`"source_capture": "captures/<cat>/<英小文字team>/<player_id>.png"`、
+  `"source_original": "captures/<cat>/<実際のフォルダ名>/<元のファイル名>"` を書く。
+  JSON の置き場所は `data/<cat>/<英小文字team>/<player_id>.json`。
+- 読み取りは、画像全体ではなく**上半分・下半分を切り出して3倍に拡大したもの**を Read で見る
+  （PIL で crop → resize）。細かい等級・記号の読み違いが減る。
 
 ### 2-3. ステータス（中央の表）
 - 等級の文字（S, A〜G）と数値を読む。等級と数値は `docs/grades.md` の表で必ず対応する
@@ -101,32 +116,40 @@ cd /home/claude/prospi-real
 python3 src/validate.py      # エラー0件になるまで直す（警告は可）
 python3 src/check_pitch_slots.py  # 投手の変化球の位置・書き漏れを画像と照合。不一致0人になるまで直す
 python3 src/read_break.py    # 変化量を画像と照合。「不一致0球種 / 問題あり0球種」になっていること
-python3 src/pending.py       # 未処理が0件になっていること
+python3 src/pending.py       # 処理したチームの未処理が0件になっていること
 python3 src/build_site.py    # site/index.html を再生成
 ```
+4つのチェックがすべて通るまで次へ進まない。
 
 validate.py のエラーは読み違いのサイン。**エラーを消すために数値を都合よく変えない。**
 画像を拡大して読み直し、それでも決められない場合は「迷ったとき」に従う。
 
-## 4. PCへ書き戻す
+## 4. GitHubへ反映する（2つのリポジトリ）
 
-次のファイルを `/mnt/user-data/outputs/prospi-real/` 以下に同じ相対パスで置き、
-`device_commit_files` で `C:\dev\claude\prospi-real\` 以下に書き戻す（1回50件まで）。
-- `data/<cat>/<team>/<player_id>.json`（新規・更新したもの全部）
-- `captures/<cat>/<team>/<player_id>.png`（改名したコピー）
-- `site/index.html`
+1. **prospi-captures（非公開）**: 改名コピーした `<player_id>.png` を追加してコミット・push。
+   元ファイルは消さない。
+   ```bash
+   cd /home/claude/prospi-captures && git add wbc/<Team>/ && git commit -m "<Team>: add renamed captures" && git push
+   ```
+2. **prospi-real（公開）**: `data/<cat>/<team>/`（JSONと `_skipped.json`）と `site/index.html` をコミット・push。
+   **push 前に `git status` で `captures` 配下や画像ファイルが含まれていないことを必ず確認する。**
+   ```bash
+   cd /home/claude/prospi-real && git add data/ site/index.html && git status --short && git commit -m "<Team>: add N players" && git push
+   ```
+   push が拒否されたら（PC側で先に push された等）、`git pull --rebase` してから push し直す。
+   強制 push はしない。
+3. `site/index_work.html`（検証用）は .gitignore 対象なので push しない。
 
-PC上の元のファイル（改名前の名前のもの）は消さない。JSONの `source_original` に記録済みなので
-未処理とはみなされない。不要ならユーザーが消す。
-
-公開ページ（Artifact）を更新する場合は、`site/index.html` をこれまでと同じ Artifact に再公開する。
+ユーザーはPCで両方のリポジトリを `git pull` して結果を受け取る。
 
 ## 5. ユーザーへの報告（短く）
 
-- 追加・更新した選手の人数（チーム別）
+- 処理したチームと、追加した選手の人数（投手・野手の内訳）
+- スキップした画像の枚数と理由の内訳
+- 一覧画面にいるのに詳細画面がない選手
 - **読み取りに自信がない箇所の一覧**（選手・項目・読んだ値・迷った理由）
-- 変化量は画素から機械読み取りしている旨（read_break.py で問題が残った球種があればその一覧）
-- GitHubへはPCからコミット・pushしてもらう（このセッションからはpushできない）
+- read_break.py / check_pitch_slots.py で問題が残った球種があればその一覧
+- 残りのチーム数
 
 ## 迷ったとき
 
