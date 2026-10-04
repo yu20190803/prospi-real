@@ -98,5 +98,17 @@
   {
     "file": "captures/wbc/Australia/Screen_20260811_180205_508.png",
     "reason": "同じ選手の切り替え途中のフレーム（neunborn_22）"
+  },
+  {
+    "file": "captures/wbc/Australia/macdonald_39.png",
+    "reason": "完全に同じ画像の重複（Screen_20260811_180131_011.png）"
+  },
+  {
+    "file": "captures/wbc/Australia/sarpolt_30.png",
+    "reason": "完全に同じ画像の重複（Screen_20260811_180155_764.png）"
+  },
+  {
+    "file": "captures/wbc/Australia/kennelly_23.png",
+    "reason": "完全に同じ画像の重複（Screen_20260811_180258_106.png）"
   }
 ]
