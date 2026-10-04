@@ -1,0 +1,134 @@
+{
+  "category": "wbc",
+  "team": "canada",
+  "kind": "pitcher",
+  "player_id": "soroka_40",
+  "source_capture": "captures/wbc/canada/soroka_40.png",
+  "source_original": "captures/wbc/Canada/Screen_20260811_180650_272.png",
+  "year": 2026,
+  "uniform_number": "40",
+  "name": "ソロカ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 274
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "156km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 58,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 57,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "D",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "スラープ",
+      "power": "A",
+      "control": "E",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "D",
+      "control": "E",
+      "break": 4
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ムファスト",
+      "power": "D",
+      "control": "E",
+      "break": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "F",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "援護▼",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "一発",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

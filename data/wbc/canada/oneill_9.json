@@ -1,0 +1,149 @@
+{
+  "category": "wbc",
+  "team": "canada",
+  "kind": "batter",
+  "player_id": "oneill_9",
+  "source_capture": "captures/wbc/canada/oneill_9.png",
+  "source_original": "captures/wbc/Canada/Screen_20260811_180815_900.png",
+  "year": 2026,
+  "uniform_number": "9",
+  "name": "オニール",
+  "position": "右翼手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 299
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 49
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 47
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 73
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 75
+    },
+    {
+      "label": "捕球",
+      "grade": "F",
+      "value": 38
+    },
+    {
+      "label": "スローイング",
+      "grade": "E",
+      "value": 42
+    },
+    {
+      "label": "肩力",
+      "grade": "A",
+      "value": 82
+    },
+    {
+      "label": "疲労回復",
+      "grade": "E",
+      "value": 43
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "RF",
+    "primary_grade": 43,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "RF",
+        "grade": "E",
+        "value": 43
+      },
+      {
+        "position": "CF",
+        "grade": "E",
+        "value": 43
+      },
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 40
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ブルヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

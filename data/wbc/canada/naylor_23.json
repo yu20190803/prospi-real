@@ -1,0 +1,139 @@
+{
+  "category": "wbc",
+  "team": "canada",
+  "kind": "batter",
+  "player_id": "naylor_23",
+  "source_capture": "captures/wbc/canada/naylor_23.png",
+  "source_original": "captures/wbc/Canada/Screen_20260811_180740_256.png",
+  "year": 2026,
+  "uniform_number": "23",
+  "name": "B.ネイラー",
+  "position": "捕手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 343
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 46
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 48
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 73
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 71
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 57
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "肩力",
+      "grade": "B",
+      "value": 78
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 50
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "C",
+    "primary_grade": 53,
+    "catcher_lead_grade": "C",
+    "positions": [
+      {
+        "position": "C",
+        "grade": "D",
+        "value": 53
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "パント",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走撃",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗撃",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対ストレートO",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "category": "wbc",
+  "team": "canada",
+  "kind": "batter",
+  "player_id": "scott_17",
+  "source_capture": "captures/wbc/canada/scott_17.png",
+  "source_original": "captures/wbc/Canada/Screen_20260811_180827_069.png",
+  "year": 2026,
+  "uniform_number": "17",
+  "name": "スコット",
+  "position": "中堅手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 243
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 36
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 44
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 66
+    },
+    {
+      "label": "走力",
+      "grade": "F",
+      "value": 29
+    },
+    {
+      "label": "捕球",
+      "grade": "F",
+      "value": 30
+    },
+    {
+      "label": "スローイング",
+      "grade": "C",
+      "value": 63
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 53
+    },
+    {
+      "label": "疲労回復",
+      "grade": "E",
+      "value": 42
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "CF",
+    "primary_grade": 67,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "CF",
+        "grade": "C",
+        "value": 67
+      },
+      {
+        "position": "LF",
+        "grade": "D",
+        "value": 51
+      },
+      {
+        "position": "RF",
+        "grade": "D",
+        "value": 51
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

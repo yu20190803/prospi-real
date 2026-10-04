@@ -1,0 +1,175 @@
+{
+  "category": "wbc",
+  "team": "canada",
+  "kind": "batter",
+  "player_id": "toro_31",
+  "source_capture": "captures/wbc/canada/toro_31.png",
+  "source_original": "captures/wbc/Canada/Screen_20260811_180750_668.png",
+  "year": 2026,
+  "uniform_number": "31",
+  "name": "トロ",
+  "position": "三塁手",
+  "throws_bats": "右投両打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 299
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 58
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 58
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 63
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 74
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 42
+    },
+    {
+      "label": "スローイング",
+      "grade": "E",
+      "value": 43
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 65
+    },
+    {
+      "label": "疲労回復",
+      "grade": "E",
+      "value": 43
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "LF",
+    "primary_grade": 30,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "LF",
+        "grade": "F",
+        "value": 30
+      },
+      {
+        "position": "CF",
+        "grade": "F",
+        "value": 33
+      },
+      {
+        "position": "RF",
+        "grade": "F",
+        "value": 33
+      },
+      {
+        "position": "3B",
+        "grade": "F",
+        "value": 36
+      },
+      {
+        "position": "SS",
+        "grade": "E",
+        "value": 48
+      },
+      {
+        "position": "2B",
+        "grade": "D",
+        "value": 56
+      },
+      {
+        "position": "1B",
+        "grade": "E",
+        "value": 43
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "中弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "パント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走撃",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "盗撃",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "粘り打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対ストレートO",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "category": "wbc",
+  "team": "canada",
+  "kind": "batter",
+  "player_id": "robson_8",
+  "source_capture": "captures/wbc/canada/robson_8.png",
+  "source_original": "captures/wbc/Canada/Screen_20260811_180822_967.png",
+  "year": 2026,
+  "uniform_number": "8",
+  "name": "ロブソン",
+  "position": "左翼手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 266
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 51
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 51
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "E",
+      "value": 47
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 71
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 61
+    },
+    {
+      "label": "スローイング",
+      "grade": "C",
+      "value": 63
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 61
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 52
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "LF",
+    "primary_grade": 63,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "LF",
+        "grade": "C",
+        "value": 63
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "グラウンダー",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "流し打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

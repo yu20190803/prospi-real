@@ -1,0 +1,117 @@
+{
+  "category": "wbc",
+  "team": "canada",
+  "kind": "pitcher",
+  "player_id": "wilkinson_35",
+  "source_capture": "captures/wbc/canada/wilkinson_35.png",
+  "source_original": "captures/wbc/Canada/Screen_20260811_180831_346.png",
+  "year": 2026,
+  "uniform_number": "35",
+  "name": "ウィルキンソン",
+  "position": "投手",
+  "throws_bats": "左投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 262
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "148km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 47,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 54,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "B",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "C",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "D",
+      "control": "D",
+      "break": 4
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ],
+  "unverified": [
+    "pitches[].break"
+  ]
+}

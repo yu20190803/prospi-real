@@ -1,0 +1,160 @@
+{
+  "category": "wbc",
+  "team": "canada",
+  "kind": "pitcher",
+  "player_id": "taiyon_50",
+  "source_capture": "captures/wbc/canada/taiyon_50.png",
+  "source_original": "captures/wbc/Canada/Screen_20260811_180655_556.png",
+  "year": 2026,
+  "uniform_number": "50",
+  "name": "タイヨン",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 356
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "152km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 70,
+      "grade": "B"
+    },
+    {
+      "label": "疲労回復",
+      "value": 67,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "カットボール",
+      "power": "E",
+      "control": "A",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スラープ",
+      "power": "D",
+      "control": "B",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "D",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "シームファスト",
+      "power": "E",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "curve",
+      "order": 2,
+      "name": "ナックルカーブ",
+      "power": "D",
+      "control": "B",
+      "break": 4
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "E",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "E",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "E",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内角攻め",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "率制◎",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "リリース",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球速安定◎",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "フライボールピッチャー",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "一発",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

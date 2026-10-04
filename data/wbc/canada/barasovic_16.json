@@ -1,0 +1,122 @@
+{
+  "category": "wbc",
+  "team": "canada",
+  "kind": "pitcher",
+  "player_id": "barasovic_16",
+  "source_capture": "captures/wbc/canada/barasovic_16.png",
+  "source_original": "captures/wbc/Canada/Screen_20260811_180653_031.png",
+  "year": 2026,
+  "uniform_number": "16",
+  "name": "バラゾビック",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 255
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "154km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 55,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 56,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "△",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "E",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ドロップカーブ",
+      "power": "D",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "横スライダー",
+      "power": "C",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "C",
+      "control": "E",
+      "break": 4
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}
