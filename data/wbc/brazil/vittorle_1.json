@@ -1,0 +1,155 @@
+{
+  "category": "wbc",
+  "team": "brazil",
+  "kind": "batter",
+  "player_id": "vittorle_1",
+  "source_capture": "captures/wbc/brazil/vittorle_1.png",
+  "source_original": "captures/wbc/Brazil/Screen_20260811_180605_191.png",
+  "year": 2026,
+  "uniform_number": "1",
+  "name": "伊藤 ヴィットル",
+  "position": "遊撃手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 233
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 43
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 42
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "F",
+      "value": 29
+    },
+    {
+      "label": "走力",
+      "grade": "C",
+      "value": 65
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 61
+    },
+    {
+      "label": "スローイング",
+      "grade": "C",
+      "value": 60
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 61
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 51
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "SS",
+    "primary_grade": 68,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "SS",
+        "grade": "C",
+        "value": 68
+      },
+      {
+        "position": "3B",
+        "grade": "D",
+        "value": 54
+      },
+      {
+        "position": "2B",
+        "grade": "F",
+        "value": 35
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "グラウンダー",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "パント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンスメーカー",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打◎",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

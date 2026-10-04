@@ -1,0 +1,133 @@
+{
+  "category": "wbc",
+  "team": "brazil",
+  "kind": "batter",
+  "player_id": "oliveira_22",
+  "source_capture": "captures/wbc/brazil/oliveira_22.png",
+  "source_original": "captures/wbc/Brazil/Screen_20260811_180558_984.png",
+  "year": 2026,
+  "uniform_number": "22",
+  "name": "オリベイラ",
+  "position": "捕手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 240
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 42
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 34
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "E",
+      "value": 47
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 58
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 56
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 68
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 66
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "C",
+    "primary_grade": 40,
+    "catcher_lead_grade": "D",
+    "positions": [
+      {
+        "position": "C",
+        "grade": "E",
+        "value": 40
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "パント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

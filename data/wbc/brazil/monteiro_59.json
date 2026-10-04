@@ -1,0 +1,122 @@
+{
+  "category": "wbc",
+  "team": "brazil",
+  "kind": "pitcher",
+  "player_id": "monteiro_59",
+  "source_capture": "captures/wbc/brazil/monteiro_59.png",
+  "source_original": "captures/wbc/Brazil/Screen_20260811_180538_000.png",
+  "year": 2026,
+  "uniform_number": "59",
+  "name": "モンテイロ",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 180
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "155km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 52,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 50,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "E",
+      "control": "F",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "シグファス",
+      "power": "E",
+      "control": "F",
+      "break": 4
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "高速スライダー",
+      "power": "E",
+      "control": "F",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "G",
+      "control": "E",
+      "break": 4
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "E",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "シュート回転",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

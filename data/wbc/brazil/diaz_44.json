@@ -1,0 +1,116 @@
+{
+  "category": "wbc",
+  "team": "brazil",
+  "kind": "pitcher",
+  "player_id": "diaz_44",
+  "source_capture": "captures/wbc/brazil/diaz_44.png",
+  "source_original": "captures/wbc/Brazil/Screen_20260811_180523_503.png",
+  "year": 2026,
+  "uniform_number": "44",
+  "name": "ディアス",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 202
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "153km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 44,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 54,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "C",
+      "control": "F",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "F",
+      "control": "G",
+      "break": 4
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "シンキング",
+      "power": "E",
+      "control": "F",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "E",
+      "control": "F",
+      "break": 4
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "category": "wbc",
+  "team": "brazil",
+  "kind": "batter",
+  "player_id": "bisquett_77",
+  "source_capture": "captures/wbc/brazil/bisquett_77.png",
+  "source_original": "captures/wbc/Brazil/Screen_20260811_180602_314.png",
+  "year": 2026,
+  "uniform_number": "77",
+  "name": "ビシェット Jr.",
+  "position": "一塁手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 195
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 21
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 21
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "D",
+      "value": 57
+    },
+    {
+      "label": "走力",
+      "grade": "F",
+      "value": 28
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "肩力",
+      "grade": "E",
+      "value": 48
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 50
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "1B",
+    "primary_grade": 41,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "3B",
+        "grade": "E",
+        "value": 41
+      },
+      {
+        "position": "1B",
+        "grade": "E",
+        "value": 41
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "パント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "存在感",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

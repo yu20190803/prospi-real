@@ -1,0 +1,138 @@
+{
+  "category": "wbc",
+  "team": "brazil",
+  "kind": "batter",
+  "player_id": "batista_43",
+  "source_capture": "captures/wbc/brazil/batista_43.png",
+  "source_original": "captures/wbc/Brazil/Screen_20260811_180619_158.png",
+  "year": 2026,
+  "uniform_number": "43",
+  "name": "バティスタ",
+  "position": "二塁手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 268
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 50
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "D",
+      "value": 56
+    },
+    {
+      "label": "走力",
+      "grade": "C",
+      "value": 64
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 54
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 54
+    },
+    {
+      "label": "肩力",
+      "grade": "E",
+      "value": 48
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 73
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "SS",
+    "primary_grade": 30,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "SS",
+        "grade": "F",
+        "value": 30
+      },
+      {
+        "position": "2B",
+        "grade": "E",
+        "value": 43
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "グラウンダー",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "パント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "B",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

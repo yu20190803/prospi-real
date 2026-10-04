@@ -1,0 +1,176 @@
+{
+  "category": "wbc",
+  "team": "brazil",
+  "kind": "batter",
+  "player_id": "carvalho_6",
+  "source_capture": "captures/wbc/brazil/carvalho_6.png",
+  "source_original": "captures/wbc/Brazil/Screen_20260811_180641_458.png",
+  "year": 2026,
+  "uniform_number": "6",
+  "name": "カルバーリョ",
+  "position": "右翼手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 225
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 23
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 21
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "走力",
+      "grade": "E",
+      "value": 48
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 64
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 59
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 51
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "RF",
+    "primary_grade": "C",
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "RF",
+        "grade": "C",
+        "value": 63
+      },
+      {
+        "position": "CF",
+        "grade": "D",
+        "value": 56
+      },
+      {
+        "position": "LF",
+        "grade": "C",
+        "value": 63
+      },
+      {
+        "position": "3B",
+        "grade": "D",
+        "value": 56
+      },
+      {
+        "position": "SS",
+        "grade": "C",
+        "value": 63
+      },
+      {
+        "position": "1B",
+        "grade": "C",
+        "value": 63
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "ラインドライブ",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "意外性",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "悪球打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

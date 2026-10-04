@@ -1,0 +1,136 @@
+{
+  "category": "wbc",
+  "team": "brazil",
+  "kind": "pitcher",
+  "player_id": "nakao_41",
+  "source_capture": "captures/wbc/brazil/nakao_41.png",
+  "source_original": "captures/wbc/Brazil/Screen_20260811_180520_163.png",
+  "year": 2026,
+  "uniform_number": "41",
+  "name": "仲尾次オスカル",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 163
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "140km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 42,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 51,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "D",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "D",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "クルチェ",
+      "power": "D",
+      "control": "E",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "SFF",
+      "power": "E",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "カーブ",
+      "power": "E",
+      "control": "D",
+      "break": 4
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "シュート回転",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "四球",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

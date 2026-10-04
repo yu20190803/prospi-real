@@ -1,0 +1,155 @@
+{
+  "category": "wbc",
+  "team": "brazil",
+  "kind": "batter",
+  "player_id": "reginato_5",
+  "source_capture": "captures/wbc/brazil/reginato_5.png",
+  "source_original": "captures/wbc/Brazil/Screen_20260811_180614_534.png",
+  "year": 2026,
+  "uniform_number": "5",
+  "name": "レジナット",
+  "position": "三塁手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 271
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 47
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 60
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 51
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 64
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 52
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "3B",
+    "primary_grade": 49,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "3B",
+        "grade": "E",
+        "value": 49
+      },
+      {
+        "position": "SS",
+        "grade": "E",
+        "value": 49
+      },
+      {
+        "position": "2B",
+        "grade": "D",
+        "value": 56
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "ラインドライブ",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "パント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "粘り打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンスメーカー",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

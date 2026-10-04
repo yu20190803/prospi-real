@@ -1,0 +1,161 @@
+{
+  "category": "wbc",
+  "team": "brazil",
+  "kind": "batter",
+  "player_id": "ramirez_24",
+  "source_capture": "captures/wbc/brazil/ramirez_24.png",
+  "source_original": "captures/wbc/Brazil/Screen_20260811_180637_514.png",
+  "year": 2026,
+  "uniform_number": "24",
+  "name": "ラミレス",
+  "position": "右翼手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 261
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 36
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 36
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 70
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 53
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 41
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 61
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 52
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "RF",
+    "primary_grade": "E",
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "RF",
+        "grade": "E",
+        "value": 46
+      },
+      {
+        "position": "CF",
+        "grade": "E",
+        "value": 46
+      },
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 46
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "おかわり",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "存在感",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}
