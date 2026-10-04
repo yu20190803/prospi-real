@@ -138,9 +138,18 @@ footer{color:var(--dim);font-size:12px;border-top:1px solid var(--line-soft);pad
   <section aria-labelledby="list-h">
     <div class="section-head">
       <h2 id="list-h">選手一覧</h2>
-      <div class="tabs" role="tablist" aria-label="区分">
-        <button id="tab-batter" role="tab" aria-selected="true" data-kind="batter">野手</button>
-        <button id="tab-pitcher" role="tab" aria-selected="false" data-kind="pitcher">投手</button>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="tabs" role="tablist" aria-label="チーム">
+          <button id="tab-all-team" role="tab" aria-selected="true" data-team="">すべて</button>
+          <button id="tab-brazil" role="tab" aria-selected="false" data-team="brazil">Brazil</button>
+          <button id="tab-canada" role="tab" aria-selected="false" data-team="canada">Canada</button>
+          <button id="tab-australia" role="tab" aria-selected="false" data-team="australia">Australia</button>
+          <button id="tab-usa" role="tab" aria-selected="false" data-team="usa">USA</button>
+        </div>
+        <div class="tabs" role="tablist" aria-label="区分">
+          <button id="tab-batter" role="tab" aria-selected="true" data-kind="batter">野手</button>
+          <button id="tab-pitcher" role="tab" aria-selected="false" data-kind="pitcher">投手</button>
+        </div>
       </div>
     </div>
     <p class="hint" style="margin-bottom:8px">列見出しで並べ替え／名前で詳細表示／チェックで最大3人を比較</p>
@@ -167,7 +176,7 @@ const PLAYERS = __DATA__;
 const GC = __GRADE_COLORS__;
 const SERIES = ["var(--s1)","var(--s2)","var(--s3)"];
 const APT_ORDER = {"◎":4,"○":3,"△":2,"ー":1,"－":1};
-const state = {kind:"batter", sort:{key:"ovr",dir:-1}, picked:{batter:[],pitcher:[]}, detail:{batter:null,pitcher:null}};
+const state = {team:"", kind:"batter", sort:{key:"ovr",dir:-1}, picked:{batter:[],pitcher:[]}, detail:{batter:null,pitcher:null}};
 
 const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const gcol = g => GC[g] || "#ffffff";
@@ -199,7 +208,7 @@ const PITCHER_COLS = [
 /* ── 一覧 ── */
 function renderList(){
   const kind=state.kind, cols=kind==="batter"?BATTER_COLS:PITCHER_COLS;
-  const rows=PLAYERS.filter(p=>p.kind===kind);
+  const rows=PLAYERS.filter(p=>p.kind===kind && (!state.team || p.team===state.team));
   const head=[{key:null,label:"比較"},{key:"no",label:"No."},{key:"name",label:"選手"},{key:"ovr",label:"★"},
     ...(kind==="batter"?[{key:"pos",label:"守備"}]:[{key:"spd",label:"球速"}]), ...cols,
     ...(kind==="pitcher"?[{key:"apt",label:"先/中/抑"},{key:"npitch",label:"変化球"},{key:"brk",label:"変化量計"}]:[])];
@@ -442,13 +451,15 @@ const PITCHER_AXES=[
 ];
 
 function renderAll(){
-  document.getElementById("count").textContent=PLAYERS.length;
-  document.querySelectorAll(".tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.kind===state.kind));
+  document.getElementById("count").textContent=PLAYERS.filter(p=>!state.team||p.team===state.team).length;
+  document.querySelectorAll(".tabs button[data-kind]").forEach(b=>b.setAttribute("aria-selected",b.dataset.kind===state.kind));
+  document.querySelectorAll(".tabs button[data-team]").forEach(b=>b.setAttribute("aria-selected",b.dataset.team===state.team));
   renderList();renderCard();renderCompare();
 }
 document.addEventListener("click",e=>{
-  const t=e.target.closest("[data-kind],[data-sort],[data-detail]");if(!t)return;
-  if(t.dataset.kind) state.kind=t.dataset.kind;
+  const t=e.target.closest("[data-team],[data-kind],[data-sort],[data-detail]");if(!t)return;
+  if(t.dataset.team!==undefined) state.team=t.dataset.team;
+  else if(t.dataset.kind) state.kind=t.dataset.kind;
   else if(t.dataset.sort){const k=t.dataset.sort;state.sort=state.sort.key===k?{key:k,dir:-state.sort.dir}:{key:k,dir:k==="name"||k==="no"?1:-1};}
   else if(t.dataset.detail){state.detail[state.kind]=t.dataset.detail;renderAll();document.getElementById("pcard").scrollIntoView({behavior:"smooth",block:"start"});return;}
   renderAll();
