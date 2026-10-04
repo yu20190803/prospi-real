@@ -3,7 +3,9 @@
 使い方:
     python src/pending.py              # 一覧を表示
     python src/pending.py --next-team  # 未処理が残っている最初のチームのフォルダ（例: wbc/Australia）だけを出力
-                                       # 残りがなければ何も出力しない（定期実行で使う）
+                                       # 残りがなければ何も出力しない
+    python src/pending.py --done-count # チームごとの「処理済みとして記録された画像の数」を出力
+                                       # （PCのフォルダの画像数がこれより多いチームに未処理がある）
 
 判定:
 - 処理済みの画像 … 次のどれか
@@ -61,7 +63,25 @@ def pending_by_team() -> "OrderedDict[str, list[Path]]":
     return out
 
 
+def done_counts() -> "OrderedDict[str, int]":
+    """data/<cat>/<team>/ ごとに、JSON の source_original/source_capture と _skipped.json に記録された画像の数"""
+    out: "OrderedDict[str, set]" = OrderedDict()
+    for jp in sorted((ROOT / "data").rglob("*.json")):
+        team = "/".join(jp.relative_to(ROOT / "data").parts[:2])
+        files = out.setdefault(team, set())
+        d = json.loads(jp.read_text(encoding="utf-8"))
+        if jp.name == "_skipped.json":
+            files.update(key(e["file"]) for e in d)
+        elif not jp.name.startswith("_"):
+            files.update(key(d[k]) for k in ("source_original", "source_capture") if d.get(k))
+    return OrderedDict((t, len(v)) for t, v in out.items())
+
+
 def main(argv: list[str]) -> None:
+    if "--done-count" in argv:
+        for team, n in done_counts().items():
+            print(f"{team}\t{n}")
+        return
     by_team = pending_by_team()
     if "--next-team" in argv:
         for team in by_team:

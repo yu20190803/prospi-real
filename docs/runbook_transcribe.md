@@ -1,168 +1,132 @@
-# 書き起こし手順書（別モデル・別セッション向け）
+# 書き起こし手順書（定期実行・別モデル・別セッション向け）
 
-ユーザーが `captures/<npb|wbc>/<team>/` に選手詳細画面のスクリーンショットを置き、
-「入れました」と報告したあとに行う作業の手順。**この手順書の通りに進めれば、どのモデルでも
-同じ品質になるように書いている。判断に迷う点は「迷ったとき」の節に従い、勝手に仕様を変えない。**
+PCの `C:\dev\claude\prospi-real\captures\<npb|wbc>\<Team>\` に置かれたスクリーンショットを、
+1回の作業で1チームずつ `data/` に書き起こす手順。**この手順書の通りに進めれば、どのモデルでも
+同じ品質になるように書いている。判断に迷う点は「迷ったとき」に従い、勝手に仕様を変えない。**
 
-関連ドキュメント: `CLAUDE.md`（方針）、`docs/data_schema.md`（JSONの形式）、
-`docs/templates/pitcher.json` / `batter.json`（雛形）、`docs/grades.md`（等級の定義）。
+関連: `CLAUDE.md`（方針）、`docs/transcribe_guide.md`（1枚の読み方。サブエージェントが読む）、
+`docs/data_schema.md`（JSONの定義）、`docs/grades.md`（等級）。
 
----
+## 考え方（2026-10-04 見直し: 1チーム30分 → 数分、品質は同等以上）
 
-## 0. 作業環境の準備（PCにリンクして直接読む）
+- **LLMに画像を読ませるのは「選手画面を1人1回」だけ**。メニュー画面・切り替え途中のフレーム・
+  完全に同じ画像は `src/prep_team.py` が画素で仕分ける（USAの正解ラベル103枚で全件一致）。
+- **書き起こしはサブエージェントに並列で任せる**（1サブエージェント5枚まで）。メインの会話に
+  選手画像を溜めないので、トークンも時間も大きく減る。
+- **画素で確かめられるものは全部スクリプトで照合する**: 変化球の箱の位置（check_pitch_slots）、
+  変化量（read_break）、特殊能力の行数とアイコンの色（check_abilities）、守備図の位置（check_fielding）、
+  等級と数値の整合（validate）。書き起こし側には検出結果をヒントとして渡す。
+- 読み取り画像の倍率は 1.5倍（1.0/1.5/2.0倍で同じ8人を書き起こし、精度差がないことを確認済み）。
 
-画像はPC上のフォルダに置かれたままにする。**どちらのGitHubリポジトリにも画像は上げない**
-（非公開リポジトリ prospi-captures 経由でのやりとりは廃止、2026-09-28）。
-コードは `yu20190803/prospi-real`（公開）の1つだけ。
+## 0. 準備
 
-1. `add_repo`（access: push）で `yu20190803/prospi-real` をセッションに追加し、
-   `/home/claude/prospi-real` に `git clone --depth 1` する。
-2. Python 依存: `cd /home/claude/prospi-real && pip install -r requirements.txt --break-system-packages`
-3. このタスクはPCにリンクされている前提で動く（デバイス連携ツール `mcp__remote-devices__*` が
-   使えること）。使えなければ「PCにリンクされていないため画像に触れられない」と報告して終了する
-   （リンクなしで進めない）。
-4. `get_device_info` で接続済みフォルダを確認し、`<npb|wbc>/<team>/...png` の形の画像が入っている
-   `captures` フォルダを特定する（`device_list_dir` で接続フォルダ直下・1階層下を確認すれば見つかる
-   はず）。見つからなければ「captures フォルダが見つからない」と報告して終了する
-   （フォルダ名を推測して `device_request_folder_access` を呼ばない）。
-5. チームのフォルダ名は `USA`・`Australia` のように大文字を含むことがある。
-   **データ側（`team`・`data/` のフォルダ・`source_capture`）は常に英小文字**（`usa`, `australia`, `japan_2026`）。
-   画像を読むスクリプトは `src/capture_paths.py` で大文字・小文字を無視して解決するので、
-   PC側のフォルダ名を変える必要はない（PCのWindowsで大文字小文字だけの改名は事故のもと）。
+1. `add_repo`（access: push）で `yu20190803/prospi-real` を追加し、`/home/claude/prospi-real` に clone。
+2. `cd /home/claude/prospi-real && pip install -r requirements.txt --break-system-packages`
+3. PCにリンクされていること（`mcp__remote-devices__*` が使え、`get_device_info` の
+   `connectedFolders` に `C:\dev\claude\prospi-real` がある）。なければ
+   「PCのcapturesフォルダにアクセスできないため今回は何もしませんでした」と報告して終了
+   （`device_request_folder_access` は呼ばない）。
+4. この手順書と `CLAUDE.md` を読む。`docs/transcribe_guide.md` はサブエージェントが読むので、
+   メインは読まなくてよい（fallback で自分が書き起こすときだけ読む）。
 
-## 1. 未処理の画像を特定する
+## 1. 対象チームを決めて取り込む
 
-1. 0-4. で特定したPC上の captures フォルダを `device_list_dir`（recursive）で一覧する。
-2. 未処理の判定は**ファイル名では行わない**（ファイル名がすでに `<ローマ字姓>_<背番号>.png`
-   形式でも、対応するJSONが無ければ未処理として扱う。過去にリネーム・PC書き戻しまで済んだのに
-   GitHubへのpushができずJSONが失われたケースがあるため）。
-   `data/<cat>/<team>/` の各JSONの `source_original` / `source_capture` に記録済みのパスでも
-   `data/<cat>/<team>/_skipped.json` に記録済みのパスでもない画像が未処理
-   （`src/pending.py` の判定もこの基準。パス比較は大文字小文字を区別しない）。
-3. **1回の作業では1チームだけ処理する**（1チーム40枚前後。途中で打ち切られないように）。
-   未処理が残っている最初のチームを選ぶ。
-4. そのチームの未処理画像を `device_stage_files` で取り込み、作業コピーの
-   `captures/<cat>/<team>/<元のファイル名>` に置く（`captures/` はこのリポジトリで
-   まるごと .gitignore 済みなので、公開リポジトリには入らない）。
-5. 未処理の画像には選手詳細画面以外も混ざっている。1枚ずつ見て分類する:
-   - 選手詳細画面 → 2. の手順で書き起こす
-   - 選手一覧のメニュー画面・画面切り替え途中のフレーム（2画面が半透明に重なったもの）・
-     同じ選手の2枚目 → `_skipped.json` に `{"file": "captures/wbc/<Team>/<元ファイル名>", "reason": "…"}` で記録
-   - 迷ったら選手画面として書き起こし、報告で触れる
-6. メニュー画面の選手一覧に載っているのに詳細画面がない選手がいれば、報告に書く
-   （例: USA のバクストン、クロウ=アームストロング）。
+1. `device_list_dir` で `C:\dev\claude\prospi-real\captures\wbc`（と `npb` があればそれも）を
+   **再帰なしで**一覧し、チームフォルダ名を得る（再帰一覧は900件超になり重いので使わない）。
+2. `python3 src/pending.py --done-count` で、チームごとの「処理済みとして記録された画像の数」を見る。
+3. チームフォルダ名の順に、`device_list_dir`（再帰なし）でそのフォルダの画像数を数え、
+   記録数より多いチーム（＝未処理がある）を最初に見つけたら、それを今回のチームにする。
+   全チームで一致していれば「全チームの書き起こしが完了しました」と報告して終了（何もコミットしない）。
+4. そのチームのフォルダの**画像をすべて**（処理済みも含めて。重複判定に使う）`device_stage_files` で
+   取り込む（1回50件まで。超えたら分ける）。届き先は `/mnt/user-data/uploads/prospi-real/captures/...`。
+5. `ln -sfn /mnt/user-data/uploads/prospi-real/captures /home/claude/prospi-real/captures`
+   （`captures` は .gitignore 済み。公開リポジトリには入らない）
 
-## 2. 1枚ずつ書き起こす
+チームのフォルダ名は `USA`・`Australia` のように大文字を含むことがある。データ側（`team`・`data/` の
+フォルダ・`source_capture`）は常に英小文字。スクリプトは大文字小文字を無視して解決する。
 
-画像を Read で開き、次の順に読む。**1枚読むごとにJSONを保存する**（まとめて最後に書かない）。
-
-### 2-1. ヘッダー
-- 背番号（左上の大きい数字）→ `uniform_number`（文字列）
-- 年度（その下の小さい数字）→ `year`
-- 選手名 → `name`（画面表記どおり）
-- 守備位置・投打（右上）→ `position` / `throws_bats`
-- ★の右の数値 → `rarity.overall`
-- `kind` は守備位置が「投手」なら `pitcher`、それ以外は `batter`
-
-### 2-2. player_id を決める
-- `<ローマ字姓>_<背番号>`、ASCII小文字・数字・アンダースコアのみ。
-- ローマ字は**実在選手の英語表記の姓**を使う（ウィットJr. → `witt`、ジャッジ → `judge`、
-  日本人選手はヘボン式: 大谷 → `ohtani`、山本 → `yamamoto`）。
-- 同じチームで同じIDがすでにあり**別人**なら末尾に `_2`。**同一人物**なら上書き更新。
-- 画像を**実際のフォルダ**（例: `captures/wbc/Australia/`）に `<player_id>.png` という名前でコピーする
-  （元ファイルは消さない・上書きしない）。
-- JSON には `"team": "<英小文字>"`、`"source_capture": "captures/<cat>/<英小文字team>/<player_id>.png"`、
-  `"source_original": "captures/<cat>/<実際のフォルダ名>/<元のファイル名>"` を書く。
-  JSON の置き場所は `data/<cat>/<英小文字team>/<player_id>.json`。
-- 読み取りは、画像全体ではなく**上半分・下半分を切り出して3倍に拡大したもの**を Read で見る
-  （PIL で crop → resize）。細かい等級・記号の読み違いが減る。
-
-### 2-3. ステータス（中央の表）
-- 等級の文字（S, A〜G）と数値を読む。等級と数値は `docs/grades.md` の表で必ず対応する
-  （S=90以上, A=80〜89, B=70〜79, C=60〜69, D=50〜59, E=40〜49, F=20〜39, G=19以下）。
-  **食い違ったらどちらかの読み違い。画像を拡大して読み直す。**
-- 投手: 球速（"161km/h" のように単位付き文字列）、スタミナ、疲労回復、先発/中継/抑え適性。
-- 野手: ミート（対右・対左の2行）、パワー、走力、捕球、スローイング、肩力、疲労回復。
-
-### 2-4. 特殊能力（右のリスト）
-- 上から順に全行。名前は記号（○ ▼）も含めて表記どおり。
-- 右端に等級バッジがあれば `grade`、なければ `null`。
-- 行頭の四角アイコンの色で `type`: ピンク=`plus`、紫=`minus`、ピンクと紫の斜め2色=`both`。
-- 一番上の行だけ `highlighted: true`。
-
-### 2-5. 野手: 守備図と得意苦手コース
-- 守備図の「等級＋数値」をすべて `fielding_diagram.positions` へ。先頭は右上の守備位置。
-- 得意・苦手コースの3×3の数字を `zone_grid` へ（上の行から）。
-
-### 2-6. 投手: 変化球（最も間違えやすい。必ずこの通りに）
-1. 画面下部の「1」パネルの球種をすべて `order: 1` で記録する。
-2. 「2」パネルで**明るく表示されている**球種のうち、「1」と違う箱にあるもの・同じ方向でも
-   名前が違うものを `order: 2` で記録する。**暗く表示されているのは第一球種の残像なので記録しない。**
-3. 方向 → `category` は `docs/data_schema.md` の表で決める。
-   **左投手は画面が左右反転しているので、左右を入れ替えて記録する。**
-   **球種名から決めない。** 例: チェンジアップでも右投手の右下の箱なら `sinker`、真下なら `fork`、
-   左投手の左下なら `sinker`。名前で決めて全投手の約半数を取り違えた（2026-09-27）。
-   記録後は必ず `python3 src/check_pitch_slots.py` で画像の箱の位置と機械照合する。
-   このチェックは「画像にある箱がデータにない」＝球種の書き漏れも検出する。
-4. 箱の左の文字＝`power`、右の黒い四角の文字＝`control`。
-5. **変化量 `break` は目で数えない。`src/read_break.py` で画素から読む（必須）**
-   - 目視だと箱と同色の1段目を落とすなどして段数がぶれる（2026-09-27 に全投手で不安定だった）。
-   - 書き起こし時は変化球の `break` を仮に `4` で入れておき、category（箱の位置）を確定させてから
-     `python3 src/check_pitch_slots.py` → `python3 src/read_break.py --write` の順に実行する。
-     category が間違っていると別の柄を読むので、必ず位置照合を先に通すこと。
-   - read_break.py は柄7段の中心の画素を見て点灯/未点灯を判定し、第一・第二パネルの2か所で読んで
-     一致したものだけ書き込む。「読み取りに問題あり」が出た球種は書き込まれないので、
-     拡大画像（柄に判定点を重ねたもの）を見て原因を調べる。数値を手で合わせて消さない。
-   - 直球系（最上段の箱）は柄がないので `break: null`。
-6. read_break.py で書き込めた変化量には `unverified` を付けない（画像と機械照合済み）。
-   読み取りに問題が残った球種だけ `"unverified": ["pitches[].break"]` を付けて報告する。
-
-## 3. チェック
+## 2. 仕分け（スクリプト・数秒）
 
 ```bash
-cd /home/claude/prospi-real
-python3 src/validate.py      # エラー0件になるまで直す（警告は可）
-python3 src/check_pitch_slots.py  # 投手の変化球の位置・書き漏れを画像と照合。不一致0人になるまで直す
-python3 src/read_break.py    # 変化量を画像と照合。「不一致0球種 / 問題あり0球種」になっていること
-python3 src/pending.py       # 処理したチームの未処理が0件になっていること
-python3 src/build_site.py    # site/index.html を再生成
+python3 src/prep_team.py captures/wbc/<Team> --write-skipped
 ```
-4つのチェックがすべて通るまで次へ進まない。
+- メニュー画面・切り替え途中（写り込み率 w≥0.5）・完全に同じ画像を `_skipped.json` に記録する。
+- 書き起こし対象を `work/wbc/<team>/jobs/pass1_NN.json`（きれいな画像）と `pass2_NN.json`
+  （写り込みのある画像 0.02≤w<0.5）に5枚ずつ分ける。読み取り画像は `work/.../sheets/`。
+- 選手一覧（メニュー画面）は `work/.../roster.png`。
+- `work/` は .gitignore 済み（ゲーム画像を含むので絶対にコミットしない）。
 
-validate.py のエラーは読み違いのサイン。**エラーを消すために数値を都合よく変えない。**
-画像を拡大して読み直し、それでも決められない場合は「迷ったとき」に従う。
+## 3. 書き起こし（サブエージェント並列）
 
-## 4. 反映する
+**pass1 のジョブファイル1つにつきサブエージェント1つを、1回のメッセージでまとめて起動する**（並列実行）。
+モデルは指定しない（このセッションと同じモデル。品質を下げないため軽いモデルにしない）。プロンプト:
 
-1. **PCへの書き戻し**: 改名コピーした `<player_id>.png` を `device_commit_files` で、
-   0-4. で特定したPC上の captures フォルダの `<cat>/<team>/<player_id>.png` に書く
-   （改名前の元ファイルは消さない・上書きしない）。
-2. **GitHub（prospi-real、公開）**: `data/<cat>/<team>/`（JSONと `_skipped.json`）と
-   `site/index.html` をコミット・push。
-   **push 前に `git status` で `captures` 配下や画像ファイルが含まれていないことを必ず確認する。**
-   ```bash
-   cd /home/claude/prospi-real && git add data/ site/index.html && git status --short && git commit -m "<Team>: add N players" && git push
-   ```
-   push が拒否されたら（PC側で先に push された等）、`git pull --rebase` してから push し直す。
-   強制 push はしない。
-3. `site/index_work.html`（検証用）は .gitignore 対象なので push しない。
+```
+You are transcribing プロ野球スピリッツ (baseball game) player screenshots into JSON. Work in /home/claude/prospi-real.
+1. Read docs/transcribe_guide.md fully and follow it exactly.
+2. Read the job file <ジョブファイルのパス> (a JSON list of jobs). For each job: Read its `sheet` image (once; re-read only if genuinely unsure), then write one JSON file to its `out` path with the Write tool, as the guide specifies, using the job's category, team, source_original, pitch_boxes, fielding_positions and renamed_copies.
+Do not open anything under data/ or captures/, or other job files. Do not run scripts.
+3. Reply with one line per job: "<out> <player_id> #<number> <name>", then any notes. Under 100 words.
+```
 
-ユーザーはPCで `git pull` して `data/` と `site/index.html` の更新を受け取る
-（改名した画像はすでに `device_commit_files` でPCに書き戻し済み）。
+全員終わったら:
+```bash
+python3 src/merge_team.py work/wbc/<team>
+```
+同じ選手（背番号＋名前）の重複をまとめて `data/wbc/<team>/` に書き、改名コピー `<player_id>.png` を作り、
+`work/.../known_players.txt`（既知の選手一覧）を出す。「問題」が出たら、そのジョブだけやり直す。
 
-## 5. ユーザーへの報告（短く）
+**pass2 のジョブがあれば**、同様にサブエージェントを起動する（プロンプトの 2. の前に
+`Read work/wbc/<team>/known_players.txt (players already transcribed). For each job, follow the guide's
+last section about ghost images: if the player is in that list, write only the duplicate_of JSON.` を足す）。
+終わったら `merge_team.py` をもう一度実行する（取り込み済みの結果は `json_merged/` に移るので二重にならない）。
 
-- 処理したチームと、追加した選手の人数（投手・野手の内訳）
-- スキップした画像の枚数と理由の内訳
-- 一覧画面にいるのに詳細画面がない選手
-- **読み取りに自信がない箇所の一覧**（選手・項目・読んだ値・迷った理由）
-- read_break.py / check_pitch_slots.py で問題が残った球種があればその一覧
-- 残りのチーム数
+**Agent ツールが使えない場合**は、メインが `docs/transcribe_guide.md` を読み、ジョブファイルを順に
+自分で処理する（手順と品質基準は同じ）。
+
+## 4. チェック（すべて通るまで直す）
+
+```bash
+python3 src/validate.py           # エラー0件（等級と数値の整合など）
+python3 src/check_pitch_slots.py  # 位置の不一致0人（変化球の箱の位置・書き漏れ）
+python3 src/check_abilities.py    # 不一致0人（特殊能力の行数・アイコンの色）
+python3 src/check_fielding.py     # 不一致0人（守備図の位置）
+python3 src/read_break.py --write && python3 src/read_break.py   # 「不一致0球種 / 問題あり0球種」
+python3 src/build_site.py
+```
+- NG が出た選手だけ、その選手の `work/.../sheets/<元ファイル名>.png` を Read で見て `data/` の JSON を直す。
+  **エラーを消すために数値を都合よく変えない。** 画像と食い違うのはデータ側の読み違い。
+- `merge_team.py` が出した「読み取りに自信がない箇所（notes）」も、その画像を見て確かめる。
+  決められないものは報告に残す。
+
+## 5. 選手一覧との照合
+
+`work/.../roster.png`（1枚）を Read で見て、`known_players.txt` にいない選手を
+「一覧にいるのに詳細画面がない選手」として報告する。日本代表のサイドバー画面など roster が
+無いチームは「対象外」とする。
+
+## 6. 反映
+
+1. 改名コピーをPCへ: `python3 src/merge_team.py work/wbc/<team> --outputs /mnt/user-data/outputs/prospi-real`
+   を実行すると（新しい結果がなくても）`work/.../commit_files.json` に一覧ができる。その中身をそのまま
+   `device_commit_files` に渡す（元ファイルは消さない・上書きしない）。
+   ※ merge を最後に実行したときの一覧なので、pass2 のあとに `--outputs` 付きで1回実行すればよい。
+2. GitHub（prospi-real、公開）: `data/` と `site/index.html` をコミットして push。
+   **push 前に `git status --short` で `captures`・`work`・画像ファイルが含まれていないことを確認する。**
+   拒否されたら `git pull --rebase` してから push。強制 push はしない。push に失敗しても処理は止めない
+   （次回は別の未処理チームに進む設計）。成否は報告に書く。
+
+## 7. 報告（短く、日本語で）
+
+- 処理したチームと追加人数（投手・野手の内訳）、スキップ枚数と理由の内訳
+- 一覧にいるのに詳細画面がない選手
+- 読み取りに自信がない箇所（選手・項目・読んだ値・理由）、チェックで残った問題
+- GitHub への push の成否、残りのチーム数
 
 ## 迷ったとき
 
-- 読めない・判別できない値は推測で埋めず、JSON にはいちばん近い読み値を入れたうえで
-  報告の「自信がない箇所」に必ず載せる。
-- スキーマにない情報（新しい表示要素など）が出てきたら、JSON に勝手なキーを足さずに報告する。
-- テンプレート・CSS・スクリプトは変更しない（この手順の範囲外）。レイアウトの崩れに
-  気づいたら報告だけする。
+- 読めない値は推測で埋めず、いちばん近い読み値を入れて報告に載せる。
+- スキーマにない情報が出てきたら、JSON に勝手なキーを足さずに報告する。
+- テンプレート・CSS・スクリプトは定期実行では変更しない。画面のレイアウトや解像度が変わって
+  スクリプトの座標が合わなくなった（チェックが大量にNGになる）場合は、無理に直さず報告する
+  （`src/layout.py` に新しいレイアウトの切り出し位置を足す作業が必要）。

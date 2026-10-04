@@ -25,9 +25,9 @@ import sys
 from pathlib import Path
 
 import numpy as np
-from PIL import Image
 
 from capture_paths import resolve
+from layout import open_std
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE_W, BASE_H = 865, 605
@@ -77,7 +77,7 @@ def read_stem(im: np.ndarray, slot: str, order: int, panel: int) -> tuple[int, s
 
 
 def read_player(d: dict) -> list[dict]:
-    im = np.array(Image.open(resolve(d["source_capture"])).convert("RGB")).astype(int)
+    im = np.array(open_std(resolve(d["source_capture"]))).astype(int)
     table = SLOT_LEFT if d.get("throws_bats", "").startswith("左") else SLOT_RIGHT
     rows = []
     for p in d.get("pitches", []):

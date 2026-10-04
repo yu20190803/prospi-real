@@ -1,19 +1,19 @@
 {
   "category": "wbc",
-  "team": "usa",
+  "team": "australia",
   "kind": "batter",
-  "player_id": "henderson_11",
-  "source_capture": "captures/wbc/usa/henderson_11.png",
-  "source_original": "captures/wbc/USA/Screen_20260811_175114_926.png",
+  "player_id": "beaulieu_40",
+  "source_capture": "captures/wbc/australia/beaulieu_40.png",
+  "source_original": "captures/wbc/Australia/Screen_20260811_180243_518.png",
   "year": 2026,
-  "uniform_number": "11",
-  "name": "ヘンダーソン",
+  "uniform_number": "40",
+  "name": "ボーリュー",
   "position": "遊撃手",
-  "throws_bats": "右投左打",
+  "throws_bats": "右投右打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 437
+    "overall": 272
   },
   "stats": [
     {
@@ -21,45 +21,45 @@
       "splits": [
         {
           "vs": "対右",
-          "grade": "C",
-          "value": 67
+          "grade": "E",
+          "value": 47
         },
         {
           "vs": "対左",
           "grade": "D",
-          "value": 57
+          "value": 59
         }
       ]
     },
     {
       "label": "パワー",
-      "grade": "B",
-      "value": 79
+      "grade": "D",
+      "value": 54
     },
     {
       "label": "走力",
-      "grade": "A",
-      "value": 82
+      "grade": "B",
+      "value": 70
     },
     {
       "label": "捕球",
-      "grade": "B",
-      "value": 71
+      "grade": "E",
+      "value": 49
     },
     {
       "label": "スローイング",
-      "grade": "C",
-      "value": 66
+      "grade": "D",
+      "value": 58
     },
     {
       "label": "肩力",
-      "grade": "A",
-      "value": 80
+      "grade": "C",
+      "value": 65
     },
     {
       "label": "疲労回復",
-      "grade": "C",
-      "value": 67
+      "grade": "D",
+      "value": 50
     }
   ],
   "fielding_aptitude": [],
@@ -82,24 +82,24 @@
   ],
   "fielding_diagram": {
     "primary_position": "SS",
-    "primary_grade": 64,
+    "primary_grade": 50,
     "catcher_lead_grade": null,
     "positions": [
       {
         "position": "SS",
-        "grade": "C",
-        "value": 64
+        "grade": "D",
+        "value": 50
       },
       {
-        "position": "3B",
-        "grade": "D",
-        "value": 55
+        "position": "RF",
+        "grade": "F",
+        "value": 35
       }
     ]
   },
   "abilities": [
     {
-      "name": "低弾道",
+      "name": "高弾道",
       "grade": null,
       "highlighted": true,
       "type": "plus"
@@ -118,37 +118,19 @@
     },
     {
       "name": "チャンス",
-      "grade": "B",
+      "grade": "C",
       "highlighted": false,
       "type": "plus"
     },
     {
       "name": "走塁",
-      "grade": "B",
+      "grade": "D",
       "highlighted": false,
       "type": "plus"
     },
     {
       "name": "盗塁",
       "grade": "D",
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "存在感",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "固め打ち",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "決勝打",
-      "grade": null,
       "highlighted": false,
       "type": "plus"
     }

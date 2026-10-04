@@ -80,9 +80,6 @@
       0
     ]
   ],
-  "unverified": [
-    "fielding_diagram.positions"
-  ],
   "fielding_diagram": {
     "primary_position": "3B",
     "primary_grade": 78,
@@ -109,7 +106,7 @@
         "value": 78
       },
       {
-        "position": "CF",
+        "position": "LF",
         "grade": "F",
         "value": 34
       }

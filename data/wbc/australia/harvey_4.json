@@ -1,39 +1,39 @@
 {
   "category": "wbc",
-  "team": "usa",
+  "team": "australia",
   "kind": "pitcher",
-  "player_id": "wittlock_59",
-  "source_capture": "captures/wbc/usa/wittlock_59.png",
-  "source_original": "captures/wbc/USA/Screen_20260811_175055_722.png",
+  "player_id": "harvey_4",
+  "source_capture": "captures/wbc/australia/harvey_4.png",
+  "source_original": "captures/wbc/Australia/Screen_20260811_180145_332.png",
   "year": 2026,
-  "uniform_number": "59",
-  "name": "ウィットロック",
+  "uniform_number": "4",
+  "name": "ハーベイ",
   "position": "投手",
-  "throws_bats": "右投右打",
+  "throws_bats": "左投左打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 394
+    "overall": 202
   },
   "stats": [
     {
       "label": "球速",
-      "value": "157km/h",
+      "value": "144km/h",
       "grade": null
     },
     {
       "label": "スタミナ",
-      "value": 45,
-      "grade": "E"
+      "value": 63,
+      "grade": "C"
     },
     {
       "label": "疲労回復",
-      "value": 71,
+      "value": 76,
       "grade": "B"
     },
     {
       "label": "先発適性",
-      "value": "○",
+      "value": "ー",
       "grade": null
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "label": "抑え適性",
-      "value": "◎",
+      "value": "○",
       "grade": null
     }
   ],
@@ -51,48 +51,56 @@
     {
       "category": "straight",
       "order": 1,
-      "name": "ツーシーム",
-      "power": "B",
-      "control": "C",
+      "name": "ストレート",
+      "power": "D",
+      "control": "D",
       "break": null
     },
     {
-      "category": "slider",
+      "category": "shoot",
       "order": 1,
-      "name": "スライダー",
-      "power": "E",
-      "control": "F",
-      "break": 4
-    },
-    {
-      "category": "curve",
-      "order": 1,
-      "name": "ナックルカーブ",
-      "power": "A",
+      "name": "高速シュート",
+      "power": "F",
       "control": "D",
-      "break": 4
+      "break": 1
     },
     {
       "category": "sinker",
       "order": 1,
-      "name": "高速シンカー",
+      "name": "高速スクリュー",
+      "power": "F",
+      "control": "E",
+      "break": 1
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "パーム",
       "power": "D",
       "control": "D",
       "break": 4
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ツーシーム",
+      "power": "F",
+      "control": "D",
+      "break": null
     }
   ],
   "abilities": [
     {
       "name": "ケガしにくさ",
-      "grade": "E",
+      "grade": "D",
       "highlighted": true,
-      "type": "minus"
+      "type": "plus"
     },
     {
       "name": "対ピンチ",
-      "grade": "D",
+      "grade": "E",
       "highlighted": false,
-      "type": "plus"
+      "type": "minus"
     },
     {
       "name": "クイック",
@@ -108,25 +116,7 @@
     },
     {
       "name": "対左打者",
-      "grade": "C",
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "奪三振",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "緊急登板○",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "球持ち",
-      "grade": null,
+      "grade": "D",
       "highlighted": false,
       "type": "plus"
     }

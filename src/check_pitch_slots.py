@@ -28,6 +28,7 @@ from pathlib import Path
 from PIL import Image
 
 from capture_paths import resolve
+from layout import open_std
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE_W, BASE_H = 865, 605
@@ -36,6 +37,9 @@ BASE_W, BASE_H = 865, 605
 SLOTS = {"top": (142, 374), "r2L": (112, 420), "r2R": (182, 420),
          "r3L": (67, 467), "r3C": (140, 467), "r3R": (227, 467)}
 PANEL2_DX = 291
+# 第二パネルで「同じ枠に名前の違う球種」が出るとき、新しい球種の箱は残像から右下にずれて重なる
+# （Australia の harvey_4 / neunborn_22 で実測 +21, +16）。この位置が明るければ新しい球種とみなす
+SHIFT = (21, 16)
 
 # 画面上の枠 → category（右投手基準）。左投手は画面が左右反転している
 RIGHT = {"r2L": "slider", "r2R": "shoot", "r3L": "curve", "r3C": "fork", "r3R": "sinker"}
@@ -57,10 +61,14 @@ def _patch(im: Image.Image, cx: int, cy: int):
 
 def detect(capture: Path) -> dict:
     """{'p1': {枠: 色}, 'p2': {枠: 色}} を返す（空の枠は含めない）"""
-    im = Image.open(capture).convert("RGB")
+    im = open_std(capture)
     out = {}
     for name, dx in (("p1", 0), ("p2", PANEL2_DX)):
         out[name] = {k: c for k, (x, y) in SLOTS.items() if (c := _patch(im, x + dx, y))}
+    for k, (x, y) in SLOTS.items():
+        c = _patch(im, x + PANEL2_DX + SHIFT[0], y + SHIFT[1])
+        if c and max(c) > BRIGHT and k in out["p2"] and max(out["p2"][k]) <= BRIGHT:
+            out["p2"][k] = c  # 残像の上にずれて重なった新しい球種
     return out
 
 

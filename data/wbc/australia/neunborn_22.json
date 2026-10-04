@@ -1,35 +1,35 @@
 {
   "category": "wbc",
-  "team": "usa",
+  "team": "australia",
   "kind": "pitcher",
-  "player_id": "mclean_26",
-  "source_capture": "captures/wbc/usa/mclean_26.png",
-  "source_original": "captures/wbc/USA/Screen_20260811_175016_061.png",
+  "player_id": "neunborn_22",
+  "source_capture": "captures/wbc/australia/neunborn_22.png",
+  "source_original": "captures/wbc/Australia/Screen_20260811_180206_710.png",
   "year": 2026,
-  "uniform_number": "26",
-  "name": "マクリーン",
+  "uniform_number": "22",
+  "name": "ニューンボーン",
   "position": "投手",
   "throws_bats": "右投右打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 424
+    "overall": 258
   },
   "stats": [
     {
       "label": "球速",
-      "value": "158km/h",
+      "value": "148km/h",
       "grade": null
     },
     {
       "label": "スタミナ",
-      "value": 61,
-      "grade": "C"
+      "value": 51,
+      "grade": "D"
     },
     {
       "label": "疲労回復",
-      "value": 50,
-      "grade": "D"
+      "value": 60,
+      "grade": "C"
     },
     {
       "label": "先発適性",
@@ -38,12 +38,12 @@
     },
     {
       "label": "中継適性",
-      "value": "ー",
+      "value": "◎",
       "grade": null
     },
     {
       "label": "抑え適性",
-      "value": "ー",
+      "value": "◎",
       "grade": null
     }
   ],
@@ -51,8 +51,8 @@
     {
       "category": "straight",
       "order": 1,
-      "name": "ツーシーム",
-      "power": "B",
+      "name": "ストレート",
+      "power": "D",
       "control": "D",
       "break": null
     },
@@ -60,41 +60,33 @@
       "category": "slider",
       "order": 1,
       "name": "スライダー",
+      "power": "E",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "スラーブ",
+      "power": "D",
+      "control": "E",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "チェンジアップ",
       "power": "C",
       "control": "D",
       "break": 5
     },
     {
       "category": "curve",
-      "order": 1,
-      "name": "スラーブ",
-      "power": "A",
-      "control": "F",
-      "break": 5
-    },
-    {
-      "category": "sinker",
-      "order": 1,
-      "name": "チェンジアップ",
-      "power": "D",
-      "control": "E",
-      "break": 4
-    },
-    {
-      "category": "straight",
       "order": 2,
-      "name": "ストレート",
-      "power": "E",
+      "name": "カーブ",
+      "power": "F",
       "control": "E",
-      "break": null
-    },
-    {
-      "category": "slider",
-      "order": 2,
-      "name": "カットボール",
-      "power": "E",
-      "control": "E",
-      "break": 4
+      "break": 3
     }
   ],
   "abilities": [
@@ -106,7 +98,7 @@
     },
     {
       "name": "対ピンチ",
-      "grade": "D",
+      "grade": "C",
       "highlighted": false,
       "type": "plus"
     },
@@ -118,7 +110,7 @@
     },
     {
       "name": "打たれ強さ",
-      "grade": "C",
+      "grade": "D",
       "highlighted": false,
       "type": "plus"
     },
@@ -135,16 +127,22 @@
       "type": "plus"
     },
     {
-      "name": "球速安定○",
+      "name": "緊急登板○",
       "grade": null,
       "highlighted": false,
       "type": "plus"
     },
     {
-      "name": "ゴロピッチャー",
+      "name": "一発",
       "grade": null,
       "highlighted": false,
-      "type": "both"
+      "type": "minus"
+    },
+    {
+      "name": "シュート回転",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
     }
   ]
 }

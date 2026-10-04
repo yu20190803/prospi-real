@@ -99,9 +99,33 @@
   ],
   "abilities": [
     {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
       "name": "対左打者",
       "grade": "C",
-      "highlighted": true,
+      "highlighted": false,
       "type": "plus"
     },
     {

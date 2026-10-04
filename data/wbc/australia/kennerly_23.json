@@ -1,19 +1,19 @@
 {
   "category": "wbc",
-  "team": "usa",
+  "team": "australia",
   "kind": "batter",
-  "player_id": "judge_99",
-  "source_capture": "captures/wbc/usa/judge_99.png",
-  "source_original": "captures/wbc/USA/Screen_20260811_175150_886.png",
+  "player_id": "kennerly_23",
+  "source_capture": "captures/wbc/australia/kennerly_23.png",
+  "source_original": "captures/wbc/Australia/Screen_20260811_180258_106.png",
   "year": 2026,
-  "uniform_number": "99",
-  "name": "ジャッジ",
+  "uniform_number": "23",
+  "name": "ケネリー",
   "position": "右翼手",
   "throws_bats": "右投右打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 514
+    "overall": 269
   },
   "stats": [
     {
@@ -21,45 +21,45 @@
       "splits": [
         {
           "vs": "対右",
-          "grade": "B",
-          "value": 73
+          "grade": "E",
+          "value": 45
         },
         {
           "vs": "対左",
-          "grade": "B",
-          "value": 73
+          "grade": "E",
+          "value": 49
         }
       ]
     },
     {
       "label": "パワー",
-      "grade": "S",
-      "value": 97
+      "grade": "C",
+      "value": 62
     },
     {
       "label": "走力",
-      "grade": "C",
-      "value": 61
+      "grade": "D",
+      "value": 50
     },
     {
       "label": "捕球",
-      "grade": "C",
-      "value": 68
+      "grade": "D",
+      "value": 51
     },
     {
       "label": "スローイング",
-      "grade": "C",
-      "value": 61
+      "grade": "D",
+      "value": 52
     },
     {
       "label": "肩力",
-      "grade": "A",
-      "value": 85
+      "grade": "D",
+      "value": 57
     },
     {
       "label": "疲労回復",
-      "grade": "B",
-      "value": 71
+      "grade": "E",
+      "value": 48
     }
   ],
   "fielding_aptitude": [],
@@ -82,29 +82,29 @@
   ],
   "fielding_diagram": {
     "primary_position": "RF",
-    "primary_grade": 52,
+    "primary_grade": 53,
     "catcher_lead_grade": null,
     "positions": [
       {
         "position": "RF",
         "grade": "D",
-        "value": 52
+        "value": 53
       },
       {
         "position": "CF",
         "grade": "E",
-        "value": 41
+        "value": 45
       },
       {
         "position": "LF",
-        "grade": "F",
-        "value": 35
+        "grade": "E",
+        "value": 45
       }
     ]
   },
   "abilities": [
     {
-      "name": "アーチスト",
+      "name": "中弾道",
       "grade": null,
       "highlighted": true,
       "type": "plus"
@@ -117,7 +117,7 @@
     },
     {
       "name": "バント",
-      "grade": "D",
+      "grade": "B",
       "highlighted": false,
       "type": "plus"
     },
@@ -129,9 +129,9 @@
     },
     {
       "name": "走塁",
-      "grade": "E",
+      "grade": "D",
       "highlighted": false,
-      "type": "minus"
+      "type": "plus"
     },
     {
       "name": "盗塁",
@@ -140,37 +140,7 @@
       "type": "plus"
     },
     {
-      "name": "威圧感",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "広角打法",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "固め打ち",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "連発",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "初球",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "対ストレート○",
+      "name": "流し打ち",
       "grade": null,
       "highlighted": false,
       "type": "plus"

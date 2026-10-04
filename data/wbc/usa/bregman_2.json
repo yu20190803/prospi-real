@@ -124,6 +124,12 @@
       "type": "minus"
     },
     {
+      "name": "盗塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
       "name": "カット打ち",
       "grade": null,
       "highlighted": false,

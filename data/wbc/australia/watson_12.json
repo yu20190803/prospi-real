@@ -1,39 +1,39 @@
 {
   "category": "wbc",
-  "team": "usa",
+  "team": "australia",
   "kind": "pitcher",
-  "player_id": "wittlock_59",
-  "source_capture": "captures/wbc/usa/wittlock_59.png",
-  "source_original": "captures/wbc/USA/Screen_20260811_175055_722.png",
+  "player_id": "watson_12",
+  "source_capture": "captures/wbc/australia/watson_12.png",
+  "source_original": "captures/wbc/Australia/Screen_20260811_180202_537.png",
   "year": 2026,
-  "uniform_number": "59",
-  "name": "ウィットロック",
+  "uniform_number": "12",
+  "name": "ワトソン",
   "position": "投手",
-  "throws_bats": "右投右打",
+  "throws_bats": "左投左打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 394
+    "overall": 277
   },
   "stats": [
     {
       "label": "球速",
-      "value": "157km/h",
+      "value": "158km/h",
       "grade": null
     },
     {
       "label": "スタミナ",
-      "value": 45,
+      "value": 47,
       "grade": "E"
     },
     {
       "label": "疲労回復",
-      "value": 71,
-      "grade": "B"
+      "value": 55,
+      "grade": "D"
     },
     {
       "label": "先発適性",
-      "value": "○",
+      "value": "ー",
       "grade": null
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "label": "抑え適性",
-      "value": "◎",
+      "value": "○",
       "grade": null
     }
   ],
@@ -51,46 +51,38 @@
     {
       "category": "straight",
       "order": 1,
-      "name": "ツーシーム",
+      "name": "ストレート",
       "power": "B",
-      "control": "C",
+      "control": "E",
       "break": null
     },
     {
-      "category": "slider",
+      "category": "shoot",
       "order": 1,
-      "name": "スライダー",
-      "power": "E",
+      "name": "シンキング",
+      "power": "D",
       "control": "F",
       "break": 4
     },
     {
-      "category": "curve",
+      "category": "slider",
       "order": 1,
-      "name": "ナックルカーブ",
-      "power": "A",
-      "control": "D",
-      "break": 4
-    },
-    {
-      "category": "sinker",
-      "order": 1,
-      "name": "高速シンカー",
-      "power": "D",
-      "control": "D",
+      "name": "カットボール",
+      "power": "E",
+      "control": "F",
       "break": 4
     }
   ],
   "abilities": [
     {
       "name": "ケガしにくさ",
-      "grade": "E",
+      "grade": "D",
       "highlighted": true,
-      "type": "minus"
+      "type": "plus"
     },
     {
       "name": "対ピンチ",
-      "grade": "D",
+      "grade": "B",
       "highlighted": false,
       "type": "plus"
     },
@@ -108,25 +100,7 @@
     },
     {
       "name": "対左打者",
-      "grade": "C",
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "奪三振",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "緊急登板○",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "球持ち",
-      "grade": null,
+      "grade": "D",
       "highlighted": false,
       "type": "plus"
     }

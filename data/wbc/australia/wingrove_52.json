@@ -1,19 +1,19 @@
 {
   "category": "wbc",
-  "team": "usa",
+  "team": "australia",
   "kind": "batter",
-  "player_id": "judge_99",
-  "source_capture": "captures/wbc/usa/judge_99.png",
-  "source_original": "captures/wbc/USA/Screen_20260811_175150_886.png",
+  "player_id": "wingrove_52",
+  "source_capture": "captures/wbc/australia/wingrove_52.png",
+  "source_original": "captures/wbc/Australia/Screen_20260811_180240_131.png",
   "year": 2026,
-  "uniform_number": "99",
-  "name": "ジャッジ",
-  "position": "右翼手",
-  "throws_bats": "右投右打",
+  "uniform_number": "52",
+  "name": "ウィングローブ",
+  "position": "一塁手",
+  "throws_bats": "右投左打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 514
+    "overall": 289
   },
   "stats": [
     {
@@ -21,45 +21,45 @@
       "splits": [
         {
           "vs": "対右",
-          "grade": "B",
-          "value": 73
+          "grade": "F",
+          "value": 39
         },
         {
           "vs": "対左",
-          "grade": "B",
-          "value": 73
+          "grade": "F",
+          "value": 39
         }
       ]
     },
     {
       "label": "パワー",
-      "grade": "S",
-      "value": 97
+      "grade": "B",
+      "value": 73
     },
     {
       "label": "走力",
-      "grade": "C",
-      "value": 61
+      "grade": "D",
+      "value": 53
     },
     {
       "label": "捕球",
-      "grade": "C",
-      "value": 68
+      "grade": "E",
+      "value": 45
     },
     {
       "label": "スローイング",
-      "grade": "C",
-      "value": 61
+      "grade": "E",
+      "value": 48
     },
     {
       "label": "肩力",
-      "grade": "A",
-      "value": 85
+      "grade": "D",
+      "value": 55
     },
     {
       "label": "疲労回復",
-      "grade": "B",
-      "value": 71
+      "grade": "C",
+      "value": 60
     }
   ],
   "fielding_aptitude": [],
@@ -81,30 +81,20 @@
     ]
   ],
   "fielding_diagram": {
-    "primary_position": "RF",
-    "primary_grade": 52,
+    "primary_position": "1B",
+    "primary_grade": 47,
     "catcher_lead_grade": null,
     "positions": [
       {
-        "position": "RF",
-        "grade": "D",
-        "value": 52
-      },
-      {
-        "position": "CF",
+        "position": "1B",
         "grade": "E",
-        "value": 41
-      },
-      {
-        "position": "LF",
-        "grade": "F",
-        "value": 35
+        "value": 47
       }
     ]
   },
   "abilities": [
     {
-      "name": "アーチスト",
+      "name": "高弾道",
       "grade": null,
       "highlighted": true,
       "type": "plus"
@@ -129,9 +119,9 @@
     },
     {
       "name": "走塁",
-      "grade": "E",
+      "grade": "D",
       "highlighted": false,
-      "type": "minus"
+      "type": "plus"
     },
     {
       "name": "盗塁",
@@ -140,37 +130,7 @@
       "type": "plus"
     },
     {
-      "name": "威圧感",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
       "name": "広角打法",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "固め打ち",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "連発",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "初球",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "対ストレート○",
       "grade": null,
       "highlighted": false,
       "type": "plus"

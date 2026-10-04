@@ -1,24 +1,24 @@
 {
   "category": "wbc",
-  "team": "usa",
+  "team": "australia",
   "kind": "pitcher",
-  "player_id": "mclean_26",
-  "source_capture": "captures/wbc/usa/mclean_26.png",
-  "source_original": "captures/wbc/USA/Screen_20260811_175016_061.png",
+  "player_id": "mcdonald_39",
+  "source_capture": "captures/wbc/australia/mcdonald_39.png",
+  "source_original": "captures/wbc/Australia/Screen_20260811_180131_011.png",
   "year": 2026,
-  "uniform_number": "26",
-  "name": "マクリーン",
+  "uniform_number": "39",
+  "name": "マクドナルド",
   "position": "投手",
   "throws_bats": "右投右打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 424
+    "overall": 238
   },
   "stats": [
     {
       "label": "球速",
-      "value": "158km/h",
+      "value": "150km/h",
       "grade": null
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "label": "疲労回復",
-      "value": 50,
+      "value": 51,
       "grade": "D"
     },
     {
@@ -51,49 +51,25 @@
     {
       "category": "straight",
       "order": 1,
-      "name": "ツーシーム",
-      "power": "B",
-      "control": "D",
-      "break": null
-    },
-    {
-      "category": "slider",
-      "order": 1,
-      "name": "スライダー",
+      "name": "ストレート",
       "power": "C",
       "control": "D",
-      "break": 5
+      "break": null
     },
     {
       "category": "curve",
       "order": 1,
-      "name": "スラーブ",
-      "power": "A",
-      "control": "F",
-      "break": 5
-    },
-    {
-      "category": "sinker",
-      "order": 1,
-      "name": "チェンジアップ",
+      "name": "スローカーブ",
       "power": "D",
-      "control": "E",
+      "control": "D",
       "break": 4
     },
     {
-      "category": "straight",
-      "order": 2,
-      "name": "ストレート",
-      "power": "E",
-      "control": "E",
-      "break": null
-    },
-    {
-      "category": "slider",
-      "order": 2,
-      "name": "カットボール",
-      "power": "E",
-      "control": "E",
+      "category": "fork",
+      "order": 1,
+      "name": "フォーク",
+      "power": "D",
+      "control": "D",
       "break": 4
     }
   ],
@@ -118,7 +94,7 @@
     },
     {
       "name": "打たれ強さ",
-      "grade": "C",
+      "grade": "D",
       "highlighted": false,
       "type": "plus"
     },
@@ -129,7 +105,7 @@
       "type": "plus"
     },
     {
-      "name": "奪三振",
+      "name": "逃げ球",
       "grade": null,
       "highlighted": false,
       "type": "plus"
@@ -139,12 +115,6 @@
       "grade": null,
       "highlighted": false,
       "type": "plus"
-    },
-    {
-      "name": "ゴロピッチャー",
-      "grade": null,
-      "highlighted": false,
-      "type": "both"
     }
   ]
 }

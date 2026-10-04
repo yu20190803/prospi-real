@@ -1,19 +1,19 @@
 {
   "category": "wbc",
-  "team": "usa",
+  "team": "australia",
   "kind": "batter",
-  "player_id": "judge_99",
-  "source_capture": "captures/wbc/usa/judge_99.png",
-  "source_original": "captures/wbc/USA/Screen_20260811_175150_886.png",
+  "player_id": "burke_34",
+  "source_capture": "captures/wbc/australia/burke_34.png",
+  "source_original": "captures/wbc/Australia/Screen_20260811_180246_390.png",
   "year": 2026,
-  "uniform_number": "99",
-  "name": "ジャッジ",
-  "position": "右翼手",
-  "throws_bats": "右投右打",
+  "uniform_number": "34",
+  "name": "バーク",
+  "position": "左翼手",
+  "throws_bats": "右投左打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 514
+    "overall": 326
   },
   "stats": [
     {
@@ -21,45 +21,45 @@
       "splits": [
         {
           "vs": "対右",
-          "grade": "B",
-          "value": 73
+          "grade": "D",
+          "value": 51
         },
         {
           "vs": "対左",
-          "grade": "B",
-          "value": 73
+          "grade": "D",
+          "value": 51
         }
       ]
     },
     {
       "label": "パワー",
-      "grade": "S",
-      "value": 97
+      "grade": "C",
+      "value": 66
     },
     {
       "label": "走力",
       "grade": "C",
-      "value": 61
+      "value": 67
     },
     {
       "label": "捕球",
-      "grade": "C",
-      "value": 68
+      "grade": "D",
+      "value": 58
     },
     {
       "label": "スローイング",
       "grade": "C",
-      "value": 61
+      "value": 60
     },
     {
       "label": "肩力",
-      "grade": "A",
-      "value": 85
+      "grade": "C",
+      "value": 62
     },
     {
       "label": "疲労回復",
-      "grade": "B",
-      "value": 71
+      "grade": "C",
+      "value": 62
     }
   ],
   "fielding_aptitude": [],
@@ -81,30 +81,35 @@
     ]
   ],
   "fielding_diagram": {
-    "primary_position": "RF",
+    "primary_position": "LF",
     "primary_grade": 52,
-    "catcher_lead_grade": null,
+    "catcher_lead_grade": "E",
     "positions": [
       {
-        "position": "RF",
+        "position": "LF",
         "grade": "D",
         "value": 52
       },
       {
         "position": "CF",
         "grade": "E",
-        "value": 41
+        "value": 44
       },
       {
-        "position": "LF",
+        "position": "RF",
+        "grade": "E",
+        "value": 44
+      },
+      {
+        "position": "C",
         "grade": "F",
-        "value": 35
+        "value": 37
       }
     ]
   },
   "abilities": [
     {
-      "name": "アーチスト",
+      "name": "中弾道",
       "grade": null,
       "highlighted": true,
       "type": "plus"
@@ -117,7 +122,7 @@
     },
     {
       "name": "バント",
-      "grade": "D",
+      "grade": "B",
       "highlighted": false,
       "type": "plus"
     },
@@ -129,9 +134,9 @@
     },
     {
       "name": "走塁",
-      "grade": "E",
+      "grade": "D",
       "highlighted": false,
-      "type": "minus"
+      "type": "plus"
     },
     {
       "name": "盗塁",
@@ -140,37 +145,7 @@
       "type": "plus"
     },
     {
-      "name": "威圧感",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "広角打法",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "固め打ち",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "連発",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "初球",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "対ストレート○",
+      "name": "粘り打ち",
       "grade": null,
       "highlighted": false,
       "type": "plus"

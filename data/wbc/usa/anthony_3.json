@@ -80,9 +80,6 @@
       0
     ]
   ],
-  "unverified": [
-    "fielding_diagram.positions"
-  ],
   "fielding_diagram": {
     "primary_position": "RF",
     "primary_grade": 64,
@@ -94,7 +91,7 @@
         "value": 64
       },
       {
-        "position": "CF",
+        "position": "LF",
         "grade": "D",
         "value": 58
       }
@@ -135,7 +132,7 @@
       "name": "盗塁",
       "grade": "D",
       "highlighted": false,
-      "type": "minus"
+      "type": "plus"
     },
     {
       "name": "初球",

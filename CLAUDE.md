@@ -39,22 +39,19 @@
 1. ユーザーがPCの `captures/<npb|wbc>/<team>/` に選手詳細画面のスクリーンショットを置く
    （ファイル名は自由、投手・野手・メニュー画面混在可）。画像はPCに置いたままでよく、
    どのGitHubリポジトリにも上げない。書き起こしはクラウドの定期実行がPCにリンクして
-   1回1チームずつ行う（手順は runbook の 0.〜5.）。
-   `<ローマ字姓>_<背番号>.png` の命名になっていない画像を未処理とみなす。
-2. Claude が画像を読み取り、選手名・背番号から `<player_id>.png` に改名したうえで、
-   `docs/data_schema.md` のスキーマに従って `data/<npb|wbc>/<team>/<player_id>.json` を書き起こす。
-   既存の player_id と同じ選手なら、画像・JSONとも上書き更新する。
-3. `python src/generate.py <data/.../player_id.json>` で
-   `src/templates/player_card.html.jinja` + `src/templates/style.css` から
-   `output/<npb|wbc>/<team>/<player_id>.html` を生成する。
-4. 生成結果と元スクリーンショットを見比べ、ズレがあれば
-   テンプレート/CSSを直す（データではなくレイアウト側を直す）。
-5. 全選手を再生成する場合は `python src/generate.py --all` を使う想定。
-6. `python src/validate.py` で全JSONを機械チェック（等級と能力値の整合、値域、推定値の一覧）。
-   エラー0件にしてから次へ進む。あわせて `python src/check_pitch_slots.py` で投手の変化球の
-   位置（category）と書き漏れを元画像と照合し、不一致0人にする。そのあと
-   `python src/read_break.py --write` で変化量を画像から読み取って反映する。
-7. `python src/build_site.py` で `site/index.html`（公開用データベースページ）を生成する。
+   1回1チームずつ行う。処理済みかどうかは、JSON の `source_original`/`source_capture` と
+   `_skipped.json` に記録されているかで決める（ファイル名では決めない）。
+2. `src/prep_team.py` が画素だけでメニュー画面・切り替え途中のフレーム・重複を仕分け、
+   選手画面ごとに読み取り用画像とジョブを作る（LLM不要）。
+3. 選手画面の書き起こしはサブエージェントが並列で行う（`docs/transcribe_guide.md` に従う）。
+   `src/merge_team.py` が同じ選手の重複をまとめて `data/<npb|wbc>/<team>/<player_id>.json` に書き、
+   改名コピー `<player_id>.png` を作る。既存の player_id と同じ選手なら上書き更新する。
+4. 画素で照合できる項目はすべてスクリプトで照合し、不一致0にする:
+   `validate.py`（等級と数値の整合）、`check_pitch_slots.py`（変化球の箱の位置）、
+   `check_abilities.py`（特殊能力の行数・アイコン色）、`check_fielding.py`（守備図の位置）、
+   `read_break.py --write`（変化量を画素から読んで反映）。
+5. `python src/build_site.py` で `site/index.html`（公開用データベースページ）を生成する。
+6. （内部検証用）`python src/generate.py` で画面再現カード `output/.../*.html` を作り、元画像と見比べられる。
 
 ## ディレクトリ
 
@@ -79,8 +76,15 @@ site/index_work.html                           生成された検証用ページ
 docs/data_schema.md                            選手データのJSONスキーマ定義（投手/野手それぞれ記載）
 docs/runbook_transcribe.md                     書き起こし手順書（画像受け取り〜PC書き戻し〜報告）
 docs/templates/pitcher.json, batter.json       書き起こし用の雛形（実データと同じ形式）
-src/pending.py                                 未処理画像の一覧（--next-team で次に処理するチーム）
+src/pending.py                                 未処理画像の一覧（--done-count でチームごとの処理済み記録数）
 src/capture_paths.py                           captures/ のパスを大文字・小文字を無視して解決
+src/layout.py                                  キャプチャを標準レイアウト(865x605)に正規化（日本代表の1150x695画面など）
+src/prep_team.py                               1チームの画像を画素で仕分け、読み取り用画像・ジョブを作る
+src/merge_team.py                              書き起こし結果の重複をまとめて data/ に書く・改名コピー作成
+src/check_abilities.py                         特殊能力の行数・アイコン色を元画像と機械照合
+src/check_fielding.py                          守備図の守備位置を元画像と機械照合
+docs/transcribe_guide.md                       1枚の画像を書き起こすためのガイド（サブエージェント用）
+work/<cat>/<team>/                             作業用（読み取り画像・ジョブ・中間JSON）。.gitignore対象・コミットしない
 data/<npb|wbc>/<team>/_skipped.json            書き起こし対象外の画像（メニュー画面・重複など）の記録
 ```
 
@@ -139,7 +143,10 @@ data/<npb|wbc>/<team>/_skipped.json            書き起こし対象外の画像
     一致したものだけ `--write` で書き込む。柄の座標は全キャプチャ共通（865x605で実測）。
   - category（箱の位置）が違うと別の柄を読むので、先に check_pitch_slots.py を通す。
   - 機械照合済みの変化量には `unverified` を付けない。読み取りに問題が残った球種だけ付ける。
-  - ゲーム画面の解像度・レイアウトが変わった場合は、柄の座標（read_break.py の STEMS）と
-    箱の座標（check_pitch_slots.py の SLOTS）を測り直す必要がある。
+  - 座標はすべて標準レイアウト（865x605）基準。別レイアウトの画面は `src/layout.py` で
+    標準レイアウトに切り出してから読む（日本代表の1150x695画面は (279, 8) から等倍で切り出し）。
+    新しいレイアウトが出てきたら `layout.py` に切り出し位置を足す。
+- 特殊能力の type（行頭アイコンの色）と行数、守備図の守備位置も画素で照合する
+  （2026-10-04 追加。目視の書き起こしでは USA の8人に type の誤り・行の書き漏れ、3人に守備位置の誤りがあった）。
 - `captures/` の画像はスクリーンショット原本。生成スクリプトから読むだけで、
   加工・上書きしない。

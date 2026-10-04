@@ -1,19 +1,19 @@
 {
   "category": "wbc",
-  "team": "usa",
+  "team": "australia",
   "kind": "batter",
-  "player_id": "rowley_29",
-  "source_capture": "captures/wbc/usa/rowley_29.png",
-  "source_original": "captures/wbc/USA/Screen_20260811_175103_160.png",
+  "player_id": "stewart_44",
+  "source_capture": "captures/wbc/australia/stewart_44.png",
+  "source_original": "captures/wbc/Australia/Screen_20260811_180250_631.png",
   "year": 2026,
-  "uniform_number": "29",
-  "name": "ローリー",
-  "position": "捕手",
-  "throws_bats": "右投両打",
+  "uniform_number": "44",
+  "name": "スチュアート",
+  "position": "右翼手",
+  "throws_bats": "右投右打",
   "photo": null,
   "rarity": {
     "star": true,
-    "overall": 458
+    "overall": 271
   },
   "stats": [
     {
@@ -26,40 +26,40 @@
         },
         {
           "vs": "対左",
-          "grade": "D",
-          "value": 53
+          "grade": "C",
+          "value": 61
         }
       ]
     },
     {
       "label": "パワー",
-      "grade": "S",
-      "value": 91
+      "grade": "A",
+      "value": 80
     },
     {
       "label": "走力",
-      "grade": "D",
-      "value": 53
+      "grade": "F",
+      "value": 21
     },
     {
       "label": "捕球",
-      "grade": "E",
-      "value": 46
+      "grade": "F",
+      "value": 25
     },
     {
       "label": "スローイング",
       "grade": "C",
-      "value": 66
+      "value": 60
     },
     {
       "label": "肩力",
-      "grade": "A",
-      "value": 82
+      "grade": "E",
+      "value": 46
     },
     {
       "label": "疲労回復",
-      "grade": "B",
-      "value": 73
+      "grade": "D",
+      "value": 51
     }
   ],
   "fielding_aptitude": [],
@@ -81,27 +81,37 @@
     ]
   ],
   "fielding_diagram": {
-    "primary_position": "C",
-    "primary_grade": 67,
-    "catcher_lead_grade": "C",
+    "primary_position": "RF",
+    "primary_grade": 28,
+    "catcher_lead_grade": null,
     "positions": [
       {
-        "position": "C",
-        "grade": "C",
-        "value": 67
+        "position": "RF",
+        "grade": "F",
+        "value": 28
+      },
+      {
+        "position": "LF",
+        "grade": "F",
+        "value": 20
+      },
+      {
+        "position": "3B",
+        "grade": "F",
+        "value": 20
       }
     ]
   },
   "abilities": [
     {
-      "name": "アーチスト",
+      "name": "中弾道",
       "grade": null,
       "highlighted": true,
       "type": "plus"
     },
     {
       "name": "ケガしにくさ",
-      "grade": "C",
+      "grade": "D",
       "highlighted": false,
       "type": "plus"
     },
@@ -119,31 +129,13 @@
     },
     {
       "name": "走塁",
-      "grade": "E",
-      "highlighted": false,
-      "type": "minus"
-    },
-    {
-      "name": "盗塁",
       "grade": "D",
       "highlighted": false,
       "type": "plus"
     },
     {
-      "name": "存在感",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "満塁男",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "連発",
-      "grade": null,
+      "name": "盗塁",
+      "grade": "D",
       "highlighted": false,
       "type": "plus"
     },
@@ -154,28 +146,10 @@
       "type": "plus"
     },
     {
-      "name": "逆境",
+      "name": "三振",
       "grade": null,
       "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "悪球打ち",
-      "grade": null,
-      "highlighted": false,
-      "type": "plus"
-    },
-    {
-      "name": "プルヒッター",
-      "grade": null,
-      "highlighted": false,
-      "type": "both"
-    },
-    {
-      "name": "死球",
-      "grade": null,
-      "highlighted": false,
-      "type": "both"
+      "type": "minus"
     }
   ]
 }
