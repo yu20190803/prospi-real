@@ -46,10 +46,11 @@
 3. 選手画面の書き起こしはサブエージェントが並列で行う（`docs/transcribe_guide.md` に従う）。
    `src/merge_team.py` が同じ選手の重複をまとめて `data/<npb|wbc>/<team>/<player_id>.json` に書き、
    改名コピー `<player_id>.png` を作る。既存の player_id と同じ選手なら上書き更新する。
-4. 画素で照合できる項目はすべてスクリプトで照合し、不一致0にする:
-   `validate.py`（等級と数値の整合）、`check_pitch_slots.py`（変化球の箱の位置）、
-   `check_abilities.py`（特殊能力の行数・アイコン色）、`check_fielding.py`（守備図の位置）、
-   `read_break.py --write`（変化量を画素から読んで反映）。
+4. `python3 src/finalize_team.py <cat>/<team>` で、画素で照合できる項目をすべて照合し不一致0にする
+   （変化球の箱の位置・変化量の画素読み取りと書き込み・等級と数値・特殊能力・守備図・起用適性の◎○△ー）。
+   **終了コード 0 になるまでそのチームはコミットしない**（2026-10-11。チェックを飛ばしてコミットされた
+   Brazil・Canada を作り直した教訓）。個別のチェックは validate.py / check_pitch_slots.py /
+   check_abilities.py / check_fielding.py / check_aptitude.py / read_break.py でも実行できる。
 5. `python src/build_site.py` で `site/index.html`（公開用データベースページ）を生成する。
 6. （内部検証用）`python src/generate.py` で画面再現カード `output/.../*.html` を作り、元画像と見比べられる。
 
@@ -83,6 +84,8 @@ src/prep_team.py                               1チームの画像を画素で�
 src/merge_team.py                              書き起こし結果の重複をまとめて data/ に書く・改名コピー作成
 src/check_abilities.py                         特殊能力の行数・アイコン色を元画像と機械照合
 src/check_fielding.py                          守備図の守備位置を元画像と機械照合
+src/check_aptitude.py                          投手の起用適性（◎○△ー）を元画像と機械照合
+src/finalize_team.py                           書き起こし後の仕上げ（変化量の書き込み＋全チェック＋サイト生成。NGなら止まる）
 docs/transcribe_guide.md                       1枚の画像を書き起こすためのガイド（サブエージェント用）
 work/<cat>/<team>/                             作業用（読み取り画像・ジョブ・中間JSON）。.gitignore対象・コミットしない
 data/<npb|wbc>/<team>/_skipped.json            書き起こし対象外の画像（メニュー画面・重複など）の記録

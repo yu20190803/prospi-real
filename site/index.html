@@ -139,13 +139,7 @@ footer{color:var(--dim);font-size:12px;border-top:1px solid var(--line-soft);pad
     <div class="section-head">
       <h2 id="list-h">選手一覧</h2>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <div class="tabs" role="tablist" aria-label="チーム">
-          <button id="tab-all-team" role="tab" aria-selected="true" data-team="">すべて</button>
-          <button id="tab-brazil" role="tab" aria-selected="false" data-team="brazil">Brazil</button>
-          <button id="tab-canada" role="tab" aria-selected="false" data-team="canada">Canada</button>
-          <button id="tab-australia" role="tab" aria-selected="false" data-team="australia">Australia</button>
-          <button id="tab-usa" role="tab" aria-selected="false" data-team="usa">USA</button>
-        </div>
+        <div class="tabs" role="tablist" aria-label="チーム" id="team-tabs"></div>
         <div class="tabs" role="tablist" aria-label="区分">
           <button id="tab-batter" role="tab" aria-selected="true" data-kind="batter">野手</button>
           <button id="tab-pitcher" role="tab" aria-selected="false" data-kind="pitcher">投手</button>
@@ -476,5 +470,14 @@ document.addEventListener("pointermove",e=>{const h=e.target.closest(".hit");if(
   tip.style.left=Math.min(e.clientX+12,innerWidth-r.width-8)+"px";tip.style.top=(e.clientY+14)+"px";});
 
 ["batter","pitcher"].forEach(k=>{state.picked[k]=PLAYERS.filter(p=>p.kind===k).sort((a,b)=>b.rarity.overall-a.rarity.overall).slice(0,2).map(p=>p.player_id);});
+// チーム別タブはデータに含まれるチームから自動で作る（チームを足してもテンプレートの修正は不要）
+const TEAM_LABEL={usa:"USA",japan:"日本",korea:"Korea",dominican:"Dominican Rep.",great_britain:"Great Britain",chinese_taipei:"Chinese Taipei",
+  giants:"巨人",tigers:"阪神",carp:"広島",dragons:"中日",swallows:"ヤクルト",baystars:"DeNA",hawks:"ソフトバンク",buffaloes:"オリックス",lions:"西武",marines:"ロッテ",eagles:"楽天",fighters:"日本ハム"};
+const teamLabel=t=>TEAM_LABEL[t]||t.replace(/_/g," ").replace(/\b\w/g,c=>c.toUpperCase());
+(function(){
+  const box=document.getElementById("team-tabs"), teams=[...new Set(PLAYERS.map(p=>p.team))].sort((a,b)=>teamLabel(a).localeCompare(teamLabel(b)));
+  box.innerHTML=[`<button role="tab" aria-selected="true" data-team="">すべて</button>`,
+    ...teams.map(t=>`<button role="tab" aria-selected="false" data-team="${esc(t)}">${esc(teamLabel(t))}</button>`)].join("");
+})();
 renderAll();
 </script>

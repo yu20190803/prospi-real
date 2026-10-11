@@ -160,6 +160,19 @@ def analyze(team_dir: Path) -> dict:
     return out
 
 
+# サブエージェントへの指示文（ジョブごとに jobs/<ジョブ名>.prompt.txt として書き出す）。
+# 指揮役はこのファイルの中身を一字一句そのまま Agent ツールの prompt に渡す（要約・言い換えをしない）。
+# 2026-10-11: 指揮役が指示を書き換えた結果、ガイドを守らない書き起こしが混入したため固定化した。
+PROMPT = """You are transcribing プロ野球スピリッツ (baseball game) player screenshots into JSON. Work in /home/claude/prospi-real.
+1. Read docs/transcribe_guide.md fully and follow it exactly.
+{known}2. Read the job file {job} (a JSON list of jobs). For each job: Read its `sheet` image (once; re-read only if genuinely unsure), then write one JSON file to its `out` path with the Write tool, as the guide specifies, using the job's category, team, source_original, pitch_boxes, fielding_positions and renamed_copies.
+Do not open anything under data/ or captures/, or other job files. Do not run scripts.
+3. Reply with one line per job: "<out> <player_id> #<number> <name>", then any notes. Under 100 words.
+"""
+KNOWN = ("Read {known_path} (players already transcribed). For each job, follow the guide's last section about "
+         "ghost images: if the player is in that list, write only the duplicate_of JSON.\n")
+
+
 def write_outputs(res: dict, work: Path, zoom: float, batch: int = 5) -> None:
     sheets = work / "sheets"
     sheets.mkdir(parents=True, exist_ok=True)
@@ -180,6 +193,14 @@ def write_outputs(res: dict, work: Path, zoom: float, batch: int = 5) -> None:
     if jobs.exists():
         shutil.rmtree(jobs)
     jobs.mkdir()
+    # 前回の書き起こし結果が残っていると、作り直しのときに merge_team.py が古い結果を取り込んでしまう。
+    # 消さずに json_old_<日時>/ へ退避してから空の json/ を用意する
+    import time
+    stamp = time.strftime("%Y%m%d_%H%M%S")
+    for name in ("json", "json_merged"):
+        old = work / name
+        if old.exists() and any(old.iterdir()):
+            old.rename(work / f"{name}_old_{stamp}")
     (work / "json").mkdir(exist_ok=True)
     for pas, sel in (("pass1", [it for it in res["transcribe"] if it["ghost"] < W_GHOST]),
                      ("pass2", [it for it in res["transcribe"] if it["ghost"] >= W_GHOST])):
@@ -189,8 +210,11 @@ def write_outputs(res: dict, work: Path, zoom: float, batch: int = 5) -> None:
                    "ghost": it["ghost"], "renamed_copies": it["renamed_copies"], "pitch_boxes": it["pitch_boxes"],
                    "fielding_positions": it["fielding_positions"]}
                   for it in sel[b:b + batch]]
-            (jobs / f"{pas}_{b // batch + 1:02d}.json").write_text(json.dumps(js, ensure_ascii=False, indent=1),
-                                                                 encoding="utf-8")
+            jp = jobs / f"{pas}_{b // batch + 1:02d}.json"
+            jp.write_text(json.dumps(js, ensure_ascii=False, indent=1), encoding="utf-8")
+            known = KNOWN.format(known_path=(work / "known_players.txt").relative_to(ROOT)) if pas == "pass2" else ""
+            jp.with_suffix(".prompt.txt").write_text(
+                PROMPT.format(job=jp.relative_to(ROOT), known=known), encoding="utf-8")
     clean = {k: v for k, v in res.items() if not k.startswith("_")}
     clean["transcribe"] = [{k: v for k, v in it.items() if not k.startswith("_")} for it in res["transcribe"]]
     (work / "manifest.json").write_text(json.dumps(clean, ensure_ascii=False, indent=2), encoding="utf-8")

@@ -18,6 +18,20 @@ PCの `C:\dev\claude\prospi-real\captures\<npb|wbc>\<Team>\` に置かれたス�
   等級と数値の整合（validate）。書き起こし側には検出結果をヒントとして渡す。
 - 読み取り画像の倍率は 1.5倍（1.0/1.5/2.0倍で同じ8人を書き起こし、精度差がないことを確認済み）。
 
+## 絶対に守ること（2026-10-11 追加）
+
+Brazil・Canada（2026-10-04）では、この手順のチェックを「画像がない」という誤った判断で飛ばし、
+サブエージェントへの指示も書き換えた結果、変化量が仮置きの 4 のまま・箱の位置の誤り（11人）・
+特殊能力の誤り（22人）・◎を○と読む誤りがコミットされ、2チームとも作り直しになった。
+同じ画像・同じガイドで書き起こし直すと Haiku でも誤りは出なかったので、原因はモデルではなく手順の逸脱。
+
+1. **サブエージェントへの指示は `jobs/<ジョブ名>.prompt.txt` の中身を一字一句そのまま渡す。**
+   要約・言い換え・追記をしない。
+2. **`python3 src/finalize_team.py <cat>/<team>` が終了コード 0（「完了条件を満たしました」）で終わるまで、
+   そのチームの `data/` をコミットしない。** NG を残したままのコミット・push はしない。
+3. 画像は `captures/`（PCから取り込んだもの）にある。「画像がないので照合は後で」と判断してはいけない。
+   本当に見つからない場合は finalize_team.py が「元画像が見つかりません」と出すので、取り込みからやり直す。
+
 ## 0. 準備
 
 1. `add_repo`（access: push）で `yu20190803/prospi-real` を追加し、`/home/claude/prospi-real` に clone。
@@ -60,15 +74,9 @@ python3 src/prep_team.py captures/wbc/<Team> --write-skipped
 ## 3. 書き起こし（サブエージェント並列）
 
 **pass1 のジョブファイル1つにつきサブエージェント1つを、1回のメッセージでまとめて起動する**（並列実行）。
-モデルは指定しない（このセッションと同じモデル。品質を下げないため軽いモデルにしない）。プロンプト:
-
-```
-You are transcribing プロ野球スピリッツ (baseball game) player screenshots into JSON. Work in /home/claude/prospi-real.
-1. Read docs/transcribe_guide.md fully and follow it exactly.
-2. Read the job file <ジョブファイルのパス> (a JSON list of jobs). For each job: Read its `sheet` image (once; re-read only if genuinely unsure), then write one JSON file to its `out` path with the Write tool, as the guide specifies, using the job's category, team, source_original, pitch_boxes, fielding_positions and renamed_copies.
-Do not open anything under data/ or captures/, or other job files. Do not run scripts.
-3. Reply with one line per job: "<out> <player_id> #<number> <name>", then any notes. Under 100 words.
-```
+モデルは指定しない（このセッションと同じモデル。品質を下げないため軽いモデルにしない）。
+**プロンプトは `work/wbc/<team>/jobs/pass1_NN.prompt.txt` を Read し、その中身をそのまま渡す**
+（`prep_team.py` がジョブごとに作る。言い換えない）。
 
 全員終わったら:
 ```bash
@@ -77,26 +85,25 @@ python3 src/merge_team.py work/wbc/<team>
 同じ選手（背番号＋名前）の重複をまとめて `data/wbc/<team>/` に書き、改名コピー `<player_id>.png` を作り、
 `work/.../known_players.txt`（既知の選手一覧）を出す。「問題」が出たら、そのジョブだけやり直す。
 
-**pass2 のジョブがあれば**、同様にサブエージェントを起動する（プロンプトの 2. の前に
-`Read work/wbc/<team>/known_players.txt (players already transcribed). For each job, follow the guide's
-last section about ghost images: if the player is in that list, write only the duplicate_of JSON.` を足す）。
+**pass2 のジョブがあれば**、pass1 の merge のあとで同様にサブエージェントを起動する
+（プロンプトは `pass2_NN.prompt.txt` の中身そのまま。既知の選手一覧を読む指示が入っている）。
 終わったら `merge_team.py` をもう一度実行する（取り込み済みの結果は `json_merged/` に移るので二重にならない）。
 
 **Agent ツールが使えない場合**は、メインが `docs/transcribe_guide.md` を読み、ジョブファイルを順に
 自分で処理する（手順と品質基準は同じ）。
 
-## 4. チェック（すべて通るまで直す）
+## 4. チェック（finalize_team.py が終了コード 0 になるまで直す）
 
 ```bash
-python3 src/validate.py           # エラー0件（等級と数値の整合など）
-python3 src/check_pitch_slots.py  # 位置の不一致0人（変化球の箱の位置・書き漏れ）
-python3 src/check_abilities.py    # 不一致0人（特殊能力の行数・アイコンの色）
-python3 src/check_fielding.py     # 不一致0人（守備図の位置）
-python3 src/read_break.py --write && python3 src/read_break.py   # 「不一致0球種 / 問題あり0球種」
-python3 src/build_site.py
+python3 src/finalize_team.py wbc/<team>
 ```
-- NG が出た選手だけ、その選手の `work/.../sheets/<元ファイル名>.png` を Read で見て `data/` の JSON を直す。
-  **エラーを消すために数値を都合よく変えない。** 画像と食い違うのはデータ側の読み違い。
+1コマンドで、変化球の箱の位置 → 変化量の画素読み取りと書き込み → validate・変化量・特殊能力・守備図・
+起用適性（◎○△ー）・元画像の有無の全チェック → NG 0 なら build_site.py まで行う。
+- NG が出た選手だけ、その選手の `work/.../sheets/<元ファイル名>.png` を Read で見て `data/` の JSON を直し、
+  もう一度 finalize_team.py を実行する。**エラーを消すために数値を都合よく変えない。**
+  画像と食い違うのはデータ側の読み違い。
+- 箱の位置を直すと、変化量は次の実行で自動的に画素から書き込まれる（変化量を手で書かない）。
+- 何度直しても NG が残る選手がいたら、そのチームはコミットせず、残った NG を報告に書いて終える。
 - `merge_team.py` が出した「読み取りに自信がない箇所（notes）」も、その画像を見て確かめる。
   決められないものは報告に残す。
 
@@ -112,7 +119,8 @@ python3 src/build_site.py
    を実行すると（新しい結果がなくても）`work/.../commit_files.json` に一覧ができる。その中身をそのまま
    `device_commit_files` に渡す（元ファイルは消さない・上書きしない）。
    ※ merge を最後に実行したときの一覧なので、pass2 のあとに `--outputs` 付きで1回実行すればよい。
-2. GitHub（prospi-real、公開）: `data/` と `site/index.html` をコミットして push。
+2. GitHub（prospi-real、公開）: **直前の `finalize_team.py wbc/<team>` が終了コード 0 だったときだけ**、
+   `data/` と `site/index.html` をコミットして push（ブランチは main）。
    **push 前に `git status --short` で `captures`・`work`・画像ファイルが含まれていないことを確認する。**
    拒否されたら `git pull --rebase` してから push。強制 push はしない。push に失敗しても処理は止めない
    （次回は別の未処理チームに進む設計）。成否は報告に書く。
@@ -121,7 +129,8 @@ python3 src/build_site.py
 
 - 処理したチームと追加人数（投手・野手の内訳）、スキップ枚数と理由の内訳
 - 一覧にいるのに詳細画面がない選手
-- 読み取りに自信がない箇所（選手・項目・読んだ値・理由）、チェックで残った問題
+- 読み取りに自信がない箇所（選手・項目・読んだ値・理由）
+- finalize_team.py の最終結果（「完了条件を満たしました」か、残った NG の一覧）
 - GitHub への push の成否、残りのチーム数
 
 ## 迷ったとき

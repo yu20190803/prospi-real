@@ -8,3 +8,6 @@ work/
 # data/ 配下に画像を置かない（ゲーム画面の著作物）
 data/**/*.png
 data/**/*.jpg
+node_modules/
+package.json
+package-lock.json
