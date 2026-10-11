@@ -42,8 +42,9 @@ PCの `C:\dev\claude\prospi-real\captures\<npb|wbc>\<Team>\` に置かれたス�
 5. `ln -sfn /mnt/user-data/uploads/prospi-real/captures /home/claude/prospi-real/captures`
    （`captures` は .gitignore 済み。公開リポジトリには入らない）
 
-チームのフォルダ名は `USA`・`Australia` のように大文字を含むことがある。データ側（`team`・`data/` の
-フォルダ・`source_capture`）は常に英小文字。スクリプトは大文字小文字を無視して解決する。
+チームのフォルダ名は `USA`・`Australia` のように大文字を含むことがある。データ側の `team`・`data/` の
+フォルダは常に英小文字。`source_capture` は PC のフォルダ名どおり（`merge_team.py` が `source_original`
+と同じフォルダで書く）。スクリプトは大文字小文字を無視して解決する。
 
 ## 2. 仕分け（スクリプト・数秒）
 

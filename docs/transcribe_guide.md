@@ -10,7 +10,8 @@ JSON を1つ書く。**このガイドだけで作業が完結するように書
 - 置き場所: 指示された `out` のパス（例: `work/wbc/australia/json/Screen_20260811_180119_611.png.json`）
 - 1画像につき1ファイル。**`data/` には書かない**（`src/merge_team.py` が重複をまとめてから移す）。
 - 形式は下の雛形どおり（キーの順番もこのまま）。`source_original` は指示された元画像のパス、
-  `source_capture` は `captures/<cat>/<team>/<player_id>.png`（team は英小文字）。
+  `source_capture` は `source_original` と同じフォルダの `<player_id>.png`（フォルダ名の大文字・小文字も
+  そのまま。例 `captures/wbc/USA/judge_99.png`）。
 
 ### 投手
 ```json
@@ -37,7 +38,7 @@ JSON を1つ書く。**このガイドだけで作業が完結するように書
 ### 野手
 ```json
 {"category": "wbc", "team": "usa", "kind": "batter", "player_id": "judge_99",
- "source_capture": "captures/wbc/usa/judge_99.png", "source_original": "captures/wbc/USA/Screen_....png",
+ "source_capture": "captures/wbc/USA/judge_99.png", "source_original": "captures/wbc/USA/Screen_....png",
  "year": 2026, "uniform_number": "99", "name": "ジャッジ", "position": "右翼手", "throws_bats": "右投右打",
  "photo": null, "rarity": {"star": true, "overall": 514},
  "stats": [

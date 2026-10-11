@@ -108,7 +108,8 @@ def main(argv: list[str]) -> int:
             pid = f"{d['player_id']}_{n}"
         d["player_id"] = pid
         d["category"], d["team"] = cat, team
-        d["source_capture"] = f"captures/{cat}/{team}/{pid}.png"
+        # 改名コピーは元画像と同じフォルダに置くので、フォルダ名もPC側の表記（例 USA）に合わせる
+        d["source_capture"] = (Path(d["source_original"]).parent / f"{pid}.png").as_posix()
         for x in d.pop("notes", None) or []:
             notes.append(f"{pid}: {x}")
         ordered = {k: d[k] for k in ["category", "team", "kind", "player_id", "source_capture", "source_original"]}
