@@ -24,7 +24,7 @@ import shutil
 import sys
 from pathlib import Path
 
-from capture_paths import ROOT, key, resolve
+from capture_paths import ROOT, capture_folder, key, resolve
 
 PID = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*_\d+(?:_\d+)?$")
 REQUIRED = ["category", "team", "kind", "player_id", "year", "uniform_number", "name",
@@ -108,8 +108,8 @@ def main(argv: list[str]) -> int:
             pid = f"{d['player_id']}_{n}"
         d["player_id"] = pid
         d["category"], d["team"] = cat, team
-        # 改名コピーは元画像と同じフォルダに置くので、フォルダ名もPC側の表記（例 USA）に合わせる
-        d["source_capture"] = (Path(d["source_original"]).parent / f"{pid}.png").as_posix()
+        # チーム部分は英小文字、USA だけ大文字（capture_paths.capture_folder）
+        d["source_capture"] = f"captures/{cat}/{capture_folder(team)}/{pid}.png"
         for x in d.pop("notes", None) or []:
             notes.append(f"{pid}: {x}")
         ordered = {k: d[k] for k in ["category", "team", "kind", "player_id", "source_capture", "source_original"]}

@@ -131,8 +131,8 @@ data/<npb|wbc>/<team>/_skipped.json            書き起こし対象外の画像
   クラウドの定期実行はPCにリンクしてデバイス連携ツールで直接画像を読み書きする
   （画像取得のためだけに非公開リポジトリ prospi-captures を経由する運用は廃止、2026-09-28）。
 - チームのフォルダ名は大文字を含むことがある（`captures/wbc/USA`）。データ側の `team`・
-  `data/` のフォルダは常に英小文字。`source_capture` は PC のフォルダ名どおりに書く
-  （例 `captures/wbc/USA/judge_99.png`。`source_original` と同じフォルダ。2026-10-11 決定）。
+  `data/` のフォルダは常に英小文字。`source_capture` のチーム部分も英小文字だが、
+  **USA だけは大文字**（`captures/wbc/USA/judge_99.png`。2026-10-11 決定、`capture_paths.capture_folder()`）。
   画像を読むコードは必ず `src/capture_paths.py` の `resolve()` を通す（Linux は大文字・小文字を区別する）。
 - 左投手は画面上の変化方向が左右反転する。`pitches[].category` は右投手基準の大分類
   （スライダー系=左方向 など）で記録する。**category は画面上の箱の位置で決め、球種名からは

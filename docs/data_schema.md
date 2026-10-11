@@ -13,7 +13,7 @@
 | `team` | string | チームフォルダ名（英小文字）と一致 |
 | `kind` | `"pitcher"` \| `"batter"` | 守備位置が「投手」なら pitcher、それ以外は batter |
 | `player_id` | string | ファイル名（拡張子なし）と一致。命名規則は runbook 参照 |
-| `source_capture` | string | `captures/<category>/<PCのチームフォルダ名>/<player_id>.png`（例 `captures/wbc/USA/judge_99.png`） |
+| `source_capture` | string | `captures/<category>/<team>/<player_id>.png`（team は英小文字。USA だけ大文字 `captures/wbc/USA/judge_99.png`） |
 | `source_original` | string（任意） | 改名前の元ファイルのパス（例: `captures/npb/giants/IMG_0012.png`）。pending.py が処理済み判定に使う |
 | `year` | int | 左上の小さい年度バッジ（例: 2026） |
 | `uniform_number` | string | 背番号。**文字列**で持つ（"7", "99"） |

@@ -1,10 +1,9 @@
 """captures/ 以下のパスを大文字・小文字を区別せずに解決する。
 
 PC（Windows）は大文字・小文字を区別しないが、定期実行するクラウド（Linux）は区別する。
-画像フォルダは `captures/wbc/USA/` のように大文字を含むことがある。`source_capture` は
-PCのフォルダ名どおりに記録する（例 `captures/wbc/USA/judge_99.png`）が、古いデータには
-小文字で記録したもの（`captures/wbc/brazil/...`）も残っている。
-画像を読むスクリプトはすべてこの resolve() を通すこと。
+画像フォルダは `captures/wbc/USA/` のように大文字を含むことがある。`source_capture` のチーム部分は
+英小文字（`captures/wbc/brazil/...`）が原則で、USA だけは大文字 `USA` で書く（2026-10-11 決定）。
+この表記は capture_folder() で決める。画像を読むスクリプトはすべてこの resolve() を通すこと。
 
 大文字・小文字だけが違うフォルダが2つある場合（クラウドに古い `usa` と `USA` が並んでいた、2026-10-11）、
 表記が完全に一致するものを優先し、次にファイルが実際に見つかるほうを選ぶ。
@@ -17,6 +16,14 @@ from __future__ import annotations
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+# source_capture に書くチームフォルダ名の例外（原則は team と同じ英小文字）
+FOLDER_NAME = {"usa": "USA"}
+
+
+def capture_folder(team: str) -> str:
+    """source_capture に書くチームフォルダ名（usa → USA、それ以外は英小文字のまま）"""
+    return FOLDER_NAME.get(team.lower(), team.lower())
 
 
 def resolve(rel: str | Path) -> Path | None:
