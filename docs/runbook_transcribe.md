@@ -35,6 +35,10 @@ Brazil・Canada（2026-10-04）では、この手順のチェックを「画像�
 ## 0. 準備
 
 1. `add_repo`（access: push）で `yu20190803/prospi-real` を追加し、`/home/claude/prospi-real` に clone。
+   **`add_repo`（`mcp__claude-code-remote__add_repo`）は後から読み込む方式のツールで、最初は一覧に出ない。**
+   ToolSearch で `select:mcp__claude-code-remote__add_repo` を読み込んでから呼ぶ（「ツールが無い」と判断しない。
+   2026-10-11 の実行でこれを飛ばし、clone は読み取り専用でできたが push が 403 で拒否された）。
+   呼んだあと `git push --dry-run origin main` で push できることを確かめてから先へ進む。
 2. `cd /home/claude/prospi-real && pip install -r requirements.txt --break-system-packages`
 3. PCにリンクされていること（`mcp__remote-devices__*` が使え、`get_device_info` の
    `connectedFolders` に `C:\dev\claude\prospi-real` がある）。なければ
@@ -47,10 +51,14 @@ Brazil・Canada（2026-10-04）では、この手順のチェックを「画像�
 
 1. `device_list_dir` で `C:\dev\claude\prospi-real\captures\wbc`（と `npb` があればそれも）を
    **再帰なしで**一覧し、チームフォルダ名を得る（再帰一覧は900件超になり重いので使わない）。
-2. `python3 src/pending.py --done-count` で、チームごとの「処理済みとして記録された画像の数」を見る。
-3. チームフォルダ名の順に、`device_list_dir`（再帰なし）でそのフォルダの画像数を数え、
-   記録数より多いチーム（＝未処理がある）を最初に見つけたら、それを今回のチームにする。
-   全チームで一致していれば「全チームの書き起こしが完了しました」と報告して終了（何もコミットしない）。
+2. 各チームフォルダを `device_list_dir`（再帰なし）で一覧し、ファイル名を
+   `{"wbc/Australia": ["Screen_....png", ...], "wbc/Brazil": [...], ...}`（チーム名はPCの表記のまま）の形で
+   `work/pc_listing.json` に書く。
+3. `python3 src/pending.py --pick work/pc_listing.json` を実行する。1行目が今回のチーム、2行目以降がそのチームの
+   未記録の画像。何も出なければ「全チームの書き起こしが完了しました」と報告して終了（何もコミットしない）。
+   **枚数で比べない**（PCにだけある綴り違いの改名コピー1枚で枚数がずれ、処理済みのチームを選び続けることがある）。
+   未記録の画像が改名コピー（`<名前>_<背番号>.png`）だけなら、prep_team.py が重複として `_skipped.json` に
+   記録して終わる。それもコミットして push する（しないと次回も同じチームが選ばれる）。
 4. そのチームのフォルダの**画像をすべて**（処理済みも含めて。重複判定に使う）`device_stage_files` で
    取り込む（1回50件まで。超えたら分ける）。届き先は `/mnt/user-data/uploads/prospi-real/captures/...`。
 5. `ln -sfn /mnt/user-data/uploads/prospi-real/captures /home/claude/prospi-real/captures`
@@ -122,8 +130,13 @@ python3 src/finalize_team.py wbc/<team>
 2. GitHub（prospi-real、公開）: **直前の `finalize_team.py wbc/<team>` が終了コード 0 だったときだけ**、
    `data/` と `site/index.html` をコミットして push（ブランチは main）。
    **push 前に `git status --short` で `captures`・`work`・画像ファイルが含まれていないことを確認する。**
-   拒否されたら `git pull --rebase` してから push。強制 push はしない。push に失敗しても処理は止めない
-   （次回は別の未処理チームに進む設計）。成否は報告に書く。
+   拒否されたら `git pull --rebase` してから push。強制 push はしない。
+   **403（access denied）で拒否されたら**、`add_repo`（access: push）を呼び直してからもう一度 push する。
+   それでも push できなければ、作業が消えないように `git format-patch origin/main -o /mnt/user-data/outputs/prospi-real/_pending_push/`
+   でパッチを作り、`device_commit_files` で PC の `C:\dev\claude\prospi-real\_pending_push\` に書き戻して、
+   その旨を報告する（次の実行またはユーザーが適用できる。`_pending_push/` は .gitignore 済み）。
+   **次の実行の最初に** PC の `_pending_push\` にパッチがあれば、それを取り込み `git am` で適用して push してから
+   通常の手順に入る（push できたらPC側のパッチは消さず、報告で削除をお願いする）。
 
 ## 7. 報告（短く、日本語で）
 

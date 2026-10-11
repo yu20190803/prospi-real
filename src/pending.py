@@ -4,6 +4,7 @@
     python src/pending.py              # 一覧を表示
     python src/pending.py --next-team  # 未処理が残っている最初のチームのフォルダ（例: wbc/Australia）だけを出力
                                        # 残りがなければ何も出力しない
+    python src/pending.py --pick <一覧.json> # PCのファイル名一覧から、未記録の画像がある最初のチームを選ぶ
     python src/pending.py --done-count # チームごとの「処理済みとして記録された画像の数」を出力
                                        # （PCのフォルダの画像数がこれより多いチームに未処理がある）
 
@@ -77,7 +78,30 @@ def done_counts() -> "OrderedDict[str, int]":
     return OrderedDict((t, len(v)) for t, v in out.items())
 
 
+def pick(listing_path: str) -> int:
+    """PCのファイル名一覧から、未記録の画像があるチームを1つ選ぶ（定期実行の対象チームの決定に使う）。
+
+    listing は {"wbc/Australia": ["Screen_....png", "stewart_44.png", ...], ...}（チーム名はPCの表記のまま）。
+    枚数ではなくファイル名で比べる（2026-10-11: PCにだけある綴り違いの改名コピー1枚で枚数がずれ、
+    処理済みの Australia が選ばれ続ける問題があった）。チーム名の順に見て、最初に未記録の画像がある
+    チームを1行目に、その未記録ファイル名を2行目以降に出す。全部記録済みなら何も出さず終了コード 1。
+    """
+    listing = json.loads(Path(listing_path).read_text(encoding="utf-8"))
+    _, _, done = load()
+    for team in sorted(listing, key=str.lower):
+        names = [n for n in listing[team] if Path(n).suffix.lower() in IMG_EXT]
+        todo = [n for n in sorted(names) if key(f"captures/{team}/{n}") not in done]
+        if todo:
+            print(team)
+            for n in todo:
+                print(f"  {n}")
+            return 0
+    return 1
+
+
 def main(argv: list[str]) -> None:
+    if "--pick" in argv:
+        sys.exit(pick(argv[argv.index("--pick") + 1]))
     if "--done-count" in argv:
         for team, n in done_counts().items():
             print(f"{team}\t{n}")
