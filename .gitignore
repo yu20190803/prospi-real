@@ -5,3 +5,6 @@ output/
 captures
 site/index_work.html
 work/
+# data/ 配下に画像を置かない（ゲーム画面の著作物）
+data/**/*.png
+data/**/*.jpg
