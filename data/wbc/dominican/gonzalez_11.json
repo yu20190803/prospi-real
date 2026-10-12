@@ -1,0 +1,154 @@
+{
+  "category": "wbc",
+  "team": "dominican",
+  "kind": "batter",
+  "player_id": "gonzalez_11",
+  "source_capture": "captures/wbc/dominican/gonzalez_11.png",
+  "source_original": "captures/wbc/Dominican/Screen_20260811_175533_342.png",
+  "year": 2026,
+  "uniform_number": "11",
+  "name": "ゴンザレス",
+  "position": "遊撃手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 290
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 50
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 51
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "E",
+      "value": 49
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 74
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 61
+    },
+    {
+      "label": "スローイング",
+      "grade": "C",
+      "value": 60
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 51
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "SS",
+    "primary_grade": 71,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "SS",
+        "grade": "B",
+        "value": 71
+      },
+      {
+        "position": "2B",
+        "grade": "B",
+        "value": 71
+      },
+      {
+        "position": "3B",
+        "grade": "B",
+        "value": 71
+      },
+      {
+        "position": "1B",
+        "grade": "C",
+        "value": 66
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "中弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

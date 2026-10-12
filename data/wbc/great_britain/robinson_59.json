@@ -1,0 +1,167 @@
+{
+  "category": "wbc",
+  "team": "great_britain",
+  "kind": "batter",
+  "player_id": "robinson_59",
+  "source_capture": "captures/wbc/great_britain/robinson_59.png",
+  "source_original": "captures/wbc/Great_britain/Screen_20260811_175916_141.png",
+  "year": 2026,
+  "uniform_number": "59",
+  "name": "K.ロビンソン",
+  "position": "右翼手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 265
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 39
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 46
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "D",
+      "value": 58
+    },
+    {
+      "label": "走力",
+      "grade": "A",
+      "value": 82
+    },
+    {
+      "label": "捕球",
+      "grade": "F",
+      "value": 38
+    },
+    {
+      "label": "スローイング",
+      "grade": "E",
+      "value": 41
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 59
+    },
+    {
+      "label": "疲労回復",
+      "grade": "E",
+      "value": 42
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "RF",
+    "primary_grade": 48,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "RF",
+        "grade": "E",
+        "value": 48
+      },
+      {
+        "position": "CF",
+        "grade": "E",
+        "value": 46
+      },
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 43
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "意外性",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "神の手",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ホーム突入",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "category": "wbc",
+  "team": "israel",
+  "kind": "pitcher",
+  "player_id": "kremer_64",
+  "source_capture": "captures/wbc/israel/kremer_64.png",
+  "source_original": "captures/wbc/Israel/Screen_20260811_175559_206.png",
+  "year": 2026,
+  "uniform_number": "64",
+  "name": "クレイマー",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 325
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "154km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 72,
+      "grade": "B"
+    },
+    {
+      "label": "疲労回復",
+      "value": 69,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "D",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "C",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ドロップカーブ",
+      "power": "E",
+      "control": "C",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "SFF",
+      "power": "C",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ツーシーム",
+      "power": "C",
+      "control": "B",
+      "break": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "E",
+      "highlighted": true,
+      "type": "minus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "尻上がり",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打球反応○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "一発",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

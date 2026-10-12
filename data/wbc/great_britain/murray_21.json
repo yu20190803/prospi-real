@@ -1,0 +1,116 @@
+{
+  "category": "wbc",
+  "team": "great_britain",
+  "kind": "pitcher",
+  "player_id": "murray_21",
+  "source_capture": "captures/wbc/great_britain/murray_21.png",
+  "source_original": "captures/wbc/Great_britain/Screen_20260811_175813_892.png",
+  "year": 2026,
+  "uniform_number": "21",
+  "name": "マレー",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 234
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "150km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 57,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 52,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "B",
+      "control": "E",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "F",
+      "control": "F",
+      "break": 2
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "フォーク",
+      "power": "C",
+      "control": "G",
+      "break": 4
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ツーシーム",
+      "power": "D",
+      "control": "G",
+      "break": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

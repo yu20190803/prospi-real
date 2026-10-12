@@ -1,0 +1,180 @@
+{
+  "category": "wbc",
+  "team": "dominican",
+  "kind": "batter",
+  "player_id": "soto_22",
+  "source_capture": "captures/wbc/dominican/soto_22.png",
+  "source_original": "captures/wbc/Dominican/Screen_20260811_175552_782.png",
+  "year": 2026,
+  "uniform_number": "22",
+  "name": "J.ソト",
+  "position": "右翼手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 473
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "B",
+          "value": 70
+        },
+        {
+          "vs": "対左",
+          "grade": "C",
+          "value": 61
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "A",
+      "value": 89
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 61
+    },
+    {
+      "label": "スローイング",
+      "grade": "B",
+      "value": 76
+    },
+    {
+      "label": "肩力",
+      "grade": "B",
+      "value": 77
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 75
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "RF",
+    "primary_grade": 36,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "RF",
+        "grade": "F",
+        "value": 36
+      },
+      {
+        "position": "LF",
+        "grade": "F",
+        "value": 36
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "パワーヒッター",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "A",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "存在感",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "広角打法",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンスメーカー",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対ストレート○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "カット打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

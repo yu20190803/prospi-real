@@ -1,0 +1,139 @@
+{
+  "category": "wbc",
+  "team": "israel",
+  "kind": "batter",
+  "player_id": "harris_35",
+  "source_capture": "captures/wbc/israel/harris_35.png",
+  "source_original": "captures/wbc/Israel/Screen_20260811_175653_504.png",
+  "year": 2026,
+  "uniform_number": "35",
+  "name": "ハリス",
+  "position": "捕手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 313
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 42
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 52
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 70
+    },
+    {
+      "label": "走力",
+      "grade": "F",
+      "value": 31
+    },
+    {
+      "label": "捕球",
+      "grade": "F",
+      "value": 35
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 54
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 60
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 60
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "C",
+    "primary_grade": 79,
+    "catcher_lead_grade": "D",
+    "positions": [
+      {
+        "position": "C",
+        "grade": "B",
+        "value": 79
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "パワーヒッター",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "サヨナラ男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "category": "wbc",
+  "team": "israel",
+  "kind": "batter",
+  "player_id": "bennett_40",
+  "source_capture": "captures/wbc/israel/bennett_40.png",
+  "source_original": "captures/wbc/Israel/Screen_20260811_175737_991.png",
+  "year": 2026,
+  "uniform_number": "40",
+  "name": "ベネット",
+  "position": "左翼手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 280
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 42
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 56
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 62
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 72
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 44
+    },
+    {
+      "label": "スローイング",
+      "grade": "E",
+      "value": 49
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 62
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 53
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "RF",
+    "primary_grade": 52,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "RF",
+        "grade": "D",
+        "value": 52
+      },
+      {
+        "position": "CF",
+        "grade": "E",
+        "value": 48
+      },
+      {
+        "position": "LF",
+        "grade": "D",
+        "value": 56
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "中弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "広角打法",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

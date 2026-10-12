@@ -1,0 +1,151 @@
+{
+  "category": "wbc",
+  "team": "dominican",
+  "kind": "batter",
+  "player_id": "wells_28",
+  "source_capture": "captures/wbc/dominican/wells_28.png",
+  "source_original": "captures/wbc/Dominican/Screen_20260811_175508_872.png",
+  "year": 2026,
+  "uniform_number": "28",
+  "name": "ウェルズ",
+  "position": "捕手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 341
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 40
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 44
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 79
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 54
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 53
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 51
+    },
+    {
+      "label": "肩力",
+      "grade": "B",
+      "value": 75
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 55
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "C",
+    "primary_grade": 55,
+    "catcher_lead_grade": "D",
+    "positions": [
+      {
+        "position": "C",
+        "grade": "D",
+        "value": 55
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "サヨナラ男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

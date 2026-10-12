@@ -1,0 +1,138 @@
+{
+  "category": "wbc",
+  "team": "great_britain",
+  "kind": "batter",
+  "player_id": "hamilton_25",
+  "source_capture": "captures/wbc/great_britain/hamilton_25.png",
+  "source_original": "captures/wbc/Great_britain/Screen_20260811_175909_151.png",
+  "year": 2026,
+  "uniform_number": "25",
+  "name": "ハミルトン",
+  "position": "遊撃手",
+  "throws_bats": "右投両打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 306
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "C",
+          "value": 66
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 52
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 66
+    },
+    {
+      "label": "走力",
+      "grade": "C",
+      "value": 66
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 57
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 56
+    },
+    {
+      "label": "肩力",
+      "grade": "B",
+      "value": 70
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 53
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "SS",
+    "primary_grade": 53,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "SS",
+        "grade": "D",
+        "value": 53
+      },
+      {
+        "position": "RF",
+        "grade": "F",
+        "value": 37
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "中弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

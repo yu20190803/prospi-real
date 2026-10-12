@@ -1,0 +1,132 @@
+{
+  "category": "wbc",
+  "team": "great_britain",
+  "kind": "pitcher",
+  "player_id": "beck_19",
+  "source_capture": "captures/wbc/great_britain/beck_19.png",
+  "source_original": "captures/wbc/Great_britain/Screen_20260811_175749_104.png",
+  "year": 2026,
+  "uniform_number": "19",
+  "name": "B.ベック",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 252
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "152km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 58,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 48,
+      "grade": "E"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "真っスラ",
+      "power": "E",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ドロップカーブ",
+      "power": "C",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "縦スライダー",
+      "power": "C",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ーシームフ",
+      "power": "F",
+      "control": "F",
+      "break": null
+    },
+    {
+      "category": "curve",
+      "order": 2,
+      "name": "スラーブ",
+      "power": "E",
+      "control": "F",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 2,
+      "name": "SFF",
+      "power": "E",
+      "control": "F",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "category": "wbc",
+  "team": "great_britain",
+  "kind": "pitcher",
+  "player_id": "beck_43",
+  "source_capture": "captures/wbc/great_britain/beck_43.png",
+  "source_original": "captures/wbc/Great_britain/Screen_20260811_175752_684.png",
+  "year": 2026,
+  "uniform_number": "43",
+  "name": "T.ベック",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 249
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "156km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 58,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 51,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "E",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "C",
+      "control": "E",
+      "break": 5
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ドロップカーブ",
+      "power": "E",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "高速スライダー",
+      "power": "E",
+      "control": "D",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

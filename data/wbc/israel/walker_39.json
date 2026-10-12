@@ -1,0 +1,116 @@
+{
+  "category": "wbc",
+  "team": "israel",
+  "kind": "pitcher",
+  "player_id": "walker_39",
+  "source_capture": "captures/wbc/israel/walker_39.png",
+  "source_original": "captures/wbc/Israel/Screen_20260811_175614_415.png",
+  "year": 2026,
+  "uniform_number": "39",
+  "name": "ウォーカー",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 309
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "148km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 79,
+      "grade": "B"
+    },
+    {
+      "label": "疲労回復",
+      "value": 54,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "A",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "F",
+      "control": "C",
+      "break": 3
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "シンキング",
+      "power": "E",
+      "control": "C",
+      "break": 2
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "フォーク",
+      "power": "F",
+      "control": "D",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

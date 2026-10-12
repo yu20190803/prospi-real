@@ -1,0 +1,144 @@
+{
+  "category": "wbc",
+  "team": "dominican",
+  "kind": "pitcher",
+  "player_id": "severino_40",
+  "source_capture": "captures/wbc/dominican/severino_40.png",
+  "source_original": "captures/wbc/Dominican/Screen_20260811_175415_227.png",
+  "year": 2026,
+  "uniform_number": "40",
+  "name": "セベリーノ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 386
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "159km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 72,
+      "grade": "B"
+    },
+    {
+      "label": "疲労回復",
+      "value": 76,
+      "grade": "B"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "△",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ムービング",
+      "power": "C",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "A",
+      "control": "E",
+      "break": 5
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "スラーブ",
+      "power": "C",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "E",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ツーシーム",
+      "power": "D",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "カットボール",
+      "power": "D",
+      "control": "E",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "クイック",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "牽制◎",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打球反応○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

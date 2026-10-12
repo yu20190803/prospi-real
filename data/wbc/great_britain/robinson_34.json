@@ -1,0 +1,148 @@
+{
+  "category": "wbc",
+  "team": "great_britain",
+  "kind": "pitcher",
+  "player_id": "robinson_34",
+  "source_capture": "captures/wbc/great_britain/robinson_34.png",
+  "source_original": "captures/wbc/Great_britain/Screen_20260811_175821_518.png",
+  "year": 2026,
+  "uniform_number": "34",
+  "name": "ロビンソン",
+  "position": "投手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 209
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "147km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 50,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 60,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "C",
+      "control": "E",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "E",
+      "control": "E",
+      "break": 4
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "ンキングフ",
+      "power": "G",
+      "control": "E",
+      "break": 1
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ナックルカーブ",
+      "power": "F",
+      "control": "D",
+      "break": 1
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ],
+  "unverified": [
+    "pitches[].break"
+  ],
+  "break_panel_mismatch": [
+    {
+      "pitch": "ンキングフ",
+      "category": "shoot",
+      "order": 1,
+      "panel1": 1,
+      "panel2": 0,
+      "adopted": 1,
+      "panel1_pixels": [
+        "117/25",
+        "50/2",
+        "50/0",
+        "50/0",
+        "50/0",
+        "50/0",
+        "43/2"
+      ],
+      "panel2_pixels": [
+        "56/11",
+        "51/3",
+        "49/1",
+        "52/2",
+        "50/0",
+        "50/0",
+        "43/0"
+      ],
+      "reason": "第一パネルの点灯1段は明確（明るさ/彩度 117/25）。第二パネルの1〜1段目はしきい値（明るさ75・彩度20）未満だが、同じ柄の未点灯段（彩度最大2・明るさ中央値50）より高い（56/11）。暗い色の柄が第二パネルで背景に近くなる画像側の問題と判断し、第一パネルの値を採用"
+    }
+  ]
+}

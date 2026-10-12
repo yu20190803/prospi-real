@@ -1,0 +1,124 @@
+{
+  "category": "wbc",
+  "team": "israel",
+  "kind": "pitcher",
+  "player_id": "ross_41",
+  "source_capture": "captures/wbc/israel/ross_41.png",
+  "source_original": "captures/wbc/Israel/Screen_20260811_175617_737.png",
+  "year": 2026,
+  "uniform_number": "41",
+  "name": "ロス",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 243
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "143km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 81,
+      "grade": "A"
+    },
+    {
+      "label": "疲労回復",
+      "value": 63,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "C",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "高速スライダー",
+      "power": "E",
+      "control": "D",
+      "break": 2
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "フォーク",
+      "power": "F",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "サークルチ",
+      "power": "F",
+      "control": "C",
+      "break": 2
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ツーシーム",
+      "power": "C",
+      "control": "D",
+      "break": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

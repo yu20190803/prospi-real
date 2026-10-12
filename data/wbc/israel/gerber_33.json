@@ -1,0 +1,124 @@
+{
+  "category": "wbc",
+  "team": "israel",
+  "kind": "pitcher",
+  "player_id": "gerber_33",
+  "source_capture": "captures/wbc/israel/gerber_33.png",
+  "source_original": "captures/wbc/Israel/Screen_20260811_175602_857.png",
+  "year": 2026,
+  "uniform_number": "33",
+  "name": "ゲバー",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 248
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "157km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 51,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 52,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "C",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "C",
+      "control": "D",
+      "break": 2
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "SFF",
+      "power": "E",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "シンキング",
+      "power": "F",
+      "control": "F",
+      "break": 2
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "スライダー",
+      "power": "E",
+      "control": "E",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

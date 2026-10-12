@@ -1,0 +1,162 @@
+{
+  "category": "wbc",
+  "team": "dominican",
+  "kind": "batter",
+  "player_id": "peldomo_2",
+  "source_capture": "captures/wbc/dominican/peldomo_2.png",
+  "source_original": "captures/wbc/Dominican/Screen_20260811_175518_946.png",
+  "year": 2026,
+  "uniform_number": "2",
+  "name": "ペルドモ",
+  "position": "遊撃手",
+  "throws_bats": "右投両打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 428
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "C",
+          "value": 66
+        },
+        {
+          "vs": "対左",
+          "grade": "B",
+          "value": 77
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 69
+    },
+    {
+      "label": "走力",
+      "grade": "C",
+      "value": 64
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 65
+    },
+    {
+      "label": "スローイング",
+      "grade": "E",
+      "value": 49
+    },
+    {
+      "label": "肩力",
+      "grade": "A",
+      "value": 81
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 75
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "SS",
+    "primary_grade": 68,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "SS",
+        "grade": "C",
+        "value": 68
+      },
+      {
+        "position": "3B",
+        "grade": "F",
+        "value": 39
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "満塁男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "悪球打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "プルヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "死球",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

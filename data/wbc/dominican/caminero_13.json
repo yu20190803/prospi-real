@@ -1,0 +1,172 @@
+{
+  "category": "wbc",
+  "team": "dominican",
+  "kind": "batter",
+  "player_id": "caminero_13",
+  "source_capture": "captures/wbc/dominican/caminero_13.png",
+  "source_original": "captures/wbc/Dominican/Screen_20260811_175512_260.png",
+  "year": 2026,
+  "uniform_number": "13",
+  "name": "カミネロ",
+  "position": "三塁手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 410
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "C",
+          "value": 65
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "A",
+      "value": 88
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 57
+    },
+    {
+      "label": "捕球",
+      "grade": "F",
+      "value": 33
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 53
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 69
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 69
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "3B",
+    "primary_grade": 48,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "3B",
+        "grade": "E",
+        "value": 48
+      },
+      {
+        "position": "SS",
+        "grade": "F",
+        "value": 39
+      },
+      {
+        "position": "2B",
+        "grade": "F",
+        "value": 39
+      },
+      {
+        "position": "1B",
+        "grade": "E",
+        "value": 45
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "ラインドライブ",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "広角打法",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "満塁男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "悪球打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

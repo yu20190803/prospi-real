@@ -1,0 +1,158 @@
+{
+  "category": "wbc",
+  "team": "great_britain",
+  "kind": "batter",
+  "player_id": "lewis_6",
+  "source_capture": "captures/wbc/great_britain/lewis_6.png",
+  "source_original": "captures/wbc/Great_britain/Screen_20260811_175851_554.png",
+  "year": 2026,
+  "uniform_number": "6",
+  "name": "ルイスJr.",
+  "position": "二塁手",
+  "throws_bats": "右投両打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 246
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 33
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 39
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 63
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 77
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 42
+    },
+    {
+      "label": "スローイング",
+      "grade": "F",
+      "value": 37
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 57
+    },
+    {
+      "label": "疲労回復",
+      "grade": "F",
+      "value": 38
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "2B",
+    "primary_grade": 53,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "2B",
+        "grade": "D",
+        "value": 53
+      },
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 46
+      },
+      {
+        "position": "CF",
+        "grade": "F",
+        "value": 38
+      },
+      {
+        "position": "RF",
+        "grade": "E",
+        "value": 42
+      },
+      {
+        "position": "SS",
+        "grade": "F",
+        "value": 38
+      },
+      {
+        "position": "3B",
+        "grade": "E",
+        "value": 46
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

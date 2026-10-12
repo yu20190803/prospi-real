@@ -1,0 +1,150 @@
+{
+  "category": "wbc",
+  "team": "dominican",
+  "kind": "batter",
+  "player_id": "santana_41",
+  "source_capture": "captures/wbc/dominican/santana_41.png",
+  "source_original": "captures/wbc/Dominican/Screen_20260811_175536_648.png",
+  "year": 2026,
+  "uniform_number": "41",
+  "name": "C.サンタナ",
+  "position": "一塁手",
+  "throws_bats": "右投両打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 307
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 44
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 69
+    },
+    {
+      "label": "走力",
+      "grade": "E",
+      "value": 46
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 57
+    },
+    {
+      "label": "スローイング",
+      "grade": "C",
+      "value": 62
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 64
+    },
+    {
+      "label": "疲労回復",
+      "grade": "E",
+      "value": 41
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "1B",
+    "primary_grade": 74,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "1B",
+        "grade": "B",
+        "value": 74
+      },
+      {
+        "position": "3B",
+        "grade": "F",
+        "value": 36
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "A",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "満塁男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

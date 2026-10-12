@@ -1,0 +1,158 @@
+{
+  "category": "wbc",
+  "team": "dominican",
+  "kind": "pitcher",
+  "player_id": "mejia_47",
+  "source_capture": "captures/wbc/dominican/mejia_47.png",
+  "source_original": "captures/wbc/Dominican/Screen_20260811_175452_529.png",
+  "year": 2026,
+  "uniform_number": "47",
+  "name": "メヒア",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 360
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "160km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 44,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 65,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "真っスラ",
+      "power": "A",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "A",
+      "control": "E",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "ークルチェ",
+      "power": "G",
+      "control": "F",
+      "break": 1
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逃げ球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対ランナー○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ],
+  "unverified": [
+    "pitches[].break"
+  ],
+  "break_panel_mismatch": [
+    {
+      "pitch": "ークルチェ",
+      "category": "sinker",
+      "order": 1,
+      "panel1": 1,
+      "panel2": 0,
+      "adopted": 1,
+      "panel1_pixels": [
+        "114/21",
+        "52/3",
+        "52/2",
+        "49/0",
+        "52/2",
+        "50/0",
+        "50/2"
+      ],
+      "panel2_pixels": [
+        "58/10",
+        "49/1",
+        "49/0",
+        "49/1",
+        "50/0",
+        "49/1",
+        "51/4"
+      ],
+      "reason": "第一パネルの点灯1段は明確（明るさ/彩度 114/21）。第二パネルの1〜1段目はしきい値（明るさ75・彩度20）未満だが、同じ柄の未点灯段（彩度最大1・明るさ中央値49）より高い（58/10）。暗い色の柄が第二パネルで背景に近くなる画像側の問題と判断し、第一パネルの値を採用"
+    }
+  ]
+}

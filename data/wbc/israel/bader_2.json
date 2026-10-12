@@ -1,0 +1,179 @@
+{
+  "category": "wbc",
+  "team": "israel",
+  "kind": "batter",
+  "player_id": "bader_2",
+  "source_capture": "captures/wbc/israel/bader_2.png",
+  "source_original": "captures/wbc/Israel/Screen_20260811_175734_734.png",
+  "year": 2026,
+  "uniform_number": "2",
+  "name": "ベイダー",
+  "position": "左翼手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 351
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 53
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 46
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 70
+    },
+    {
+      "label": "走力",
+      "grade": "A",
+      "value": 81
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 64
+    },
+    {
+      "label": "スローイング",
+      "grade": "E",
+      "value": 47
+    },
+    {
+      "label": "肩力",
+      "grade": "A",
+      "value": 88
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 56
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "RF",
+    "primary_grade": 56,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "RF",
+        "grade": "D",
+        "value": 56
+      },
+      {
+        "position": "CF",
+        "grade": "B",
+        "value": 78
+      },
+      {
+        "position": "LF",
+        "grade": "B",
+        "value": 72
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "中弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "意外性",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "プルヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "死球",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "category": "wbc",
+  "team": "great_britain",
+  "kind": "batter",
+  "player_id": "kopaniak_29",
+  "source_capture": "captures/wbc/great_britain/kopaniak_29.png",
+  "source_original": "captures/wbc/Great_britain/Screen_20260811_175912_645.png",
+  "year": 2026,
+  "uniform_number": "29",
+  "name": "コパーニアック",
+  "position": "左翼手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 280
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 44
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 51
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 72
+    },
+    {
+      "label": "走力",
+      "grade": "C",
+      "value": 63
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 51
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 54
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 65
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 53
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "LF",
+    "primary_grade": 43,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 43
+      },
+      {
+        "position": "CF",
+        "grade": "E",
+        "value": 41
+      },
+      {
+        "position": "RF",
+        "grade": "E",
+        "value": 43
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

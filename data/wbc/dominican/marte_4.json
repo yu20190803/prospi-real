@@ -1,0 +1,161 @@
+{
+  "category": "wbc",
+  "team": "dominican",
+  "kind": "batter",
+  "player_id": "marte_4",
+  "source_capture": "captures/wbc/dominican/marte_4.png",
+  "source_original": "captures/wbc/Dominican/Screen_20260811_175523_587.png",
+  "year": 2026,
+  "uniform_number": "4",
+  "name": "マルテ",
+  "position": "二塁手",
+  "throws_bats": "右投両打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 424
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "A",
+          "value": 80
+        },
+        {
+          "vs": "対左",
+          "grade": "B",
+          "value": 75
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "A",
+      "value": 84
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 56
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 59
+    },
+    {
+      "label": "スローイング",
+      "grade": "B",
+      "value": 70
+    },
+    {
+      "label": "肩力",
+      "grade": "A",
+      "value": 84
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 58
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "2B",
+    "primary_grade": 70,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "2B",
+        "grade": "B",
+        "value": 70
+      },
+      {
+        "position": "SS",
+        "grade": "E",
+        "value": 43
+      },
+      {
+        "position": "CF",
+        "grade": "F",
+        "value": 36
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "ラインドライブ",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対ストレート○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "プルヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "死球",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

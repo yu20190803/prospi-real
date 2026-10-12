@@ -1,0 +1,145 @@
+{
+  "category": "wbc",
+  "team": "israel",
+  "kind": "batter",
+  "player_id": "mervis_52",
+  "source_capture": "captures/wbc/israel/mervis_52.png",
+  "source_original": "captures/wbc/Israel/Screen_20260811_175700_539.png",
+  "year": 2026,
+  "uniform_number": "52",
+  "name": "マービス",
+  "position": "一塁手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 223
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 21
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 64
+    },
+    {
+      "label": "走力",
+      "grade": "E",
+      "value": 40
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 60
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 66
+    },
+    {
+      "label": "疲労回復",
+      "grade": "E",
+      "value": 41
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "1B",
+    "primary_grade": 58,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "1B",
+        "grade": "D",
+        "value": 58
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "アーチスト",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "category": "wbc",
+  "team": "dominican",
+  "kind": "batter",
+  "player_id": "machado_3",
+  "source_capture": "captures/wbc/dominican/machado_3.png",
+  "source_original": "captures/wbc/Dominican/Screen_20260811_175526_361.png",
+  "year": 2026,
+  "uniform_number": "3",
+  "name": "マチャド",
+  "position": "三塁手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 418
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "C",
+          "value": 65
+        },
+        {
+          "vs": "対左",
+          "grade": "C",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "A",
+      "value": 85
+    },
+    {
+      "label": "走力",
+      "grade": "E",
+      "value": 48
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 64
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 51
+    },
+    {
+      "label": "肩力",
+      "grade": "B",
+      "value": 78
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 70
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "3B",
+    "primary_grade": 67,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "3B",
+        "grade": "C",
+        "value": 67
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "パワーヒッター",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "A",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "満塁男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "粘り打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンスメーカー",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

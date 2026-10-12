@@ -1,0 +1,122 @@
+{
+  "category": "wbc",
+  "team": "israel",
+  "kind": "pitcher",
+  "player_id": "morris_32",
+  "source_capture": "captures/wbc/israel/morris_32.png",
+  "source_original": "captures/wbc/Israel/Screen_20260811_175606_502.png",
+  "year": 2026,
+  "uniform_number": "32",
+  "name": "モーリス",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 264
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "145km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 85,
+      "grade": "A"
+    },
+    {
+      "label": "疲労回復",
+      "value": 50,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "B",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "高速シュート",
+      "power": "E",
+      "control": "B",
+      "break": 2
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ナックルカーブ",
+      "power": "F",
+      "control": "C",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "ナックル",
+      "power": "E",
+      "control": "C",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "シュート回転",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

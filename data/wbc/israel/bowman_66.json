@@ -1,0 +1,130 @@
+{
+  "category": "wbc",
+  "team": "israel",
+  "kind": "pitcher",
+  "player_id": "bowman_66",
+  "source_capture": "captures/wbc/israel/bowman_66.png",
+  "source_original": "captures/wbc/Israel/Screen_20260811_175628_796.png",
+  "year": 2026,
+  "uniform_number": "66",
+  "name": "ボウマン",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 277
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "150km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 41,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 60,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ツーシーム",
+      "power": "D",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "B",
+      "control": "C",
+      "break": 5
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "SFF",
+      "power": "C",
+      "control": "C",
+      "break": 3
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ストレート",
+      "power": "F",
+      "control": "E",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "カットボール",
+      "power": "D",
+      "control": "D",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球持ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

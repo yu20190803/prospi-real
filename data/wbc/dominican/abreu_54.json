@@ -1,0 +1,142 @@
+{
+  "category": "wbc",
+  "team": "dominican",
+  "kind": "pitcher",
+  "player_id": "abreu_54",
+  "source_capture": "captures/wbc/dominican/abreu_54.png",
+  "source_original": "captures/wbc/Dominican/Screen_20260811_175448_528.png",
+  "year": 2026,
+  "uniform_number": "54",
+  "name": "アブレウ",
+  "position": "投手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 280
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "161km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 47,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 65,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "△",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "◎",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ツーシーム",
+      "power": "C",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "高速スライダー",
+      "power": "C",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "スラーブ",
+      "power": "E",
+      "control": "F",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "E",
+      "control": "F",
+      "break": 2
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ストレート",
+      "power": "D",
+      "control": "E",
+      "break": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "逃げ球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球速安定○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "四球",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

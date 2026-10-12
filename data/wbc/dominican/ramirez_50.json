@@ -1,0 +1,144 @@
+{
+  "category": "wbc",
+  "team": "dominican",
+  "kind": "batter",
+  "player_id": "ramirez_50",
+  "source_capture": "captures/wbc/dominican/ramirez_50.png",
+  "source_original": "captures/wbc/Dominican/Screen_20260811_175505_777.png",
+  "year": 2026,
+  "uniform_number": "50",
+  "name": "ラミレス",
+  "position": "捕手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 334
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 47
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 47
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "A",
+      "value": 83
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 57
+    },
+    {
+      "label": "捕球",
+      "grade": "F",
+      "value": 27
+    },
+    {
+      "label": "スローイング",
+      "grade": "F",
+      "value": 31
+    },
+    {
+      "label": "肩力",
+      "grade": "A",
+      "value": 80
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 61
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "C",
+    "primary_grade": 36,
+    "catcher_lead_grade": "E",
+    "positions": [
+      {
+        "position": "C",
+        "grade": "F",
+        "value": 36
+      },
+      {
+        "position": "1B",
+        "grade": "F",
+        "value": 26
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "死球",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

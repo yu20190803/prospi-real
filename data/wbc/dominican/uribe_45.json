@@ -1,0 +1,138 @@
+{
+  "category": "wbc",
+  "team": "dominican",
+  "kind": "pitcher",
+  "player_id": "uribe_45",
+  "source_capture": "captures/wbc/dominican/uribe_45.png",
+  "source_original": "captures/wbc/Dominican/Screen_20260811_175459_803.png",
+  "year": 2026,
+  "uniform_number": "45",
+  "name": "ウリーベ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 385
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "163km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 38,
+      "grade": "F"
+    },
+    {
+      "label": "疲労回復",
+      "value": 79,
+      "grade": "B"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "◎",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ームファス",
+      "power": "C",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "A",
+      "control": "D",
+      "break": 5
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ストレート",
+      "power": "F",
+      "control": "D",
+      "break": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逃げ球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球速安定○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打球反応○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ゴロピッチャー",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

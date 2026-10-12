@@ -1,0 +1,154 @@
+{
+  "category": "wbc",
+  "team": "israel",
+  "kind": "pitcher",
+  "player_id": "cohen_18",
+  "source_capture": "captures/wbc/israel/cohen_18.png",
+  "source_original": "captures/wbc/Israel/Screen_20260811_175621_955.png",
+  "year": 2026,
+  "uniform_number": "18",
+  "name": "コーエン",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 289
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "151km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 43,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 55,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "◎",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "D",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "B",
+      "control": "C",
+      "break": 4
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "シンキング",
+      "power": "F",
+      "control": "F",
+      "break": 2
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "C",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "高速スライダー",
+      "power": "D",
+      "control": "D",
+      "break": 4
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逃げ球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球速安定○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ゴロピッチャー",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "四球",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}
