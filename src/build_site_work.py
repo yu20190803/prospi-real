@@ -11,8 +11,8 @@ build_site.py（公開用 site/index.html）との違い:
 元キャプチャは JPEG にして site/work_img/<cat>/<team>/<player_id>.jpg に書き出し、ページからは
 相対パスで参照する（2026-10-12 変更。data URI 埋め込みでは248人で22MBになり、Artifact の
 1ページ16MB上限を超えたため）。Artifact へは画像を `files` として一緒に公開する。
-前回から内容が変わった画像の一覧を site/work_img_changed.json に書くので、2回目以降はそれだけを
-`files` に渡せばよい（渡さなかったファイルは Artifact 側に残る）。
+前回の公開から内容が変わった画像の一覧を site/work_img_changed.json に積み上げるので、2回目以降はそれだけを
+`files` に渡せばよい（渡さなかったファイルは Artifact 側に残る）。公開したらこのファイルを消す。
 `--inline` を付けると従来どおり data URI で1ファイルに埋め込む（ローカルで1枚だけ持ち運ぶ用）。
 ゲーム画面そのものを含むので site/index_work.html・site/work_img/ は .gitignore 対象。内部検証専用で、公開しない。
 """
@@ -23,7 +23,7 @@ import io
 import json
 from pathlib import Path
 
-from build_site import PUBLIC_KEYS as _BASE_KEYS
+from build_site import PUBLIC_KEYS as _BASE_KEYS, uid
 import grades
 from capture_paths import resolve
 
@@ -68,6 +68,7 @@ def main() -> None:
     for path in sorted((ROOT / "data").rglob("[!_]*.json")):
         d = json.loads(path.read_text(encoding="utf-8"))
         pub = {k: d[k] for k in PUBLIC_KEYS if k in d}
+        pub["uid"] = uid(d)
         players.append(pub)
         if inline:
             uri = capture_data_uri(d["source_capture"]) if d.get("source_capture") else None
@@ -83,7 +84,7 @@ def main() -> None:
                     changed.append(rel)
                 uri = rel
         if uri:
-            captures[d["player_id"]] = uri
+            captures[uid(d)] = uri
         else:
             missing.append(d["player_id"])
     data = json.dumps(players, ensure_ascii=False).replace("</", "<\\/")
@@ -96,6 +97,9 @@ def main() -> None:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(html, encoding="utf-8")
     if not inline:
+        # 公開するまで積み上げる（公開したら site/work_img_changed.json を消す）。2回続けて実行しても一覧が消えないように
+        prev = json.loads(CHANGED.read_text(encoding="utf-8")) if CHANGED.exists() else []
+        changed = list(dict.fromkeys(prev + changed))
         CHANGED.write_text(json.dumps(changed, ensure_ascii=False, indent=0), encoding="utf-8")
         print(f"画像 {len(captures)}枚（今回新しく書き出し・変更 {len(changed)}枚 → {CHANGED.relative_to(ROOT)}）")
     print(f"{len(players)}選手 → {OUT.relative_to(ROOT)}（検証用・非公開）")

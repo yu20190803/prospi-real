@@ -50,11 +50,17 @@ def pitch_panels(d: dict) -> list[dict]:
     return panels
 
 
+def uid(d: dict) -> str:
+    return f"{d['team']}__{d['player_id']}"
+
+
 def main() -> None:
     players = []
     for path in sorted((ROOT / "data").rglob("[!_]*.json")):
         d = json.loads(path.read_text(encoding="utf-8"))
         pub = {k: d[k] for k in PUBLIC_KEYS if k in d}
+        # player_id はチームをまたぐと重複する（日本代表の年度違いの suzuki_51 など）ので、ページ内の識別子は uid を使う
+        pub["uid"] = uid(d)
         players.append(pub)
     data = json.dumps(players, ensure_ascii=False).replace("</", "<\\/")
     html = (TEMPLATE.read_text(encoding="utf-8")

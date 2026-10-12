@@ -240,11 +240,11 @@ function renderList(){
   const cur=currentDetail();
   const th=head.map(h=>h.key?`<th scope="col"><button data-sort="${h.key}" ${h.key===key?`data-dir="${dir<0?"▼":"▲"}"`:""}>${h.label}</button></th>`:`<th scope="col">${h.label}</th>`).join("");
   const tr=rows.map(p=>{
-    const i=state.picked[kind].indexOf(p.player_id);
-    return `<tr class="${cur&&cur.player_id===p.player_id?"active":""}">
-      <td><input type="checkbox" class="pick" id="pick-${p.player_id}" data-id="${p.player_id}" ${i>=0?"checked":""} aria-label="${esc(p.name)}を比較">${i>=0?`<span class="swatch" style="background:${SERIES[i]}"></span>`:""}</td>
+    const i=state.picked[kind].indexOf(p.uid);
+    return `<tr class="${cur&&cur.uid===p.uid?"active":""}">
+      <td><input type="checkbox" class="pick" id="pick-${p.uid}" data-id="${p.uid}" ${i>=0?"checked":""} aria-label="${esc(p.name)}を比較">${i>=0?`<span class="swatch" style="background:${SERIES[i]}"></span>`:""}</td>
       <td><span class="no-badge" style="background:${badgeColor(p)}">${esc(p.uniform_number)}</span></td>
-      <td><button class="name-btn" data-detail="${p.player_id}">${esc(p.name)}</button><span class="tb">${esc(p.throws_bats)}</span></td>
+      <td><button class="name-btn" data-detail="${p.uid}">${esc(p.name)}</button><span class="tb">${esc(p.throws_bats)}</span></td>
       <td class="ovr-cell">${p.rarity.overall}</td>
       ${kind==="batter"?`<td>${esc(p.position)}</td>`:`<td><span class="num" style="font-size:16px">${speed(p)}</span><span class="tb" style="margin-left:2px">km/h</span></td>`}
       ${cols.map(c=>{const s=c.get(p);return `<td>${s?`<span class="gv">${G(s.grade)}<span class="num">${s.value}</span></span>`:"—"}</td>`;}).join("")}
@@ -256,7 +256,7 @@ function renderList(){
 /* ── 選手カード ── */
 function currentDetail(){
   const id=state.detail[state.kind];
-  return PLAYERS.find(p=>p.player_id===id) || PLAYERS.filter(p=>p.kind===state.kind).sort((a,b)=>b.rarity.overall-a.rarity.overall)[0];
+  return PLAYERS.find(p=>p.uid===id) || PLAYERS.filter(p=>p.kind===state.kind).sort((a,b)=>b.rarity.overall-a.rarity.overall)[0];
 }
 const SILHOUETTE=`<svg viewBox="0 0 100 100" aria-hidden="true"><path d="M26 40c0-16 11-26 24-26s24 10 24 26c0 3-1 5-2 6H28c-1-1-2-3-2-6z" fill="#2f3f55"/><rect x="22" y="40" width="56" height="6" rx="3" fill="#24324a"/><ellipse cx="50" cy="55" rx="18" ry="21" fill="#9fb0c0"/><path d="M8 100c2-18 20-27 42-27s40 9 42 27z" fill="#e4e7ec"/></svg>`;
 
@@ -425,7 +425,7 @@ function renderCard(){
 function renderCapture(){
   const p=currentDetail(), box=document.getElementById("capture");
   if(!box) return;
-  const img=CAPTURES[p.player_id];
+  const img=CAPTURES[p.uid];
   if(!img){ box.innerHTML=`<p class="cap-empty">元キャプチャが見つかりません（${esc(p.source_capture||"source_capture なし")}）</p>`; return; }
   box.innerHTML=`<img src="${img}" alt="${esc(p.name)}の元キャプチャ">
     <div class="cap-path">${esc(p.source_capture)}</div>`;
@@ -433,7 +433,7 @@ function renderCapture(){
 
 /* ── 比較 ── */
 function renderCompare(){
-  const ps=state.picked[state.kind].map(id=>PLAYERS.find(p=>p.player_id===id));
+  const ps=state.picked[state.kind].map(id=>PLAYERS.find(p=>p.uid===id));
   const legend=document.getElementById("cmp-legend"), box=document.getElementById("cmp");
   if(!ps.length){legend.innerHTML="";box.innerHTML=`<p class="empty">一覧のチェックボックスで選手を選ぶと、ここに能力が並びます。</p>`;return;}
   legend.innerHTML=ps.map((p,i)=>`<span><i style="background:${SERIES[i]}"></i>${esc(p.name)}</span>`).join("");
@@ -501,9 +501,9 @@ document.addEventListener("pointermove",e=>{const h=e.target.closest(".hit");if(
   tip.textContent=h.dataset.tip;tip.hidden=false;const r=tip.getBoundingClientRect();
   tip.style.left=Math.min(e.clientX+12,innerWidth-r.width-8)+"px";tip.style.top=(e.clientY+14)+"px";});
 
-["batter","pitcher"].forEach(k=>{state.picked[k]=PLAYERS.filter(p=>p.kind===k).sort((a,b)=>b.rarity.overall-a.rarity.overall).slice(0,2).map(p=>p.player_id);});
+["batter","pitcher"].forEach(k=>{state.picked[k]=PLAYERS.filter(p=>p.kind===k).sort((a,b)=>b.rarity.overall-a.rarity.overall).slice(0,2).map(p=>p.uid);});
 // チーム別タブはデータに含まれるチームから自動で作る（チームを足してもテンプレートの修正は不要）
-const TEAM_LABEL={usa:"USA",japan:"日本",korea:"Korea",dominican:"Dominican Rep.",great_britain:"Great Britain",chinese_taipei:"Chinese Taipei",
+const TEAM_LABEL={usa:"USA",japan:"日本",japan_2006:"日本 2006",japan_2009:"日本 2009",japan_2023:"日本 2023",japan_2026:"日本 2026",korea:"Korea",dominican:"Dominican Rep.",great_britain:"Great Britain",chinese_taipei:"Chinese Taipei",
   giants:"巨人",tigers:"阪神",carp:"広島",dragons:"中日",swallows:"ヤクルト",baystars:"DeNA",hawks:"ソフトバンク",buffaloes:"オリックス",lions:"西武",marines:"ロッテ",eagles:"楽天",fighters:"日本ハム"};
 const teamLabel=t=>TEAM_LABEL[t]||t.replace(/_/g," ").replace(/\b\w/g,c=>c.toUpperCase());
 (function(){
