@@ -25,6 +25,7 @@
 | `stats` | array | 下記。画面の表示順のまま |
 | `abilities` | array | 下記。画面の表示順のまま |
 | `unverified` | array（任意） | 推定値を含む項目名。投手は通常 `["pitches[].break"]`。ユーザー確認済みなら削除 |
+| `break_panel_mismatch` | array（任意） | 変化量の画素読み取りが構造的に不一致だった球種の記録（`finalize_team.py` が自動で書く。手で書かない）。各要素: `pitch`, `category`, `order`, `panel1`, `panel2`, `adopted`（採用した段数＝第一パネル）, `panel1_pixels`, `panel2_pixels`（各段の「明るさ/彩度」）, `reason`。あるときは `unverified` に `pitches[].break` が入る |
 
 ## `stats`
 

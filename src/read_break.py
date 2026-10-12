@@ -52,6 +52,27 @@ SLOT_RIGHT = {"slider": "r2L", "shoot": "r2R", "curve": "r3L", "fork": "r3C", "s
 SLOT_LEFT = {"slider": "r2R", "shoot": "r2L", "curve": "r3R", "fork": "r3C", "sinker": "r3L"}
 
 
+def _seg_color(im: np.ndarray, x: float, y: float, d, sx: float, sy: float) -> tuple[float, float]:
+    """1段の中心付近 9点の平均色の (明るさ=最大成分, 彩度=最大-最小)"""
+    n = (-d[1], d[0])
+    vals = []
+    for a in (-1.5, 0, 1.5):
+        for b in (-1, 0, 1):
+            px = (x + d[0] * a + n[0] * b) * sx
+            py = (y + d[1] * a + n[1] * b) * sy
+            vals.append(im[int(round(py)), int(round(px))])
+    c = np.mean(vals, axis=0)
+    return float(c.max()), float(c.max() - c.min())
+
+
+def stem_values(im: np.ndarray, slot: str, order: int, panel: int) -> list[tuple[float, float]]:
+    """柄7段それぞれの (明るさ, 彩度)。構造的な不一致の判定（finalize_team.py）に使う"""
+    (x0, y0), d, centers = STEMS[(slot, order)]
+    sx, sy = im.shape[1] / BASE_W, im.shape[0] / BASE_H
+    dx = PANEL2_DX if panel == 2 else 0
+    return [_seg_color(im, x0 + dx + d[0] * t, y0 + d[1] * t, d, sx, sy) for t in centers]
+
+
 def _is_lit(im: np.ndarray, x: float, y: float, d, sx: float, sy: float) -> bool:
     n = (-d[1], d[0])
     vals = []
