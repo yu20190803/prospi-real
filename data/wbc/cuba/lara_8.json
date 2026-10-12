@@ -1,0 +1,120 @@
+{
+  "category": "wbc",
+  "team": "cuba",
+  "kind": "pitcher",
+  "player_id": "lara_8",
+  "source_capture": "captures/wbc/cuba/lara_8.png",
+  "source_original": "captures/wbc/Cuba/Screen_20260811_181720_191.png",
+  "year": 2026,
+  "uniform_number": "8",
+  "name": "ララ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 335
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "152km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 47,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 69,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "A",
+      "control": "F",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "B",
+      "control": "E",
+      "break": 6
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "グファスト",
+      "power": "F",
+      "control": "F",
+      "break": 1
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対ランナー○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "フライボールピッチャー",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

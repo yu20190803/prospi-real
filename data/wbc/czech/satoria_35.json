@@ -1,0 +1,146 @@
+{
+  "category": "wbc",
+  "team": "czech",
+  "kind": "pitcher",
+  "player_id": "satoria_35",
+  "source_capture": "captures/wbc/czech/satoria_35.png",
+  "source_original": "captures/wbc/Czech/Screen_20260811_182010_804.png",
+  "year": 2026,
+  "uniform_number": "35",
+  "name": "サトリア",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 318
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "129km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 68,
+      "grade": "C"
+    },
+    {
+      "label": "疲労回復",
+      "value": 64,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "E",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "カーブ",
+      "power": "E",
+      "control": "C",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "S",
+      "control": "B",
+      "break": 5
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ツーシーム",
+      "power": "E",
+      "control": "C",
+      "break": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "大舞台",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "リリース",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球持ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ゴロピッチャー",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

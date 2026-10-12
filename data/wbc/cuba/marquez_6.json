@@ -1,0 +1,122 @@
+{
+  "category": "wbc",
+  "team": "cuba",
+  "kind": "pitcher",
+  "player_id": "marquez_6",
+  "source_capture": "captures/wbc/cuba/marquez_6.png",
+  "source_original": "captures/wbc/Cuba/Screen_20260811_181703_117.png",
+  "year": 2026,
+  "uniform_number": "6",
+  "name": "マルケス",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 259
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "150km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 87,
+      "grade": "A"
+    },
+    {
+      "label": "疲労回復",
+      "value": 64,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "E",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "F",
+      "control": "D",
+      "break": 1
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "シンキング",
+      "power": "E",
+      "control": "C",
+      "break": 1
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "C",
+      "control": "C",
+      "break": 5
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "四球",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

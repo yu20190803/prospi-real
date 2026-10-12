@@ -1,0 +1,149 @@
+{
+  "category": "wbc",
+  "team": "cuba",
+  "kind": "batter",
+  "player_id": "gilbert_7",
+  "source_capture": "captures/wbc/cuba/gilbert_7.png",
+  "source_original": "captures/wbc/Cuba/Screen_20260811_181821_934.png",
+  "year": 2026,
+  "uniform_number": "7",
+  "name": "ギベルト",
+  "position": "中堅手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 319
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 55
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 75
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 68
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 53
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "CF",
+    "primary_grade": 52,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "CF",
+        "grade": "D",
+        "value": 52
+      },
+      {
+        "position": "LF",
+        "grade": "D",
+        "value": 52
+      },
+      {
+        "position": "RF",
+        "grade": "D",
+        "value": 52
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "プルヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

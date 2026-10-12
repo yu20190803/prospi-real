@@ -1,0 +1,90 @@
+[
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182009_480.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182020_727.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182023_663.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182037_110.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182050_165.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182056_933.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182103_203.png",
+    "reason": "選手画面への切り替え途中のフレーム"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182106_174.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182109_060.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182112_402.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182119_041.png",
+    "reason": "選手画面への切り替え途中のフレーム"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182121_466.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182127_551.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182133_675.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182139_418.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182142_787.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182053_020.png",
+    "reason": "同じ選手の切り替え途中のフレーム（capka_14）"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182124_355.png",
+    "reason": "同じ選手の切り替え途中のフレーム（mensik_77）"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182030_637.png",
+    "reason": "選手一覧が強く写り込んだ切り替え途中のフレームで、特殊能力などが読めない（#63 エルツォリ。ほかに詳細画面が無いので撮り直しが必要）"
+  },
+  {
+    "file": "captures/wbc/Czech/Screen_20260811_182046_632.png",
+    "reason": "選手一覧が強く写り込んだ切り替え途中のフレームで、特殊能力などが読めない（#7 ドゥフェク。ほかに詳細画面が無いので撮り直しが必要）"
+  },
+  {
+    "file": "captures/wbc/Czech/eltzori_63.png",
+    "reason": "完全に同じ画像の重複（Screen_20260811_182030_637.png）"
+  },
+  {
+    "file": "captures/wbc/Czech/dufek_7.png",
+    "reason": "完全に同じ画像の重複（Screen_20260811_182046_632.png）"
+  }
+]

@@ -1,0 +1,122 @@
+{
+  "category": "wbc",
+  "team": "cuba",
+  "kind": "pitcher",
+  "player_id": "pena_4",
+  "source_capture": "captures/wbc/cuba/pena_4.png",
+  "source_original": "captures/wbc/Cuba/Screen_20260811_181709_546.png",
+  "year": 2026,
+  "uniform_number": "4",
+  "name": "ペーニャ",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 257
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "157km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 69,
+      "grade": "C"
+    },
+    {
+      "label": "疲労回復",
+      "value": 57,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "E",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "F",
+      "control": "B",
+      "break": 3
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "スクリュー",
+      "power": "E",
+      "control": "B",
+      "break": 2
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "フォーク",
+      "power": "F",
+      "control": "C",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球持ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

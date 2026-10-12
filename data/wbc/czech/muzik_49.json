@@ -1,0 +1,180 @@
+{
+  "category": "wbc",
+  "team": "czech",
+  "kind": "batter",
+  "player_id": "muzik_49",
+  "source_capture": "captures/wbc/czech/muzik_49.png",
+  "source_original": "captures/wbc/Czech/Screen_20260811_182107_148.png",
+  "year": 2026,
+  "uniform_number": "49",
+  "name": "ムジーク",
+  "position": "一塁手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 318
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 43
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 43
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 64
+    },
+    {
+      "label": "走力",
+      "grade": "C",
+      "value": 68
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 42
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 66
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 56
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "1B",
+    "primary_grade": 58,
+    "catcher_lead_grade": "E",
+    "positions": [
+      {
+        "position": "1B",
+        "grade": "D",
+        "value": 58
+      },
+      {
+        "position": "CF",
+        "grade": "E",
+        "value": 42
+      },
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 40
+      },
+      {
+        "position": "RF",
+        "grade": "E",
+        "value": 44
+      },
+      {
+        "position": "SS",
+        "grade": "F",
+        "value": 34
+      },
+      {
+        "position": "2B",
+        "grade": "E",
+        "value": 44
+      },
+      {
+        "position": "3B",
+        "grade": "F",
+        "value": 38
+      },
+      {
+        "position": "C",
+        "grade": "E",
+        "value": 44
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "中弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

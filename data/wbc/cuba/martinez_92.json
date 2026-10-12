@@ -1,0 +1,138 @@
+{
+  "category": "wbc",
+  "team": "cuba",
+  "kind": "pitcher",
+  "player_id": "martinez_92",
+  "source_capture": "captures/wbc/cuba/martinez_92.png",
+  "source_original": "captures/wbc/Cuba/Screen_20260811_181741_863.png",
+  "year": 2026,
+  "uniform_number": "92",
+  "name": "R.マルティネス",
+  "position": "投手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 431
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "160km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 42,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 75,
+      "grade": "B"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "◎",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "B",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ナックルカーブ",
+      "power": "D",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "SFF",
+      "power": "A",
+      "control": "C",
+      "break": 5
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "ークルチェ",
+      "power": "E",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ーシームフ",
+      "power": "F",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "fork",
+      "order": 2,
+      "name": "縦スライダー",
+      "power": "C",
+      "control": "C",
+      "break": 4
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

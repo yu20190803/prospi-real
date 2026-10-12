@@ -1,0 +1,139 @@
+{
+  "category": "wbc",
+  "team": "cuba",
+  "kind": "batter",
+  "player_id": "hernandez_3",
+  "source_capture": "captures/wbc/cuba/hernandez_3.png",
+  "source_original": "captures/wbc/Cuba/Screen_20260811_181745_155.png",
+  "year": 2026,
+  "uniform_number": "3",
+  "name": "ヘルナンデス",
+  "position": "捕手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 277
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 34
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 34
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "D",
+      "value": 54
+    },
+    {
+      "label": "走力",
+      "grade": "F",
+      "value": 37
+    },
+    {
+      "label": "捕球",
+      "grade": "F",
+      "value": 38
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "肩力",
+      "grade": "A",
+      "value": 81
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 52
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "C",
+    "primary_grade": 64,
+    "catcher_lead_grade": "C",
+    "positions": [
+      {
+        "position": "C",
+        "grade": "C",
+        "value": 64
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "守備職人",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

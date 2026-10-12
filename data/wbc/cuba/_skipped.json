@@ -1,0 +1,102 @@
+[
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181655_345.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181705_346.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181708_683.png",
+    "reason": "選手画面への切り替え途中のフレーム"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181714_944.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181718_796.png",
+    "reason": "選手画面への切り替え途中のフレーム"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181725_342.png",
+    "reason": "選手画面への切り替え途中のフレーム"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181728_190.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181737_470.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181744_318.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181747_689.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181751_381.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181757_652.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181800_874.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181804_220.png",
+    "reason": "選手画面への切り替え途中のフレーム"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181807_352.png",
+    "reason": "選手画面への切り替え途中のフレーム"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181810_573.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181814_181.png",
+    "reason": "選手画面への切り替え途中のフレーム"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181826_552.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181829_976.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181741_003.png",
+    "reason": "同じ選手の切り替え途中のフレーム（martinez_92）"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181820_772.png",
+    "reason": "同じ選手の切り替え途中のフレーム（gilbert_7）"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181701_980.png",
+    "reason": "選手一覧が強く写り込んだ切り替え途中のフレームで、特殊能力などが読めない（#25 ラロンド。ほかに詳細画面が無いので撮り直しが必要）"
+  },
+  {
+    "file": "captures/wbc/Cuba/Screen_20260811_181734_574.png",
+    "reason": "選手一覧が強く写り込んだ切り替え途中のフレームで、特殊能力などが読めない（#34 チャップマン。ほかに詳細画面が無いので撮り直しが必要）"
+  },
+  {
+    "file": "captures/wbc/Cuba/lalonde_25.png",
+    "reason": "完全に同じ画像の重複（Screen_20260811_181701_980.png）"
+  },
+  {
+    "file": "captures/wbc/Cuba/chapman_34.png",
+    "reason": "完全に同じ画像の重複（Screen_20260811_181734_574.png）"
+  }
+]

@@ -1,0 +1,122 @@
+{
+  "category": "wbc",
+  "team": "cuba",
+  "kind": "pitcher",
+  "player_id": "aquino_56",
+  "source_capture": "captures/wbc/cuba/aquino_56.png",
+  "source_original": "captures/wbc/Cuba/Screen_20260811_181738_408.png",
+  "year": 2026,
+  "uniform_number": "56",
+  "name": "アキノ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 333
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "158km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 48,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 78,
+      "grade": "B"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "A",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "E",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "シンキング",
+      "power": "F",
+      "control": "E",
+      "break": 2
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "パワーカーブ",
+      "power": "F",
+      "control": "D",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対ランナー○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

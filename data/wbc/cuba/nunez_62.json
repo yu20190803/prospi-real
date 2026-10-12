@@ -1,0 +1,122 @@
+{
+  "category": "wbc",
+  "team": "cuba",
+  "kind": "pitcher",
+  "player_id": "nunez_62",
+  "source_capture": "captures/wbc/cuba/nunez_62.png",
+  "source_original": "captures/wbc/Cuba/Screen_20260811_181729_155.png",
+  "year": 2026,
+  "uniform_number": "62",
+  "name": "ヌニェス",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 277
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "155km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 55,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 56,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "◎",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "C",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "E",
+      "control": "E",
+      "break": 2
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "C",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ツーシーム",
+      "power": "E",
+      "control": "E",
+      "break": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

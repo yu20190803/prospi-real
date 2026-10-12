@@ -1,0 +1,139 @@
+{
+  "category": "wbc",
+  "team": "cuba",
+  "kind": "batter",
+  "player_id": "arruebarrena_71",
+  "source_capture": "captures/wbc/cuba/arruebarrena_71.png",
+  "source_original": "captures/wbc/Cuba/Screen_20260811_181752_704.png",
+  "year": 2026,
+  "uniform_number": "71",
+  "name": "アルエバルエナ",
+  "position": "遊撃手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 278
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 30
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 29
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 79
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 60
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 68
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 53
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "SS",
+    "primary_grade": 78,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "SS",
+        "grade": "B",
+        "value": 78
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "パワーヒッター",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

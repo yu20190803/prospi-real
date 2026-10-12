@@ -1,0 +1,133 @@
+{
+  "category": "wbc",
+  "team": "czech",
+  "kind": "batter",
+  "player_id": "cerny_43",
+  "source_capture": "captures/wbc/czech/cerny_43.png",
+  "source_original": "captures/wbc/Czech/Screen_20260811_182125_311.png",
+  "year": 2026,
+  "uniform_number": "43",
+  "name": "チェルニー",
+  "position": "一塁手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 234
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 42
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 34
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 68
+    },
+    {
+      "label": "走力",
+      "grade": "F",
+      "value": 30
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "肩力",
+      "grade": "E",
+      "value": 40
+    },
+    {
+      "label": "疲労回復",
+      "grade": "E",
+      "value": 40
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "1B",
+    "primary_grade": 59,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "1B",
+        "grade": "D",
+        "value": 59
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

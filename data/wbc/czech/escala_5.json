@@ -1,0 +1,154 @@
+{
+  "category": "wbc",
+  "team": "czech",
+  "kind": "batter",
+  "player_id": "escala_5",
+  "source_capture": "captures/wbc/czech/escala_5.png",
+  "source_original": "captures/wbc/Czech/Screen_20260811_182134_994.png",
+  "year": 2026,
+  "uniform_number": "5",
+  "name": "エスカラ",
+  "position": "左翼手",
+  "throws_bats": "右投両打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 242
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 35
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "走力",
+      "grade": "C",
+      "value": 65
+    },
+    {
+      "label": "捕球",
+      "grade": "F",
+      "value": 38
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 54
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 52
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "LF",
+    "primary_grade": 52,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "LF",
+        "grade": "D",
+        "value": 52
+      },
+      {
+        "position": "CF",
+        "grade": "D",
+        "value": 50
+      },
+      {
+        "position": "RF",
+        "grade": "D",
+        "value": 52
+      },
+      {
+        "position": "3B",
+        "grade": "E",
+        "value": 48
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

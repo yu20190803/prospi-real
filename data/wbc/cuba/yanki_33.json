@@ -1,0 +1,133 @@
+{
+  "category": "wbc",
+  "team": "cuba",
+  "kind": "batter",
+  "player_id": "yanki_33",
+  "source_capture": "captures/wbc/cuba/yanki_33.png",
+  "source_original": "captures/wbc/Cuba/Screen_20260811_181815_455.png",
+  "year": 2026,
+  "uniform_number": "33",
+  "name": "ヤンキ",
+  "position": "一塁手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 235
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 30
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 68
+    },
+    {
+      "label": "走力",
+      "grade": "E",
+      "value": 41
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 45
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 60
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 52
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "1B",
+    "primary_grade": 48,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "1B",
+        "grade": "E",
+        "value": 48
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

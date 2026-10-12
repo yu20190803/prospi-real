@@ -1,0 +1,130 @@
+{
+  "category": "wbc",
+  "team": "czech",
+  "kind": "pitcher",
+  "player_id": "capka_14",
+  "source_capture": "captures/wbc/czech/capka_14.png",
+  "source_original": "captures/wbc/Czech/Screen_20260811_182051_192.png",
+  "year": 2026,
+  "uniform_number": "14",
+  "name": "チャプカ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 224
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "144km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 56,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 48,
+      "grade": "E"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "D",
+      "control": "E",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "高速スライダー",
+      "power": "C",
+      "control": "E",
+      "break": 2
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ドロップカーブ",
+      "power": "E",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "縦スライダー",
+      "power": "D",
+      "control": "E",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "E",
+      "control": "E",
+      "break": 1
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ゴロピッチャー",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

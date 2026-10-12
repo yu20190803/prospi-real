@@ -1,0 +1,149 @@
+{
+  "category": "wbc",
+  "team": "cuba",
+  "kind": "batter",
+  "player_id": "menendez_15",
+  "source_capture": "captures/wbc/cuba/menendez_15.png",
+  "source_original": "captures/wbc/Cuba/Screen_20260811_181748_514.png",
+  "year": 2026,
+  "uniform_number": "15",
+  "name": "メネンデス",
+  "position": "捕手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 328
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 29
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 37
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 79
+    },
+    {
+      "label": "走力",
+      "grade": "G",
+      "value": 17
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 46
+    },
+    {
+      "label": "スローイング",
+      "grade": "C",
+      "value": 65
+    },
+    {
+      "label": "肩力",
+      "grade": "A",
+      "value": 85
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 65
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "C",
+    "primary_grade": 55,
+    "catcher_lead_grade": "D",
+    "positions": [
+      {
+        "position": "C",
+        "grade": "D",
+        "value": 55
+      },
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 40
+      },
+      {
+        "position": "RF",
+        "grade": "F",
+        "value": 36
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "中弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "プルヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

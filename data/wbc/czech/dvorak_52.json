@@ -1,0 +1,120 @@
+{
+  "category": "wbc",
+  "team": "czech",
+  "kind": "pitcher",
+  "player_id": "dvorak_52",
+  "source_capture": "captures/wbc/czech/dvorak_52.png",
+  "source_original": "captures/wbc/Czech/Screen_20260811_182031_583.png",
+  "year": 2026,
+  "uniform_number": "52",
+  "name": "ドヴォルザーク",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 210
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "144km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 43,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 50,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "B",
+      "control": "E",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "E",
+      "control": "F",
+      "break": 3
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "シンキング",
+      "power": "D",
+      "control": "D",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内角攻め",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逃げ球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}
