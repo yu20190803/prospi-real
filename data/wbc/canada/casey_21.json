@@ -1,0 +1,155 @@
+{
+  "category": "wbc",
+  "team": "canada",
+  "kind": "batter",
+  "player_id": "casey_21",
+  "source_capture": "captures/wbc/canada/casey_21.png",
+  "source_original": "captures/wbc/Canada/Screen_20260811_180819_107.png",
+  "year": 2026,
+  "uniform_number": "21",
+  "name": "ケイシー",
+  "position": "中堅手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 329
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 55
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 51
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 77
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 74
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 42
+    },
+    {
+      "label": "スローイング",
+      "grade": "C",
+      "value": 63
+    },
+    {
+      "label": "肩力",
+      "grade": "B",
+      "value": 76
+    },
+    {
+      "label": "疲労回復",
+      "grade": "E",
+      "value": 41
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "CF",
+    "primary_grade": 46,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "CF",
+        "grade": "E",
+        "value": 46
+      },
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 46
+      },
+      {
+        "position": "RF",
+        "grade": "E",
+        "value": 48
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "中弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

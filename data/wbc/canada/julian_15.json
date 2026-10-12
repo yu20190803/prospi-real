@@ -1,0 +1,144 @@
+{
+  "category": "wbc",
+  "team": "canada",
+  "kind": "batter",
+  "player_id": "julian_15",
+  "source_capture": "captures/wbc/canada/julian_15.png",
+  "source_original": "captures/wbc/Canada/Screen_20260811_180803_015.png",
+  "year": 2026,
+  "uniform_number": "15",
+  "name": "ジュリアン",
+  "position": "二塁手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 236
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 44
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 49
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 70
+    },
+    {
+      "label": "走力",
+      "grade": "C",
+      "value": 65
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 51
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 54
+    },
+    {
+      "label": "疲労回復",
+      "grade": "E",
+      "value": 47
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "2B",
+    "primary_grade": 45,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "2B",
+        "grade": "E",
+        "value": 45
+      },
+      {
+        "position": "1B",
+        "grade": "E",
+        "value": 45
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

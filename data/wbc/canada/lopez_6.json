@@ -1,0 +1,195 @@
+{
+  "category": "wbc",
+  "team": "canada",
+  "kind": "batter",
+  "player_id": "lopez_6",
+  "source_capture": "captures/wbc/canada/lopez_6.png",
+  "source_original": "captures/wbc/Canada/Screen_20260811_180747_711.png",
+  "year": 2026,
+  "uniform_number": "6",
+  "name": "O.ロペス",
+  "position": "遊撃手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 395
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 56
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 44
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 70
+    },
+    {
+      "label": "走力",
+      "grade": "A",
+      "value": 81
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 63
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 53
+    },
+    {
+      "label": "肩力",
+      "grade": "B",
+      "value": 72
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 61
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "2B",
+    "primary_grade": 73,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "2B",
+        "grade": "B",
+        "value": 73
+      },
+      {
+        "position": "SS",
+        "grade": "B",
+        "value": 73
+      },
+      {
+        "position": "CF",
+        "grade": "F",
+        "value": 33
+      },
+      {
+        "position": "LF",
+        "grade": "F",
+        "value": 34
+      },
+      {
+        "position": "3B",
+        "grade": "F",
+        "value": 35
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "流し打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "粘り打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "決勝打",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "悪球打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対ストレート○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

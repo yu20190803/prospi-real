@@ -1,0 +1,122 @@
+{
+  "category": "wbc",
+  "team": "canada",
+  "kind": "pitcher",
+  "player_id": "cerantola_61",
+  "source_capture": "captures/wbc/canada/cerantola_61.png",
+  "source_original": "captures/wbc/Canada/Screen_20260811_180724_606.png",
+  "year": 2026,
+  "uniform_number": "61",
+  "name": "セラントラ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 299
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "160km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 48,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 51,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "◎",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "C",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "D",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "縦スライダー",
+      "power": "B",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "F",
+      "control": "E",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "緊急登板○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}
