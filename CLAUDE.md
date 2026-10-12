@@ -12,7 +12,10 @@
   見比べる**内部の検証用**としてのみ残す（公開しない）。
 - 同じ検証目的で `src/build_site_work.py` が `site/index_work.html`（一覧を右サイドバー、
   詳細を上部に配置し、詳細の下に対応する `captures/` 画像を表示するレイアウト）を生成する。
-  元画像をJPEGのdata URIとしてHTMLに直接埋め込むため `.gitignore` 対象・非公開。公開用は必ず
+  元画像はJPEGにして `site/work_img/<cat>/<team>/<player_id>.jpg` に書き出し、相対パスで参照する
+  （2026-10-12。data URI 埋め込みでは248人で22MBとなり Artifact の16MB上限を超えたため）。
+  Artifact へは `files` に `site/work_img_changed.json`（前回から変わった画像だけ）を渡して公開する。
+  `index_work.html`・`work_img/` は `.gitignore` 対象・非公開。公開用は必ず
   `src/build_site.py` の `site/index.html` を使う。
 
 ## 分類
@@ -73,7 +76,7 @@ src/site/index.template.html                   公開用ページのテンプレ
 site/index.html                                生成された公開用ページ
 src/build_site_work.py                         全JSON → site/index_work.html（検証用・非公開）
 src/site/index_work.template.html              検証用ページのテンプレート（一覧が右サイド／詳細下に元画像）
-site/index_work.html                           生成された検証用ページ（.gitignore対象・コミットしない）
+site/index_work.html, site/work_img/            生成された検証用ページと元画像JPEG（.gitignore対象・コミットしない）
 docs/data_schema.md                            選手データのJSONスキーマ定義（投手/野手それぞれ記載）
 docs/runbook_transcribe.md                     書き起こし手順書（画像受け取り〜PC書き戻し〜報告）
 docs/templates/pitcher.json, batter.json       書き起こし用の雛形（実データと同じ形式）

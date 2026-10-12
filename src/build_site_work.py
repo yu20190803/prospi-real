@@ -8,9 +8,13 @@ build_site.py（公開用 site/index.html）との違い:
     - 選手詳細の下に元キャプチャ（captures/配下のPNG）を表示する
     - そのため source_capture をページに埋め込む（公開版には含めない）
 
-元キャプチャは JPEG の data URI としてHTMLに直接埋め込む（相対パス参照だと
-開く場所によって画像が表示されないため）。ゲーム画面そのものを含むので
-site/index_work.html は .gitignore 対象。内部検証専用で、公開しない。
+元キャプチャは JPEG にして site/work_img/<cat>/<team>/<player_id>.jpg に書き出し、ページからは
+相対パスで参照する（2026-10-12 変更。data URI 埋め込みでは248人で22MBになり、Artifact の
+1ページ16MB上限を超えたため）。Artifact へは画像を `files` として一緒に公開する。
+前回から内容が変わった画像の一覧を site/work_img_changed.json に書くので、2回目以降はそれだけを
+`files` に渡せばよい（渡さなかったファイルは Artifact 側に残る）。
+`--inline` を付けると従来どおり data URI で1ファイルに埋め込む（ローカルで1枚だけ持ち運ぶ用）。
+ゲーム画面そのものを含むので site/index_work.html・site/work_img/ は .gitignore 対象。内部検証専用で、公開しない。
 """
 from __future__ import annotations
 
@@ -42,13 +46,42 @@ def capture_data_uri(rel: str) -> str | None:
     return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode("ascii")
 
 
+IMG_DIR = ROOT / "site" / "work_img"
+CHANGED = ROOT / "site" / "work_img_changed.json"
+
+
+def capture_jpeg(rel: str) -> bytes | None:
+    path = resolve(rel)
+    if path is None:
+        return None
+    from PIL import Image
+    im = Image.open(path).convert("RGB")
+    buf = io.BytesIO()
+    im.save(buf, "JPEG", quality=85)
+    return buf.getvalue()
+
+
 def main() -> None:
-    players, captures, missing = [], {}, []
+    import sys
+    inline = "--inline" in sys.argv[1:]
+    players, captures, missing, changed = [], {}, [], []
     for path in sorted((ROOT / "data").rglob("[!_]*.json")):
         d = json.loads(path.read_text(encoding="utf-8"))
         pub = {k: d[k] for k in PUBLIC_KEYS if k in d}
         players.append(pub)
-        uri = capture_data_uri(d["source_capture"]) if d.get("source_capture") else None
+        if inline:
+            uri = capture_data_uri(d["source_capture"]) if d.get("source_capture") else None
+        else:
+            jpg = capture_jpeg(d["source_capture"]) if d.get("source_capture") else None
+            uri = None
+            if jpg:
+                rel = f"work_img/{d['category']}/{d['team']}/{d['player_id']}.jpg"
+                dst = OUT.parent / rel
+                if not dst.exists() or dst.read_bytes() != jpg:
+                    dst.parent.mkdir(parents=True, exist_ok=True)
+                    dst.write_bytes(jpg)
+                    changed.append(rel)
+                uri = rel
         if uri:
             captures[d["player_id"]] = uri
         else:
@@ -62,6 +95,9 @@ def main() -> None:
         print("元キャプチャなし:", ", ".join(missing))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(html, encoding="utf-8")
+    if not inline:
+        CHANGED.write_text(json.dumps(changed, ensure_ascii=False, indent=0), encoding="utf-8")
+        print(f"画像 {len(captures)}枚（今回新しく書き出し・変更 {len(changed)}枚 → {CHANGED.relative_to(ROOT)}）")
     print(f"{len(players)}選手 → {OUT.relative_to(ROOT)}（検証用・非公開）")
 
 

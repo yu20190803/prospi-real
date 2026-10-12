@@ -4,6 +4,8 @@ output/
 # ゲーム画面キャプチャ（PCのみで保存）。公開リポジトリには絶対に入れない
 captures
 site/index_work.html
+site/work_img/
+site/work_img_changed.json
 work/
 # data/ 配下に画像を置かない（ゲーム画面の著作物）
 data/**/*.png
