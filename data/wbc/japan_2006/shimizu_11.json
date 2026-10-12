@@ -1,0 +1,146 @@
+{
+  "category": "wbc",
+  "team": "japan_2006",
+  "kind": "pitcher",
+  "player_id": "shimizu_11",
+  "source_capture": "captures/wbc/japan_2006/shimizu_11.png",
+  "source_original": "captures/wbc/Japan_2006/Screen_20260927_205133_908.png",
+  "year": 2006,
+  "uniform_number": "11",
+  "name": "清水 直行",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 302
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "151km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 78,
+      "grade": "B"
+    },
+    {
+      "label": "疲労回復",
+      "value": 55,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "C",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "高速スライダー",
+      "power": "B",
+      "control": "D",
+      "break": 5
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "カーブ",
+      "power": "E",
+      "control": "E",
+      "break": 1
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "SFF",
+      "power": "D",
+      "control": "E",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "B",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "牽制◎",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打球反応○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "フライボールピッチャー",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "一発",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対ランナー▼",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

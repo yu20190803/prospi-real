@@ -1,0 +1,173 @@
+{
+  "category": "wbc",
+  "team": "japan_2006",
+  "kind": "batter",
+  "player_id": "tamura_6",
+  "source_capture": "captures/wbc/japan_2006/tamura_6.png",
+  "source_original": "captures/wbc/Japan_2006/Screen_20260927_205234_098.png",
+  "year": 2006,
+  "uniform_number": "6",
+  "name": "多村仁",
+  "position": "中堅手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 407
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "C",
+          "value": 63
+        },
+        {
+          "vs": "対左",
+          "grade": "C",
+          "value": 69
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "A",
+      "value": 84
+    },
+    {
+      "label": "走力",
+      "grade": "C",
+      "value": 63
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 48
+    },
+    {
+      "label": "スローイング",
+      "grade": "B",
+      "value": 70
+    },
+    {
+      "label": "肩力",
+      "grade": "B",
+      "value": 77
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 62
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "RF",
+    "primary_grade": 66,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "RF",
+        "grade": "C",
+        "value": 66
+      },
+      {
+        "position": "CF",
+        "grade": "C",
+        "value": 66
+      },
+      {
+        "position": "LF",
+        "grade": "C",
+        "value": 66
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "G",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "広角打法",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ヘッドスライディング",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁ヘッドスライディング",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

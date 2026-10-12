@@ -1,0 +1,148 @@
+{
+  "category": "wbc",
+  "team": "japan_2023",
+  "kind": "pitcher",
+  "player_id": "takahashi_47",
+  "source_capture": "captures/wbc/japan_2023/takahashi_47.png",
+  "source_original": "captures/wbc/Japan_2023/Screen_20260927_204730_709.png",
+  "year": 2023,
+  "uniform_number": "47",
+  "name": "高橋 奎二",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 329
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "154km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 67,
+      "grade": "C"
+    },
+    {
+      "label": "疲労回復",
+      "value": 48,
+      "grade": "E"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "B",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "B",
+      "control": "D",
+      "break": 5
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "ルチェンジ",
+      "power": "D",
+      "control": "E",
+      "break": 4
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "スローカーブ",
+      "power": "E",
+      "control": "F",
+      "break": 3
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "カットボール",
+      "power": "E",
+      "control": "F",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "牽制◎",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "荒れ球",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "四球",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

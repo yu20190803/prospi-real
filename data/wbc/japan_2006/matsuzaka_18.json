@@ -1,0 +1,186 @@
+{
+  "category": "wbc",
+  "team": "japan_2006",
+  "kind": "pitcher",
+  "player_id": "matsuzaka_18",
+  "source_capture": "captures/wbc/japan_2006/matsuzaka_18.png",
+  "source_original": "captures/wbc/Japan_2006/Screen_20260927_205046_126.png",
+  "year": 2006,
+  "uniform_number": "18",
+  "name": "松坂 大輔",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 596
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "155km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 90,
+      "grade": "S"
+    },
+    {
+      "label": "疲労回復",
+      "value": 72,
+      "grade": "B"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "A",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "高速スライダー",
+      "power": "A",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ドロップカーブ",
+      "power": "D",
+      "control": "E",
+      "break": 2
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "縦スライダー",
+      "power": "A",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "ルチェンジ",
+      "power": "D",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 2,
+      "name": "縦カット",
+      "power": "B",
+      "control": "D",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ギアチェンジ",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "大舞台",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "存在感",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "援護○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "尻上がり",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打球反応○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "力配分",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "ゴロピッチャー",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

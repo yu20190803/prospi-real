@@ -1,0 +1,143 @@
+{
+  "category": "wbc",
+  "team": "italy",
+  "kind": "batter",
+  "player_id": "martini_41",
+  "source_capture": "captures/wbc/italy/martini_41.png",
+  "source_original": "captures/wbc/Italy/Screen_20260811_180422_179.png",
+  "year": 2026,
+  "uniform_number": "41",
+  "name": "マルティーニ",
+  "position": "一塁手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 258
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 50
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "D",
+      "value": 58
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 51
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 61
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 52
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "1B",
+    "primary_grade": 59,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "1B",
+        "grade": "D",
+        "value": 59
+      },
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 40
+      },
+      {
+        "position": "3B",
+        "grade": "E",
+        "value": 42
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

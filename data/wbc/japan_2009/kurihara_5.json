@@ -1,0 +1,162 @@
+{
+  "category": "wbc",
+  "team": "japan_2009",
+  "kind": "batter",
+  "player_id": "kurihara_5",
+  "source_capture": "captures/wbc/japan_2009/kurihara_5.png",
+  "source_original": "captures/wbc/Japan_2009/Screen_20260927_205010_034.png",
+  "year": 2009,
+  "uniform_number": "5",
+  "name": "栗原 健太",
+  "position": "一塁手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 365
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "B",
+          "value": 72
+        },
+        {
+          "vs": "対左",
+          "grade": "B",
+          "value": 72
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 72
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 47
+    },
+    {
+      "label": "スローイング",
+      "grade": "E",
+      "value": 40
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 51
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 79
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "1B",
+    "primary_grade": 45,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "1B",
+        "grade": "E",
+        "value": 45
+      },
+      {
+        "position": "3B",
+        "grade": "F",
+        "value": 38
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "パワーヒッター",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "広角打法",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "死球",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

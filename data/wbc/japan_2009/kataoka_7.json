@@ -1,0 +1,155 @@
+{
+  "category": "wbc",
+  "team": "japan_2009",
+  "kind": "batter",
+  "player_id": "kataoka_7",
+  "source_capture": "captures/wbc/japan_2009/kataoka_7.png",
+  "source_original": "captures/wbc/Japan_2009/Screen_20260927_204956_004.png",
+  "year": 2009,
+  "uniform_number": "7",
+  "name": "片岡 易之",
+  "position": "三塁手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 317
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "C",
+          "value": 67
+        },
+        {
+          "vs": "対左",
+          "grade": "C",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "E",
+      "value": 44
+    },
+    {
+      "label": "走力",
+      "grade": "A",
+      "value": 83
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 62
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 68
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "3B",
+    "primary_grade": 58,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "3B",
+        "grade": "D",
+        "value": 58
+      },
+      {
+        "position": "SS",
+        "grade": "C",
+        "value": 60
+      },
+      {
+        "position": "2B",
+        "grade": "C",
+        "value": 68
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "バント",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "サヨナラ男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

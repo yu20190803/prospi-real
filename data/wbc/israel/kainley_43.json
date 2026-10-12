@@ -79,6 +79,14 @@
       "power": "C",
       "control": "E",
       "break": 1
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "シームファ",
+      "power": "G",
+      "control": "F",
+      "break": null
     }
   ],
   "abilities": [

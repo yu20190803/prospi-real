@@ -1,0 +1,168 @@
+{
+  "category": "wbc",
+  "team": "japan_2023",
+  "kind": "pitcher",
+  "player_id": "imanaga_21",
+  "source_capture": "captures/wbc/japan_2023/imanaga_21.png",
+  "source_original": "captures/wbc/Japan_2023/Screen_20260927_204708_567.png",
+  "year": 2023,
+  "uniform_number": "21",
+  "name": "今永 昇太",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 411
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "153km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 68,
+      "grade": "C"
+    },
+    {
+      "label": "疲労回復",
+      "value": 61,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "A",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "C",
+      "control": "C",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "B",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "スローカーブ",
+      "power": "E",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "スライダー",
+      "power": "D",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 2,
+      "name": "スプリット",
+      "power": "D",
+      "control": "E",
+      "break": 4
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "F",
+      "highlighted": true,
+      "type": "minus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内角攻め",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "牽制◎",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球持ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打球反応○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "一発",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "category": "wbc",
+  "team": "japan_2023",
+  "kind": "batter",
+  "player_id": "shuto_9",
+  "source_capture": "captures/wbc/japan_2023/shuto_9.png",
+  "source_original": "captures/wbc/Japan_2023/Screen_20260927_204826_590.png",
+  "year": 2023,
+  "uniform_number": "9",
+  "name": "周東 佑京",
+  "position": "二塁手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 311
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 46
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 48
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "走力",
+      "grade": "S",
+      "value": 96
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 41
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 53
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 63
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 51
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "2B",
+    "primary_grade": 53,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "2B",
+        "grade": "D",
+        "value": 53
+      },
+      {
+        "position": "SS",
+        "grade": "D",
+        "value": 53
+      },
+      {
+        "position": "LF",
+        "grade": "D",
+        "value": 53
+      },
+      {
+        "position": "RF",
+        "grade": "D",
+        "value": 53
+      },
+      {
+        "position": "CF",
+        "grade": "C",
+        "value": 61
+      },
+      {
+        "position": "3B",
+        "grade": "C",
+        "value": 61
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "バント",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "A",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "サヨナラ男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "意外性",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ホーム突入",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

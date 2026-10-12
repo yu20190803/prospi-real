@@ -1,0 +1,154 @@
+{
+  "category": "wbc",
+  "team": "japan_2023",
+  "kind": "pitcher",
+  "player_id": "yamazaki_63",
+  "source_capture": "captures/wbc/japan_2023/yamazaki_63.png",
+  "source_original": "captures/wbc/Japan_2023/Screen_20260927_204734_926.png",
+  "year": 2023,
+  "uniform_number": "63",
+  "name": "山崎 颯一郎",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 359
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "160km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 51,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 51,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "△",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "A",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "D",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ナックルカーブ",
+      "power": "D",
+      "control": "F",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "SFF",
+      "power": "B",
+      "control": "E",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "サークルチ",
+      "power": "F",
+      "control": "F",
+      "break": 2
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ソーシーム",
+      "power": "F",
+      "control": "F",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "スライダー",
+      "power": "F",
+      "control": "F",
+      "break": 2
+    },
+    {
+      "category": "fork",
+      "order": 2,
+      "name": "縦スライダー",
+      "power": "F",
+      "control": "G",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "E",
+      "highlighted": true,
+      "type": "minus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "球速安定○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

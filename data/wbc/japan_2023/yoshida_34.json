@@ -1,0 +1,191 @@
+{
+  "category": "wbc",
+  "team": "japan_2023",
+  "kind": "batter",
+  "player_id": "yoshida_34",
+  "source_capture": "captures/wbc/japan_2023/yoshida_34.png",
+  "source_original": "captures/wbc/Japan_2023/Screen_20260927_204831_694.png",
+  "year": 2023,
+  "uniform_number": "34",
+  "name": "吉田 正尚",
+  "position": "左翼手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 414
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "B",
+          "value": 78
+        },
+        {
+          "vs": "対左",
+          "grade": "B",
+          "value": 71
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 75
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 57
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 54
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "肩力",
+      "grade": "E",
+      "value": 42
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 73
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "LF",
+    "primary_grade": 47,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 47
+      },
+      {
+        "position": "RF",
+        "grade": "E",
+        "value": 47
+      },
+      {
+        "position": "CF",
+        "grade": "F",
+        "value": 37
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "アーチスト",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "大舞台",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "存在感",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "アベレージヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "粘り打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "悪球打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

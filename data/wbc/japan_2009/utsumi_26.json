@@ -1,0 +1,182 @@
+{
+  "category": "wbc",
+  "team": "japan_2009",
+  "kind": "pitcher",
+  "player_id": "utsumi_26",
+  "source_capture": "captures/wbc/japan_2009/utsumi_26.png",
+  "source_original": "captures/wbc/Japan_2009/Screen_20260927_204921_365.png",
+  "year": 2009,
+  "uniform_number": "26",
+  "name": "内海 哲也",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 406
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "147km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 75,
+      "grade": "B"
+    },
+    {
+      "label": "疲労回復",
+      "value": 50,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "C",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "シュート",
+      "power": "D",
+      "control": "E",
+      "break": 2
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "E",
+      "control": "C",
+      "break": 2
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "スロースク",
+      "power": "B",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "スラーブ",
+      "power": "B",
+      "control": "D",
+      "break": 5
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ムファスト",
+      "power": "C",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "curve",
+      "order": 2,
+      "name": "ドロップカーブ",
+      "power": "D",
+      "control": "D",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "牽制◎",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逃げ球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球速安定○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打球反応○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "四球",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "動揺",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

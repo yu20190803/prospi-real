@@ -1,0 +1,160 @@
+{
+  "category": "wbc",
+  "team": "japan_2006",
+  "kind": "pitcher",
+  "player_id": "uehara_19",
+  "source_capture": "captures/wbc/japan_2006/uehara_19.png",
+  "source_original": "captures/wbc/Japan_2006/Screen_20260927_205052_448.png",
+  "year": 2006,
+  "uniform_number": "19",
+  "name": "上原 浩治",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 555
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "148km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 86,
+      "grade": "A"
+    },
+    {
+      "label": "疲労回復",
+      "value": 64,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "S",
+      "control": "S",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "D",
+      "control": "A",
+      "break": 2
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "フォーク",
+      "power": "A",
+      "control": "B",
+      "break": 6
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "スライダー",
+      "power": "D",
+      "control": "B",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 2,
+      "name": "SFF",
+      "power": "C",
+      "control": "B",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "援護○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内角攻め",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "リリース",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "フライボールピッチャー",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "一発",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

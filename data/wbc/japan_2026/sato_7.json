@@ -1,0 +1,191 @@
+{
+  "category": "wbc",
+  "team": "japan_2026",
+  "kind": "batter",
+  "player_id": "sato_7",
+  "source_capture": "captures/wbc/japan_2026/sato_7.png",
+  "source_original": "captures/wbc/Japan_2026/Screen_20260927_204552_215.png",
+  "year": 2026,
+  "uniform_number": "7",
+  "name": "佐藤 輝明",
+  "position": "三塁手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 438
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 58
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 53
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "A",
+      "value": 86
+    },
+    {
+      "label": "走力",
+      "grade": "C",
+      "value": 68
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 58
+    },
+    {
+      "label": "スローイング",
+      "grade": "C",
+      "value": 60
+    },
+    {
+      "label": "肩力",
+      "grade": "B",
+      "value": 71
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 71
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "3B",
+    "primary_grade": 52,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "3B",
+        "grade": "D",
+        "value": 52
+      },
+      {
+        "position": "LF",
+        "grade": "F",
+        "value": 30
+      },
+      {
+        "position": "RF",
+        "grade": "D",
+        "value": 52
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "パワーヒッター",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "存在感",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "広角打法",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "サヨナラ男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "決勝打",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

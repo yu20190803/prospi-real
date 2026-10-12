@@ -1,0 +1,166 @@
+{
+  "category": "wbc",
+  "team": "japan_2023",
+  "kind": "pitcher",
+  "player_id": "ohtani_16",
+  "source_capture": "captures/wbc/japan_2023/ohtani_16.png",
+  "source_original": "captures/wbc/Japan_2023/Screen_20260927_204628_883.png",
+  "year": 2023,
+  "uniform_number": "16",
+  "name": "大谷 翔平",
+  "position": "投手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 629
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "163km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 80,
+      "grade": "A"
+    },
+    {
+      "label": "疲労回復",
+      "value": 94,
+      "grade": "S"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "◎",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "真っスラ",
+      "power": "C",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スイーパー",
+      "power": "A",
+      "control": "D",
+      "break": 6
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ナックルカーブ",
+      "power": "D",
+      "control": "E",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "SFF",
+      "power": "A",
+      "control": "E",
+      "break": 4
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ツーシーム",
+      "power": "D",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "カットボール",
+      "power": "E",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "curve",
+      "order": 2,
+      "name": "カーブ",
+      "power": "E",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 2,
+      "name": "縦スライダー",
+      "power": "C",
+      "control": "D",
+      "break": 5
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "大舞台",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "威圧感",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

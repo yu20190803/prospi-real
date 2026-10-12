@@ -1,0 +1,170 @@
+{
+  "category": "wbc",
+  "team": "japan_2026",
+  "kind": "pitcher",
+  "player_id": "sumida_22",
+  "source_capture": "captures/wbc/japan_2026/sumida_22.png",
+  "source_original": "captures/wbc/Japan_2026/Screen_20260927_204448_205.png",
+  "year": 2026,
+  "uniform_number": "22",
+  "name": "隅田 知一郎",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 408
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "153km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 71,
+      "grade": "B"
+    },
+    {
+      "label": "疲労回復",
+      "value": 70,
+      "grade": "B"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "D",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "D",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "サークルチ",
+      "power": "B",
+      "control": "C",
+      "break": 5
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "SFF",
+      "power": "B",
+      "control": "B",
+      "break": 4
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "カーブ",
+      "power": "C",
+      "control": "C",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 2,
+      "name": "チェンジアップ",
+      "power": "C",
+      "control": "B",
+      "break": 2
+    },
+    {
+      "category": "curve",
+      "order": 2,
+      "name": "スラーブ",
+      "power": "E",
+      "control": "F",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "B",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "リリース",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球速安定○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "援護▼",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "寸前",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

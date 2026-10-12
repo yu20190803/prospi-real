@@ -1,0 +1,157 @@
+{
+  "category": "wbc",
+  "team": "japan_2006",
+  "kind": "batter",
+  "player_id": "tanishige_27",
+  "source_capture": "captures/wbc/japan_2006/tanishige_27.png",
+  "source_original": "captures/wbc/Japan_2006/Screen_20260927_205146_655.png",
+  "year": 2006,
+  "uniform_number": "27",
+  "name": "谷繁 元信",
+  "position": "捕手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 380
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 47
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 37
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 69
+    },
+    {
+      "label": "走力",
+      "grade": "E",
+      "value": 41
+    },
+    {
+      "label": "捕球",
+      "grade": "B",
+      "value": 71
+    },
+    {
+      "label": "スローイング",
+      "grade": "B",
+      "value": 70
+    },
+    {
+      "label": "肩力",
+      "grade": "A",
+      "value": 81
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 50
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "C",
+    "primary_grade": 76,
+    "catcher_lead_grade": "B",
+    "positions": [
+      {
+        "position": "C",
+        "grade": "B",
+        "value": 76
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "サヨナラ男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ホーム死守",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "プルヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

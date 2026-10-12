@@ -1,0 +1,179 @@
+{
+  "category": "wbc",
+  "team": "japan_2023",
+  "kind": "batter",
+  "player_id": "okamoto_25",
+  "source_capture": "captures/wbc/japan_2023/okamoto_25.png",
+  "source_original": "captures/wbc/Japan_2023/Screen_20260927_204808_048.png",
+  "year": 2023,
+  "uniform_number": "25",
+  "name": "岡本 和真",
+  "position": "三塁手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 386
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 49
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 48
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "A",
+      "value": 81
+    },
+    {
+      "label": "走力",
+      "grade": "E",
+      "value": 47
+    },
+    {
+      "label": "捕球",
+      "grade": "B",
+      "value": 71
+    },
+    {
+      "label": "スローイング",
+      "grade": "B",
+      "value": 71
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 60
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 62
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "3B",
+    "primary_grade": 59,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "3B",
+        "grade": "D",
+        "value": 59
+      },
+      {
+        "position": "LF",
+        "grade": "F",
+        "value": 36
+      },
+      {
+        "position": "1B",
+        "grade": "E",
+        "value": 48
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "アーチスト",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "広角打法",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "流し打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "決勝打",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

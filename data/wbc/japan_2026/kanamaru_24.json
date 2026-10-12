@@ -1,0 +1,174 @@
+{
+  "category": "wbc",
+  "team": "japan_2026",
+  "kind": "pitcher",
+  "player_id": "kanamaru_24",
+  "source_capture": "captures/wbc/japan_2026/kanamaru_24.png",
+  "source_original": "captures/wbc/Japan_2026/Screen_20260927_204441_097.png",
+  "year": 2026,
+  "uniform_number": "24",
+  "name": "金丸 夢斗",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 316
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "154km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 61,
+      "grade": "C"
+    },
+    {
+      "label": "疲労回復",
+      "value": 51,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "C",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "C",
+      "control": "C",
+      "break": 3
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "サークルチ",
+      "power": "E",
+      "control": "F",
+      "break": 2
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "SFF",
+      "power": "C",
+      "control": "C",
+      "break": 4
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "カーブ",
+      "power": "E",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "カットボール",
+      "power": "C",
+      "control": "D",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "E",
+      "highlighted": true,
+      "type": "minus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内角攻め",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "リリース",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球速安定○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "力配分",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "援護▼",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "スロースターター",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

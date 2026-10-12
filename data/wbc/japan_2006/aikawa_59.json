@@ -1,0 +1,145 @@
+{
+  "category": "wbc",
+  "team": "japan_2006",
+  "kind": "batter",
+  "player_id": "aikawa_59",
+  "source_capture": "captures/wbc/japan_2006/aikawa_59.png",
+  "source_original": "captures/wbc/Japan_2006/Screen_20260927_205153_801.png",
+  "year": 2006,
+  "uniform_number": "59",
+  "name": "相川 亮二",
+  "position": "捕手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 298
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 48
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 56
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "D",
+      "value": 53
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 63
+    },
+    {
+      "label": "スローイング",
+      "grade": "C",
+      "value": 69
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 67
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 60
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "C",
+    "primary_grade": 58,
+    "catcher_lead_grade": "D",
+    "positions": [
+      {
+        "position": "C",
+        "grade": "D",
+        "value": 58
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ホーム突入",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

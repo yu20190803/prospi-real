@@ -1,0 +1,191 @@
+{
+  "category": "wbc",
+  "team": "japan_2006",
+  "kind": "batter",
+  "player_id": "fukudome_17",
+  "source_capture": "captures/wbc/japan_2006/fukudome_17.png",
+  "source_original": "captures/wbc/Japan_2006/Screen_20260927_205243_272.png",
+  "year": 2006,
+  "uniform_number": "17",
+  "name": "福留孝介",
+  "position": "中堅手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 476
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "C",
+          "value": 65
+        },
+        {
+          "vs": "対左",
+          "grade": "C",
+          "value": 63
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 73
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 75
+    },
+    {
+      "label": "捕球",
+      "grade": "A",
+      "value": 88
+    },
+    {
+      "label": "スローイング",
+      "grade": "S",
+      "value": 95
+    },
+    {
+      "label": "肩力",
+      "grade": "B",
+      "value": 78
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 72
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "CF",
+    "primary_grade": 70,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "CF",
+        "grade": "B",
+        "value": 70
+      },
+      {
+        "position": "LF",
+        "grade": "B",
+        "value": 70
+      },
+      {
+        "position": "RF",
+        "grade": "A",
+        "value": 85
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "広角打法",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "代打",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "決勝打",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "レーザービーム",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

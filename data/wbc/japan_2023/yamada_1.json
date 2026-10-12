@@ -1,0 +1,186 @@
+{
+  "category": "wbc",
+  "team": "japan_2023",
+  "kind": "batter",
+  "player_id": "yamada_1",
+  "source_capture": "captures/wbc/japan_2023/yamada_1.png",
+  "source_original": "captures/wbc/Japan_2023/Screen_20260927_204750_609.png",
+  "year": 2023,
+  "uniform_number": "1",
+  "name": "山田 哲人",
+  "position": "二塁手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 424
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 41
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 52
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 72
+    },
+    {
+      "label": "走力",
+      "grade": "A",
+      "value": 81
+    },
+    {
+      "label": "捕球",
+      "grade": "B",
+      "value": 78
+    },
+    {
+      "label": "スローイング",
+      "grade": "B",
+      "value": 79
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 65
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 77
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "2B",
+    "primary_grade": 76,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "2B",
+        "grade": "B",
+        "value": 76
+      },
+      {
+        "position": "1B",
+        "grade": "F",
+        "value": 33
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "パワーヒッター",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "A",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "大舞台",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "決勝打",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "神の手",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "プルヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "内野安打▼",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

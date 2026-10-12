@@ -47,6 +47,10 @@ LEFT = {"r2L": "shoot", "r2R": "slider", "r3L": "sinker", "r3C": "fork", "r3R": 
 
 LIT = 95      # これより明るい画素を「色のついた枠」の画素とみなす
 BRIGHT = 140  # 第二パネルで新しい球種とみなす明るさ（実測: 残像は最大127、新球種は最低156）
+# G等級などの灰色の箱は新しい球種でも BRIGHT に届かない（大勢 15 のサークルチ G・ケインリー 43 の
+# シームファ G で見逃し、2026-10-12）。残像は第一パネルの同じ枠の色をほぼ半分に暗くしたもの
+# （各チャンネルの比の中央値 ~0.5）なので、比の中央値が NEW_RATIO 以上なら残像ではなく新しい球種とみなす。
+NEW_RATIO = 0.75
 
 
 def _patch(im: Image.Image, cx: int, cy: int):
@@ -69,6 +73,10 @@ def detect(capture: Path) -> dict:
         c = _patch(im, x + PANEL2_DX + SHIFT[0], y + SHIFT[1])
         if c and max(c) > BRIGHT and k in out["p2"] and max(out["p2"][k]) <= BRIGHT:
             out["p2"][k] = c  # 残像の上にずれて重なった新しい球種
+    for k, col in out["p2"].items():
+        p1 = out["p1"].get(k)
+        if max(col) <= BRIGHT and (p1 is None or statistics.median(a / max(b, 1) for a, b in zip(col, p1)) >= NEW_RATIO):
+            out["p2"][k] = tuple(max(v, BRIGHT + 1) if i == 0 else v for i, v in enumerate(col))  # 新しい球種の印
     return out
 
 

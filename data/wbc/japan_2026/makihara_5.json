@@ -1,0 +1,194 @@
+{
+  "category": "wbc",
+  "team": "japan_2026",
+  "kind": "batter",
+  "player_id": "makihara_5",
+  "source_capture": "captures/wbc/japan_2026/makihara_5.png",
+  "source_original": "captures/wbc/Japan_2026/Screen_20260927_204548_065.png",
+  "year": 2026,
+  "uniform_number": "5",
+  "name": "牧原 大成",
+  "position": "二塁手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 360
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "C",
+          "value": 60
+        },
+        {
+          "vs": "対左",
+          "grade": "C",
+          "value": 63
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "D",
+      "value": 54
+    },
+    {
+      "label": "走力",
+      "grade": "A",
+      "value": 82
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "スローイング",
+      "grade": "C",
+      "value": 61
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 62
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 50
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "2B",
+    "primary_grade": 72,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "2B",
+        "grade": "B",
+        "value": 72
+      },
+      {
+        "position": "CF",
+        "grade": "C",
+        "value": 68
+      },
+      {
+        "position": "LF",
+        "grade": "C",
+        "value": 60
+      },
+      {
+        "position": "RF",
+        "grade": "C",
+        "value": 60
+      },
+      {
+        "position": "3B",
+        "grade": "C",
+        "value": 65
+      },
+      {
+        "position": "SS",
+        "grade": "C",
+        "value": 65
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "ラインドライブ",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "バント",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "デイゲーム",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "サヨナラ男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ホーム突入",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

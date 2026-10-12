@@ -26,13 +26,14 @@ from pathlib import Path
 
 from capture_paths import ROOT, capture_folder, key, resolve
 
-PID = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*_\d+(?:_\d+)?$")
+PID = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*_\d+(?:_\d+)?(?:_bat)?$")  # _bat: 二刀流の野手画面
 REQUIRED = ["category", "team", "kind", "player_id", "year", "uniform_number", "name",
             "position", "throws_bats", "rarity", "stats", "abilities"]
 
 
-def _ident(d: dict) -> tuple[str, str]:
-    return (str(d.get("uniform_number", "")).strip(), str(d.get("name", "")).strip())
+def _ident(d: dict) -> tuple[str, str, str]:
+    # kind も含める: 二刀流（大谷）は同じ背番号・名前で投手画面と野手画面が別にあり、別の記録にする（2026-10-12）
+    return (str(d.get("uniform_number", "")).strip(), str(d.get("name", "")).strip(), d.get("kind", ""))
 
 
 def main(argv: list[str]) -> int:

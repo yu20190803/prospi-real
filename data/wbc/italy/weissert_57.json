@@ -1,0 +1,132 @@
+{
+  "category": "wbc",
+  "team": "italy",
+  "kind": "pitcher",
+  "player_id": "weissert_57",
+  "source_capture": "captures/wbc/italy/weissert_57.png",
+  "source_original": "captures/wbc/Italy/Screen_20260811_180354_678.png",
+  "year": 2026,
+  "uniform_number": "57",
+  "name": "ワイサート",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 321
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "155km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 36,
+      "grade": "F"
+    },
+    {
+      "label": "疲労回復",
+      "value": 78,
+      "grade": "B"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "◎",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ングファス",
+      "power": "D",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "高速スライダー",
+      "power": "C",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "ングファス",
+      "power": "C",
+      "control": "C",
+      "break": 5
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "スラーブ",
+      "power": "E",
+      "control": "F",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "E",
+      "control": "E",
+      "break": 4
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "スライダー",
+      "power": "D",
+      "control": "E",
+      "break": 7
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

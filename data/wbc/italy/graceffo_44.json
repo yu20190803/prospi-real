@@ -1,0 +1,116 @@
+{
+  "category": "wbc",
+  "team": "italy",
+  "kind": "pitcher",
+  "player_id": "graceffo_44",
+  "source_capture": "captures/wbc/italy/graceffo_44.png",
+  "source_original": "captures/wbc/Italy/Screen_20260811_180319_069.png",
+  "year": 2026,
+  "uniform_number": "44",
+  "name": "グレースフォ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 266
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "159km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 53,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 48,
+      "grade": "E"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "D",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "パワーカーブ",
+      "power": "B",
+      "control": "D",
+      "break": 5
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "縦スライダー",
+      "power": "D",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "E",
+      "control": "C",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

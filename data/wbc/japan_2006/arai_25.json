@@ -1,0 +1,162 @@
+{
+  "category": "wbc",
+  "team": "japan_2006",
+  "kind": "batter",
+  "player_id": "arai_25",
+  "source_capture": "captures/wbc/japan_2006/arai_25.png",
+  "source_original": "captures/wbc/Japan_2006/Screen_20260927_205224_682.png",
+  "year": 2006,
+  "uniform_number": "25",
+  "name": "新井貴浩",
+  "position": "三塁手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 354
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 50
+        },
+        {
+          "vs": "対左",
+          "grade": "A",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "A",
+      "value": 85
+    },
+    {
+      "label": "走力",
+      "grade": "E",
+      "value": 43
+    },
+    {
+      "label": "捕球",
+      "grade": "F",
+      "value": 38
+    },
+    {
+      "label": "スローイング",
+      "grade": "F",
+      "value": 30
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 50
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "1B",
+    "primary_grade": 60,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "1B",
+        "grade": "C",
+        "value": 60
+      },
+      {
+        "position": "3B",
+        "grade": "E",
+        "value": 46
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "ラインドライブ",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "広角打法",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

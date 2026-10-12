@@ -26,7 +26,9 @@
       1. 問題が「第一パネルX段と第二パネルY段が不一致」だけで、X > Y（第二パネルが少なく読んでいる）
       2. 第一パネルの点灯段が根元から連続し、各段が明るさ 90 以上または彩度 20 以上（背景は 48〜52 / 0〜2）
       3. 第二パネルで読めなかった段が、同じ柄の確実に未点灯の段（X+2段目〜6段目）より
-         彩度 +4 以上かつ明るさ +3 以上高い（背景に完全に同化していない）
+         彩度 +4 以上かつ明るさ +3 以上高い（背景に完全に同化していない）。
+         ただし彩度が +6 以上高ければ明るさの条件は問わない（2026-10-12 追加。灰色の G 等級の柄は第二パネルで
+         明るさが背景と同じ 44〜47 まで落ちるが、色味は彩度 7〜10（未点灯段は 0〜1）で残る。大勢 15 の高速シュートで実測）
     固定のしきい値で「背景より高い」を判定しないのは、正常な画像でも点灯段のすぐ次の段に色のにじみがあり、
     明るさ 61・彩度 16 まで上がるため（USA・Australia の全投手で実測）。同じ柄の中で比べる。
     「点灯段が途中で途切れている」「点灯段が0」、箱の位置・特殊能力・守備図・起用適性・validate の NG は
@@ -63,6 +65,7 @@ def _players(target: str) -> list[Path]:
 
 LIT1_BRIGHT, LIT1_SAT = 90, 20      # 条件2: 第一パネルの点灯段
 DIFF_SAT, DIFF_BRIGHT = 4, 3         # 条件3: 同じ柄の未点灯段との差
+DIFF_SAT_ONLY = 6                    # 条件3: 彩度がこれだけ高ければ明るさは問わない（灰色の柄）
 
 
 def structural_mismatch(im: np.ndarray, r: dict) -> dict | None:
@@ -81,7 +84,8 @@ def structural_mismatch(im: np.ndarray, r: dict) -> dict | None:
     if not ref:
         return None
     ref_sat, ref_bright = max(s for _, s in ref), statistics.median(b for b, _ in ref)
-    if not all(s >= ref_sat + DIFF_SAT and b >= ref_bright + DIFF_BRIGHT for b, s in v2[n2:n1]):
+    if not all(s >= ref_sat + DIFF_SAT and (b >= ref_bright + DIFF_BRIGHT or s >= ref_sat + DIFF_SAT_ONLY)
+               for b, s in v2[n2:n1]):
         return None
     fmt = lambda vs: [f"{b:.0f}/{s:.0f}" for b, s in vs]
     return {"pitch": r["pitch"]["name"], "category": r["pitch"]["category"], "order": order,

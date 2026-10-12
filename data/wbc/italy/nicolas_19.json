@@ -1,0 +1,126 @@
+{
+  "category": "wbc",
+  "team": "italy",
+  "kind": "pitcher",
+  "player_id": "nicolas_19",
+  "source_capture": "captures/wbc/italy/nicolas_19.png",
+  "source_original": "captures/wbc/Italy/Screen_20260811_180327_947.png",
+  "year": 2026,
+  "uniform_number": "19",
+  "name": "ニコラス",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 307
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "161km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 44,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 51,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "△",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "C",
+      "control": "E",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "高速スライダー",
+      "power": "B",
+      "control": "F",
+      "break": 3
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ナックルカーブ",
+      "power": "B",
+      "control": "F",
+      "break": 4
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逃げ球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球持ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "四球",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "category": "wbc",
+  "team": "italy",
+  "kind": "batter",
+  "player_id": "pasquantino_9",
+  "source_capture": "captures/wbc/italy/pasquantino_9.png",
+  "source_original": "captures/wbc/Italy/Screen_20260811_180404_491.png",
+  "year": 2026,
+  "uniform_number": "9",
+  "name": "パスカンティーノ",
+  "position": "一塁手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 365
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 58
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 47
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "A",
+      "value": 84
+    },
+    {
+      "label": "走力",
+      "grade": "E",
+      "value": 46
+    },
+    {
+      "label": "捕球",
+      "grade": "C",
+      "value": 66
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 57
+    },
+    {
+      "label": "肩力",
+      "grade": "E",
+      "value": 43
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 71
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "1B",
+    "primary_grade": 63,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "1B",
+        "grade": "C",
+        "value": 63
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "パワーヒッター",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "存在感",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "カット打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "プルヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

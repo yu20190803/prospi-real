@@ -1,0 +1,186 @@
+{
+  "category": "wbc",
+  "team": "japan_2023",
+  "kind": "batter",
+  "player_id": "murakami_55",
+  "source_capture": "captures/wbc/japan_2023/murakami_55.png",
+  "source_original": "captures/wbc/Japan_2023/Screen_20260927_204821_195.png",
+  "year": 2023,
+  "uniform_number": "55",
+  "name": "村上 宗隆",
+  "position": "三塁手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 503
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "C",
+          "value": 62
+        },
+        {
+          "vs": "対左",
+          "grade": "B",
+          "value": 75
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "S",
+      "value": 92
+    },
+    {
+      "label": "走力",
+      "grade": "C",
+      "value": 64
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 61
+    },
+    {
+      "label": "疲労回復",
+      "grade": "B",
+      "value": 72
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "3B",
+    "primary_grade": 51,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "3B",
+        "grade": "D",
+        "value": 51
+      },
+      {
+        "position": "1B",
+        "grade": "E",
+        "value": 48
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "パワーヒッター",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "威圧感",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "広角打法",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "満塁男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "サヨナラ男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "決勝打",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

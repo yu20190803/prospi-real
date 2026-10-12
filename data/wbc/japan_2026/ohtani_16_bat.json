@@ -1,0 +1,191 @@
+{
+  "category": "wbc",
+  "team": "japan_2026",
+  "kind": "batter",
+  "player_id": "ohtani_16_bat",
+  "source_capture": "captures/wbc/japan_2026/ohtani_16_bat.png",
+  "source_original": "captures/wbc/Japan_2026/Screen_20260927_204406_103.png",
+  "year": 2026,
+  "uniform_number": "16",
+  "name": "大谷 翔平",
+  "position": "投手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 583
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "C",
+          "value": 69
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 58
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "S",
+      "value": 98
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 76
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "肩力",
+      "grade": "A",
+      "value": 86
+    },
+    {
+      "label": "疲労回復",
+      "grade": "A",
+      "value": 84
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "P",
+    "primary_grade": 58,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "P",
+        "grade": "D",
+        "value": 58
+      },
+      {
+        "position": "RF",
+        "grade": "E",
+        "value": 42
+      },
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 40
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "パワーヒッター",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "パント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "高速弾",
+      "grade": null,
+      "highlighted": false,
+      "type": "gold"
+    },
+    {
+      "name": "威圧感",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "広角打法",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンスメーカー",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "悪球打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対ストレート○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "レーザービーム",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "category": "wbc",
+  "team": "italy",
+  "kind": "pitcher",
+  "player_id": "festa_52",
+  "source_capture": "captures/wbc/italy/festa_52.png",
+  "source_original": "captures/wbc/Italy/Screen_20260811_180334_552.png",
+  "year": 2026,
+  "uniform_number": "52",
+  "name": "フェスタ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 263
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "150km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 40,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 68,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "真っスラ",
+      "power": "D",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "B",
+      "control": "D",
+      "break": 5
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ームファス",
+      "power": "C",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "カットボール",
+      "power": "E",
+      "control": "E",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逃げ球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球速安定○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

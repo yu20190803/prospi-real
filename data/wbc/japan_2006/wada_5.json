@@ -1,0 +1,133 @@
+{
+  "category": "wbc",
+  "team": "japan_2006",
+  "kind": "batter",
+  "player_id": "wada_5",
+  "source_capture": "captures/wbc/japan_2006/wada_5.png",
+  "source_original": "captures/wbc/Japan_2006/Screen_20260927_205230_878.png",
+  "year": 2006,
+  "uniform_number": "5",
+  "name": "和田一浩",
+  "position": "左翼手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 375
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "B",
+          "value": 70
+        },
+        {
+          "vs": "対左",
+          "grade": "B",
+          "value": 78
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "A",
+      "value": 80
+    },
+    {
+      "label": "走力",
+      "grade": "E",
+      "value": 48
+    },
+    {
+      "label": "捕球",
+      "grade": "B",
+      "value": 75
+    },
+    {
+      "label": "スローイング",
+      "grade": "B",
+      "value": 77
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 58
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 60
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "LF",
+    "primary_grade": 51,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "LF",
+        "grade": "D",
+        "value": 51
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "アーチスト",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

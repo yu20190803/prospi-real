@@ -1,0 +1,149 @@
+{
+  "category": "wbc",
+  "team": "italy",
+  "kind": "batter",
+  "player_id": "canzone_8",
+  "source_capture": "captures/wbc/italy/canzone_8.png",
+  "source_original": "captures/wbc/Italy/Screen_20260811_180445_056.png",
+  "year": 2026,
+  "uniform_number": "8",
+  "name": "キャンゾーン",
+  "position": "右翼手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 342
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "C",
+          "value": 64
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 42
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 79
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 58
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 48
+    },
+    {
+      "label": "スローイング",
+      "grade": "E",
+      "value": 44
+    },
+    {
+      "label": "肩力",
+      "grade": "S",
+      "value": 90
+    },
+    {
+      "label": "疲労回復",
+      "grade": "E",
+      "value": 49
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "RF",
+    "primary_grade": 56,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "RF",
+        "grade": "D",
+        "value": 56
+      },
+      {
+        "position": "CF",
+        "grade": "E",
+        "value": 42
+      },
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 46
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "ラインドライブ",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "悪球打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

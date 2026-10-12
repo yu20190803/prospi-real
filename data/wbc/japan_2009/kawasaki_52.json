@@ -1,0 +1,191 @@
+{
+  "category": "wbc",
+  "team": "japan_2009",
+  "kind": "batter",
+  "player_id": "kawasaki_52",
+  "source_capture": "captures/wbc/japan_2009/kawasaki_52.png",
+  "source_original": "captures/wbc/Japan_2009/Screen_20260927_205005_218.png",
+  "year": 2009,
+  "uniform_number": "52",
+  "name": "川崎 宗則",
+  "position": "三塁手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 367
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "A",
+          "value": 80
+        },
+        {
+          "vs": "対左",
+          "grade": "B",
+          "value": 72
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "E",
+      "value": 48
+    },
+    {
+      "label": "走力",
+      "grade": "A",
+      "value": 81
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 50
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 57
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 65
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "3B",
+    "primary_grade": 61,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "3B",
+        "grade": "C",
+        "value": 61
+      },
+      {
+        "position": "SS",
+        "grade": "C",
+        "value": 61
+      },
+      {
+        "position": "2B",
+        "grade": "D",
+        "value": 58
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "グラウンダー",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "バント",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "アベレージヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "流し打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "満塁男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "粘り打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "カット打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "神の手",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

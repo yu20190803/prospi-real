@@ -1,0 +1,170 @@
+{
+  "category": "wbc",
+  "team": "italy",
+  "kind": "batter",
+  "player_id": "bartee_1",
+  "source_capture": "captures/wbc/italy/bartee_1.png",
+  "source_original": "captures/wbc/Italy/Screen_20260811_180409_128.png",
+  "year": 2026,
+  "uniform_number": "1",
+  "name": "バーティ",
+  "position": "三塁手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 297
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 55
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 53
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 66
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 78
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 46
+    },
+    {
+      "label": "スローイング",
+      "grade": "E",
+      "value": 48
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 54
+    },
+    {
+      "label": "疲労回復",
+      "grade": "E",
+      "value": 41
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "3B",
+    "primary_grade": 54,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "3B",
+        "grade": "D",
+        "value": 54
+      },
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 47
+      },
+      {
+        "position": "RF",
+        "grade": "E",
+        "value": 42
+      },
+      {
+        "position": "CF",
+        "grade": "F",
+        "value": 33
+      },
+      {
+        "position": "SS",
+        "grade": "F",
+        "value": 33
+      },
+      {
+        "position": "2B",
+        "grade": "D",
+        "value": 54
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "グラウンダー",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

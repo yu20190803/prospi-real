@@ -1,0 +1,191 @@
+{
+  "category": "wbc",
+  "team": "japan_2026",
+  "kind": "batter",
+  "player_id": "morishita_23",
+  "source_capture": "captures/wbc/japan_2026/morishita_23.png",
+  "source_original": "captures/wbc/Japan_2026/Screen_20260927_204615_749.png",
+  "year": 2026,
+  "uniform_number": "23",
+  "name": "森下 翔太",
+  "position": "右翼手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 407
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "D",
+          "value": 50
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 58
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "B",
+      "value": 73
+    },
+    {
+      "label": "走力",
+      "grade": "C",
+      "value": 60
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 51
+    },
+    {
+      "label": "スローイング",
+      "grade": "B",
+      "value": 74
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 64
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 68
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "RF",
+    "primary_grade": 70,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "RF",
+        "grade": "B",
+        "value": 70
+      },
+      {
+        "position": "LF",
+        "grade": "C",
+        "value": 62
+      },
+      {
+        "position": "CF",
+        "grade": "D",
+        "value": 50
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "アーチスト",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "大舞台",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "粘り打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "サヨナラ男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "決勝打",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "神の手",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "プルヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

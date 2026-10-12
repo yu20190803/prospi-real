@@ -1,0 +1,145 @@
+{
+  "category": "wbc",
+  "team": "japan_2026",
+  "kind": "batter",
+  "player_id": "wakatsuki_4",
+  "source_capture": "captures/wbc/japan_2026/wakatsuki_4.png",
+  "source_original": "captures/wbc/Japan_2026/Screen_20260927_204520_606.png",
+  "year": 2026,
+  "uniform_number": "4",
+  "name": "若月 健矢",
+  "position": "捕手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 352
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 35
+        },
+        {
+          "vs": "対左",
+          "grade": "D",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 61
+    },
+    {
+      "label": "走力",
+      "grade": "E",
+      "value": 48
+    },
+    {
+      "label": "捕球",
+      "grade": "A",
+      "value": 81
+    },
+    {
+      "label": "スローイング",
+      "grade": "C",
+      "value": 67
+    },
+    {
+      "label": "肩力",
+      "grade": "A",
+      "value": 86
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 66
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "C",
+    "primary_grade": 65,
+    "catcher_lead_grade": "C",
+    "positions": [
+      {
+        "position": "C",
+        "grade": "C",
+        "value": 65
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "中弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "サヨナラ男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ホーム死守",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

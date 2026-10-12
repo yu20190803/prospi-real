@@ -1,0 +1,202 @@
+{
+  "category": "wbc",
+  "team": "japan_2026",
+  "kind": "pitcher",
+  "player_id": "ito_14",
+  "source_capture": "captures/wbc/japan_2026/ito_14.png",
+  "source_original": "captures/wbc/Japan_2026/Screen_20260927_204432_130.png",
+  "year": 2026,
+  "uniform_number": "14",
+  "name": "伊藤 大海",
+  "position": "投手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 422
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "150km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 82,
+      "grade": "A"
+    },
+    {
+      "label": "疲労回復",
+      "value": 70,
+      "grade": "B"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "◎",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "真っスラ",
+      "power": "B",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "B",
+      "control": "C",
+      "break": 5
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "グファスト",
+      "power": "E",
+      "control": "C",
+      "break": 1
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "スローカーブ",
+      "power": "E",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "SFF",
+      "power": "C",
+      "control": "C",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "ルチェンジ",
+      "power": "D",
+      "control": "D",
+      "break": 2
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ァスピッチ",
+      "power": "F",
+      "control": "E",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "カットボール",
+      "power": "D",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "curve",
+      "order": 2,
+      "name": "ナックルカーブ",
+      "power": "D",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 2,
+      "name": "縦スライダー",
+      "power": "C",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 2,
+      "name": "トチェンジ",
+      "power": "E",
+      "control": "E",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "ギアチェンジ",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内角攻め",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打球反応○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "一発",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

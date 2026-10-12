@@ -1,0 +1,186 @@
+{
+  "category": "wbc",
+  "team": "japan_2006",
+  "kind": "batter",
+  "player_id": "matsunaka_3",
+  "source_capture": "captures/wbc/japan_2006/matsunaka_3.png",
+  "source_original": "captures/wbc/Japan_2006/Screen_20260927_205207_039.png",
+  "year": 2006,
+  "uniform_number": "3",
+  "name": "松中 信彦",
+  "position": "一塁手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 416
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "A",
+          "value": 81
+        },
+        {
+          "vs": "対左",
+          "grade": "B",
+          "value": 71
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "A",
+      "value": 88
+    },
+    {
+      "label": "走力",
+      "grade": "F",
+      "value": 33
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 57
+    },
+    {
+      "label": "肩力",
+      "grade": "E",
+      "value": 41
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 61
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "1B",
+    "primary_grade": 47,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "1B",
+        "grade": "E",
+        "value": 47
+      },
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 47
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "パワーヒッター",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "G",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "威圧感",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "粘り打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "連発",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "サヨナラ男",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "決勝打",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ヘッドスライディング",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁ヘッドスライディング",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "category": "wbc",
+  "team": "japan_2006",
+  "kind": "pitcher",
+  "player_id": "watanabe_31",
+  "source_capture": "captures/wbc/japan_2006/watanabe_31.png",
+  "source_original": "captures/wbc/Japan_2006/Screen_20260927_205057_665.png",
+  "year": 2006,
+  "uniform_number": "31",
+  "name": "渡辺 俊介",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 450
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "132km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 85,
+      "grade": "A"
+    },
+    {
+      "label": "疲労回復",
+      "value": 60,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "S",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スロースラ",
+      "power": "C",
+      "control": "C",
+      "break": 4
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "スローカーブ",
+      "power": "D",
+      "control": "C",
+      "break": 2
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "超高速シンカー",
+      "power": "A",
+      "control": "C",
+      "break": 5
+    },
+    {
+      "category": "sinker",
+      "order": 2,
+      "name": "スローシンカー",
+      "power": "F",
+      "control": "E",
+      "break": 1
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "C",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "大舞台",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "牽制◎",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球持ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打球反応▼",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

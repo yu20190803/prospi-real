@@ -1,0 +1,156 @@
+{
+  "category": "wbc",
+  "team": "japan_2006",
+  "kind": "pitcher",
+  "player_id": "sugiuchi_47",
+  "source_capture": "captures/wbc/japan_2006/sugiuchi_47.png",
+  "source_original": "captures/wbc/Japan_2006/Screen_20260927_205109_286.png",
+  "year": 2006,
+  "uniform_number": "47",
+  "name": "杉内 俊哉",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 397
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "145km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 85,
+      "grade": "A"
+    },
+    {
+      "label": "疲労回復",
+      "value": 60,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "A",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "C",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "E",
+      "control": "E",
+      "break": 2
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "スラーブ",
+      "power": "B",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 2,
+      "name": "フォーク",
+      "power": "E",
+      "control": "E",
+      "break": 2
+    },
+    {
+      "category": "curve",
+      "order": 2,
+      "name": "カーブ",
+      "power": "D",
+      "control": "D",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "E",
+      "highlighted": true,
+      "type": "minus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "牽制◎",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "尻上がり",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打球反応○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

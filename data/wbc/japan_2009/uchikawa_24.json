@@ -1,0 +1,205 @@
+{
+  "category": "wbc",
+  "team": "japan_2009",
+  "kind": "batter",
+  "player_id": "uchikawa_24",
+  "source_capture": "captures/wbc/japan_2009/uchikawa_24.png",
+  "source_original": "captures/wbc/Japan_2009/Screen_20260927_205026_505.png",
+  "year": 2009,
+  "uniform_number": "24",
+  "name": "内川 聖一",
+  "position": "左翼手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 432
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "A",
+          "value": 86
+        },
+        {
+          "vs": "対左",
+          "grade": "S",
+          "value": 98
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 63
+    },
+    {
+      "label": "走力",
+      "grade": "C",
+      "value": 60
+    },
+    {
+      "label": "捕球",
+      "grade": "E",
+      "value": 48
+    },
+    {
+      "label": "スローイング",
+      "grade": "F",
+      "value": 39
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 58
+    },
+    {
+      "label": "疲労回復",
+      "grade": "C",
+      "value": 69
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "LF",
+    "primary_grade": 53,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "LF",
+        "grade": "D",
+        "value": 53
+      },
+      {
+        "position": "CF",
+        "grade": "E",
+        "value": 46
+      },
+      {
+        "position": "RF",
+        "grade": "E",
+        "value": 46
+      },
+      {
+        "position": "3B",
+        "grade": "E",
+        "value": 40
+      },
+      {
+        "position": "SS",
+        "grade": "E",
+        "value": 40
+      },
+      {
+        "position": "2B",
+        "grade": "E",
+        "value": 48
+      },
+      {
+        "position": "1B",
+        "grade": "D",
+        "value": 53
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "中弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "大舞台",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "アベレージヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "固め打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "粘り打ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逆境",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "プルヒッター",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    }
+  ]
+}

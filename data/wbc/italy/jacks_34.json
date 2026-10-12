@@ -1,0 +1,122 @@
+{
+  "category": "wbc",
+  "team": "italy",
+  "kind": "pitcher",
+  "player_id": "jacks_34",
+  "source_capture": "captures/wbc/italy/jacks_34.png",
+  "source_original": "captures/wbc/Italy/Screen_20260811_180448_667.png",
+  "year": 2026,
+  "uniform_number": "34",
+  "name": "ジャックス",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 205
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "152km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 49,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 44,
+      "grade": "E"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "F",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "シンキング",
+      "power": "D",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スロースラ",
+      "power": "D",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "スライダー",
+      "power": "E",
+      "control": "D",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "一発",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

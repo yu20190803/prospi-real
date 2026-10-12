@@ -1,0 +1,152 @@
+{
+  "category": "wbc",
+  "team": "italy",
+  "kind": "pitcher",
+  "player_id": "lorenzen_24",
+  "source_capture": "captures/wbc/italy/lorenzen_24.png",
+  "source_original": "captures/wbc/Italy/Screen_20260811_180315_350.png",
+  "year": 2026,
+  "uniform_number": "24",
+  "name": "ローレンゼン",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 334
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "157km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 78,
+      "grade": "B"
+    },
+    {
+      "label": "疲労回復",
+      "value": 59,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "△",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ナチュラル",
+      "power": "C",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "D",
+      "control": "C",
+      "break": 2
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "パワーカーブ",
+      "power": "D",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "C",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ツーシーム",
+      "power": "D",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "スライダー",
+      "power": "D",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "curve",
+      "order": 2,
+      "name": "スラーブ",
+      "power": "D",
+      "control": "D",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "一発",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "シュート回転",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

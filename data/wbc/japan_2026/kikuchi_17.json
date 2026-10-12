@@ -1,0 +1,162 @@
+{
+  "category": "wbc",
+  "team": "japan_2026",
+  "kind": "pitcher",
+  "player_id": "kikuchi_17",
+  "source_capture": "captures/wbc/japan_2026/kikuchi_17.png",
+  "source_original": "captures/wbc/Japan_2026/Screen_20260927_204416_593.png",
+  "year": 2026,
+  "uniform_number": "17",
+  "name": "菊池 雄星",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 377
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "158km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 78,
+      "grade": "B"
+    },
+    {
+      "label": "疲労回復",
+      "value": 70,
+      "grade": "B"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "C",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "B",
+      "control": "C",
+      "break": 5
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "サークルチ",
+      "power": "B",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "オージーカーブ",
+      "power": "D",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ムファスト",
+      "power": "F",
+      "control": "F",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "カットボール",
+      "power": "F",
+      "control": "F",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "B",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "クイック",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球速安定○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "球持ち",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "フライボールピッチャー",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "対ランナー▼",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

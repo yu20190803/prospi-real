@@ -1,0 +1,166 @@
+{
+  "category": "wbc",
+  "team": "japan_2026",
+  "kind": "pitcher",
+  "player_id": "matsumoto_66",
+  "source_capture": "captures/wbc/japan_2026/matsumoto_66.png",
+  "source_original": "captures/wbc/Japan_2026/Screen_20260927_204445_031.png",
+  "year": 2026,
+  "uniform_number": "66",
+  "name": "松本 裕樹",
+  "position": "投手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 402
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "158km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 48,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 62,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "◎",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ナチュラル",
+      "power": "B",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "高速スライダー",
+      "power": "D",
+      "control": "D",
+      "break": 2
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "スラーブ",
+      "power": "B",
+      "control": "C",
+      "break": 5
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "SFF",
+      "power": "B",
+      "control": "C",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "シンキング",
+      "power": "E",
+      "control": "D",
+      "break": 1
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ストレート",
+      "power": "D",
+      "control": "B",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 2,
+      "name": "カットボール",
+      "power": "E",
+      "control": "E",
+      "break": 2
+    },
+    {
+      "category": "curve",
+      "order": 2,
+      "name": "カーブ",
+      "power": "D",
+      "control": "E",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "E",
+      "highlighted": true,
+      "type": "minus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "力配分",
+      "grade": null,
+      "highlighted": false,
+      "type": "both"
+    },
+    {
+      "name": "四球",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

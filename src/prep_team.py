@@ -39,7 +39,7 @@ from check_pitch_slots import detect as detect_slots, BRIGHT
 from check_fielding import detect as detect_fielding
 
 IMG_EXT = {".png", ".jpg", ".jpeg", ".webp"}
-RENAMED = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*_\d+(?:_\d+)?\.png$")
+RENAMED = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*_\d+(?:_\d+)?(?:_bat)?\.png$")
 ZOOM = 1.5          # 書き起こし用画像の倍率（1.0/1.5/2.0倍で精度差なしを確認。余裕をみて1.5倍）
 W_TRANSITION = 0.5  # これ以上メニューが写り込んでいたら「切り替え途中」としてスキップ
 W_GHOST = 0.02      # これ以上なら「写り込みあり（要注意）」として manifest に印を付ける
@@ -47,7 +47,8 @@ W_GHOST = 0.02      # これ以上なら「写り込みあり（要注意）」�
 R_MENU = "選手一覧のメニュー画面"
 R_TRANS = "選手画面への切り替え途中のフレーム"
 FIELD_JA = {"LF": "外野・左", "CF": "外野・中央", "RF": "外野・右", "3B": "内野・左の手前",
-            "SS": "内野・左の奥", "2B": "内野・右の奥", "1B": "内野・右の手前", "C": "本塁の手前"}
+            "SS": "内野・左の奥", "2B": "内野・右の奥", "1B": "内野・右の手前", "C": "本塁の手前",
+            "P": "マウンド（投手）"}
 SLOT_JA = {"top": "最上段", "r2L": "2段目・左", "r2R": "2段目・右",
            "r3L": "3段目・左", "r3C": "3段目・中央", "r3R": "3段目・右"}
 

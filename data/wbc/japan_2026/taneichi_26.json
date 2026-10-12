@@ -1,0 +1,152 @@
+{
+  "category": "wbc",
+  "team": "japan_2026",
+  "kind": "pitcher",
+  "player_id": "taneichi_26",
+  "source_capture": "captures/wbc/japan_2026/taneichi_26.png",
+  "source_original": "captures/wbc/Japan_2026/Screen_20260927_204431_062.png",
+  "year": 2026,
+  "uniform_number": "26",
+  "name": "種市 篤暉",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 344
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "155km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 80,
+      "grade": "A"
+    },
+    {
+      "label": "疲労回復",
+      "value": 52,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ルシュート",
+      "power": "C",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "D",
+      "control": "E",
+      "break": 2
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ナックルカーブ",
+      "power": "E",
+      "control": "D",
+      "break": 1
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "フォーク",
+      "power": "B",
+      "control": "E",
+      "break": 6
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "スプリット",
+      "power": "D",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ムファスト",
+      "power": "F",
+      "control": "E",
+      "break": null
+    },
+    {
+      "category": "fork",
+      "order": 2,
+      "name": "縦スライダー",
+      "power": "D",
+      "control": "D",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "E",
+      "highlighted": true,
+      "type": "minus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "ギアチェンジ",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

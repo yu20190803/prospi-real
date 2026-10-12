@@ -1,0 +1,124 @@
+{
+  "category": "wbc",
+  "team": "italy",
+  "kind": "pitcher",
+  "player_id": "lasorsa_75",
+  "source_capture": "captures/wbc/italy/lasorsa_75.png",
+  "source_original": "captures/wbc/Italy/Screen_20260811_180351_117.png",
+  "year": 2026,
+  "uniform_number": "75",
+  "name": "ラソーサ",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 266
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "150km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 45,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 53,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ーシームフ",
+      "power": "D",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "ンキングフ",
+      "power": "E",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "コースライ",
+      "power": "C",
+      "control": "C",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "D",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "チュラルシ",
+      "power": "D",
+      "control": "C",
+      "break": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}
