@@ -35,6 +35,15 @@ Brazil・Canada（2026-10-04）では、この手順のチェックを「画像�
    完了判定をブロックしない（下の「4. チェック」参照。判定は finalize_team.py が画素から自動で行う）。
    自分の判断で unverified を付けてブロックを外したり、変化量を手で書き換えたりしない。
 
+## どこで実行するか（2026-10-12 決定）
+
+PCに紐付いた定期タスク（クラウドの定期実行）は、PCの画像は読めるが GitHub へ push できない
+（実行環境に prospi-real への書き込み許可が付かず 403 になる。3回再現）。PCに紐付かない定期タスクは
+push できるが画像を読めない。両方できるのは、prospi-real が付いた会話（セッション）だけなので、
+**書き起こしはその会話が1時間ごとに自分を起こして（send_later）、1回1チームずつこの手順で行う**。
+書き起こし本体はサブエージェント（Haiku 5.5、Agent ツールの model に haiku を指定）、まとめ役が会話本体。
+起こすたびに次の予約を入れ、全チーム完了・PCに届かない状態が続く・ユーザーが止めた、のいずれかで止める。
+
 ## 0. 準備
 
 1. `add_repo`（access: push）で `yu20190803/prospi-real` を追加し、`/home/claude/prospi-real` に clone。
@@ -168,6 +177,9 @@ python3 src/finalize_team.py wbc/<team>
    を実行すると（新しい結果がなくても）`work/.../commit_files.json` に一覧ができる。その中身をそのまま
    `device_commit_files` に渡す（元ファイルは消さない・上書きしない）。
    ※ merge を最後に実行したときの一覧なので、pass2 のあとに `--outputs` 付きで1回実行すればよい。
+   続けて `python3 src/prep_team.py captures/wbc/<Team> --write-skipped` をもう一度実行する。元画像が処理済みに
+   なったので、過去の実行で付いた綴り違いの古い改名コピー（例 `bieiera_49.png`）が「完全に同じ画像の重複」として
+   `_skipped.json` に記録される（記録しないと、次回も同じチームが未処理として選ばれる。2026-10-12 Brazil で発生）。
 2. GitHub（prospi-real、公開）: **直前の `finalize_team.py wbc/<team>` が終了コード 0 だったときだけ**、
    `data/` と `site/index.html` をコミットして push（ブランチは main）。
    **push 前に `git status --short` で `captures`・`work`・画像ファイルが含まれていないことを確認する。**
