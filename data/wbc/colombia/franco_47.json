@@ -1,0 +1,160 @@
+{
+  "category": "wbc",
+  "team": "colombia",
+  "kind": "batter",
+  "player_id": "franco_47",
+  "source_capture": "captures/wbc/colombia/franco_47.png",
+  "source_original": "captures/wbc/Colombia/Screen_20260811_181509_848.png",
+  "year": 2026,
+  "uniform_number": "47",
+  "name": "フランコ",
+  "position": "右翼手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 303
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "B",
+          "value": 78
+        },
+        {
+          "vs": "対左",
+          "grade": "C",
+          "value": 64
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 65
+    },
+    {
+      "label": "走力",
+      "grade": "F",
+      "value": 24
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 58
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 56
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 53
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "RF",
+    "primary_grade": 39,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "RF",
+        "grade": "F",
+        "value": 39
+      },
+      {
+        "position": "LF",
+        "grade": "F",
+        "value": 35
+      },
+      {
+        "position": "CF",
+        "grade": "F",
+        "value": 28
+      },
+      {
+        "position": "3B",
+        "grade": "F",
+        "value": 23
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "高弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "初球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対ストレート○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

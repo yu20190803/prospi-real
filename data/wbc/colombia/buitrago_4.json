@@ -1,0 +1,116 @@
+{
+  "category": "wbc",
+  "team": "colombia",
+  "kind": "pitcher",
+  "player_id": "buitrago_4",
+  "source_capture": "captures/wbc/colombia/buitrago_4.png",
+  "source_original": "captures/wbc/Colombia/Screen_20260811_181427_692.png",
+  "year": 2026,
+  "uniform_number": "4",
+  "name": "ブイトラゴ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 322
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "147km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 54,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 61,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "◎",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "C",
+      "control": "E",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "高速スライダー",
+      "power": "F",
+      "control": "E",
+      "break": 1
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "フォーク",
+      "power": "A",
+      "control": "E",
+      "break": 6
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ソーシーム",
+      "power": "E",
+      "control": "E",
+      "break": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "A",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "category": "wbc",
+  "team": "colombia",
+  "kind": "batter",
+  "player_id": "ramirez_43",
+  "source_capture": "captures/wbc/colombia/ramirez_43.png",
+  "source_original": "captures/wbc/Colombia/Screen_20260811_181506_468.png",
+  "year": 2026,
+  "uniform_number": "43",
+  "name": "ラミレス",
+  "position": "左翼手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 289
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "E",
+          "value": 48
+        },
+        {
+          "vs": "対左",
+          "grade": "E",
+          "value": 48
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "C",
+      "value": 68
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 75
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 53
+    },
+    {
+      "label": "スローイング",
+      "grade": "E",
+      "value": 48
+    },
+    {
+      "label": "肩力",
+      "grade": "D",
+      "value": 59
+    },
+    {
+      "label": "疲労回復",
+      "grade": "E",
+      "value": 44
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "LF",
+    "primary_grade": 54,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "LF",
+        "grade": "D",
+        "value": 54
+      },
+      {
+        "position": "CF",
+        "grade": "F",
+        "value": 31
+      },
+      {
+        "position": "RF",
+        "grade": "D",
+        "value": 54
+      },
+      {
+        "position": "1B",
+        "grade": "F",
+        "value": 31
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

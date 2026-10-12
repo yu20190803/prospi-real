@@ -1,0 +1,122 @@
+{
+  "category": "wbc",
+  "team": "colombia",
+  "kind": "pitcher",
+  "player_id": "alvarado_20",
+  "source_capture": "captures/wbc/colombia/alvarado_20.png",
+  "source_original": "captures/wbc/Colombia/Screen_20260811_181408_009.png",
+  "year": 2026,
+  "uniform_number": "20",
+  "name": "アルバラード",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 224
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "157km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 40,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 82,
+      "grade": "A"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "D",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "スライダー",
+      "power": "D",
+      "control": "E",
+      "break": 4
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "パワーカーブ",
+      "power": "F",
+      "control": "E",
+      "break": 2
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "フォーク",
+      "power": "F",
+      "control": "E",
+      "break": 1
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "シュート回転",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

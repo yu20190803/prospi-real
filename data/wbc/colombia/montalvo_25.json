@@ -1,0 +1,108 @@
+{
+  "category": "wbc",
+  "team": "colombia",
+  "kind": "pitcher",
+  "player_id": "montalvo_25",
+  "source_capture": "captures/wbc/colombia/montalvo_25.png",
+  "source_original": "captures/wbc/Colombia/Screen_20260811_181355_279.png",
+  "year": 2026,
+  "uniform_number": "25",
+  "name": "モンタルボ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 237
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "148km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 88,
+      "grade": "A"
+    },
+    {
+      "label": "疲労回復",
+      "value": 64,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "E",
+      "control": "E",
+      "break": null
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "シンキング",
+      "power": "D",
+      "control": "D",
+      "break": 5
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "フォーク",
+      "power": "F",
+      "control": "D",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

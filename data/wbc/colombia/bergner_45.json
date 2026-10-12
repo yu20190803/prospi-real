@@ -1,0 +1,122 @@
+{
+  "category": "wbc",
+  "team": "colombia",
+  "kind": "pitcher",
+  "player_id": "bergner_45",
+  "source_capture": "captures/wbc/colombia/bergner_45.png",
+  "source_original": "captures/wbc/Colombia/Screen_20260811_181347_967.png",
+  "year": 2026,
+  "uniform_number": "45",
+  "name": "バーグナー",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 193
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "148km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 52,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 43,
+      "grade": "E"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "D",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "E",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ドロップカーブ",
+      "power": "D",
+      "control": "E",
+      "break": 3
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "サークルチ",
+      "power": "C",
+      "control": "D",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "四球",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

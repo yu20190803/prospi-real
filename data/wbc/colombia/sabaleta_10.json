@@ -1,0 +1,122 @@
+{
+  "category": "wbc",
+  "team": "colombia",
+  "kind": "pitcher",
+  "player_id": "sabaleta_10",
+  "source_capture": "captures/wbc/colombia/sabaleta_10.png",
+  "source_original": "captures/wbc/Colombia/Screen_20260811_181421_677.png",
+  "year": 2026,
+  "uniform_number": "10",
+  "name": "サバレタ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 279
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "153km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 46,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 54,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "C",
+      "control": "D",
+      "break": null
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "スラーブ",
+      "power": "C",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "C",
+      "control": "D",
+      "break": 3
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ームファス",
+      "power": "C",
+      "control": "D",
+      "break": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "奪三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}
