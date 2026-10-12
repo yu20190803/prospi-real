@@ -92,7 +92,7 @@ def validate(path: Path) -> tuple[list[str], list[str]]:
     for a in d.get("abilities", []):
         if a.get("grade") and a["grade"] not in GRADE_SET:
             errors.append(f"特殊能力 {a['name']}: 等級が不正 {a['grade']}")
-        if a.get("type") not in {"plus", "minus", "both"}:
+        if a.get("type") not in {"plus", "minus", "both", "gold"}:
             errors.append(f"特殊能力 {a['name']}: type が不正 {a.get('type')}")
 
     for u in d.get("unverified", []):

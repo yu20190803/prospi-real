@@ -6,7 +6,9 @@
 
 判定内容（標準レイアウト 865x605 で実測した座標。layout.open_std で正規化してから読む）:
     - 右の能力リストの各行の行頭アイコン（x 596〜610）が色付きかどうか → 能力の行数
-    - アイコンの左上と右下の色: 両方ピンク=plus、両方紫=minus、ピンクと紫の2色=both
+    - アイコンの左上と右下の色: 両方ピンク=plus、両方紫=minus、ピンクと紫の2色=both、両方金色=gold
+      （gold は行全体が金色の「金特」。2026-10-12 Brazil ramirez_24 の「おかわり」で初出。以前は金色を
+      知らずにそこで数えるのを止め、行数を少なく読んでいた）
     データの abilities の件数・type と一致しなければ報告する（書き漏れ・余分な行・色の読み違い）。
 """
 from __future__ import annotations
@@ -26,6 +28,8 @@ ROW0, ROW_H, MAX_ROWS = 104.5, 34.55, 14
 
 def _color(px: np.ndarray) -> str | None:
     r, g, b = (float(v) for v in px.reshape(-1, 3).mean(0))
+    if r > 200 and g > 170 and b < 170 and r - b > 70:
+        return "gold"   # 金特（実測 245/219/145, 241/208/118）
     if r > 200 and b > 200 and r - g > 35:
         return "pink"
     if r < 200 and b > 160 and b - r > 12 and b - g > 15:
@@ -43,7 +47,7 @@ def detect(capture: Path) -> list[str]:
         if tl is None and br is None:
             break
         if tl == br:
-            out.append("plus" if tl == "pink" else "minus")
+            out.append({"pink": "plus", "purple": "minus", "gold": "gold"}[tl])
         elif tl and br:
             out.append("both")
         else:
