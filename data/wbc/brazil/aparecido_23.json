@@ -1,0 +1,154 @@
+{
+  "category": "wbc",
+  "team": "brazil",
+  "kind": "pitcher",
+  "player_id": "aparecido_23",
+  "source_capture": "captures/wbc/brazil/aparecido_23.png",
+  "source_original": "captures/wbc/Brazil/Screen_20260811_180526_128.png",
+  "year": 2026,
+  "uniform_number": "23",
+  "name": "アパレシド",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 194
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "149km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 47,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 66,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "ー",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "D",
+      "control": "F",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "カットボール",
+      "power": "E",
+      "control": "F",
+      "break": 2
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "シンキング",
+      "power": "G",
+      "control": "F",
+      "break": 1
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "フォーク",
+      "power": "F",
+      "control": "F",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "逃げ球",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ],
+  "unverified": [
+    "pitches[].break"
+  ],
+  "break_panel_mismatch": [
+    {
+      "pitch": "シンキング",
+      "category": "shoot",
+      "order": 1,
+      "panel1": 1,
+      "panel2": 0,
+      "adopted": 1,
+      "panel1_pixels": [
+        "115/24",
+        "53/4",
+        "49/0",
+        "50/0",
+        "50/0",
+        "50/0",
+        "41/2"
+      ],
+      "panel2_pixels": [
+        "55/9",
+        "50/4",
+        "49/3",
+        "49/0",
+        "50/0",
+        "49/0",
+        "43/1"
+      ],
+      "reason": "第一パネルの点灯1段は明確（明るさ/彩度 115/24）。第二パネルの1〜1段目はしきい値（明るさ75・彩度20）未満だが、同じ柄の未点灯段（彩度最大3・明るさ中央値49）より高い（55/9）。暗い色の柄が第二パネルで背景に近くなる画像側の問題と判断し、第一パネルの値を採用"
+    }
+  ]
+}

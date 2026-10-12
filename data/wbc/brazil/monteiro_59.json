@@ -1,0 +1,154 @@
+{
+  "category": "wbc",
+  "team": "brazil",
+  "kind": "pitcher",
+  "player_id": "monteiro_59",
+  "source_capture": "captures/wbc/brazil/monteiro_59.png",
+  "source_original": "captures/wbc/Brazil/Screen_20260811_180538_000.png",
+  "year": 2026,
+  "uniform_number": "59",
+  "name": "モンテイロ",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 180
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "155km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 52,
+      "grade": "D"
+    },
+    {
+      "label": "疲労回復",
+      "value": 50,
+      "grade": "D"
+    },
+    {
+      "label": "先発適性",
+      "value": "ー",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "E",
+      "control": "F",
+      "break": null
+    },
+    {
+      "category": "shoot",
+      "order": 1,
+      "name": "ングファス",
+      "power": "E",
+      "control": "F",
+      "break": 2
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "高速スライダー",
+      "power": "F",
+      "control": "F",
+      "break": 2
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "G",
+      "control": "E",
+      "break": 2
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "シュート回転",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ],
+  "unverified": [
+    "pitches[].break"
+  ],
+  "break_panel_mismatch": [
+    {
+      "pitch": "チェンジアップ",
+      "category": "fork",
+      "order": 1,
+      "panel1": 2,
+      "panel2": 0,
+      "adopted": 2,
+      "panel1_pixels": [
+        "116/24",
+        "115/23",
+        "51/2",
+        "51/2",
+        "52/2",
+        "53/2",
+        "47/3"
+      ],
+      "panel2_pixels": [
+        "58/11",
+        "58/10",
+        "51/2",
+        "50/0",
+        "50/0",
+        "51/0",
+        "46/2"
+      ],
+      "reason": "第一パネルの点灯2段は明確（明るさ/彩度 116/24, 115/23）。第二パネルの1〜2段目はしきい値（明るさ75・彩度20）未満だが、同じ柄の未点灯段（彩度最大0・明るさ中央値50）より高い（58/11, 58/10）。暗い色の柄が第二パネルで背景に近くなる画像側の問題と判断し、第一パネルの値を採用"
+    }
+  ]
+}
