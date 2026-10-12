@@ -1,0 +1,158 @@
+{
+  "category": "wbc",
+  "team": "chinese_taipei",
+  "kind": "batter",
+  "player_id": "lin_15",
+  "source_capture": "captures/wbc/chinese_taipei/lin_15.png",
+  "source_original": "captures/wbc/Chinese_taipei/Screen_20260811_181120_561.png",
+  "year": 2026,
+  "uniform_number": "15",
+  "name": "リン・ズーウェイ",
+  "position": "二塁手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 272
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 28
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "D",
+      "value": 51
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 70
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 57
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 52
+    },
+    {
+      "label": "肩力",
+      "grade": "B",
+      "value": 73
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 58
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "2B",
+    "primary_grade": 64,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "2B",
+        "grade": "C",
+        "value": 64
+      },
+      {
+        "position": "CF",
+        "grade": "E",
+        "value": 46
+      },
+      {
+        "position": "LF",
+        "grade": "E",
+        "value": 43
+      },
+      {
+        "position": "RF",
+        "grade": "E",
+        "value": 43
+      },
+      {
+        "position": "SS",
+        "grade": "E",
+        "value": 46
+      },
+      {
+        "position": "3B",
+        "grade": "E",
+        "value": 42
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "ラインドライブ",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

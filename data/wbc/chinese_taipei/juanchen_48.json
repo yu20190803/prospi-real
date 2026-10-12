@@ -1,0 +1,142 @@
+{
+  "category": "wbc",
+  "team": "chinese_taipei",
+  "kind": "pitcher",
+  "player_id": "juanchen_48",
+  "source_capture": "captures/wbc/chinese_taipei/juanchen_48.png",
+  "source_original": "captures/wbc/Chinese_taipei/Screen_20260811_181027_080.png",
+  "year": 2026,
+  "uniform_number": "48",
+  "name": "ジュアンチェン ジョンアオ",
+  "position": "投手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 257
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "156km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 62,
+      "grade": "C"
+    },
+    {
+      "label": "疲労回復",
+      "value": 61,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "△",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "D",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "ナックルカーブ",
+      "power": "C",
+      "control": "D",
+      "break": 4
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "縦スライダー",
+      "power": "D",
+      "control": "C",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "チェンジアップ",
+      "power": "E",
+      "control": "E",
+      "break": 1
+    },
+    {
+      "category": "straight",
+      "order": 2,
+      "name": "ームファスト",
+      "power": "E",
+      "control": "D",
+      "break": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "一発",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対ランナー▼",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "シュート回転",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

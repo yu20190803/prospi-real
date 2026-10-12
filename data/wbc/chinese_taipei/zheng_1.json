@@ -1,0 +1,155 @@
+{
+  "category": "wbc",
+  "team": "chinese_taipei",
+  "kind": "batter",
+  "player_id": "zheng_1",
+  "source_capture": "captures/wbc/chinese_taipei/zheng_1.png",
+  "source_original": "captures/wbc/Chinese_taipei/Screen_20260811_181126_104.png",
+  "year": 2026,
+  "uniform_number": "1",
+  "name": "ジェン・ツォンチェ",
+  "position": "二塁手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 231
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 31
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "F",
+      "value": 38
+    },
+    {
+      "label": "走力",
+      "grade": "A",
+      "value": 81
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 55
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 58
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 60
+    },
+    {
+      "label": "疲労回復",
+      "grade": "E",
+      "value": 40
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "2B",
+    "primary_grade": 66,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "2B",
+        "grade": "C",
+        "value": 66
+      },
+      {
+        "position": "SS",
+        "grade": "C",
+        "value": 66
+      },
+      {
+        "position": "3B",
+        "grade": "E",
+        "value": 48
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "グラウンダー",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "ヘッドスライディング",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

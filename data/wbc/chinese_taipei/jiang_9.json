@@ -1,0 +1,155 @@
+{
+  "category": "wbc",
+  "team": "chinese_taipei",
+  "kind": "batter",
+  "player_id": "jiang_9",
+  "source_capture": "captures/wbc/chinese_taipei/jiang_9.png",
+  "source_original": "captures/wbc/Chinese_taipei/Screen_20260811_181133_353.png",
+  "year": 2026,
+  "uniform_number": "9",
+  "name": "ジャン・ジェンユー",
+  "position": "遊撃手",
+  "throws_bats": "右投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 227
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 31
+        },
+        {
+          "vs": "対左",
+          "grade": "F",
+          "value": 33
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "E",
+      "value": 42
+    },
+    {
+      "label": "走力",
+      "grade": "B",
+      "value": 70
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 59
+    },
+    {
+      "label": "スローイング",
+      "grade": "E",
+      "value": 46
+    },
+    {
+      "label": "肩力",
+      "grade": "C",
+      "value": 69
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 59
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "SS",
+    "primary_grade": 57,
+    "catcher_lead_grade": null,
+    "positions": [
+      {
+        "position": "SS",
+        "grade": "D",
+        "value": 57
+      },
+      {
+        "position": "2B",
+        "grade": "E",
+        "value": 49
+      },
+      {
+        "position": "3B",
+        "grade": "D",
+        "value": 57
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "低弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "F",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "内野安打○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バントダッシュ○",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    }
+  ]
+}

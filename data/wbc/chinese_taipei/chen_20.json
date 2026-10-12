@@ -1,0 +1,136 @@
+{
+  "category": "wbc",
+  "team": "chinese_taipei",
+  "kind": "pitcher",
+  "player_id": "chen_20",
+  "source_capture": "captures/wbc/chinese_taipei/chen_20.png",
+  "source_original": "captures/wbc/Chinese_taipei/Screen_20260811_181059_987.png",
+  "year": 2026,
+  "uniform_number": "20",
+  "name": "チェン・グァンユウ",
+  "position": "投手",
+  "throws_bats": "左投左打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 279
+  },
+  "stats": [
+    {
+      "label": "球速",
+      "value": "152km/h",
+      "grade": null
+    },
+    {
+      "label": "スタミナ",
+      "value": 48,
+      "grade": "E"
+    },
+    {
+      "label": "疲労回復",
+      "value": 61,
+      "grade": "C"
+    },
+    {
+      "label": "先発適性",
+      "value": "○",
+      "grade": null
+    },
+    {
+      "label": "中継適性",
+      "value": "◎",
+      "grade": null
+    },
+    {
+      "label": "抑え適性",
+      "value": "○",
+      "grade": null
+    }
+  ],
+  "pitches": [
+    {
+      "category": "straight",
+      "order": 1,
+      "name": "ストレート",
+      "power": "D",
+      "control": "C",
+      "break": null
+    },
+    {
+      "category": "slider",
+      "order": 1,
+      "name": "高速スライダー",
+      "power": "C",
+      "control": "C",
+      "break": 4
+    },
+    {
+      "category": "sinker",
+      "order": 1,
+      "name": "ロースクリ",
+      "power": "D",
+      "control": "C",
+      "break": 3
+    },
+    {
+      "category": "fork",
+      "order": 1,
+      "name": "SFF",
+      "power": "D",
+      "control": "C",
+      "break": 4
+    },
+    {
+      "category": "curve",
+      "order": 1,
+      "name": "カーブ",
+      "power": "D",
+      "control": "C",
+      "break": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "対ピンチ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "クイック",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "打たれ強さ",
+      "grade": "E",
+      "highlighted": false,
+      "type": "minus"
+    },
+    {
+      "name": "対左打者",
+      "grade": "C",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "牽制◎",
+      "grade": null,
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "四球",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

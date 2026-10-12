@@ -1,0 +1,139 @@
+{
+  "category": "wbc",
+  "team": "chinese_taipei",
+  "kind": "batter",
+  "player_id": "jiang_63",
+  "source_capture": "captures/wbc/chinese_taipei/jiang_63.png",
+  "source_original": "captures/wbc/Chinese_taipei/Screen_20260811_181113_534.png",
+  "year": 2026,
+  "uniform_number": "63",
+  "name": "ジャン・シャオホン",
+  "position": "捕手",
+  "throws_bats": "右投右打",
+  "photo": null,
+  "rarity": {
+    "star": true,
+    "overall": 259
+  },
+  "stats": [
+    {
+      "label": "ミート",
+      "splits": [
+        {
+          "vs": "対右",
+          "grade": "F",
+          "value": 33
+        },
+        {
+          "vs": "対左",
+          "grade": "G",
+          "value": 19
+        }
+      ]
+    },
+    {
+      "label": "パワー",
+      "grade": "D",
+      "value": 53
+    },
+    {
+      "label": "走力",
+      "grade": "D",
+      "value": 58
+    },
+    {
+      "label": "捕球",
+      "grade": "D",
+      "value": 54
+    },
+    {
+      "label": "スローイング",
+      "grade": "D",
+      "value": 59
+    },
+    {
+      "label": "肩力",
+      "grade": "B",
+      "value": 73
+    },
+    {
+      "label": "疲労回復",
+      "grade": "D",
+      "value": 59
+    }
+  ],
+  "fielding_aptitude": [],
+  "zone_grid": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "fielding_diagram": {
+    "primary_position": "C",
+    "primary_grade": 52,
+    "catcher_lead_grade": "C",
+    "positions": [
+      {
+        "position": "C",
+        "grade": "D",
+        "value": 52
+      }
+    ]
+  },
+  "abilities": [
+    {
+      "name": "中弾道",
+      "grade": null,
+      "highlighted": true,
+      "type": "plus"
+    },
+    {
+      "name": "ケガしにくさ",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "バント",
+      "grade": "B",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "チャンス",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "走塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "盗塁",
+      "grade": "D",
+      "highlighted": false,
+      "type": "plus"
+    },
+    {
+      "name": "三振",
+      "grade": null,
+      "highlighted": false,
+      "type": "minus"
+    }
+  ]
+}

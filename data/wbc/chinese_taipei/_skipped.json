@@ -1,0 +1,86 @@
+[
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181017_779.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181021_720.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181035_162.png",
+    "reason": "選手画面への切り替え途中のフレーム"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181042_662.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181049_296.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181058_996.png",
+    "reason": "選手画面への切り替え途中のフレーム"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181109_027.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181112_349.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181119_412.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181132_152.png",
+    "reason": "選手画面への切り替え途中のフレーム"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181135_663.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181139_449.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181142_891.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181151_830.png",
+    "reason": "選手一覧のメニュー画面"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181025_736.png",
+    "reason": "同じ選手の切り替え途中のフレーム（juanchen_48）"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181055_228.png",
+    "reason": "選手一覧が強く写り込んだ切り替え途中のフレームで、特殊能力の色や一部の値が読めない（#0 リン・カイウェイ。ほかに詳細画面が無いので撮り直しが必要）"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181031_903.png",
+    "reason": "選手一覧が強く写り込んだ切り替え途中のフレームで、特殊能力の色や一部の値が読めない（#11 グーリン・ルェヤン。ほかに詳細画面が無いので撮り直しが必要）"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/Screen_20260811_181125_164.png",
+    "reason": "選手一覧が強く写り込んだ切り替え途中のフレームで、特殊能力の色や一部の値が読めない（#90 ジャン・クンユー。ほかに詳細画面が無いので撮り直しが必要）"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/lin_1.png",
+    "reason": "完全に同じ画像の重複（Screen_20260811_181031_903.png）"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/lin_0.png",
+    "reason": "完全に同じ画像の重複（Screen_20260811_181055_228.png）"
+  },
+  {
+    "file": "captures/wbc/Chinese_taipei/jiang_90.png",
+    "reason": "完全に同じ画像の重複（Screen_20260811_181125_164.png）"
+  }
+]
